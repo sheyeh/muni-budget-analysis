@@ -28,9 +28,13 @@ htmlcov/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+# Data downloads
+data/
+
 # IDE & OS files
 .idea/
 .vscode/
+*.iml
 .DS_Store
 *.swp
 
