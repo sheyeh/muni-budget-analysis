@@ -48,6 +48,17 @@ from pipeline.analysis.llm_classify import classify_table
 
 def process_one(source: str, input_path: Path, codebook_listing: str, codebook_by_code: dict, api_key: str, model: str) -> list[dict]:
     doc = json.loads(input_path.read_text(encoding="utf-8"))
+    
+    # Load scoped.json if present
+    scoped_path = input_path.parent / "scoped.json"
+    scope_data = None
+    if scoped_path.is_file():
+        try:
+            scope_data = json.loads(scoped_path.read_text(encoding="utf-8"))
+            print(f"  Loaded scope filtering metadata from: {scoped_path.name}")
+        except Exception as exc:
+            print(f"  Warning: failed to load scoped.json: {exc!r}")
+
     all_records: list[dict] = []
 
     for table in extract_all_tables(doc):
@@ -83,6 +94,7 @@ def process_one(source: str, input_path: Path, codebook_listing: str, codebook_b
             table=table,
             classification=result,
             codebook_by_code=codebook_by_code,
+            scope_data=scope_data,
         )
         all_records.extend(records_to_dicts(records))
 
@@ -92,7 +104,7 @@ def process_one(source: str, input_path: Path, codebook_listing: str, codebook_b
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--api-key", default=os.environ.get("GEMINI_API_KEY"), help="Gemini API key (or set GEMINI_API_KEY)")
-    p.add_argument("--model", default="gemini-3.6-flash")
+    p.add_argument("--model", default="gemini-3.5-flash-lite")
     p.add_argument("--input", action="append", required=True, dest="inputs", help="path to a docling native.json (repeatable)")
     p.add_argument("--source", action="append", required=True, dest="sources", help="label for the matching --input, e.g. a municipality/year slug (repeatable, same order as --input)")
     p.add_argument("--out", help="write combined output to this single JSON file")

@@ -17,11 +17,11 @@ from __future__ import annotations
 import json
 import time
 from dataclasses import dataclass
+from typing import Optional, List
+from pydantic import BaseModel, Field
 
-# Gemini model availability shifts frequently (2.5-flash was cut off for new
-# users mid-2026, well before its announced deprecation date) -- override
-# with --model if this 404s again; check https://ai.google.dev/gemini-api/docs/models
-DEFAULT_MODEL = "gemini-3.6-flash"
+# Default to cost-effective gemini-3.5-flash-lite as aligned
+DEFAULT_MODEL = "gemini-3.5-flash-lite"
 
 MAX_RETRIES = 3
 RETRY_BASE_DELAY_SECONDS = 2.0  # doubles each retry: 2s, 4s, 8s
@@ -41,15 +41,6 @@ Candidate codes (tab-separated "code<TAB>label", one per line):
 Table rows to classify (tab-separated "row_index<TAB>label<TAB>sample values"):
 {rows_listing}
 
-Respond with ONLY a single JSON object of this shape:
-{{
-  "unit_inference": {unit_inference_shape},
-  "rows": [
-    {{"row_index": <int>, "code": "<matched code>" or null, "row_type": "line_item" or "subtotal" or "grand_total", "confidence": <0.0-1.0>, "note": "<short reason, or why no code matched>"}}
-    // one entry for EVERY row above
-  ]
-}}
-
 Every row is one of:
 - "line_item": a specific budget line (e.g. "ארנונה כללית", "שכר עובדי \
 חינוך"). Give it the most specific ("deepest") matching code.
@@ -63,6 +54,13 @@ aggregate of that category's line items rather than a line item itself.
 isn't a category at all (e.g. "סה\"כ הכנסות", "סה\"כ תקציב", "עודף/גרעון", \
 a bare section-divider label like "הכנסות"/"הוצאות"). These get "code": \
 null since no single code applies.
+
+Rules for "unusable_input":
+- Set "unusable_input": true if the label is severely garbled, contains \
+mostly random symbols/punctuation (e.g. "###$$$"), is pure OCR noise with \
+no discernible financial/budgetary meaning (e.g. "עצמיות ANN"), or has been \
+so badly mangled by extraction that it cannot be classified.
+- Otherwise, default "unusable_input": false.
 """
 
 UNIT_INSTRUCTIONS_KNOWN = "The document states its amounts are in {unit}; do not re-derive this."
@@ -77,38 +75,49 @@ infer whether these amounts are already in full NIS or in thousands of NIS.\
 @dataclass
 class RowClassification:
     row_index: int
-    code: str | None
+    code: Optional[str]
     row_type: str  # "line_item" | "subtotal" | "grand_total"
     confidence: float
     note: str
+    unusable_input: bool = False
 
 
 @dataclass
 class ClassificationResult:
     rows: list[RowClassification]
-    inferred_unit: str | None = None
-    inferred_unit_confidence: float | None = None
-    inferred_unit_rationale: str | None = None
+    inferred_unit: Optional[str] = None
+    inferred_unit_confidence: Optional[float] = None
+    inferred_unit_rationale: Optional[str] = None
 
 
-UNIT_INFERENCE_SHAPE_KNOWN = "null"
-UNIT_INFERENCE_SHAPE_UNKNOWN = (
-    '{"unit": "thousands" or "full", "confidence": <0.0-1.0>, "rationale": "<short reason>"}'
-)
+# Pydantic models for Google GenAI Structured Outputs
+class RowInference(BaseModel):
+    row_index: int = Field(description="The row index of the table being classified.")
+    code: Optional[str] = Field(None, description="The matched MoI chart of accounts code (e.g. '111', '6111'), or null if no single specific code applies.")
+    row_type: str = Field(description="One of: 'line_item', 'subtotal', or 'grand_total'.")
+    confidence: float = Field(description="Confidence rating of the code classification between 0.0 and 1.0.")
+    note: str = Field(description="Brief reason for the match/non-match.")
+    unusable_input: bool = Field(False, description="Set to True if the input row label is severely malformed, completely garbled, or unusable due to parsing errors.")
+
+class UnitInference(BaseModel):
+    unit: str = Field(description="One of 'thousands' or 'full'.")
+    confidence: float = Field(description="Confidence in unit inference from 0.0 to 1.0.")
+    rationale: str = Field(description="Brief reasoning for the unit inference.")
+
+class TableClassificationResponse(BaseModel):
+    unit_inference: Optional[UnitInference] = Field(None, description="Unit inference if table has no explicit unit.")
+    rows: List[RowInference] = Field(description="Classification entries for every table row.")
 
 
 def _build_prompt(codebook_listing: str, rows: list[tuple[int, str, str]], unit_known: str | None) -> str:
     if unit_known:
         unit_instructions = UNIT_INSTRUCTIONS_KNOWN.format(unit=unit_known)
-        unit_inference_shape = UNIT_INFERENCE_SHAPE_KNOWN
     else:
         unit_instructions = UNIT_INSTRUCTIONS_UNKNOWN
-        unit_inference_shape = UNIT_INFERENCE_SHAPE_UNKNOWN
     rows_listing = "\n".join(f"{idx}\t{label}\t{sample}" for idx, label, sample in rows)
     return PROMPT_TEMPLATE.format(
         codebook_listing=codebook_listing,
         unit_instructions=unit_instructions,
-        unit_inference_shape=unit_inference_shape,
         rows_listing=rows_listing,
     )
 
@@ -121,10 +130,6 @@ def _error_details(exc: Exception) -> list[dict]:
 
 
 def _is_daily_quota_exhausted(exc: Exception) -> bool:
-    # A per-day quota (e.g. the free tier's 20-requests/day/model cap) won't
-    # recover within a retry loop's timescale -- distinct from a per-minute
-    # rate limit, which will. Detected via the QuotaFailure detail's
-    # quotaId/quotaMetric, which name the window ("...PerDay...").
     for detail in _error_details(exc):
         if not detail.get("@type", "").endswith("QuotaFailure"):
             continue
@@ -173,7 +178,10 @@ def _call_gemini(prompt: str, api_key: str, model: str) -> str:
             response = client.models.generate_content(
                 model=model,
                 contents=prompt,
-                config=types.GenerateContentConfig(response_mime_type="application/json"),
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    response_schema=TableClassificationResponse,
+                ),
             )
             return response.text
         except Exception as exc:
@@ -207,11 +215,12 @@ def _parse_response(raw: str) -> ClassificationResult:
             row_type=item.get("row_type", "line_item"),
             confidence=float(item.get("confidence", 0.0)),
             note=item.get("note", ""),
+            unusable_input=bool(item.get("unusable_input", False)),
         )
         for item in parsed["rows"]
     ]
     unit_inference = parsed.get("unit_inference")
-    if unit_inference:
+    if unit_inference and unit_inference.get("unit"):
         return ClassificationResult(
             rows=rows,
             inferred_unit=unit_inference.get("unit"),
@@ -232,3 +241,4 @@ def classify_table(
     prompt = _build_prompt(codebook_listing, rows, unit_known)
     raw = _call_gemini(prompt, api_key=api_key, model=model)
     return _parse_response(raw)
+

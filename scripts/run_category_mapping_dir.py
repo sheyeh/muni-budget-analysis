@@ -45,7 +45,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--out-dir", required=True, help="directory to write one <name>.json per source into")
     p.add_argument("--pattern", default="native.json", help="filename to look for inside each subdirectory (default: native.json)")
     p.add_argument("--api-key", help="Gemini API key (or set GEMINI_API_KEY and omit this)")
-    p.add_argument("--model", default="gemini-3.6-flash")
+    p.add_argument("--model", default="gemini-3.5-flash-lite")
     return p.parse_args()
 
 
