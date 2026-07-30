@@ -18,8 +18,8 @@ ADR-0002's "don't over-invest in heuristics" guidance) that
 tel_aviv_2026.xlsx's row 1 (a single-cell title banner) as the header
 instead of row 2's real column names — asserted explicitly in the new test
 so a future fix has something to flip. 6/6 excel_pipeline tests pass.
-Tier B (GPU VM run on tel_aviv_2026.pdf/shafir_2026.pdf) remains open,
-pending explicit go-ahead for GCP GPU VM cost.
+Tier B (GPU VM run on tel_aviv_2026.pdf/shafir_2026.pdf) is now done —
+see "Tier B: GPU verification of the production run.py path" below.
 
 ## Task 1: Scaffolding & dependencies
 
@@ -61,8 +61,8 @@ plan, `.claude/plans/piped-noodling-ocean.md` — now cross-referenced in
 the test docstring). Full suite: 40/40 tests pass. **This completes all
 7 prd.md tasks** — the Level-2 file processing pipeline is implemented
 end-to-end for the Tier A (CPU, fast) sample set. Tier B (GPU,
-tel_aviv_2026.pdf/shafir_2026.pdf, code-631 check) remains an outstanding
-follow-up requiring an explicit go-ahead for GCP VM cost.
+tel_aviv_2026.pdf/shafir_2026.pdf, code-631 check) is now done too — see
+"Tier B: GPU verification of the production run.py path" below.
 
 ## Task 6 (2/2): normalize.py
 
