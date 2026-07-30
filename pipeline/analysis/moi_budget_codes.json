@@ -1,0 +1,5378 @@
+[
+  {
+    "code": "6",
+    "label": "הנהלה כללית",
+    "side": "payments",
+    "level": 1,
+    "parent": null,
+    "source_page": 3
+  },
+  {
+    "code": "61",
+    "label": "מינהל כללי",
+    "side": "payments",
+    "level": 2,
+    "parent": "6",
+    "source_page": 3
+  },
+  {
+    "code": "611",
+    "label": "הנהלה ומועצה",
+    "side": "payments",
+    "level": 3,
+    "parent": "61",
+    "source_page": 3
+  },
+  {
+    "code": "6111",
+    "label": "ראש הרשות המקומית וסגניו",
+    "side": "payments",
+    "level": 4,
+    "parent": "611",
+    "source_page": 3
+  },
+  {
+    "code": "6112",
+    "label": "מועצת הרשות",
+    "side": "payments",
+    "level": 4,
+    "parent": "611",
+    "source_page": 3
+  },
+  {
+    "code": "612",
+    "label": "מבקר הרשות",
+    "side": "payments",
+    "level": 3,
+    "parent": "61",
+    "source_page": 3
+  },
+  {
+    "code": "613",
+    "label": "מזכירות",
+    "side": "payments",
+    "level": 3,
+    "parent": "61",
+    "source_page": 3
+  },
+  {
+    "code": "614",
+    "label": "הסברה ויחסי צבור",
+    "side": "payments",
+    "level": 3,
+    "parent": "61",
+    "source_page": 3
+  },
+  {
+    "code": "615",
+    "label": "מנגנון",
+    "side": "payments",
+    "level": 3,
+    "parent": "61",
+    "source_page": 3
+  },
+  {
+    "code": "616",
+    "label": "או\"ש והדרכה",
+    "side": "payments",
+    "level": 3,
+    "parent": "61",
+    "source_page": 3
+  },
+  {
+    "code": "617",
+    "label": "שרות משפטי",
+    "side": "payments",
+    "level": 3,
+    "parent": "61",
+    "source_page": 3
+  },
+  {
+    "code": "618",
+    "label": "תכנון ומחקר",
+    "side": "payments",
+    "level": 3,
+    "parent": "61",
+    "source_page": 3
+  },
+  {
+    "code": "619",
+    "label": "בחירות ברשויות המקומיות",
+    "side": "payments",
+    "level": 3,
+    "parent": "61",
+    "source_page": 3
+  },
+  {
+    "code": "62",
+    "label": "מינהל כספי",
+    "side": "payments",
+    "level": 2,
+    "parent": "6",
+    "source_page": 3
+  },
+  {
+    "code": "621",
+    "label": "הגזברות",
+    "side": "payments",
+    "level": 3,
+    "parent": "62",
+    "source_page": 3
+  },
+  {
+    "code": "6211",
+    "label": "הנהלת הגזברות",
+    "side": "payments",
+    "level": 4,
+    "parent": "621",
+    "source_page": 3
+  },
+  {
+    "code": "6212",
+    "label": "תקציבים וכלכלה",
+    "side": "payments",
+    "level": 4,
+    "parent": "621",
+    "source_page": 3
+  },
+  {
+    "code": "6213",
+    "label": "הנהלת חשבונות",
+    "side": "payments",
+    "level": 4,
+    "parent": "621",
+    "source_page": 3
+  },
+  {
+    "code": "6214",
+    "label": "תשלומים",
+    "side": "payments",
+    "level": 4,
+    "parent": "621",
+    "source_page": 3
+  },
+  {
+    "code": "6215",
+    "label": "יחידת שכר",
+    "side": "payments",
+    "level": 4,
+    "parent": "621",
+    "source_page": 3
+  },
+  {
+    "code": "6216",
+    "label": "הכנסות",
+    "side": "payments",
+    "level": 4,
+    "parent": "621",
+    "source_page": 3
+  },
+  {
+    "code": "623",
+    "label": "שומה וגביה",
+    "side": "payments",
+    "level": 3,
+    "parent": "62",
+    "source_page": 3
+  },
+  {
+    "code": "6231",
+    "label": "גבית ארנונה",
+    "side": "payments",
+    "level": 4,
+    "parent": "623",
+    "source_page": 3
+  },
+  {
+    "code": "6232",
+    "label": "גבית אגרות והיטלים",
+    "side": "payments",
+    "level": 4,
+    "parent": "623",
+    "source_page": 3
+  },
+  {
+    "code": "6233",
+    "label": "גבית תשלומי בעלים",
+    "side": "payments",
+    "level": 4,
+    "parent": "623",
+    "source_page": 3
+  },
+  {
+    "code": "6234",
+    "label": "גביה ממשרדי ממשלה",
+    "side": "payments",
+    "level": 4,
+    "parent": "623",
+    "source_page": 3
+  },
+  {
+    "code": "6235",
+    "label": "הוצאות לפועל",
+    "side": "payments",
+    "level": 4,
+    "parent": "623",
+    "source_page": 3
+  },
+  {
+    "code": "624",
+    "label": "פקוח על חברות הרשות",
+    "side": "payments",
+    "level": 3,
+    "parent": "62",
+    "source_page": 3
+  },
+  {
+    "code": "63",
+    "label": "הוצאות מימון",
+    "side": "payments",
+    "level": 2,
+    "parent": "6",
+    "source_page": 3
+  },
+  {
+    "code": "631",
+    "label": "עמלות והוצאות בנקאיות",
+    "side": "payments",
+    "level": 3,
+    "parent": "63",
+    "source_page": 3
+  },
+  {
+    "code": "632",
+    "label": "הוצאות מימון",
+    "side": "payments",
+    "level": 3,
+    "parent": "63",
+    "source_page": 3
+  },
+  {
+    "code": "64",
+    "label": "פרעון מלוות",
+    "side": "payments",
+    "level": 2,
+    "parent": "6",
+    "source_page": 3
+  },
+  {
+    "code": "648",
+    "label": "פרעון מלוות לפרעון עצמי",
+    "side": "payments",
+    "level": 3,
+    "parent": "64",
+    "source_page": 3
+  },
+  {
+    "code": "649",
+    "label": "פרעון מלוות מוכר",
+    "side": "payments",
+    "level": 3,
+    "parent": "64",
+    "source_page": 3
+  },
+  {
+    "code": "6491",
+    "label": "פרעון מלוות מוכר לא למיחזור",
+    "side": "payments",
+    "level": 4,
+    "parent": "649",
+    "source_page": 3
+  },
+  {
+    "code": "6492",
+    "label": "פרעון מלוות מוכר למיחזור נטו",
+    "side": "payments",
+    "level": 4,
+    "parent": "649",
+    "source_page": 3
+  },
+  {
+    "code": "7",
+    "label": "שרותים מקומיים",
+    "side": "payments",
+    "level": 1,
+    "parent": null,
+    "source_page": 4
+  },
+  {
+    "code": "71",
+    "label": "תברואה",
+    "side": "payments",
+    "level": 2,
+    "parent": "7",
+    "source_page": 4
+  },
+  {
+    "code": "711",
+    "label": "מינהל תברואה",
+    "side": "payments",
+    "level": 3,
+    "parent": "71",
+    "source_page": 4
+  },
+  {
+    "code": "712",
+    "label": "שרותי נקיון",
+    "side": "payments",
+    "level": 3,
+    "parent": "71",
+    "source_page": 4
+  },
+  {
+    "code": "7121",
+    "label": "מינהל שרותי ניקיון",
+    "side": "payments",
+    "level": 4,
+    "parent": "712",
+    "source_page": 4
+  },
+  {
+    "code": "7122",
+    "label": "ניקוי רחובות",
+    "side": "payments",
+    "level": 4,
+    "parent": "712",
+    "source_page": 4
+  },
+  {
+    "code": "7123",
+    "label": "אסוף ובעור אשפה",
+    "side": "payments",
+    "level": 4,
+    "parent": "712",
+    "source_page": 4
+  },
+  {
+    "code": "7124",
+    "label": "נקוי חצרות",
+    "side": "payments",
+    "level": 4,
+    "parent": "712",
+    "source_page": 4
+  },
+  {
+    "code": "7125",
+    "label": "בתי שמוש צבוריים",
+    "side": "payments",
+    "level": 4,
+    "parent": "712",
+    "source_page": 4
+  },
+  {
+    "code": "713",
+    "label": "פיקוח תברואי",
+    "side": "payments",
+    "level": 3,
+    "parent": "71",
+    "source_page": 4
+  },
+  {
+    "code": "7131",
+    "label": "מינהל הפיקוח התברואי",
+    "side": "payments",
+    "level": 4,
+    "parent": "713",
+    "source_page": 4
+  },
+  {
+    "code": "7132",
+    "label": "פקוח תברואי כללי",
+    "side": "payments",
+    "level": 4,
+    "parent": "713",
+    "source_page": 4
+  },
+  {
+    "code": "7133",
+    "label": "פיקוח על עסקים ומוסדות",
+    "side": "payments",
+    "level": 4,
+    "parent": "713",
+    "source_page": 4
+  },
+  {
+    "code": "714",
+    "label": "שרות וטרינרי",
+    "side": "payments",
+    "level": 3,
+    "parent": "71",
+    "source_page": 4
+  },
+  {
+    "code": "7141",
+    "label": "מינהל שרות וטרינרי",
+    "side": "payments",
+    "level": 4,
+    "parent": "714",
+    "source_page": 4
+  },
+  {
+    "code": "7142",
+    "label": "פיקוח וטרינרי",
+    "side": "payments",
+    "level": 4,
+    "parent": "714",
+    "source_page": 4
+  },
+  {
+    "code": "7143",
+    "label": "מלחמה בכלבת",
+    "side": "payments",
+    "level": 4,
+    "parent": "714",
+    "source_page": 4
+  },
+  {
+    "code": "715",
+    "label": "תברואה מונעת",
+    "side": "payments",
+    "level": 3,
+    "parent": "71",
+    "source_page": 4
+  },
+  {
+    "code": "7151",
+    "label": "מכירת חומרי תברואה",
+    "side": "payments",
+    "level": 4,
+    "parent": "715",
+    "source_page": 4
+  },
+  {
+    "code": "7152",
+    "label": "הדברת מחלות מדבקות",
+    "side": "payments",
+    "level": 4,
+    "parent": "715",
+    "source_page": 4
+  },
+  {
+    "code": "7153",
+    "label": "שרות להדברת מזיקים",
+    "side": "payments",
+    "level": 4,
+    "parent": "715",
+    "source_page": 4
+  },
+  {
+    "code": "72",
+    "label": "שמירה וביטחון",
+    "side": "payments",
+    "level": 2,
+    "parent": "7",
+    "source_page": 4
+  },
+  {
+    "code": "721",
+    "label": "מינהל שמירה ובטחון",
+    "side": "payments",
+    "level": 3,
+    "parent": "72",
+    "source_page": 4
+  },
+  {
+    "code": "722",
+    "label": "שמירה בטחונית",
+    "side": "payments",
+    "level": 3,
+    "parent": "72",
+    "source_page": 4
+  },
+  {
+    "code": "7221",
+    "label": "משמר אזרחי",
+    "side": "payments",
+    "level": 4,
+    "parent": "722",
+    "source_page": 4
+  },
+  {
+    "code": "723",
+    "label": "הג\"א",
+    "side": "payments",
+    "level": 3,
+    "parent": "72",
+    "source_page": 4
+  },
+  {
+    "code": "724",
+    "label": "כבוי אש",
+    "side": "payments",
+    "level": 3,
+    "parent": "72",
+    "source_page": 4
+  },
+  {
+    "code": "725",
+    "label": "בטיחות",
+    "side": "payments",
+    "level": 3,
+    "parent": "72",
+    "source_page": 4
+  },
+  {
+    "code": "726",
+    "label": "מל\"ח ופס\"ח",
+    "side": "payments",
+    "level": 3,
+    "parent": "72",
+    "source_page": 4
+  },
+  {
+    "code": "7261",
+    "label": "מל\"ח",
+    "side": "payments",
+    "level": 4,
+    "parent": "726",
+    "source_page": 4
+  },
+  {
+    "code": "7262",
+    "label": "פס\"ח",
+    "side": "payments",
+    "level": 4,
+    "parent": "726",
+    "source_page": 4
+  },
+  {
+    "code": "727",
+    "label": "הגמ\"ר",
+    "side": "payments",
+    "level": 3,
+    "parent": "72",
+    "source_page": 4
+  },
+  {
+    "code": "729",
+    "label": "כסוי הוצאות לשעת חרום",
+    "side": "payments",
+    "level": 3,
+    "parent": "72",
+    "source_page": 4
+  },
+  {
+    "code": "73",
+    "label": "תכנון ובנין עיר",
+    "side": "payments",
+    "level": 2,
+    "parent": "7",
+    "source_page": 5
+  },
+  {
+    "code": "731",
+    "label": "משרד מהנדס הרשות",
+    "side": "payments",
+    "level": 3,
+    "parent": "73",
+    "source_page": 5
+  },
+  {
+    "code": "732",
+    "label": "תכנון עיר",
+    "side": "payments",
+    "level": 3,
+    "parent": "73",
+    "source_page": 5
+  },
+  {
+    "code": "7321",
+    "label": "תיכנון כללי",
+    "side": "payments",
+    "level": 4,
+    "parent": "732",
+    "source_page": 5
+  },
+  {
+    "code": "7322",
+    "label": "תוכנית אב",
+    "side": "payments",
+    "level": 4,
+    "parent": "732",
+    "source_page": 5
+  },
+  {
+    "code": "7323",
+    "label": "מדידות",
+    "side": "payments",
+    "level": 4,
+    "parent": "732",
+    "source_page": 5
+  },
+  {
+    "code": "733",
+    "label": "רשוי ופיקוח על הבניה",
+    "side": "payments",
+    "level": 3,
+    "parent": "73",
+    "source_page": 5
+  },
+  {
+    "code": "7331",
+    "label": "אגרות, רשיונות בניה",
+    "side": "payments",
+    "level": 4,
+    "parent": "733",
+    "source_page": 5
+  },
+  {
+    "code": "7332",
+    "label": "פקוח על הבניה",
+    "side": "payments",
+    "level": 4,
+    "parent": "733",
+    "source_page": 5
+  },
+  {
+    "code": "7333",
+    "label": "פיקוח על בנינים מסוכנים",
+    "side": "payments",
+    "level": 4,
+    "parent": "733",
+    "source_page": 5
+  },
+  {
+    "code": "7334",
+    "label": "ועדה מקומית לתכנון ובניה",
+    "side": "payments",
+    "level": 4,
+    "parent": "733",
+    "source_page": 5
+  },
+  {
+    "code": "74",
+    "label": "נכסים ציבוריים",
+    "side": "payments",
+    "level": 2,
+    "parent": "7",
+    "source_page": 5
+  },
+  {
+    "code": "741",
+    "label": "מינהל נכסים ציבוריים",
+    "side": "payments",
+    "level": 3,
+    "parent": "74",
+    "source_page": 5
+  },
+  {
+    "code": "742",
+    "label": "דרכים ומדרכות",
+    "side": "payments",
+    "level": 3,
+    "parent": "74",
+    "source_page": 5
+  },
+  {
+    "code": "7421",
+    "label": "אחזקת כבישים עורקיים",
+    "side": "payments",
+    "level": 4,
+    "parent": "742",
+    "source_page": 5
+  },
+  {
+    "code": "7422",
+    "label": "אחזקת כבישים פנימיים ומדרכות",
+    "side": "payments",
+    "level": 4,
+    "parent": "742",
+    "source_page": 5
+  },
+  {
+    "code": "743",
+    "label": "תאורת רחובות",
+    "side": "payments",
+    "level": 3,
+    "parent": "74",
+    "source_page": 5
+  },
+  {
+    "code": "744",
+    "label": "בטיחות בדרכים",
+    "side": "payments",
+    "level": 3,
+    "parent": "74",
+    "source_page": 5
+  },
+  {
+    "code": "7441",
+    "label": "תחזוקת רמזורים ואיי תנועה",
+    "side": "payments",
+    "level": 4,
+    "parent": "744",
+    "source_page": 5
+  },
+  {
+    "code": "7442",
+    "label": "תחזוקת מעברים תת קרקעים וגשרים",
+    "side": "payments",
+    "level": 4,
+    "parent": "744",
+    "source_page": 5
+  },
+  {
+    "code": "7443",
+    "label": "מעקות ואמצעי בטיחות",
+    "side": "payments",
+    "level": 4,
+    "parent": "744",
+    "source_page": 5
+  },
+  {
+    "code": "7444",
+    "label": "שלטים תמרורים וסימוני כבישים",
+    "side": "payments",
+    "level": 4,
+    "parent": "744",
+    "source_page": 5
+  },
+  {
+    "code": "7445",
+    "label": "מטה בטיחות עירוני",
+    "side": "payments",
+    "level": 4,
+    "parent": "744",
+    "source_page": 5
+  },
+  {
+    "code": "745",
+    "label": "תיעול וניקוז",
+    "side": "payments",
+    "level": 3,
+    "parent": "74",
+    "source_page": 5
+  },
+  {
+    "code": "746",
+    "label": "גנים ונטיעות",
+    "side": "payments",
+    "level": 3,
+    "parent": "74",
+    "source_page": 5
+  },
+  {
+    "code": "7461",
+    "label": "גינות ציבוריות",
+    "side": "payments",
+    "level": 4,
+    "parent": "746",
+    "source_page": 5
+  },
+  {
+    "code": "7462",
+    "label": "טיפוח פינות נוי",
+    "side": "payments",
+    "level": 4,
+    "parent": "746",
+    "source_page": 5
+  },
+  {
+    "code": "7463",
+    "label": "מזרקות ואלמנטי רחוב אמנותיים",
+    "side": "payments",
+    "level": 4,
+    "parent": "746",
+    "source_page": 5
+  },
+  {
+    "code": "7464",
+    "label": "ריהוט רחוב ומתקני משחקים",
+    "side": "payments",
+    "level": 4,
+    "parent": "746",
+    "source_page": 5
+  },
+  {
+    "code": "747",
+    "label": "חופים, בריכות ומרחצאות",
+    "side": "payments",
+    "level": 3,
+    "parent": "74",
+    "source_page": 5
+  },
+  {
+    "code": "7472",
+    "label": "חופי רחצה",
+    "side": "payments",
+    "level": 4,
+    "parent": "747",
+    "source_page": 5
+  },
+  {
+    "code": "7473",
+    "label": "בריכות שחיה",
+    "side": "payments",
+    "level": 4,
+    "parent": "747",
+    "source_page": 5
+  },
+  {
+    "code": "7474",
+    "label": "מרחצאות",
+    "side": "payments",
+    "level": 4,
+    "parent": "747",
+    "source_page": 5
+  },
+  {
+    "code": "748",
+    "label": "בתי עלמין",
+    "side": "payments",
+    "level": 3,
+    "parent": "74",
+    "source_page": 5
+  },
+  {
+    "code": "749",
+    "label": "נכסים ציבוריים אחרים",
+    "side": "payments",
+    "level": 3,
+    "parent": "74",
+    "source_page": 5
+  },
+  {
+    "code": "75",
+    "label": "חגיגות מבצעים וארועים",
+    "side": "payments",
+    "level": 2,
+    "parent": "7",
+    "source_page": 5
+  },
+  {
+    "code": "751",
+    "label": "חגיגות יום העצמאות",
+    "side": "payments",
+    "level": 3,
+    "parent": "75",
+    "source_page": 5
+  },
+  {
+    "code": "752",
+    "label": "חגיגות וטכסים אחרים",
+    "side": "payments",
+    "level": 3,
+    "parent": "75",
+    "source_page": 5
+  },
+  {
+    "code": "753",
+    "label": "פעולות אימוץ",
+    "side": "payments",
+    "level": 3,
+    "parent": "75",
+    "source_page": 5
+  },
+  {
+    "code": "754",
+    "label": "קשרים בינלאומיים",
+    "side": "payments",
+    "level": 3,
+    "parent": "75",
+    "source_page": 5
+  },
+  {
+    "code": "756",
+    "label": "כנסים וארועים בינלאומיים",
+    "side": "payments",
+    "level": 3,
+    "parent": "75",
+    "source_page": 5
+  },
+  {
+    "code": "76",
+    "label": "שרותים עירוניים שונים",
+    "side": "payments",
+    "level": 2,
+    "parent": "7",
+    "source_page": 6
+  },
+  {
+    "code": "761",
+    "label": "מוקד עירוני",
+    "side": "payments",
+    "level": 3,
+    "parent": "76",
+    "source_page": 6
+  },
+  {
+    "code": "762",
+    "label": "מידע לציבור",
+    "side": "payments",
+    "level": 3,
+    "parent": "76",
+    "source_page": 6
+  },
+  {
+    "code": "764",
+    "label": "תרבות הדיור",
+    "side": "payments",
+    "level": 3,
+    "parent": "76",
+    "source_page": 6
+  },
+  {
+    "code": "765",
+    "label": "מוסדות כלליים",
+    "side": "payments",
+    "level": 3,
+    "parent": "76",
+    "source_page": 6
+  },
+  {
+    "code": "766",
+    "label": "ועדים מקומיים",
+    "side": "payments",
+    "level": 3,
+    "parent": "76",
+    "source_page": 6
+  },
+  {
+    "code": "767",
+    "label": "בטוח אלמנטרי לרשות",
+    "side": "payments",
+    "level": 3,
+    "parent": "76",
+    "source_page": 6
+  },
+  {
+    "code": "769",
+    "label": "שרותים שונים",
+    "side": "payments",
+    "level": 3,
+    "parent": "76",
+    "source_page": 6
+  },
+  {
+    "code": "77",
+    "label": "פיתוח כלכלי",
+    "side": "payments",
+    "level": 2,
+    "parent": "7",
+    "source_page": 6
+  },
+  {
+    "code": "771",
+    "label": "עידוד קייט ותיירות",
+    "side": "payments",
+    "level": 3,
+    "parent": "77",
+    "source_page": 6
+  },
+  {
+    "code": "772",
+    "label": "עידוד תעשיה ומלאכה",
+    "side": "payments",
+    "level": 3,
+    "parent": "77",
+    "source_page": 6
+  },
+  {
+    "code": "773",
+    "label": "חברות עירוניות",
+    "side": "payments",
+    "level": 3,
+    "parent": "77",
+    "source_page": 6
+  },
+  {
+    "code": "7731",
+    "label": "הון מניות",
+    "side": "payments",
+    "level": 4,
+    "parent": "773",
+    "source_page": 6
+  },
+  {
+    "code": "7732",
+    "label": "הלואות בעלים ושטרי הון",
+    "side": "payments",
+    "level": 4,
+    "parent": "773",
+    "source_page": 6
+  },
+  {
+    "code": "78",
+    "label": "פיקוח עירוני",
+    "side": "payments",
+    "level": 2,
+    "parent": "7",
+    "source_page": 6
+  },
+  {
+    "code": "781",
+    "label": "פיקוח על חוקי עזר",
+    "side": "payments",
+    "level": 3,
+    "parent": "78",
+    "source_page": 6
+  },
+  {
+    "code": "782",
+    "label": "גבית המשפט עירוני",
+    "side": "payments",
+    "level": 3,
+    "parent": "78",
+    "source_page": 6
+  },
+  {
+    "code": "79",
+    "label": "שירותים חקלאיים",
+    "side": "payments",
+    "level": 2,
+    "parent": "7",
+    "source_page": 6
+  },
+  {
+    "code": "791",
+    "label": "מינהל שרותים חקלאיים",
+    "side": "payments",
+    "level": 3,
+    "parent": "79",
+    "source_page": 6
+  },
+  {
+    "code": "792",
+    "label": "שרות השדה",
+    "side": "payments",
+    "level": 3,
+    "parent": "79",
+    "source_page": 6
+  },
+  {
+    "code": "793",
+    "label": "מלחמה במזיקים לחקלאות",
+    "side": "payments",
+    "level": 3,
+    "parent": "79",
+    "source_page": 6
+  },
+  {
+    "code": "794",
+    "label": "תצפיות ותחנות נסיונות",
+    "side": "payments",
+    "level": 3,
+    "parent": "79",
+    "source_page": 6
+  },
+  {
+    "code": "795",
+    "label": "הדרכה חקלאית",
+    "side": "payments",
+    "level": 3,
+    "parent": "79",
+    "source_page": 6
+  },
+  {
+    "code": "796",
+    "label": "עבודות נקוז מקומי ואזורי",
+    "side": "payments",
+    "level": 3,
+    "parent": "79",
+    "source_page": 6
+  },
+  {
+    "code": "797",
+    "label": "שמירת שדות",
+    "side": "payments",
+    "level": 3,
+    "parent": "79",
+    "source_page": 6
+  },
+  {
+    "code": "799",
+    "label": "שרותים חקלאיים אחרים",
+    "side": "payments",
+    "level": 3,
+    "parent": "79",
+    "source_page": 6
+  },
+  {
+    "code": "8",
+    "label": "שרותים ממלכתיים",
+    "side": "payments",
+    "level": 1,
+    "parent": null,
+    "source_page": 7
+  },
+  {
+    "code": "81",
+    "label": "חינוך",
+    "side": "payments",
+    "level": 2,
+    "parent": "8",
+    "source_page": 7
+  },
+  {
+    "code": "811",
+    "label": "מינהל החינוך",
+    "side": "payments",
+    "level": 3,
+    "parent": "81",
+    "source_page": 7
+  },
+  {
+    "code": "812",
+    "label": "חינוך קדם יסודי",
+    "side": "payments",
+    "level": 3,
+    "parent": "81",
+    "source_page": 7
+  },
+  {
+    "code": "8121",
+    "label": "מינהל החינוך הקדם יסודי",
+    "side": "payments",
+    "level": 4,
+    "parent": "812",
+    "source_page": 7
+  },
+  {
+    "code": "8122",
+    "label": "גני ילדים גיל חובה",
+    "side": "payments",
+    "level": 4,
+    "parent": "812",
+    "source_page": 7
+  },
+  {
+    "code": "8123",
+    "label": "גני ילדים טרום חובה",
+    "side": "payments",
+    "level": 4,
+    "parent": "812",
+    "source_page": 7
+  },
+  {
+    "code": "8124",
+    "label": "מעונות ופעוטונים",
+    "side": "payments",
+    "level": 4,
+    "parent": "812",
+    "source_page": 7
+  },
+  {
+    "code": "8125",
+    "label": "גני מועדון וצהרונים",
+    "side": "payments",
+    "level": 4,
+    "parent": "812",
+    "source_page": 7
+  },
+  {
+    "code": "8126",
+    "label": "גני ילדים לחינוך מיוחד",
+    "side": "payments",
+    "level": 4,
+    "parent": "812",
+    "source_page": 7
+  },
+  {
+    "code": "8128",
+    "label": "קיטנה/חודש לימודים נוסף לגנ\"י",
+    "side": "payments",
+    "level": 4,
+    "parent": "812",
+    "source_page": 7
+  },
+  {
+    "code": "813",
+    "label": "חינוך יסודי",
+    "side": "payments",
+    "level": 3,
+    "parent": "81",
+    "source_page": 7
+  },
+  {
+    "code": "8131",
+    "label": "מינהל החינוך היסודי",
+    "side": "payments",
+    "level": 4,
+    "parent": "813",
+    "source_page": 7
+  },
+  {
+    "code": "8132",
+    "label": "בתי\"ס יסודיים",
+    "side": "payments",
+    "level": 4,
+    "parent": "813",
+    "source_page": 7
+  },
+  {
+    "code": "8133",
+    "label": "חינוך מיוחד",
+    "side": "payments",
+    "level": 4,
+    "parent": "813",
+    "source_page": 7
+  },
+  {
+    "code": "8134",
+    "label": "חוגים לתלמידים מחוננים ומוכשרים",
+    "side": "payments",
+    "level": 4,
+    "parent": "813",
+    "source_page": 7
+  },
+  {
+    "code": "8135",
+    "label": "ישיבות קטנות ותלמודי תורה",
+    "side": "payments",
+    "level": 4,
+    "parent": "813",
+    "source_page": 7
+  },
+  {
+    "code": "8136",
+    "label": "חינוך משלים בבתי\"ס",
+    "side": "payments",
+    "level": 4,
+    "parent": "813",
+    "source_page": 7
+  },
+  {
+    "code": "8137",
+    "label": "חוות חקלאיות",
+    "side": "payments",
+    "level": 4,
+    "parent": "813",
+    "source_page": 7
+  },
+  {
+    "code": "8138",
+    "label": "קיטנות/לימודיות וחודש לימוד נוסף",
+    "side": "payments",
+    "level": 4,
+    "parent": "813",
+    "source_page": 7
+  },
+  {
+    "code": "814",
+    "label": "חטיבות ביניים",
+    "side": "payments",
+    "level": 3,
+    "parent": "81",
+    "source_page": 7
+  },
+  {
+    "code": "815",
+    "label": "חינוך על יסודי",
+    "side": "payments",
+    "level": 3,
+    "parent": "81",
+    "source_page": 7
+  },
+  {
+    "code": "8151",
+    "label": "מינהל החינוך העל יסודי",
+    "side": "payments",
+    "level": 4,
+    "parent": "815",
+    "source_page": 7
+  },
+  {
+    "code": "8152",
+    "label": "בתי\"ס על יסודיים עיוניים",
+    "side": "payments",
+    "level": 4,
+    "parent": "815",
+    "source_page": 7
+  },
+  {
+    "code": "8153",
+    "label": "בתי\"ס ערב על יסודייים",
+    "side": "payments",
+    "level": 4,
+    "parent": "815",
+    "source_page": 7
+  },
+  {
+    "code": "8154",
+    "label": "ישיבות תיכוניות אולפנות ומתיבתות",
+    "side": "payments",
+    "level": 4,
+    "parent": "815",
+    "source_page": 7
+  },
+  {
+    "code": "8155",
+    "label": "בתי\"ס על יסודיים מקצועיים",
+    "side": "payments",
+    "level": 4,
+    "parent": "815",
+    "source_page": 7
+  },
+  {
+    "code": "8156",
+    "label": "בתי\"ס על יסודיים חקלאיים",
+    "side": "payments",
+    "level": 4,
+    "parent": "815",
+    "source_page": 7
+  },
+  {
+    "code": "8157",
+    "label": "בתי\"ס על יסודיים מקיפים",
+    "side": "payments",
+    "level": 4,
+    "parent": "815",
+    "source_page": 7
+  },
+  {
+    "code": "816",
+    "label": "חינוך גבוה",
+    "side": "payments",
+    "level": 3,
+    "parent": "81",
+    "source_page": 7
+  },
+  {
+    "code": "8162",
+    "label": "אוניברסטאות",
+    "side": "payments",
+    "level": 4,
+    "parent": "816",
+    "source_page": 7
+  },
+  {
+    "code": "8163",
+    "label": "מוסדות להשכלה טכנולוגית גבוהה",
+    "side": "payments",
+    "level": 4,
+    "parent": "816",
+    "source_page": 7
+  },
+  {
+    "code": "8164",
+    "label": "ישיבות גבוהות וכוללים",
+    "side": "payments",
+    "level": 4,
+    "parent": "816",
+    "source_page": 7
+  },
+  {
+    "code": "8165",
+    "label": "בתי מדרש למורים",
+    "side": "payments",
+    "level": 4,
+    "parent": "816",
+    "source_page": 7
+  },
+  {
+    "code": "8166",
+    "label": "מכללות",
+    "side": "payments",
+    "level": 4,
+    "parent": "816",
+    "source_page": 7
+  },
+  {
+    "code": "8167",
+    "label": "אמנות",
+    "side": "payments",
+    "level": 4,
+    "parent": "816",
+    "source_page": 7
+  },
+  {
+    "code": "8168",
+    "label": "קרן מילגות עירוניות",
+    "side": "payments",
+    "level": 4,
+    "parent": "816",
+    "source_page": 7
+  },
+  {
+    "code": "817",
+    "label": "שרותים נוספים לבתי\"ס וגנ\"י",
+    "side": "payments",
+    "level": 3,
+    "parent": "81",
+    "source_page": 7
+  },
+  {
+    "code": "8171",
+    "label": "קב\"ט שמירה ובטחון מוסדות חינוך",
+    "side": "payments",
+    "level": 4,
+    "parent": "817",
+    "source_page": 7
+  },
+  {
+    "code": "8172",
+    "label": "מרכזיה פדגוגית",
+    "side": "payments",
+    "level": 4,
+    "parent": "817",
+    "source_page": 7
+  },
+  {
+    "code": "8173",
+    "label": "שרות פסיכולוגי חינוכי",
+    "side": "payments",
+    "level": 4,
+    "parent": "817",
+    "source_page": 7
+  },
+  {
+    "code": "8174",
+    "label": "שרות בריאות לתלמיד",
+    "side": "payments",
+    "level": 4,
+    "parent": "817",
+    "source_page": 7
+  },
+  {
+    "code": "8175",
+    "label": "בטוח תלמידים",
+    "side": "payments",
+    "level": 4,
+    "parent": "817",
+    "source_page": 7
+  },
+  {
+    "code": "8176",
+    "label": "רווחה חינוכית",
+    "side": "payments",
+    "level": 4,
+    "parent": "817",
+    "source_page": 7
+  },
+  {
+    "code": "8177",
+    "label": "קבסי\"ם",
+    "side": "payments",
+    "level": 4,
+    "parent": "817",
+    "source_page": 7
+  },
+  {
+    "code": "8178",
+    "label": "הסעות ילדים",
+    "side": "payments",
+    "level": 4,
+    "parent": "817",
+    "source_page": 7
+  },
+  {
+    "code": "8179",
+    "label": "שרותים אחרים",
+    "side": "payments",
+    "level": 4,
+    "parent": "817",
+    "source_page": 7
+  },
+  {
+    "code": "818",
+    "label": "חינוך מבוגרים",
+    "side": "payments",
+    "level": 3,
+    "parent": "81",
+    "source_page": 7
+  },
+  {
+    "code": "82",
+    "label": "תרבות",
+    "side": "payments",
+    "level": 2,
+    "parent": "8",
+    "source_page": 8
+  },
+  {
+    "code": "821",
+    "label": "מינהל התרבות",
+    "side": "payments",
+    "level": 3,
+    "parent": "82",
+    "source_page": 8
+  },
+  {
+    "code": "822",
+    "label": "פעולות תרבות",
+    "side": "payments",
+    "level": 3,
+    "parent": "82",
+    "source_page": 8
+  },
+  {
+    "code": "823",
+    "label": "ספריות עירוניות",
+    "side": "payments",
+    "level": 3,
+    "parent": "82",
+    "source_page": 8
+  },
+  {
+    "code": "824",
+    "label": "מתנסי\"ם",
+    "side": "payments",
+    "level": 3,
+    "parent": "82",
+    "source_page": 8
+  },
+  {
+    "code": "825",
+    "label": "מוסיקה ומחול",
+    "side": "payments",
+    "level": 3,
+    "parent": "82",
+    "source_page": 8
+  },
+  {
+    "code": "8251",
+    "label": "קונסרוטוריון",
+    "side": "payments",
+    "level": 4,
+    "parent": "825",
+    "source_page": 8
+  },
+  {
+    "code": "8252",
+    "label": "תזמורת עירונית",
+    "side": "payments",
+    "level": 4,
+    "parent": "825",
+    "source_page": 8
+  },
+  {
+    "code": "8253",
+    "label": "מקהלה עירונית",
+    "side": "payments",
+    "level": 4,
+    "parent": "825",
+    "source_page": 8
+  },
+  {
+    "code": "826",
+    "label": "מוקדי תרבות",
+    "side": "payments",
+    "level": 3,
+    "parent": "82",
+    "source_page": 8
+  },
+  {
+    "code": "8261",
+    "label": "תיאטרונים",
+    "side": "payments",
+    "level": 4,
+    "parent": "826",
+    "source_page": 8
+  },
+  {
+    "code": "8262",
+    "label": "מוזיאונים",
+    "side": "payments",
+    "level": 4,
+    "parent": "826",
+    "source_page": 8
+  },
+  {
+    "code": "8263",
+    "label": "גן חיות",
+    "side": "payments",
+    "level": 4,
+    "parent": "826",
+    "source_page": 8
+  },
+  {
+    "code": "8264",
+    "label": "מוקדי תרבות אחרים",
+    "side": "payments",
+    "level": 4,
+    "parent": "826",
+    "source_page": 8
+  },
+  {
+    "code": "827",
+    "label": "תרבות תורנית",
+    "side": "payments",
+    "level": 3,
+    "parent": "82",
+    "source_page": 8
+  },
+  {
+    "code": "828",
+    "label": "נוער",
+    "side": "payments",
+    "level": 3,
+    "parent": "82",
+    "source_page": 8
+  },
+  {
+    "code": "8281",
+    "label": "מינהל הנוער",
+    "side": "payments",
+    "level": 4,
+    "parent": "828",
+    "source_page": 8
+  },
+  {
+    "code": "8282",
+    "label": "מוקדי הפעלת נוער",
+    "side": "payments",
+    "level": 4,
+    "parent": "828",
+    "source_page": 8
+  },
+  {
+    "code": "8283",
+    "label": "חוגי נוער",
+    "side": "payments",
+    "level": 4,
+    "parent": "828",
+    "source_page": 8
+  },
+  {
+    "code": "8284",
+    "label": "קיטנות נוער",
+    "side": "payments",
+    "level": 4,
+    "parent": "828",
+    "source_page": 8
+  },
+  {
+    "code": "8289",
+    "label": "תנועות נוער",
+    "side": "payments",
+    "level": 4,
+    "parent": "828",
+    "source_page": 8
+  },
+  {
+    "code": "829",
+    "label": "ספורט",
+    "side": "payments",
+    "level": 3,
+    "parent": "82",
+    "source_page": 8
+  },
+  {
+    "code": "8291",
+    "label": "מינהל הספורט",
+    "side": "payments",
+    "level": 4,
+    "parent": "829",
+    "source_page": 8
+  },
+  {
+    "code": "8292",
+    "label": "מתקני הספורט",
+    "side": "payments",
+    "level": 4,
+    "parent": "829",
+    "source_page": 8
+  },
+  {
+    "code": "8293",
+    "label": "פעולות ספורט",
+    "side": "payments",
+    "level": 4,
+    "parent": "829",
+    "source_page": 8
+  },
+  {
+    "code": "8299",
+    "label": "ארגוני ספורט",
+    "side": "payments",
+    "level": 4,
+    "parent": "829",
+    "source_page": 8
+  },
+  {
+    "code": "83",
+    "label": "בריאות",
+    "side": "payments",
+    "level": 2,
+    "parent": "8",
+    "source_page": 8
+  },
+  {
+    "code": "832",
+    "label": "מרפאות",
+    "side": "payments",
+    "level": 3,
+    "parent": "83",
+    "source_page": 8
+  },
+  {
+    "code": "8321",
+    "label": "מרפאות יעוץ",
+    "side": "payments",
+    "level": 4,
+    "parent": "832",
+    "source_page": 8
+  },
+  {
+    "code": "8322",
+    "label": "מרפאות כלליות",
+    "side": "payments",
+    "level": 4,
+    "parent": "832",
+    "source_page": 8
+  },
+  {
+    "code": "8323",
+    "label": "מרפאות שיניים",
+    "side": "payments",
+    "level": 4,
+    "parent": "832",
+    "source_page": 8
+  },
+  {
+    "code": "8324",
+    "label": "תחנות אם וילד",
+    "side": "payments",
+    "level": 4,
+    "parent": "832",
+    "source_page": 8
+  },
+  {
+    "code": "833",
+    "label": "בתי חולים",
+    "side": "payments",
+    "level": 3,
+    "parent": "83",
+    "source_page": 8
+  },
+  {
+    "code": "8331",
+    "label": "בתי חולים כללייים",
+    "side": "payments",
+    "level": 4,
+    "parent": "833",
+    "source_page": 8
+  },
+  {
+    "code": "8332",
+    "label": "בתי חולים אחרים",
+    "side": "payments",
+    "level": 4,
+    "parent": "833",
+    "source_page": 8
+  },
+  {
+    "code": "834",
+    "label": "בתי ספר לאחיות",
+    "side": "payments",
+    "level": 3,
+    "parent": "83",
+    "source_page": 8
+  },
+  {
+    "code": "835",
+    "label": "מוסדות בריאות אחרים",
+    "side": "payments",
+    "level": 3,
+    "parent": "83",
+    "source_page": 8
+  },
+  {
+    "code": "836",
+    "label": "שרותי חירום רפואים",
+    "side": "payments",
+    "level": 3,
+    "parent": "83",
+    "source_page": 8
+  },
+  {
+    "code": "8361",
+    "label": "מד\"א",
+    "side": "payments",
+    "level": 4,
+    "parent": "836",
+    "source_page": 8
+  },
+  {
+    "code": "8362",
+    "label": "נט\"ן",
+    "side": "payments",
+    "level": 4,
+    "parent": "836",
+    "source_page": 8
+  },
+  {
+    "code": "8363",
+    "label": "מוקד לתורנויות של רופאים",
+    "side": "payments",
+    "level": 4,
+    "parent": "836",
+    "source_page": 8
+  },
+  {
+    "code": "837",
+    "label": "פעולות מחקר",
+    "side": "payments",
+    "level": 3,
+    "parent": "83",
+    "source_page": 8
+  },
+  {
+    "code": "839",
+    "label": "מוסדות בריאות נתמכים",
+    "side": "payments",
+    "level": 3,
+    "parent": "83",
+    "source_page": 8
+  },
+  {
+    "code": "84",
+    "label": "רווחה",
+    "side": "payments",
+    "level": 2,
+    "parent": "8",
+    "source_page": 9
+  },
+  {
+    "code": "841",
+    "label": "מינהל הרווחה",
+    "side": "payments",
+    "level": 3,
+    "parent": "84",
+    "source_page": 9
+  },
+  {
+    "code": "842",
+    "label": "רווחת הפרט והמשפחה",
+    "side": "payments",
+    "level": 3,
+    "parent": "84",
+    "source_page": 9
+  },
+  {
+    "code": "8422",
+    "label": "צרכים מיוחדים",
+    "side": "payments",
+    "level": 4,
+    "parent": "842",
+    "source_page": 9
+  },
+  {
+    "code": "8424",
+    "label": "הדרכת משפחות",
+    "side": "payments",
+    "level": 4,
+    "parent": "842",
+    "source_page": 9
+  },
+  {
+    "code": "8425",
+    "label": "סמך מקצועי",
+    "side": "payments",
+    "level": 4,
+    "parent": "842",
+    "source_page": 9
+  },
+  {
+    "code": "843",
+    "label": "שרותים לילד ולנוער",
+    "side": "payments",
+    "level": 3,
+    "parent": "84",
+    "source_page": 9
+  },
+  {
+    "code": "8435",
+    "label": "פעולות קהילתיות",
+    "side": "payments",
+    "level": 4,
+    "parent": "843",
+    "source_page": 9
+  },
+  {
+    "code": "8438",
+    "label": "אחזקת ילדים בפנימיות",
+    "side": "payments",
+    "level": 4,
+    "parent": "843",
+    "source_page": 9
+  },
+  {
+    "code": "8439",
+    "label": "אחזקת ילדים במעונות יום ואומנות יומיות",
+    "side": "payments",
+    "level": 4,
+    "parent": "843",
+    "source_page": 9
+  },
+  {
+    "code": "844",
+    "label": "שרותים לזקן",
+    "side": "payments",
+    "level": 3,
+    "parent": "84",
+    "source_page": 9
+  },
+  {
+    "code": "8443",
+    "label": "שרותים לזקן- מוסדי",
+    "side": "payments",
+    "level": 4,
+    "parent": "844",
+    "source_page": 9
+  },
+  {
+    "code": "8444",
+    "label": "שרותים לזקן- קהילתי",
+    "side": "payments",
+    "level": 4,
+    "parent": "844",
+    "source_page": 9
+  },
+  {
+    "code": "8445",
+    "label": "תעסוקה ומרכזי יום לקשיש",
+    "side": "payments",
+    "level": 4,
+    "parent": "844",
+    "source_page": 9
+  },
+  {
+    "code": "845",
+    "label": "שרותים למפגר",
+    "side": "payments",
+    "level": 3,
+    "parent": "84",
+    "source_page": 9
+  },
+  {
+    "code": "8451",
+    "label": "סידור מפגרים במוסדות",
+    "side": "payments",
+    "level": 4,
+    "parent": "845",
+    "source_page": 9
+  },
+  {
+    "code": "8452",
+    "label": "סידור מפגרים במסגרות יום",
+    "side": "payments",
+    "level": 4,
+    "parent": "845",
+    "source_page": 9
+  },
+  {
+    "code": "8453",
+    "label": "שרותים למפגר-קהילתי",
+    "side": "payments",
+    "level": 4,
+    "parent": "845",
+    "source_page": 9
+  },
+  {
+    "code": "8454",
+    "label": "מפעלי תעסוקה למפגר ומע\"ש",
+    "side": "payments",
+    "level": 4,
+    "parent": "845",
+    "source_page": 9
+  },
+  {
+    "code": "846",
+    "label": "שרותי שיקום",
+    "side": "payments",
+    "level": 3,
+    "parent": "84",
+    "source_page": 9
+  },
+  {
+    "code": "8461",
+    "label": "שיקום העיוור- אחזקה במוסדות",
+    "side": "payments",
+    "level": 4,
+    "parent": "846",
+    "source_page": 9
+  },
+  {
+    "code": "8462",
+    "label": "שיקום העיוור- מעונות יום",
+    "side": "payments",
+    "level": 4,
+    "parent": "846",
+    "source_page": 9
+  },
+  {
+    "code": "8463",
+    "label": "טיפול בעיוור בקהילה",
+    "side": "payments",
+    "level": 4,
+    "parent": "846",
+    "source_page": 9
+  },
+  {
+    "code": "8464",
+    "label": "מפעלי תעסוקה לעיוורים",
+    "side": "payments",
+    "level": 4,
+    "parent": "846",
+    "source_page": 9
+  },
+  {
+    "code": "8465",
+    "label": "נכים- שיקום במוסדות",
+    "side": "payments",
+    "level": 4,
+    "parent": "846",
+    "source_page": 9
+  },
+  {
+    "code": "8466",
+    "label": "נכים- אחזקה במסגרות יום",
+    "side": "payments",
+    "level": 4,
+    "parent": "846",
+    "source_page": 9
+  },
+  {
+    "code": "8467",
+    "label": "נכים- טיפול בקהילה",
+    "side": "payments",
+    "level": 4,
+    "parent": "846",
+    "source_page": 9
+  },
+  {
+    "code": "8468",
+    "label": "נכים- שיקום במפעלי תעסוקה",
+    "side": "payments",
+    "level": 4,
+    "parent": "846",
+    "source_page": 9
+  },
+  {
+    "code": "847",
+    "label": "שרותי תקון",
+    "side": "payments",
+    "level": 3,
+    "parent": "84",
+    "source_page": 9
+  },
+  {
+    "code": "8471",
+    "label": "טיפול בחבורות רחוב ונוער במצוקה",
+    "side": "payments",
+    "level": 4,
+    "parent": "847",
+    "source_page": 9
+  },
+  {
+    "code": "8472",
+    "label": "חסות במצוקה",
+    "side": "payments",
+    "level": 4,
+    "parent": "847",
+    "source_page": 9
+  },
+  {
+    "code": "8473",
+    "label": "סמים",
+    "side": "payments",
+    "level": 4,
+    "parent": "847",
+    "source_page": 9
+  },
+  {
+    "code": "8474",
+    "label": "מפתנים",
+    "side": "payments",
+    "level": 4,
+    "parent": "847",
+    "source_page": 9
+  },
+  {
+    "code": "848",
+    "label": "עבודה קהילתית",
+    "side": "payments",
+    "level": 3,
+    "parent": "84",
+    "source_page": 9
+  },
+  {
+    "code": "8482",
+    "label": "מרכזים קהילתיים",
+    "side": "payments",
+    "level": 4,
+    "parent": "848",
+    "source_page": 9
+  },
+  {
+    "code": "8483",
+    "label": "התנדבות",
+    "side": "payments",
+    "level": 4,
+    "parent": "848",
+    "source_page": 9
+  },
+  {
+    "code": "8484",
+    "label": ")שירות יעוץ לאזרח( שי\"ל",
+    "side": "payments",
+    "level": 4,
+    "parent": "848",
+    "source_page": 9
+  },
+  {
+    "code": "8485",
+    "label": "שיקום שכונות",
+    "side": "payments",
+    "level": 4,
+    "parent": "848",
+    "source_page": 9
+  },
+  {
+    "code": "849",
+    "label": "שרותים לעולים",
+    "side": "payments",
+    "level": 3,
+    "parent": "84",
+    "source_page": 9
+  },
+  {
+    "code": "85",
+    "label": "דת",
+    "side": "payments",
+    "level": 2,
+    "parent": "8",
+    "source_page": 10
+  },
+  {
+    "code": "851",
+    "label": "שרותים דתיים יהודיים",
+    "side": "payments",
+    "level": 3,
+    "parent": "85",
+    "source_page": 10
+  },
+  {
+    "code": "852",
+    "label": "שרותי דת לקראים",
+    "side": "payments",
+    "level": 3,
+    "parent": "85",
+    "source_page": 10
+  },
+  {
+    "code": "853",
+    "label": "שרותי דת למוסלמים",
+    "side": "payments",
+    "level": 3,
+    "parent": "85",
+    "source_page": 10
+  },
+  {
+    "code": "854",
+    "label": "שרותי דת לעדות נוצריות",
+    "side": "payments",
+    "level": 3,
+    "parent": "85",
+    "source_page": 10
+  },
+  {
+    "code": "855",
+    "label": "שרותי דת לדרוזים",
+    "side": "payments",
+    "level": 3,
+    "parent": "85",
+    "source_page": 10
+  },
+  {
+    "code": "856",
+    "label": "שרותי דת יהודיים כלליים",
+    "side": "payments",
+    "level": 3,
+    "parent": "85",
+    "source_page": 10
+  },
+  {
+    "code": "857",
+    "label": "שרותי דת במועצות איזוריות",
+    "side": "payments",
+    "level": 3,
+    "parent": "85",
+    "source_page": 10
+  },
+  {
+    "code": "859",
+    "label": "שרותי דת שונים",
+    "side": "payments",
+    "level": 3,
+    "parent": "85",
+    "source_page": 10
+  },
+  {
+    "code": "86",
+    "label": "קליטת עליה",
+    "side": "payments",
+    "level": 2,
+    "parent": "8",
+    "source_page": 10
+  },
+  {
+    "code": "869",
+    "label": "שירותים שונים לקליטת העליה",
+    "side": "payments",
+    "level": 3,
+    "parent": "86",
+    "source_page": 10
+  },
+  {
+    "code": "87",
+    "label": "איכות הסביבה",
+    "side": "payments",
+    "level": 2,
+    "parent": "8",
+    "source_page": 10
+  },
+  {
+    "code": "879",
+    "label": "שירותים שונים לאיכות הסביבה",
+    "side": "payments",
+    "level": 3,
+    "parent": "87",
+    "source_page": 10
+  },
+  {
+    "code": "9",
+    "label": "מפעלים",
+    "side": "payments",
+    "level": 1,
+    "parent": null,
+    "source_page": 12
+  },
+  {
+    "code": "91",
+    "label": "מים",
+    "side": "payments",
+    "level": 2,
+    "parent": "9",
+    "source_page": 11
+  },
+  {
+    "code": "911",
+    "label": "מינהל המים",
+    "side": "payments",
+    "level": 3,
+    "parent": "91",
+    "source_page": 11
+  },
+  {
+    "code": "912",
+    "label": "גביה",
+    "side": "payments",
+    "level": 3,
+    "parent": "91",
+    "source_page": 11
+  },
+  {
+    "code": "913",
+    "label": "תפעול ואחזקת משק המים",
+    "side": "payments",
+    "level": 3,
+    "parent": "91",
+    "source_page": 11
+  },
+  {
+    "code": "9131",
+    "label": "קנית מים",
+    "side": "payments",
+    "level": 4,
+    "parent": "913",
+    "source_page": 11
+  },
+  {
+    "code": "9132",
+    "label": "אחזקת מערכת הפקת מים",
+    "side": "payments",
+    "level": 4,
+    "parent": "913",
+    "source_page": 11
+  },
+  {
+    "code": "92",
+    "label": "בתי מטבחיים",
+    "side": "payments",
+    "level": 2,
+    "parent": "9",
+    "source_page": 11
+  },
+  {
+    "code": "922",
+    "label": "בתי מטבחיים עירוניים",
+    "side": "payments",
+    "level": 3,
+    "parent": "92",
+    "source_page": 11
+  },
+  {
+    "code": "923",
+    "label": "בתי מטבחיים באגוד ערים",
+    "side": "payments",
+    "level": 3,
+    "parent": "92",
+    "source_page": 11
+  },
+  {
+    "code": "93",
+    "label": "נכסים",
+    "side": "payments",
+    "level": 2,
+    "parent": "9",
+    "source_page": 11
+  },
+  {
+    "code": "931",
+    "label": "מינהל הנכסים",
+    "side": "payments",
+    "level": 3,
+    "parent": "93",
+    "source_page": 11
+  },
+  {
+    "code": "932",
+    "label": "דירות",
+    "side": "payments",
+    "level": 3,
+    "parent": "93",
+    "source_page": 11
+  },
+  {
+    "code": "933",
+    "label": "משרדים ועסקים",
+    "side": "payments",
+    "level": 3,
+    "parent": "93",
+    "source_page": 11
+  },
+  {
+    "code": "934",
+    "label": "מבני מלאכה ותעשיה",
+    "side": "payments",
+    "level": 3,
+    "parent": "93",
+    "source_page": 11
+  },
+  {
+    "code": "935",
+    "label": "קרקעות",
+    "side": "payments",
+    "level": 3,
+    "parent": "93",
+    "source_page": 11
+  },
+  {
+    "code": "936",
+    "label": "אכסניות נוער",
+    "side": "payments",
+    "level": 3,
+    "parent": "93",
+    "source_page": 11
+  },
+  {
+    "code": "937",
+    "label": "שווקים",
+    "side": "payments",
+    "level": 3,
+    "parent": "93",
+    "source_page": 11
+  },
+  {
+    "code": "938",
+    "label": "משרדי הרשות",
+    "side": "payments",
+    "level": 3,
+    "parent": "93",
+    "source_page": 11
+  },
+  {
+    "code": "939",
+    "label": "נכסים אחרים",
+    "side": "payments",
+    "level": 3,
+    "parent": "93",
+    "source_page": 11
+  },
+  {
+    "code": "94",
+    "label": "תחבורה",
+    "side": "payments",
+    "level": 2,
+    "parent": "9",
+    "source_page": 11
+  },
+  {
+    "code": "942",
+    "label": "אוטובוסים",
+    "side": "payments",
+    "level": 3,
+    "parent": "94",
+    "source_page": 11
+  },
+  {
+    "code": "9421",
+    "label": "שרות אוטובוסים בהפעלת הרשות",
+    "side": "payments",
+    "level": 4,
+    "parent": "942",
+    "source_page": 11
+  },
+  {
+    "code": "9422",
+    "label": "שרות אוטובוסים צבוריים",
+    "side": "payments",
+    "level": 4,
+    "parent": "942",
+    "source_page": 11
+  },
+  {
+    "code": "9423",
+    "label": "תחנות אוטובוסים",
+    "side": "payments",
+    "level": 4,
+    "parent": "942",
+    "source_page": 11
+  },
+  {
+    "code": "943",
+    "label": "חניה למכוניות",
+    "side": "payments",
+    "level": 3,
+    "parent": "94",
+    "source_page": 11
+  },
+  {
+    "code": "9431",
+    "label": "מגרשי חניה",
+    "side": "payments",
+    "level": 4,
+    "parent": "943",
+    "source_page": 11
+  },
+  {
+    "code": "9432",
+    "label": "כרטיסי חניה ומדחנים",
+    "side": "payments",
+    "level": 4,
+    "parent": "943",
+    "source_page": 11
+  },
+  {
+    "code": "944",
+    "label": "חניה למוניות",
+    "side": "payments",
+    "level": 3,
+    "parent": "94",
+    "source_page": 11
+  },
+  {
+    "code": "945",
+    "label": "רכבות",
+    "side": "payments",
+    "level": 3,
+    "parent": "94",
+    "source_page": 11
+  },
+  {
+    "code": "95",
+    "label": "מפעלי תעסוקה",
+    "side": "payments",
+    "level": 2,
+    "parent": "9",
+    "source_page": 11
+  },
+  {
+    "code": "96",
+    "label": "חשמל",
+    "side": "payments",
+    "level": 2,
+    "parent": "9",
+    "source_page": 11
+  },
+  {
+    "code": "97",
+    "label": "מפעל הביוב",
+    "side": "payments",
+    "level": 2,
+    "parent": "9",
+    "source_page": 11
+  },
+  {
+    "code": "971",
+    "label": "מינהל הביוב",
+    "side": "payments",
+    "level": 3,
+    "parent": "97",
+    "source_page": 11
+  },
+  {
+    "code": "972",
+    "label": "ביוב עירוני",
+    "side": "payments",
+    "level": 3,
+    "parent": "97",
+    "source_page": 11
+  },
+  {
+    "code": "973",
+    "label": "טיהור מי ביוב",
+    "side": "payments",
+    "level": 3,
+    "parent": "97",
+    "source_page": 11
+  },
+  {
+    "code": "974",
+    "label": "ריקון בורות שופכין",
+    "side": "payments",
+    "level": 3,
+    "parent": "97",
+    "source_page": 11
+  },
+  {
+    "code": "98",
+    "label": "מפעלים אחרים",
+    "side": "payments",
+    "level": 2,
+    "parent": "9",
+    "source_page": 11
+  },
+  {
+    "code": "99",
+    "label": "תשלומים בלתי רגילים",
+    "side": "payments",
+    "level": 2,
+    "parent": "9",
+    "source_page": 12
+  },
+  {
+    "code": "991",
+    "label": "הפרשות מקרנות תקציביות",
+    "side": "payments",
+    "level": 3,
+    "parent": "99",
+    "source_page": 12
+  },
+  {
+    "code": "9911",
+    "label": "הפרשה לקרן למחסנים",
+    "side": "payments",
+    "level": 4,
+    "parent": "991",
+    "source_page": 12
+  },
+  {
+    "code": "9912",
+    "label": "הפרשה לקרן למניות",
+    "side": "payments",
+    "level": 4,
+    "parent": "991",
+    "source_page": 12
+  },
+  {
+    "code": "9913",
+    "label": "הפרשה לקרן הלוואות לעובדים",
+    "side": "payments",
+    "level": 4,
+    "parent": "991",
+    "source_page": 12
+  },
+  {
+    "code": "9914",
+    "label": "הפרשה לקרן גמ\"ח לועדים מקומיים",
+    "side": "payments",
+    "level": 4,
+    "parent": "991",
+    "source_page": 12
+  },
+  {
+    "code": "9915",
+    "label": "הפרשה לקרן לחדוש רכב וציוד",
+    "side": "payments",
+    "level": 4,
+    "parent": "991",
+    "source_page": 12
+  },
+  {
+    "code": "9916",
+    "label": "הפרשה לקרן לשכונים",
+    "side": "payments",
+    "level": 4,
+    "parent": "991",
+    "source_page": 12
+  },
+  {
+    "code": "9919",
+    "label": "הפרשה לקרנות אחרות",
+    "side": "payments",
+    "level": 4,
+    "parent": "991",
+    "source_page": 12
+  },
+  {
+    "code": "992",
+    "label": "רזרבה תקציבית )כולל התיקרויות(",
+    "side": "payments",
+    "level": 3,
+    "parent": "99",
+    "source_page": 12
+  },
+  {
+    "code": "993",
+    "label": "תשלומים להחזר הכנסות מש.ק",
+    "side": "payments",
+    "level": 3,
+    "parent": "99",
+    "source_page": 12
+  },
+  {
+    "code": "994",
+    "label": "הוצאות מיוחדות ובלתי נצפות ראש",
+    "side": "payments",
+    "level": 3,
+    "parent": "99",
+    "source_page": 12
+  },
+  {
+    "code": "995",
+    "label": "הנחות ממיסים לפי חוק או תקנות",
+    "side": "payments",
+    "level": 3,
+    "parent": "99",
+    "source_page": 12
+  },
+  {
+    "code": "999",
+    "label": "העברות לכיסוי גרעון",
+    "side": "payments",
+    "level": 3,
+    "parent": "99",
+    "source_page": 12
+  },
+  {
+    "code": "9991",
+    "label": "העברת מענק לכיסוי גרעון מצטבר",
+    "side": "payments",
+    "level": 4,
+    "parent": "999",
+    "source_page": 12
+  },
+  {
+    "code": "9992",
+    "label": "העברת עודף תקציבי לכיסוי גרעון",
+    "side": "payments",
+    "level": 4,
+    "parent": "999",
+    "source_page": 12
+  },
+  {
+    "code": "9999",
+    "label": "העברת הלוואות לכיסוי גרעון",
+    "side": "payments",
+    "level": 4,
+    "parent": "999",
+    "source_page": 12
+  },
+  {
+    "code": "1",
+    "label": "מיסים ומענק כללי",
+    "side": "receipts",
+    "level": 1,
+    "parent": null,
+    "source_page": 2
+  },
+  {
+    "code": "11",
+    "label": "ארנונות",
+    "side": "receipts",
+    "level": 2,
+    "parent": "1",
+    "source_page": 2
+  },
+  {
+    "code": "111",
+    "label": "ארנונה כללית",
+    "side": "receipts",
+    "level": 3,
+    "parent": "11",
+    "source_page": 2
+  },
+  {
+    "code": "1111",
+    "label": "ארנונה כללית למגורים- גביה שוטפת",
+    "side": "receipts",
+    "level": 4,
+    "parent": "111",
+    "source_page": 2
+  },
+  {
+    "code": "1112",
+    "label": "ארנונה כללית למגורים- גביה מיתרת פיגורים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "111",
+    "source_page": 2
+  },
+  {
+    "code": "1113",
+    "label": "ארנונה כללית שלא למגורים- גביה שוטפת",
+    "side": "receipts",
+    "level": 4,
+    "parent": "111",
+    "source_page": 2
+  },
+  {
+    "code": "1114",
+    "label": "ארנונה כללית שלא למגורים- גביה מיתרת פיגורים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "111",
+    "source_page": 2
+  },
+  {
+    "code": "112",
+    "label": "הכנסות במקום ארנונה",
+    "side": "receipts",
+    "level": 3,
+    "parent": "11",
+    "source_page": 2
+  },
+  {
+    "code": "113",
+    "label": "הנחות מימון",
+    "side": "receipts",
+    "level": 3,
+    "parent": "11",
+    "source_page": 2
+  },
+  {
+    "code": "115",
+    "label": "הנחות לזכאים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "11",
+    "source_page": 2
+  },
+  {
+    "code": "116",
+    "label": "הנחות ועדה בגין מצב חומרי",
+    "side": "receipts",
+    "level": 3,
+    "parent": "11",
+    "source_page": 2
+  },
+  {
+    "code": "117",
+    "label": "הנחות ועדה אחרות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "11",
+    "source_page": 2
+  },
+  {
+    "code": "12",
+    "label": "אגרות",
+    "side": "receipts",
+    "level": 2,
+    "parent": "1",
+    "source_page": 2
+  },
+  {
+    "code": "121",
+    "label": "תעודות ואישורים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "12",
+    "source_page": 2
+  },
+  {
+    "code": "122",
+    "label": "אגרת רשיונות לשלטים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "12",
+    "source_page": 2
+  },
+  {
+    "code": "124",
+    "label": "מודעות ופרסומים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "12",
+    "source_page": 2
+  },
+  {
+    "code": "1241",
+    "label": "מודעות על לוחות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "124",
+    "source_page": 2
+  },
+  {
+    "code": "1242",
+    "label": "מודעות על בדי קולנוע",
+    "side": "receipts",
+    "level": 4,
+    "parent": "124",
+    "source_page": 2
+  },
+  {
+    "code": "1243",
+    "label": "מודעות על רכב ציבורי",
+    "side": "receipts",
+    "level": 4,
+    "parent": "124",
+    "source_page": 2
+  },
+  {
+    "code": "1244",
+    "label": "פרסום חוצות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "124",
+    "source_page": 2
+  },
+  {
+    "code": "1245",
+    "label": "פרסום בכבלים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "124",
+    "source_page": 2
+  },
+  {
+    "code": "129",
+    "label": "אגרות שונות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "12",
+    "source_page": 2
+  },
+  {
+    "code": "13",
+    "label": "היטלים",
+    "side": "receipts",
+    "level": 2,
+    "parent": "1",
+    "source_page": 2
+  },
+  {
+    "code": "14",
+    "label": "מכסות",
+    "side": "receipts",
+    "level": 2,
+    "parent": "1",
+    "source_page": 2
+  },
+  {
+    "code": "141",
+    "label": "מכסות הועדים המקומיים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "14",
+    "source_page": 2
+  },
+  {
+    "code": "142",
+    "label": "מכסות לאיגודי ערים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "14",
+    "source_page": 2
+  },
+  {
+    "code": "15",
+    "label": "השתתפויות כלליות של מוסדות",
+    "side": "receipts",
+    "level": 2,
+    "parent": "1",
+    "source_page": 2
+  },
+  {
+    "code": "155",
+    "label": "השתתפויות הסוכנות היהודית",
+    "side": "receipts",
+    "level": 3,
+    "parent": "15",
+    "source_page": 2
+  },
+  {
+    "code": "156",
+    "label": "השתתפות ההסתדרות הכללית",
+    "side": "receipts",
+    "level": 3,
+    "parent": "15",
+    "source_page": 2
+  },
+  {
+    "code": "157",
+    "label": "השתתפות מוסדות אחרים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "15",
+    "source_page": 2
+  },
+  {
+    "code": "16",
+    "label": "הכנסות מימון",
+    "side": "receipts",
+    "level": 2,
+    "parent": "1",
+    "source_page": 2
+  },
+  {
+    "code": "19",
+    "label": "מענקים כלליים",
+    "side": "receipts",
+    "level": 2,
+    "parent": "1",
+    "source_page": 2
+  },
+  {
+    "code": "191",
+    "label": "מענק כללי לאיזון",
+    "side": "receipts",
+    "level": 3,
+    "parent": "19",
+    "source_page": 2
+  },
+  {
+    "code": "192",
+    "label": "מענקים חד פעמיים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "19",
+    "source_page": 2
+  },
+  {
+    "code": "193",
+    "label": "מענק הבירה )ירושלים(",
+    "side": "receipts",
+    "level": 3,
+    "parent": "19",
+    "source_page": 2
+  },
+  {
+    "code": "194",
+    "label": "מענק לקליטת העליה",
+    "side": "receipts",
+    "level": 3,
+    "parent": "19",
+    "source_page": 2
+  },
+  {
+    "code": "195",
+    "label": "מענקי הסדר",
+    "side": "receipts",
+    "level": 3,
+    "parent": "19",
+    "source_page": 2
+  },
+  {
+    "code": "196",
+    "label": "מענקים אחרים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "19",
+    "source_page": 2
+  },
+  {
+    "code": "197",
+    "label": "מענקי- רזרבה להיתיקרות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "19",
+    "source_page": 2
+  },
+  {
+    "code": "2",
+    "label": "שרותים מקומיים",
+    "side": "receipts",
+    "level": 1,
+    "parent": null,
+    "source_page": 4
+  },
+  {
+    "code": "21",
+    "label": "תברואה",
+    "side": "receipts",
+    "level": 2,
+    "parent": "2",
+    "source_page": 4
+  },
+  {
+    "code": "212",
+    "label": "שרותי נקיון",
+    "side": "receipts",
+    "level": 3,
+    "parent": "21",
+    "source_page": 4
+  },
+  {
+    "code": "2121",
+    "label": "מינהל שרותי ניקיון",
+    "side": "receipts",
+    "level": 4,
+    "parent": "212",
+    "source_page": 4
+  },
+  {
+    "code": "2122",
+    "label": "ניקוי רחובות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "212",
+    "source_page": 4
+  },
+  {
+    "code": "2123",
+    "label": "אסוף ובעור אשפה",
+    "side": "receipts",
+    "level": 4,
+    "parent": "212",
+    "source_page": 4
+  },
+  {
+    "code": "2124",
+    "label": "נקוי חצרות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "212",
+    "source_page": 4
+  },
+  {
+    "code": "2125",
+    "label": "בתי שמוש צבוריים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "212",
+    "source_page": 4
+  },
+  {
+    "code": "213",
+    "label": "פיקוח תברואי",
+    "side": "receipts",
+    "level": 3,
+    "parent": "21",
+    "source_page": 4
+  },
+  {
+    "code": "2131",
+    "label": "מינהל הפיקוח התברואי",
+    "side": "receipts",
+    "level": 4,
+    "parent": "213",
+    "source_page": 4
+  },
+  {
+    "code": "2132",
+    "label": "פקוח תברואי כללי",
+    "side": "receipts",
+    "level": 4,
+    "parent": "213",
+    "source_page": 4
+  },
+  {
+    "code": "2133",
+    "label": "פיקוח על עסקים ומוסדות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "213",
+    "source_page": 4
+  },
+  {
+    "code": "214",
+    "label": "שרות וטרינרי",
+    "side": "receipts",
+    "level": 3,
+    "parent": "21",
+    "source_page": 4
+  },
+  {
+    "code": "2141",
+    "label": "מינהל שרות וטרינרי",
+    "side": "receipts",
+    "level": 4,
+    "parent": "214",
+    "source_page": 4
+  },
+  {
+    "code": "2142",
+    "label": "פיקוח וטרינרי",
+    "side": "receipts",
+    "level": 4,
+    "parent": "214",
+    "source_page": 4
+  },
+  {
+    "code": "2143",
+    "label": "מלחמה בכלבת",
+    "side": "receipts",
+    "level": 4,
+    "parent": "214",
+    "source_page": 4
+  },
+  {
+    "code": "215",
+    "label": "תברואה מונעת",
+    "side": "receipts",
+    "level": 3,
+    "parent": "21",
+    "source_page": 4
+  },
+  {
+    "code": "2151",
+    "label": "מכירת חומרי תברואה",
+    "side": "receipts",
+    "level": 4,
+    "parent": "215",
+    "source_page": 4
+  },
+  {
+    "code": "2152",
+    "label": "הדברת מחלות מדבקות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "215",
+    "source_page": 4
+  },
+  {
+    "code": "2153",
+    "label": "דמי שרות להדברת מזיקים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "215",
+    "source_page": 4
+  },
+  {
+    "code": "22",
+    "label": "שמירה וביטחון",
+    "side": "receipts",
+    "level": 2,
+    "parent": "2",
+    "source_page": 4
+  },
+  {
+    "code": "221",
+    "label": "מינהל שמירה ובטחון",
+    "side": "receipts",
+    "level": 3,
+    "parent": "22",
+    "source_page": 4
+  },
+  {
+    "code": "222",
+    "label": "שמירה בטחונית",
+    "side": "receipts",
+    "level": 3,
+    "parent": "22",
+    "source_page": 4
+  },
+  {
+    "code": "2221",
+    "label": "משמר אזרחי",
+    "side": "receipts",
+    "level": 4,
+    "parent": "222",
+    "source_page": 4
+  },
+  {
+    "code": "223",
+    "label": "הג\"א",
+    "side": "receipts",
+    "level": 3,
+    "parent": "22",
+    "source_page": 4
+  },
+  {
+    "code": "224",
+    "label": "כבוי אש",
+    "side": "receipts",
+    "level": 3,
+    "parent": "22",
+    "source_page": 4
+  },
+  {
+    "code": "225",
+    "label": "בטיחות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "22",
+    "source_page": 4
+  },
+  {
+    "code": "226",
+    "label": "מל\"ח ופס\"ח",
+    "side": "receipts",
+    "level": 3,
+    "parent": "22",
+    "source_page": 4
+  },
+  {
+    "code": "2261",
+    "label": "מל\"ח",
+    "side": "receipts",
+    "level": 4,
+    "parent": "226",
+    "source_page": 4
+  },
+  {
+    "code": "2262",
+    "label": "פס\"ח",
+    "side": "receipts",
+    "level": 4,
+    "parent": "226",
+    "source_page": 4
+  },
+  {
+    "code": "227",
+    "label": "הגמ\"ר",
+    "side": "receipts",
+    "level": 3,
+    "parent": "22",
+    "source_page": 4
+  },
+  {
+    "code": "229",
+    "label": "כסוי הוצאות לשעת חרום",
+    "side": "receipts",
+    "level": 3,
+    "parent": "22",
+    "source_page": 4
+  },
+  {
+    "code": "23",
+    "label": "תכנון ובנין עיר",
+    "side": "receipts",
+    "level": 2,
+    "parent": "2",
+    "source_page": 5
+  },
+  {
+    "code": "231",
+    "label": "משרד מהנדס הרשות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "23",
+    "source_page": 5
+  },
+  {
+    "code": "232",
+    "label": "תכנון עיר",
+    "side": "receipts",
+    "level": 3,
+    "parent": "23",
+    "source_page": 5
+  },
+  {
+    "code": "2321",
+    "label": "תיכנון כללי",
+    "side": "receipts",
+    "level": 4,
+    "parent": "232",
+    "source_page": 5
+  },
+  {
+    "code": "2322",
+    "label": "תוכנית אב",
+    "side": "receipts",
+    "level": 4,
+    "parent": "232",
+    "source_page": 5
+  },
+  {
+    "code": "2323",
+    "label": "מדידות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "232",
+    "source_page": 5
+  },
+  {
+    "code": "233",
+    "label": "רשוי ופיקוח על הבניה",
+    "side": "receipts",
+    "level": 3,
+    "parent": "23",
+    "source_page": 5
+  },
+  {
+    "code": "2331",
+    "label": "אגרות, רשיונות בניה",
+    "side": "receipts",
+    "level": 4,
+    "parent": "233",
+    "source_page": 5
+  },
+  {
+    "code": "2332",
+    "label": "פקוח על הבניה",
+    "side": "receipts",
+    "level": 4,
+    "parent": "233",
+    "source_page": 5
+  },
+  {
+    "code": "2333",
+    "label": "פיקוח על בנינים מסוכנים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "233",
+    "source_page": 5
+  },
+  {
+    "code": "2334",
+    "label": "ועדה מקומית לתכנון ובניה",
+    "side": "receipts",
+    "level": 4,
+    "parent": "233",
+    "source_page": 5
+  },
+  {
+    "code": "24",
+    "label": "נכסים ציבוריים",
+    "side": "receipts",
+    "level": 2,
+    "parent": "2",
+    "source_page": 5
+  },
+  {
+    "code": "241",
+    "label": "מינהל נכסים ציבוריים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "24",
+    "source_page": 5
+  },
+  {
+    "code": "242",
+    "label": "דרכים ומדרכות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "24",
+    "source_page": 5
+  },
+  {
+    "code": "2421",
+    "label": "כבישים עורקיים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "242",
+    "source_page": 5
+  },
+  {
+    "code": "2422",
+    "label": "כבישים פנימיים ומדרכות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "242",
+    "source_page": 5
+  },
+  {
+    "code": "243",
+    "label": "תאורת רחובות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "24",
+    "source_page": 5
+  },
+  {
+    "code": "244",
+    "label": "בטיחות בדרכים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "24",
+    "source_page": 5
+  },
+  {
+    "code": "2441",
+    "label": "רמזורים ואיי תנועה",
+    "side": "receipts",
+    "level": 4,
+    "parent": "244",
+    "source_page": 5
+  },
+  {
+    "code": "2442",
+    "label": "מעברים תת קרקעיים וגשרים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "244",
+    "source_page": 5
+  },
+  {
+    "code": "2443",
+    "label": "מעקות ואמצעי בטיחות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "244",
+    "source_page": 5
+  },
+  {
+    "code": "2444",
+    "label": "שלטים תמרורים וסימוני כבישים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "244",
+    "source_page": 5
+  },
+  {
+    "code": "2445",
+    "label": "מטה בטיחות עירוני",
+    "side": "receipts",
+    "level": 4,
+    "parent": "244",
+    "source_page": 5
+  },
+  {
+    "code": "245",
+    "label": "תיעול וניקוז",
+    "side": "receipts",
+    "level": 3,
+    "parent": "24",
+    "source_page": 5
+  },
+  {
+    "code": "246",
+    "label": "גנים ונטיעות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "24",
+    "source_page": 5
+  },
+  {
+    "code": "2461",
+    "label": "גינות ציבוריות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "246",
+    "source_page": 5
+  },
+  {
+    "code": "2462",
+    "label": "טיפוח פינות נוי",
+    "side": "receipts",
+    "level": 4,
+    "parent": "246",
+    "source_page": 5
+  },
+  {
+    "code": "2463",
+    "label": "מזרקות ואלמנטי רחוב אמנותיים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "246",
+    "source_page": 5
+  },
+  {
+    "code": "2464",
+    "label": "ריהוט רחוב ומתקני משחקים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "246",
+    "source_page": 5
+  },
+  {
+    "code": "247",
+    "label": "חופים, בריכות ומרחצאות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "24",
+    "source_page": 5
+  },
+  {
+    "code": "2472",
+    "label": "חופי רחצה",
+    "side": "receipts",
+    "level": 4,
+    "parent": "247",
+    "source_page": 5
+  },
+  {
+    "code": "2473",
+    "label": "בריכות שחיה",
+    "side": "receipts",
+    "level": 4,
+    "parent": "247",
+    "source_page": 5
+  },
+  {
+    "code": "2474",
+    "label": "מרחצאות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "247",
+    "source_page": 5
+  },
+  {
+    "code": "248",
+    "label": "בתי עלמין",
+    "side": "receipts",
+    "level": 3,
+    "parent": "24",
+    "source_page": 5
+  },
+  {
+    "code": "249",
+    "label": "נכסים ציבוריים אחרים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "24",
+    "source_page": 5
+  },
+  {
+    "code": "25",
+    "label": "חגיגות מבצעים וארועים",
+    "side": "receipts",
+    "level": 2,
+    "parent": "2",
+    "source_page": 5
+  },
+  {
+    "code": "251",
+    "label": "חגיגות יום העצמאות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "25",
+    "source_page": 5
+  },
+  {
+    "code": "252",
+    "label": "חגיגות וטכסים אחרים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "25",
+    "source_page": 5
+  },
+  {
+    "code": "253",
+    "label": "פעולות אימוץ",
+    "side": "receipts",
+    "level": 3,
+    "parent": "25",
+    "source_page": 5
+  },
+  {
+    "code": "254",
+    "label": "קשרים בינלאומיים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "25",
+    "source_page": 5
+  },
+  {
+    "code": "256",
+    "label": "כנסים וארועים בינלאומיים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "25",
+    "source_page": 5
+  },
+  {
+    "code": "26",
+    "label": "שרותים עירוניים שונים",
+    "side": "receipts",
+    "level": 2,
+    "parent": "2",
+    "source_page": 6
+  },
+  {
+    "code": "261",
+    "label": "מוקד עירוני",
+    "side": "receipts",
+    "level": 3,
+    "parent": "26",
+    "source_page": 6
+  },
+  {
+    "code": "262",
+    "label": "מידע לציבור",
+    "side": "receipts",
+    "level": 3,
+    "parent": "26",
+    "source_page": 6
+  },
+  {
+    "code": "263",
+    "label": "השתת' בהוצאות מועצות אזוריות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "26",
+    "source_page": 6
+  },
+  {
+    "code": "264",
+    "label": "תרבות הדיור",
+    "side": "receipts",
+    "level": 3,
+    "parent": "26",
+    "source_page": 6
+  },
+  {
+    "code": "265",
+    "label": "מוסדות כלליים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "26",
+    "source_page": 6
+  },
+  {
+    "code": "266",
+    "label": "ועדים מקומיים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "26",
+    "source_page": 6
+  },
+  {
+    "code": "267",
+    "label": "בטוח אלמנטרי לרשות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "26",
+    "source_page": 6
+  },
+  {
+    "code": "269",
+    "label": "הכנסות שונות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "26",
+    "source_page": 6
+  },
+  {
+    "code": "27",
+    "label": "פיתוח כלכלי",
+    "side": "receipts",
+    "level": 2,
+    "parent": "2",
+    "source_page": 6
+  },
+  {
+    "code": "271",
+    "label": "עידוד קייט ותיירות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "27",
+    "source_page": 6
+  },
+  {
+    "code": "272",
+    "label": "עידוד תעשיה ומלאכה",
+    "side": "receipts",
+    "level": 3,
+    "parent": "27",
+    "source_page": 6
+  },
+  {
+    "code": "273",
+    "label": "חברות עירוניות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "27",
+    "source_page": 6
+  },
+  {
+    "code": "2731",
+    "label": "הון מניות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "273",
+    "source_page": 6
+  },
+  {
+    "code": "2732",
+    "label": "הלואות בעלים ושטרי הון",
+    "side": "receipts",
+    "level": 4,
+    "parent": "273",
+    "source_page": 6
+  },
+  {
+    "code": "28",
+    "label": "פיקוח עירוני",
+    "side": "receipts",
+    "level": 2,
+    "parent": "2",
+    "source_page": 6
+  },
+  {
+    "code": "281",
+    "label": "פיקוח על חוקי עזר",
+    "side": "receipts",
+    "level": 3,
+    "parent": "28",
+    "source_page": 6
+  },
+  {
+    "code": "282",
+    "label": "בית משפט עירוני",
+    "side": "receipts",
+    "level": 3,
+    "parent": "28",
+    "source_page": 6
+  },
+  {
+    "code": "29",
+    "label": "שירותים חקלאיים",
+    "side": "receipts",
+    "level": 2,
+    "parent": "2",
+    "source_page": 6
+  },
+  {
+    "code": "291",
+    "label": "ארנונה כללית על אדמה חקלאית",
+    "side": "receipts",
+    "level": 3,
+    "parent": "29",
+    "source_page": 6
+  },
+  {
+    "code": "292",
+    "label": "שרות השדה",
+    "side": "receipts",
+    "level": 3,
+    "parent": "29",
+    "source_page": 6
+  },
+  {
+    "code": "293",
+    "label": "מלחמה במזיקים לחקלאות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "29",
+    "source_page": 6
+  },
+  {
+    "code": "294",
+    "label": "תצפיות ותחנות נסיונות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "29",
+    "source_page": 6
+  },
+  {
+    "code": "295",
+    "label": "הדרכה חקלאית",
+    "side": "receipts",
+    "level": 3,
+    "parent": "29",
+    "source_page": 6
+  },
+  {
+    "code": "296",
+    "label": "עבודות נקוז מקומי ואזורי",
+    "side": "receipts",
+    "level": 3,
+    "parent": "29",
+    "source_page": 6
+  },
+  {
+    "code": "297",
+    "label": "שמירת שדות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "29",
+    "source_page": 6
+  },
+  {
+    "code": "299",
+    "label": "שרותים חקלאיים אחרים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "29",
+    "source_page": 6
+  },
+  {
+    "code": "3",
+    "label": "שרותים ממלכתיים",
+    "side": "receipts",
+    "level": 1,
+    "parent": null,
+    "source_page": 7
+  },
+  {
+    "code": "31",
+    "label": "חינוך",
+    "side": "receipts",
+    "level": 2,
+    "parent": "3",
+    "source_page": 7
+  },
+  {
+    "code": "311",
+    "label": "מינהל החינוך",
+    "side": "receipts",
+    "level": 3,
+    "parent": "31",
+    "source_page": 7
+  },
+  {
+    "code": "312",
+    "label": "חינוך קדם יסודי",
+    "side": "receipts",
+    "level": 3,
+    "parent": "31",
+    "source_page": 7
+  },
+  {
+    "code": "3122",
+    "label": "גני ילדים גיל חובה",
+    "side": "receipts",
+    "level": 4,
+    "parent": "312",
+    "source_page": 7
+  },
+  {
+    "code": "3123",
+    "label": "גני ילדים טרום חובה",
+    "side": "receipts",
+    "level": 4,
+    "parent": "312",
+    "source_page": 7
+  },
+  {
+    "code": "3124",
+    "label": "מעונות ופעוטונים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "312",
+    "source_page": 7
+  },
+  {
+    "code": "3125",
+    "label": "גני מועדון וצהרונים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "312",
+    "source_page": 7
+  },
+  {
+    "code": "3126",
+    "label": "גני ילדים לחינוך מיוחד",
+    "side": "receipts",
+    "level": 4,
+    "parent": "312",
+    "source_page": 7
+  },
+  {
+    "code": "3128",
+    "label": "קיטנה/חודש לימודים נוסף לגנ\"י",
+    "side": "receipts",
+    "level": 4,
+    "parent": "312",
+    "source_page": 7
+  },
+  {
+    "code": "313",
+    "label": "חינוך יסודי",
+    "side": "receipts",
+    "level": 3,
+    "parent": "31",
+    "source_page": 7
+  },
+  {
+    "code": "3131",
+    "label": "מינהל החינוך היסודי",
+    "side": "receipts",
+    "level": 4,
+    "parent": "313",
+    "source_page": 7
+  },
+  {
+    "code": "3132",
+    "label": "בתי\"ס יסודיים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "313",
+    "source_page": 7
+  },
+  {
+    "code": "3133",
+    "label": "חינוך מיוחד",
+    "side": "receipts",
+    "level": 4,
+    "parent": "313",
+    "source_page": 7
+  },
+  {
+    "code": "3134",
+    "label": "חוגים לתלמידים מחוננים ומוכשרים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "313",
+    "source_page": 7
+  },
+  {
+    "code": "3135",
+    "label": "ישיבות קטנות ותלמודי תורה",
+    "side": "receipts",
+    "level": 4,
+    "parent": "313",
+    "source_page": 7
+  },
+  {
+    "code": "3136",
+    "label": "חינוך משלים בבתי\"ס",
+    "side": "receipts",
+    "level": 4,
+    "parent": "313",
+    "source_page": 7
+  },
+  {
+    "code": "3137",
+    "label": "חוות חקלאיות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "313",
+    "source_page": 7
+  },
+  {
+    "code": "3138",
+    "label": "קיטנות/לימודיות וחודש לימוד נוסף",
+    "side": "receipts",
+    "level": 4,
+    "parent": "313",
+    "source_page": 7
+  },
+  {
+    "code": "314",
+    "label": "חטיבות ביניים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "31",
+    "source_page": 7
+  },
+  {
+    "code": "315",
+    "label": "חינוך על יסודי",
+    "side": "receipts",
+    "level": 3,
+    "parent": "31",
+    "source_page": 7
+  },
+  {
+    "code": "3151",
+    "label": "מינהל החינוך העל יסודי",
+    "side": "receipts",
+    "level": 4,
+    "parent": "315",
+    "source_page": 7
+  },
+  {
+    "code": "3152",
+    "label": "בתי\"ס על יסודיים עיוניים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "315",
+    "source_page": 7
+  },
+  {
+    "code": "3153",
+    "label": "בתי\"ס ערב על יסודיים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "315",
+    "source_page": 7
+  },
+  {
+    "code": "3154",
+    "label": "ישיבות תיכוניות אולפנות ומתיבתות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "315",
+    "source_page": 7
+  },
+  {
+    "code": "3155",
+    "label": "בתי\"ס על יסודיים מקצועיים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "315",
+    "source_page": 7
+  },
+  {
+    "code": "3156",
+    "label": "בתי\"ס על יסודיים חקלאיים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "315",
+    "source_page": 7
+  },
+  {
+    "code": "3157",
+    "label": "בתי\"ס על יסודיים מקיפים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "315",
+    "source_page": 7
+  },
+  {
+    "code": "316",
+    "label": "חינוך גבוה",
+    "side": "receipts",
+    "level": 3,
+    "parent": "31",
+    "source_page": 7
+  },
+  {
+    "code": "3162",
+    "label": "אוניברסטאות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "316",
+    "source_page": 7
+  },
+  {
+    "code": "3163",
+    "label": "מוסדות להשכלה טכנולוגית גבוהה",
+    "side": "receipts",
+    "level": 4,
+    "parent": "316",
+    "source_page": 7
+  },
+  {
+    "code": "3164",
+    "label": "ישיבות גבוהות וכוללים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "316",
+    "source_page": 7
+  },
+  {
+    "code": "3165",
+    "label": "בתי מדרש למורים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "316",
+    "source_page": 7
+  },
+  {
+    "code": "3166",
+    "label": "מכללות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "316",
+    "source_page": 7
+  },
+  {
+    "code": "3167",
+    "label": "אמנות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "316",
+    "source_page": 7
+  },
+  {
+    "code": "3168",
+    "label": "קרן מילגות עירוניות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "316",
+    "source_page": 7
+  },
+  {
+    "code": "317",
+    "label": "שרותים נוספים לבתי\"ס וגנ\"י",
+    "side": "receipts",
+    "level": 3,
+    "parent": "31",
+    "source_page": 7
+  },
+  {
+    "code": "3171",
+    "label": "קב\"ט שמירה ובטחון מוסדות חינוך",
+    "side": "receipts",
+    "level": 4,
+    "parent": "317",
+    "source_page": 7
+  },
+  {
+    "code": "3172",
+    "label": "מרכזיה פדגוגית",
+    "side": "receipts",
+    "level": 4,
+    "parent": "317",
+    "source_page": 7
+  },
+  {
+    "code": "3173",
+    "label": "שרות פסיכולוגי חינוכי",
+    "side": "receipts",
+    "level": 4,
+    "parent": "317",
+    "source_page": 7
+  },
+  {
+    "code": "3174",
+    "label": "שרות בריאות לתלמיד",
+    "side": "receipts",
+    "level": 4,
+    "parent": "317",
+    "source_page": 7
+  },
+  {
+    "code": "3175",
+    "label": "בטוח תלמידים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "317",
+    "source_page": 7
+  },
+  {
+    "code": "3176",
+    "label": "רווחה חינוכית",
+    "side": "receipts",
+    "level": 4,
+    "parent": "317",
+    "source_page": 7
+  },
+  {
+    "code": "3177",
+    "label": "קבסי\"ם",
+    "side": "receipts",
+    "level": 4,
+    "parent": "317",
+    "source_page": 7
+  },
+  {
+    "code": "3178",
+    "label": "הסעות ילדים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "317",
+    "source_page": 7
+  },
+  {
+    "code": "3179",
+    "label": "שרותים אחרים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "317",
+    "source_page": 7
+  },
+  {
+    "code": "318",
+    "label": "חינוך מבוגרים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "31",
+    "source_page": 7
+  },
+  {
+    "code": "32",
+    "label": "תרבות",
+    "side": "receipts",
+    "level": 2,
+    "parent": "3",
+    "source_page": 8
+  },
+  {
+    "code": "321",
+    "label": "מינהל התרבות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "32",
+    "source_page": 8
+  },
+  {
+    "code": "322",
+    "label": "פעולות תרבות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "32",
+    "source_page": 8
+  },
+  {
+    "code": "323",
+    "label": "ספריות עירוניות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "32",
+    "source_page": 8
+  },
+  {
+    "code": "324",
+    "label": "מתנסי\"ם",
+    "side": "receipts",
+    "level": 3,
+    "parent": "32",
+    "source_page": 8
+  },
+  {
+    "code": "325",
+    "label": "מוסיקה ומחול",
+    "side": "receipts",
+    "level": 3,
+    "parent": "32",
+    "source_page": 8
+  },
+  {
+    "code": "3251",
+    "label": "קונסרוטוריון",
+    "side": "receipts",
+    "level": 4,
+    "parent": "325",
+    "source_page": 8
+  },
+  {
+    "code": "3252",
+    "label": "תזמורת עירונית",
+    "side": "receipts",
+    "level": 4,
+    "parent": "325",
+    "source_page": 8
+  },
+  {
+    "code": "3254",
+    "label": "מקהלה עירונית",
+    "side": "receipts",
+    "level": 4,
+    "parent": "325",
+    "source_page": 8
+  },
+  {
+    "code": "326",
+    "label": "מוקדי תרבות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "32",
+    "source_page": 8
+  },
+  {
+    "code": "3261",
+    "label": "תיאטרונים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "326",
+    "source_page": 8
+  },
+  {
+    "code": "3262",
+    "label": "מוזיאונים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "326",
+    "source_page": 8
+  },
+  {
+    "code": "3263",
+    "label": "גן חיות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "326",
+    "source_page": 8
+  },
+  {
+    "code": "3264",
+    "label": "מוקדי תרבות אחרים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "326",
+    "source_page": 8
+  },
+  {
+    "code": "327",
+    "label": "תרבות תורנית",
+    "side": "receipts",
+    "level": 3,
+    "parent": "32",
+    "source_page": 8
+  },
+  {
+    "code": "328",
+    "label": "נוער",
+    "side": "receipts",
+    "level": 3,
+    "parent": "32",
+    "source_page": 8
+  },
+  {
+    "code": "3281",
+    "label": "מינהל הנוער",
+    "side": "receipts",
+    "level": 4,
+    "parent": "328",
+    "source_page": 8
+  },
+  {
+    "code": "3282",
+    "label": "מוקדי הפעלת נוער",
+    "side": "receipts",
+    "level": 4,
+    "parent": "328",
+    "source_page": 8
+  },
+  {
+    "code": "3283",
+    "label": "חוגי נוער",
+    "side": "receipts",
+    "level": 4,
+    "parent": "328",
+    "source_page": 8
+  },
+  {
+    "code": "3284",
+    "label": "קיטנות נוער",
+    "side": "receipts",
+    "level": 4,
+    "parent": "328",
+    "source_page": 8
+  },
+  {
+    "code": "3289",
+    "label": "תנועות נוער",
+    "side": "receipts",
+    "level": 4,
+    "parent": "328",
+    "source_page": 8
+  },
+  {
+    "code": "329",
+    "label": "ספורט",
+    "side": "receipts",
+    "level": 3,
+    "parent": "32",
+    "source_page": 8
+  },
+  {
+    "code": "3291",
+    "label": "מינהל הספורט",
+    "side": "receipts",
+    "level": 4,
+    "parent": "329",
+    "source_page": 8
+  },
+  {
+    "code": "3292",
+    "label": "מתקני הספורט",
+    "side": "receipts",
+    "level": 4,
+    "parent": "329",
+    "source_page": 8
+  },
+  {
+    "code": "3293",
+    "label": "פעולות ספורט",
+    "side": "receipts",
+    "level": 4,
+    "parent": "329",
+    "source_page": 8
+  },
+  {
+    "code": "3299",
+    "label": "ארגוני ספורט",
+    "side": "receipts",
+    "level": 4,
+    "parent": "329",
+    "source_page": 8
+  },
+  {
+    "code": "33",
+    "label": "בריאות",
+    "side": "receipts",
+    "level": 2,
+    "parent": "3",
+    "source_page": 8
+  },
+  {
+    "code": "332",
+    "label": "מרפאות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "33",
+    "source_page": 8
+  },
+  {
+    "code": "3321",
+    "label": "מרפאות יעוץ",
+    "side": "receipts",
+    "level": 4,
+    "parent": "332",
+    "source_page": 8
+  },
+  {
+    "code": "3322",
+    "label": "מרפאות כלליות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "332",
+    "source_page": 8
+  },
+  {
+    "code": "3323",
+    "label": "מרפאות שיניים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "332",
+    "source_page": 8
+  },
+  {
+    "code": "3324",
+    "label": "תחנות אם וילד",
+    "side": "receipts",
+    "level": 4,
+    "parent": "332",
+    "source_page": 8
+  },
+  {
+    "code": "333",
+    "label": "בתי חולים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "33",
+    "source_page": 8
+  },
+  {
+    "code": "3331",
+    "label": "בתי חולים כללייים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "333",
+    "source_page": 8
+  },
+  {
+    "code": "3332",
+    "label": "בתי חולים אחרים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "333",
+    "source_page": 8
+  },
+  {
+    "code": "334",
+    "label": "בתי ספר לאחיות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "33",
+    "source_page": 8
+  },
+  {
+    "code": "335",
+    "label": "מוסדות בריאות אחרים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "33",
+    "source_page": 8
+  },
+  {
+    "code": "336",
+    "label": "שרותי חירום רפואים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "33",
+    "source_page": 8
+  },
+  {
+    "code": "3361",
+    "label": "מד\"א",
+    "side": "receipts",
+    "level": 4,
+    "parent": "336",
+    "source_page": 8
+  },
+  {
+    "code": "3362",
+    "label": "נט\"ן",
+    "side": "receipts",
+    "level": 4,
+    "parent": "336",
+    "source_page": 8
+  },
+  {
+    "code": "3363",
+    "label": "מוקד לתורנויות של רופאים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "336",
+    "source_page": 8
+  },
+  {
+    "code": "337",
+    "label": "פעולות מחקר",
+    "side": "receipts",
+    "level": 3,
+    "parent": "33",
+    "source_page": 8
+  },
+  {
+    "code": "339",
+    "label": "מוסדות בריאות נתמכים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "33",
+    "source_page": 8
+  },
+  {
+    "code": "34",
+    "label": "רווחה",
+    "side": "receipts",
+    "level": 2,
+    "parent": "3",
+    "source_page": 9
+  },
+  {
+    "code": "341",
+    "label": "מינהל הרווחה",
+    "side": "receipts",
+    "level": 3,
+    "parent": "34",
+    "source_page": 9
+  },
+  {
+    "code": "342",
+    "label": "רווחת הפרט והמשפחה",
+    "side": "receipts",
+    "level": 3,
+    "parent": "34",
+    "source_page": 9
+  },
+  {
+    "code": "3422",
+    "label": "צרכים מיוחדים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "342",
+    "source_page": 9
+  },
+  {
+    "code": "3424",
+    "label": "הדרכת משפחות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "342",
+    "source_page": 9
+  },
+  {
+    "code": "3425",
+    "label": "סמך מקצועי",
+    "side": "receipts",
+    "level": 4,
+    "parent": "342",
+    "source_page": 9
+  },
+  {
+    "code": "343",
+    "label": "שרותים לילד ולנוער",
+    "side": "receipts",
+    "level": 3,
+    "parent": "34",
+    "source_page": 9
+  },
+  {
+    "code": "3435",
+    "label": "פעולות קהילתיות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "343",
+    "source_page": 9
+  },
+  {
+    "code": "3438",
+    "label": "אחזקת ילדים בפנימיות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "343",
+    "source_page": 9
+  },
+  {
+    "code": "3439",
+    "label": "אחזקת ילדים במעונות יום ואומנות יומיות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "343",
+    "source_page": 9
+  },
+  {
+    "code": "344",
+    "label": "שרותים לזקן",
+    "side": "receipts",
+    "level": 3,
+    "parent": "34",
+    "source_page": 9
+  },
+  {
+    "code": "3443",
+    "label": "שרותים לזקן- מוסדי",
+    "side": "receipts",
+    "level": 4,
+    "parent": "344",
+    "source_page": 9
+  },
+  {
+    "code": "3444",
+    "label": "שרותים לזקן- קהילתי",
+    "side": "receipts",
+    "level": 4,
+    "parent": "344",
+    "source_page": 9
+  },
+  {
+    "code": "3445",
+    "label": "תעסוקה ומרכזי יום לקשיש",
+    "side": "receipts",
+    "level": 4,
+    "parent": "344",
+    "source_page": 9
+  },
+  {
+    "code": "345",
+    "label": "שרותים למפגר",
+    "side": "receipts",
+    "level": 3,
+    "parent": "34",
+    "source_page": 9
+  },
+  {
+    "code": "3451",
+    "label": "סידור מפגרים במוסדות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "345",
+    "source_page": 9
+  },
+  {
+    "code": "3452",
+    "label": "סידור מפגרים במסגרות יום",
+    "side": "receipts",
+    "level": 4,
+    "parent": "345",
+    "source_page": 9
+  },
+  {
+    "code": "3453",
+    "label": "שרותים למפגר-קהילתי",
+    "side": "receipts",
+    "level": 4,
+    "parent": "345",
+    "source_page": 9
+  },
+  {
+    "code": "3454",
+    "label": "מפעלי תעסוקה למפגר ומע\"ש",
+    "side": "receipts",
+    "level": 4,
+    "parent": "345",
+    "source_page": 9
+  },
+  {
+    "code": "346",
+    "label": "שרותי שיקום",
+    "side": "receipts",
+    "level": 3,
+    "parent": "34",
+    "source_page": 9
+  },
+  {
+    "code": "3461",
+    "label": "שיקום העיוור- אחזקה במוסדות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "346",
+    "source_page": 9
+  },
+  {
+    "code": "3462",
+    "label": "שיקום העיוור- מעונות יום",
+    "side": "receipts",
+    "level": 4,
+    "parent": "346",
+    "source_page": 9
+  },
+  {
+    "code": "3463",
+    "label": "טיפול בעיוור בקהילה",
+    "side": "receipts",
+    "level": 4,
+    "parent": "346",
+    "source_page": 9
+  },
+  {
+    "code": "3464",
+    "label": "מפעלי תעסוקה לעיוורים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "346",
+    "source_page": 9
+  },
+  {
+    "code": "3465",
+    "label": "נכים- שיקום במוסדות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "346",
+    "source_page": 9
+  },
+  {
+    "code": "3466",
+    "label": "נכים- אחזקה במסגרות יום",
+    "side": "receipts",
+    "level": 4,
+    "parent": "346",
+    "source_page": 9
+  },
+  {
+    "code": "3467",
+    "label": "נכים- טיפול בקהילה",
+    "side": "receipts",
+    "level": 4,
+    "parent": "346",
+    "source_page": 9
+  },
+  {
+    "code": "3468",
+    "label": "נכים- שיקום במפעלי תעסוקה",
+    "side": "receipts",
+    "level": 4,
+    "parent": "346",
+    "source_page": 9
+  },
+  {
+    "code": "347",
+    "label": "שרותי תקון",
+    "side": "receipts",
+    "level": 3,
+    "parent": "34",
+    "source_page": 9
+  },
+  {
+    "code": "3471",
+    "label": "טיפול בחבורות רחוב ונוער במצוקה",
+    "side": "receipts",
+    "level": 4,
+    "parent": "347",
+    "source_page": 9
+  },
+  {
+    "code": "3472",
+    "label": "חסות במצוקה",
+    "side": "receipts",
+    "level": 4,
+    "parent": "347",
+    "source_page": 9
+  },
+  {
+    "code": "3473",
+    "label": "סמים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "347",
+    "source_page": 9
+  },
+  {
+    "code": "3474",
+    "label": "מפתנים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "347",
+    "source_page": 9
+  },
+  {
+    "code": "348",
+    "label": "עבודה קהילתית",
+    "side": "receipts",
+    "level": 3,
+    "parent": "34",
+    "source_page": 9
+  },
+  {
+    "code": "3482",
+    "label": "מרכזים קהילתיים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "348",
+    "source_page": 9
+  },
+  {
+    "code": "3483",
+    "label": "התנדבות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "348",
+    "source_page": 9
+  },
+  {
+    "code": "3484",
+    "label": ")שירות יעוץ לאזרח( שי\"ל",
+    "side": "receipts",
+    "level": 4,
+    "parent": "348",
+    "source_page": 9
+  },
+  {
+    "code": "3485",
+    "label": "שיקום שכונות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "348",
+    "source_page": 9
+  },
+  {
+    "code": "349",
+    "label": "שרותים לעולים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "34",
+    "source_page": 9
+  },
+  {
+    "code": "35",
+    "label": "דת",
+    "side": "receipts",
+    "level": 2,
+    "parent": "3",
+    "source_page": 10
+  },
+  {
+    "code": "351",
+    "label": "שרותים דתיים יהודיים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "35",
+    "source_page": 10
+  },
+  {
+    "code": "352",
+    "label": "שרותי דת לקראים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "35",
+    "source_page": 10
+  },
+  {
+    "code": "353",
+    "label": "שרותי דת למוסלמים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "35",
+    "source_page": 10
+  },
+  {
+    "code": "354",
+    "label": "שרותי דת לעדות נוצריות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "35",
+    "source_page": 10
+  },
+  {
+    "code": "355",
+    "label": "שרותי דת לדרוזים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "35",
+    "source_page": 10
+  },
+  {
+    "code": "356",
+    "label": "שרותי דת יהודיים כלליים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "35",
+    "source_page": 10
+  },
+  {
+    "code": "357",
+    "label": "שרותי דת במועצות איזוריות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "35",
+    "source_page": 10
+  },
+  {
+    "code": "359",
+    "label": "שרותי דת שונים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "35",
+    "source_page": 10
+  },
+  {
+    "code": "36",
+    "label": "קליטת עליה",
+    "side": "receipts",
+    "level": 2,
+    "parent": "3",
+    "source_page": 10
+  },
+  {
+    "code": "369",
+    "label": "שירותים שונים לקליטת העליה",
+    "side": "receipts",
+    "level": 3,
+    "parent": "36",
+    "source_page": 10
+  },
+  {
+    "code": "37",
+    "label": "איכות הסביבה",
+    "side": "receipts",
+    "level": 2,
+    "parent": "3",
+    "source_page": 10
+  },
+  {
+    "code": "379",
+    "label": "שירותים שונים לאיכות הסביבה",
+    "side": "receipts",
+    "level": 3,
+    "parent": "37",
+    "source_page": 10
+  },
+  {
+    "code": "4",
+    "label": "מפעלים",
+    "side": "receipts",
+    "level": 1,
+    "parent": null,
+    "source_page": 11
+  },
+  {
+    "code": "41",
+    "label": "מים",
+    "side": "receipts",
+    "level": 2,
+    "parent": "4",
+    "source_page": 11
+  },
+  {
+    "code": "411",
+    "label": "מינהל המים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "41",
+    "source_page": 11
+  },
+  {
+    "code": "412",
+    "label": "גביה",
+    "side": "receipts",
+    "level": 3,
+    "parent": "41",
+    "source_page": 11
+  },
+  {
+    "code": "413",
+    "label": "משק המים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "41",
+    "source_page": 11
+  },
+  {
+    "code": "4131",
+    "label": "אגרות מים )צריכה שוטפת(",
+    "side": "receipts",
+    "level": 4,
+    "parent": "413",
+    "source_page": 11
+  },
+  {
+    "code": "4132",
+    "label": "אגרות מים אחרות )מוני מים...(",
+    "side": "receipts",
+    "level": 4,
+    "parent": "413",
+    "source_page": 11
+  },
+  {
+    "code": "4133",
+    "label": "הכנסות אחרות ממים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "413",
+    "source_page": 11
+  },
+  {
+    "code": "42",
+    "label": "בתי מטבחיים",
+    "side": "receipts",
+    "level": 2,
+    "parent": "4",
+    "source_page": 11
+  },
+  {
+    "code": "422",
+    "label": "בתי מטבחיים עירוניים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "42",
+    "source_page": 11
+  },
+  {
+    "code": "423",
+    "label": "בתי מטבחיים באגוד ערים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "42",
+    "source_page": 11
+  },
+  {
+    "code": "43",
+    "label": "נכסים",
+    "side": "receipts",
+    "level": 2,
+    "parent": "4",
+    "source_page": 11
+  },
+  {
+    "code": "431",
+    "label": "מינהל הנכסים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "43",
+    "source_page": 11
+  },
+  {
+    "code": "432",
+    "label": "דירות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "43",
+    "source_page": 11
+  },
+  {
+    "code": "433",
+    "label": "משרדים ועסקים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "43",
+    "source_page": 11
+  },
+  {
+    "code": "434",
+    "label": "מבני מלאכה ותעשיה",
+    "side": "receipts",
+    "level": 3,
+    "parent": "43",
+    "source_page": 11
+  },
+  {
+    "code": "435",
+    "label": "קרקעות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "43",
+    "source_page": 11
+  },
+  {
+    "code": "436",
+    "label": "אכסניות נוער",
+    "side": "receipts",
+    "level": 3,
+    "parent": "43",
+    "source_page": 11
+  },
+  {
+    "code": "437",
+    "label": "שווקים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "43",
+    "source_page": 11
+  },
+  {
+    "code": "438",
+    "label": "משרדי הרשות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "43",
+    "source_page": 11
+  },
+  {
+    "code": "439",
+    "label": "נכסים אחרים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "43",
+    "source_page": 11
+  },
+  {
+    "code": "44",
+    "label": "תחבורה",
+    "side": "receipts",
+    "level": 2,
+    "parent": "4",
+    "source_page": 11
+  },
+  {
+    "code": "442",
+    "label": "אוטובוסים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "44",
+    "source_page": 11
+  },
+  {
+    "code": "4421",
+    "label": "שרות אוטובוסים בהפעלת הרשות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "442",
+    "source_page": 11
+  },
+  {
+    "code": "4422",
+    "label": "שרות אוטובוסים צבוריים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "442",
+    "source_page": 11
+  },
+  {
+    "code": "4423",
+    "label": "תחנות אוטובוסים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "442",
+    "source_page": 11
+  },
+  {
+    "code": "443",
+    "label": "חניה למכוניות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "44",
+    "source_page": 11
+  },
+  {
+    "code": "4431",
+    "label": "מגרשי חניה",
+    "side": "receipts",
+    "level": 4,
+    "parent": "443",
+    "source_page": 11
+  },
+  {
+    "code": "4432",
+    "label": "כרטיסי חניה ומדחנים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "443",
+    "source_page": 11
+  },
+  {
+    "code": "444",
+    "label": "חניה למוניות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "44",
+    "source_page": 11
+  },
+  {
+    "code": "445",
+    "label": "רכבות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "44",
+    "source_page": 11
+  },
+  {
+    "code": "45",
+    "label": "מפעלי תעסוקה",
+    "side": "receipts",
+    "level": 2,
+    "parent": "4",
+    "source_page": 11
+  },
+  {
+    "code": "46",
+    "label": "חשמל",
+    "side": "receipts",
+    "level": 2,
+    "parent": "4",
+    "source_page": 11
+  },
+  {
+    "code": "47",
+    "label": "מפעל הביוב",
+    "side": "receipts",
+    "level": 2,
+    "parent": "4",
+    "source_page": 11
+  },
+  {
+    "code": "471",
+    "label": "מינהל הביוב",
+    "side": "receipts",
+    "level": 3,
+    "parent": "47",
+    "source_page": 11
+  },
+  {
+    "code": "472",
+    "label": "ביוב עירוני",
+    "side": "receipts",
+    "level": 3,
+    "parent": "47",
+    "source_page": 11
+  },
+  {
+    "code": "473",
+    "label": "טיהור מי ביוב",
+    "side": "receipts",
+    "level": 3,
+    "parent": "47",
+    "source_page": 11
+  },
+  {
+    "code": "474",
+    "label": "ריקון בורות שופכין",
+    "side": "receipts",
+    "level": 3,
+    "parent": "47",
+    "source_page": 11
+  },
+  {
+    "code": "48",
+    "label": "מפעלים אחרים",
+    "side": "receipts",
+    "level": 2,
+    "parent": "4",
+    "source_page": 11
+  },
+  {
+    "code": "5",
+    "label": "תקבולים בלתי רגילים",
+    "side": "receipts",
+    "level": 1,
+    "parent": null,
+    "source_page": 12
+  },
+  {
+    "code": "51",
+    "label": "ריבית והחזר הוצאות משנים קודמות",
+    "side": "receipts",
+    "level": 2,
+    "parent": "5",
+    "source_page": 12
+  },
+  {
+    "code": "511",
+    "label": "ריבית ודיבידנדים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "51",
+    "source_page": 12
+  },
+  {
+    "code": "513",
+    "label": "תקבולים מהחזר הוצאות משנים קודמות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "51",
+    "source_page": 12
+  },
+  {
+    "code": "59",
+    "label": "החזר מקרנות והכנסות מיוחדות",
+    "side": "receipts",
+    "level": 2,
+    "parent": "5",
+    "source_page": 12
+  },
+  {
+    "code": "591",
+    "label": "החזרות מקרנות",
+    "side": "receipts",
+    "level": 3,
+    "parent": "59",
+    "source_page": 12
+  },
+  {
+    "code": "5911",
+    "label": "החזרות מקרן למחסנים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "591",
+    "source_page": 12
+  },
+  {
+    "code": "5912",
+    "label": "החזרות מקרן למניות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "591",
+    "source_page": 12
+  },
+  {
+    "code": "5913",
+    "label": "החזרות מקרן הלוואות לעובדים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "591",
+    "source_page": 12
+  },
+  {
+    "code": "5914",
+    "label": "החזרות מקרן גמ\"ח לועדים מקומיים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "591",
+    "source_page": 12
+  },
+  {
+    "code": "5915",
+    "label": "החזרות מקרן לחדוש רכב וציוד",
+    "side": "receipts",
+    "level": 4,
+    "parent": "591",
+    "source_page": 12
+  },
+  {
+    "code": "5916",
+    "label": "החזרות מקרן לשכונים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "591",
+    "source_page": 12
+  },
+  {
+    "code": "5919",
+    "label": "החזרות מקרנות אחרות",
+    "side": "receipts",
+    "level": 4,
+    "parent": "591",
+    "source_page": 12
+  },
+  {
+    "code": "594",
+    "label": "הכנסות מיוחדות ובלתי נצפות מראש",
+    "side": "receipts",
+    "level": 3,
+    "parent": "59",
+    "source_page": 12
+  },
+  {
+    "code": "599",
+    "label": "הכנסות לכיסוי גרעון",
+    "side": "receipts",
+    "level": 3,
+    "parent": "59",
+    "source_page": 12
+  },
+  {
+    "code": "5991",
+    "label": "העברת מענק לכיסוי גרעון מצטבר",
+    "side": "receipts",
+    "level": 4,
+    "parent": "599",
+    "source_page": 12
+  },
+  {
+    "code": "5992",
+    "label": "יתרה מתקציבים רגילים קודמים",
+    "side": "receipts",
+    "level": 4,
+    "parent": "599",
+    "source_page": 12
+  },
+  {
+    "code": "5999",
+    "label": "הלוואות לאיזון התקציב הרגיל",
+    "side": "receipts",
+    "level": 4,
+    "parent": "599",
+    "source_page": 12
+  }
+]
