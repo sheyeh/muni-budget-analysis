@@ -40,6 +40,8 @@ data/
 
 # Large docling native exports kept outside git (see accompanying .link.txt)
 docs/examples/docling/tel_aviv_2026/native.json
+docs/examples/docling/gezer_2026/native.json
+docs/examples/docling/jerusalem_2026/native.json
 
 # Large source budget files kept outside git (see accompanying .link.txt)
 budget_examples/jaljulya_2026.pdf
