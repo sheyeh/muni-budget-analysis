@@ -1,0 +1,10 @@
+shafir_2026's normalized.json (2.6MB, from data/processed/905/shafir_2026/normalized.json)
+is kept out of git per CLAUDE.md's large-file convention (>~2MB).
+
+No external hosting link exists yet for this file. Regenerate locally: run
+the level-2 batch entrypoint (src/muni_budget_analysis/processing/run.py)
+against budget_examples/shafir_2026.pdf (source PDF itself is also
+externally hosted, see budget_examples/shafir_2026.pdf.link.txt) via a
+level-1 manifest record with muni_id=905. This file is scanned (OCR path,
+docling_pdf_ocr) -- needs TESSERACT_CMD set on Linux hosts (see
+docs/gcp-gpu-docling.md's Tier B notes), took ~26min on a GPU VM.

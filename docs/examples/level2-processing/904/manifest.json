@@ -1,0 +1,18 @@
+{
+  "muni_id": 904,
+  "source_filename": "tel_aviv_2026.pdf",
+  "source_sha256": "8869a414756f98d9d6bf4eeb9e5c87e1356f63e244805b2c99ab00c379b33435",
+  "detected_type": "pdf",
+  "pipeline_used": "docling_pdf",
+  "docling_version": "2.117.0",
+  "processed_at": "2026-07-30T18:52:41.812983+00:00",
+  "status": "success",
+  "page_count": 363,
+  "warnings": [],
+  "error": null,
+  "outputs": {
+    "docling_native": "docling_native.json",
+    "markdown": "document.md",
+    "normalized": "normalized.json"
+  }
+}

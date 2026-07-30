@@ -117,3 +117,50 @@ Project: `qwiklabs-gcp-03-e1024cd263b6`, zone `us-central1-b`.
   real batch run would hit this on any Linux/GCP host. Rerun with the
   env var set: converted in **1551.1s (~25.9min)**, `status=success`.
 - Batch summary: 2/2 success, 0 failed.
+
+## Full-corpus level-2 + level-2.5 run + folder reorg (issue #12) (2026-07-31)
+
+Merged `worktree-level2-pipeline` and `worktree-level2.5-scope-filter`
+(already both on `origin/main` via PR #5/#10) into one integration branch
+and ran the real pipelines end-to-end against all 10 files in
+`budget_examples/` (previously only `tel_aviv_2026`/`shafir_2026` had been
+run through production `run.py`).
+
+- **Level 2** (`run.py`): 5 small/CPU files run locally
+  (`even_yehuda_2025`, `mate_yehuda_2024`, `elad_2022`, `elyakin_2026`,
+  `lachish_2026`); 3 more (`gezer_2026` 52pp, `jaljulya_2026` 9pp scanned,
+  `jerusalem_2026` 17pp) run on a fresh GCP T4 VM (`level2-batch-gpu`,
+  same project as the earlier Tier B run) since CPU ACCURATE-mode
+  extrapolates to tens of minutes for the larger ones; VM deleted after.
+  10/10 success, 0 failed. `muni_id` assignments: 901-903, 906-910 (new),
+  904-905 (existing, from Tier B).
+- **Level 2.5** (new `scripts/run_scope_classify.py`, still POC-shaped
+  per ADR-0003): ran the real classifier (Vertex AI `gemini-2.5-flash`,
+  same qwiklabs project) against real `normalized.json` tables for all 10
+  documents — the first time this classifier has run against production
+  `normalize.py` output rather than hand-transcribed samples. Capped at 3
+  tables/doc as a cost/quota guard (`tel_aviv_2026` alone has 353 tables).
+  10/10 documents got a `scoped.json`.
+- **Folder reorg** (GitHub issue #12): introduced
+  `docs/examples/{level1-scraping,level2-processing,level2.5-scope-filter,level3-analysis,level4-web}/`,
+  one directory per `CONTEXT.md` pipeline stage. Migrated
+  `docs/examples/docling/` (engine-named, pre-`normalized.json`) into
+  `level2-processing/{muni_id}/`, matching the real `data/processed/`
+  runtime shape exactly. Moved the level-2.5 POC's real deliverable
+  (`scripts/spike_output/scope_classify/`) into
+  `level2.5-scope-filter/poc/` and gitignored `scripts/spike_output/`
+  going forward (was untracked cruft in every `git status`, per the
+  issue). Moved the level-3 spike's committed output (`out/`,
+  `summarize_data.csv`, previously loose at repo root) into
+  `level3-analysis/`. See `docs/examples/README.md` for the full
+  convention.
+- **New**: `docs/handshake-level2-level3.md` — the schema contract
+  between level 2+2.5 output and level 3 input, written against the real
+  files above (not spec-only). Flags that `pipeline/analysis/` (the
+  existing level-3 spike) still reads docling's `native.json` directly
+  instead of `normalized.json`/`scoped.json` — a real gap, not fixed here
+  (out of surgical scope for this task).
+- Also surfaced, not fixed: `run.py` derives its per-file output directory
+  from `Path(budget_filename).stem`, so `tel_aviv_2026.pdf` and
+  `tel_aviv_2026.xlsx` would collide under the same `muni_id` — only the
+  PDF was processed here.

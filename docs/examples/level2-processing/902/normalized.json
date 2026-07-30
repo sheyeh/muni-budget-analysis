@@ -1,0 +1,602 @@
+{
+  "muni_id": 902,
+  "source_filename": "mate_yehuda_2024.pdf",
+  "pipeline_used": "docling_pdf_ocr",
+  "sections": [
+    {
+      "section_id": "sec-0",
+      "title": "DNM AVN MDW AyyIW Vw _297n Dspnn Myon",
+      "page_range": [
+        2,
+        2
+      ],
+      "table_ids": []
+    },
+    {
+      "section_id": "sec-1",
+      "title": "2024 D»9vIn NWI",
+      "page_range": [
+        2,
+        2
+      ],
+      "table_ids": [
+        "table-0",
+        "table-1"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "table-0",
+      "section_id": "sec-1",
+      "page_range": [
+        2,
+        2
+      ],
+      "num_rows": 19,
+      "num_cols": 2,
+      "rows": [
+        [
+          {
+            "text": "Nw 299N3",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "mypi2nn 48",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "198,473",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "3999 ANININ",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "weccnn annem naan",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "on JyaN",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "22,299",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "Yn nynyy",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "2,761",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "AN Nynasy",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "74,038",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "INR NYY",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "297,571",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "NYY n9I9n W/No",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "160,200",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "Tynn Twn DDIApPN",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "39,341",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "AMIN TAwWnN D-DAPNH",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "13,024",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "DANN DYNIvNN OIAPNH",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "23,962",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "VPNI 999 Pry",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "3,276",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "D09N TWN DANN DIN",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "239,803",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "nyvnaN Napn no",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "Rainn nnnnnnnmnnns",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "DOINN DIApN",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "concen nennennne 537,374",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "MnP Dw Prd nNyays TN NIN A24NA NIN 9999 NVIDIA I/D 438) 95) 0110999",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "14,943 wnnennn---------",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "7IINA NNN JAS) PY 10999 N0I9N",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "552,317",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "mam NID NID DN",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "SS",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "nana N0VIIN",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "552,317",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "AIM 9519 NV0IIN I’",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ]
+      ],
+      "sheet_name": null
+    },
+    {
+      "table_id": "table-1",
+      "section_id": "sec-1",
+      "page_range": [
+        3,
+        3
+      ],
+      "num_rows": 20,
+      "num_cols": 2,
+      "rows": [
+        [
+          {
+            "text": "Nn’ 995Na",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "DyNgIN FY",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "83,167",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "9997 DV",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "119,465",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "ny972 mayo",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "202,632",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "my559 mNMIN W/O",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "85,793",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "Dyn may ADV",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "164,347",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "Dyn mry9",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "250,140",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "pyn 70",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "10,555",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "ANN TT Dw",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "47,243",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "ANI M9",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "57,798",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "ANN I/D",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "5,745",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "apn) on nNNIN pyts",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "17,862",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "NN NIN pyro",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "23,607",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "DIN pys9 2/N0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "yn NIN",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "MNTIP DIY pra NVYPAYS TN MNS",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "99NA NININ 9999 NNN IW’ AS) YA) 99099)",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "ANN Ninn",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "MIN NID NNYIN I/D",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "nINW2 NX",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "552,317",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "AM 9599 NNSIN D/A",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ]
+      ],
+      "sheet_name": null
+    }
+  ]
+}
