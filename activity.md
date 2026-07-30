@@ -29,6 +29,14 @@ access) — fixed — plus 2 documentation-only findings, addressed via
 docstring notes rather than added complexity (per ADR-0002's
 don't-over-invest guidance).
 
+## Task 6 (2/2): normalize.py
+
+`pdf_result_to_normalized`/`excel_to_normalized`/`write_normalized`. Both
+pipelines' results wrap into the identical envelope. Reviewer found
+output-aliases-input list issues (same category as Task 2/6a findings) —
+fixed with shallow copies, test updated to assert non-aliasing. 4/4 tests
+pass. Task 6 complete (both excel_pipeline.py and normalize.py landed).
+
 ## Task 5: pdf_pipeline.py
 
 `convert_pdf`/`merge_multipage_tables`/`build_ocr_options` (OCR-backend
