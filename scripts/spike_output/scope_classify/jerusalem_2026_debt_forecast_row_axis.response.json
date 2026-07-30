@@ -1,0 +1,140 @@
+{
+  "year_axis": "row",
+  "columns": [
+    {
+      "index": 0,
+      "header": "שנה",
+      "detected_year": null,
+      "keep": true
+    },
+    {
+      "index": 1,
+      "header": "החזר קרן",
+      "detected_year": null,
+      "keep": true
+    },
+    {
+      "index": 2,
+      "header": "החזר ריבית",
+      "detected_year": null,
+      "keep": true
+    },
+    {
+      "index": 3,
+      "header": "הפרשי הצמדה",
+      "detected_year": null,
+      "keep": true
+    },
+    {
+      "index": 4,
+      "header": "סה\"כ",
+      "detected_year": null,
+      "keep": true
+    },
+    {
+      "index": 5,
+      "header": "שיעור ההחזר מסך כל ההחזרים השנתי",
+      "detected_year": null,
+      "keep": true
+    },
+    {
+      "index": 6,
+      "header": "שיעור ההחזר המצטבר",
+      "detected_year": null,
+      "keep": true
+    }
+  ],
+  "rows": [
+    {
+      "index": 0,
+      "row_label": "2026",
+      "detected_year": 2026,
+      "keep": true
+    },
+    {
+      "index": 1,
+      "row_label": "2027",
+      "detected_year": 2027,
+      "keep": false
+    },
+    {
+      "index": 2,
+      "row_label": "2028",
+      "detected_year": 2028,
+      "keep": false
+    },
+    {
+      "index": 3,
+      "row_label": "2029",
+      "detected_year": 2029,
+      "keep": false
+    },
+    {
+      "index": 4,
+      "row_label": "2030",
+      "detected_year": 2030,
+      "keep": false
+    },
+    {
+      "index": 5,
+      "row_label": "2031",
+      "detected_year": 2031,
+      "keep": false
+    },
+    {
+      "index": 6,
+      "row_label": "2032",
+      "detected_year": 2032,
+      "keep": false
+    },
+    {
+      "index": 7,
+      "row_label": "2033",
+      "detected_year": 2033,
+      "keep": false
+    },
+    {
+      "index": 8,
+      "row_label": "2034",
+      "detected_year": 2034,
+      "keep": false
+    },
+    {
+      "index": 9,
+      "row_label": "2035",
+      "detected_year": 2035,
+      "keep": false
+    },
+    {
+      "index": 10,
+      "row_label": "2036",
+      "detected_year": 2036,
+      "keep": false
+    },
+    {
+      "index": 11,
+      "row_label": "2037",
+      "detected_year": 2037,
+      "keep": false
+    },
+    {
+      "index": 12,
+      "row_label": "2038",
+      "detected_year": 2038,
+      "keep": false
+    },
+    {
+      "index": 13,
+      "row_label": "2039",
+      "detected_year": 2039,
+      "keep": false
+    },
+    {
+      "index": 14,
+      "row_label": "2040",
+      "detected_year": 2040,
+      "keep": false
+    }
+  ],
+  "confidence": 1.0
+}

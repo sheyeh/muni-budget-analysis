@@ -1,0 +1,48 @@
+{
+  "year_axis": "column",
+  "columns": [
+    {
+      "index": 0,
+      "header": "מינהל / אגף",
+      "detected_year": null,
+      "keep": true
+    },
+    {
+      "index": 1,
+      "header": "שיא כוח אדם בתקנים 2025",
+      "detected_year": 2025,
+      "keep": false
+    },
+    {
+      "index": 2,
+      "header": "תקציב 2025 - במימון תקנים עירוני",
+      "detected_year": 2025,
+      "keep": false
+    },
+    {
+      "index": 3,
+      "header": "תקציב 2025 - תקנים ייעודיים",
+      "detected_year": 2025,
+      "keep": false
+    },
+    {
+      "index": 4,
+      "header": "שיא כוח אדם בתקנים 2026",
+      "detected_year": 2026,
+      "keep": true
+    },
+    {
+      "index": 5,
+      "header": "תקציב 2026 - במימון תקנים עירוני",
+      "detected_year": 2026,
+      "keep": true
+    },
+    {
+      "index": 6,
+      "header": "תקציב 2026 - תקנים ייעודיים",
+      "detected_year": 2026,
+      "keep": true
+    }
+  ],
+  "confidence": 1.0
+}

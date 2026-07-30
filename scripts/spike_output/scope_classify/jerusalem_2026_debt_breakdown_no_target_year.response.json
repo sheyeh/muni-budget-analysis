@@ -1,0 +1,60 @@
+{
+  "year_axis": "column",
+  "columns": [
+    {
+      "index": 0,
+      "header": "שם הבנק",
+      "detected_year": null,
+      "keep": true
+    },
+    {
+      "index": 1,
+      "header": "יתרת קרן ליום נומינלית 31/12/24",
+      "detected_year": 2024,
+      "keep": false
+    },
+    {
+      "index": 2,
+      "header": "יתרת קרן ליום משוערכת 31/12/24",
+      "detected_year": 2024,
+      "keep": false
+    },
+    {
+      "index": 3,
+      "header": "הלוואות גיוס לשנת 2025",
+      "detected_year": 2025,
+      "keep": false
+    },
+    {
+      "index": 4,
+      "header": "יתרת קרן ליום נומינלית 31/12/25",
+      "detected_year": 2025,
+      "keep": false
+    },
+    {
+      "index": 5,
+      "header": "יתרת קרן ליום משוערכת 31/12/25",
+      "detected_year": 2025,
+      "keep": false
+    },
+    {
+      "index": 6,
+      "header": "שיעור גידול 12/2024-12/2025",
+      "detected_year": null,
+      "keep": false
+    },
+    {
+      "index": 7,
+      "header": "התפלגות התחייבויות לבנקים",
+      "detected_year": null,
+      "keep": true
+    },
+    {
+      "index": 8,
+      "header": "התפלגות מצטברת",
+      "detected_year": null,
+      "keep": true
+    }
+  ],
+  "confidence": 1.0
+}
