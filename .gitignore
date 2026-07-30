@@ -38,6 +38,9 @@ data/
 .DS_Store
 *.swp
 
+# Claude Code local state (worktrees, settings, skill cache)
+.claude/
+
 # Large docling native exports / normalized.json kept outside git (see
 # accompanying .link.txt in the same directory)
 docs/examples/level2-processing/904/docling_native.json
