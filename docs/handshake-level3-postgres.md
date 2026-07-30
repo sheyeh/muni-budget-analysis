@@ -120,6 +120,41 @@ Notes:
 - `divider` rows (per `pipeline/analysis/`'s finding) should be dropped
   before they reach `line_items.json` — they carry no values.
 
+## Open questions (found re-checking this contract against real spike output)
+
+Re-checked this contract against real files that didn't exist when it was
+first written: `docs/examples/level2.5-scope-filter/901/scoped.json` and
+the real stage-3 spike's committed output,
+`docs/examples/level3-analysis/out/even_yehuda_2025.json`. Core shape
+holds — `row_type`/`classification_code` nullability matches real
+`divider`/`grand_total`/`subtotal` rows exactly. Two gaps surfaced that
+aren't resolved by this doc yet:
+
+- **`category` (income/expense) has no derivation path in real data.**
+  The spike's real output carries no `category` field at all — divider
+  rows like "הכנסות"/"הוצאות" are recognized and dropped, but nothing
+  in the output links a later row back to which divider preceded it.
+  Whoever builds real level 3 needs to decide how `category` actually
+  gets set (most likely: track current section while iterating rows in
+  document order, set `category` from the last `divider` seen — but
+  that's not proven against real data yet).
+- **Unit granularity mismatch.** This doc puts `unit` once per `budget`
+  document, with `budget_line_item.amount` left in that raw unit. The
+  real spike instead normalizes every cell individually to whole NIS
+  (`amount_ils`), with its own per-row `unit_status` (`explicit` |
+  `inferred` | `unresolved`) and `unit_multiplier` — no document-level
+  unit concept. Before real level 3 is built, decide: keep this doc's
+  raw-amount-plus-document-unit design, or switch `budget_line_item.amount`
+  to always be pre-normalized NIS like the spike does (dropping
+  `budget.unit` as a stored field, or keeping it as informational-only
+  provenance).
+
+Already-known gap, reconfirmed but not new: `amount_type`/
+`fiscal_year_value` resolution is completely unbuilt in the real spike —
+it emits raw `amount_label` (source column header text) instead of a
+resolved `(fiscal_year_value, amount_type)` pair. Matches this doc's and
+ADR-0004's existing "not implemented" status, no schema change implied.
+
 ## Loader (not built — issue #13)
 
 Reads both `manifest.json` and `line_items.json` per processed budget,
