@@ -89,3 +89,31 @@ identity) — both fixed, plus the missing positive-merge test added
 `ingest`. 12/12 tests pass. Reviewer found a real bug (url download
 buffered the whole response into memory instead of streaming — would OOM
 on large files like shafir_2026.pdf) — fixed.
+
+## Tier B: GPU verification of the production run.py path (2026-07-30)
+
+Ran `tel_aviv_2026.pdf` and `shafir_2026.pdf` through the real
+`run_batch()`/`run.py` entrypoint (not the spike script) on a GCP T4 VM,
+per the outstanding follow-up in `tests/test_run_e2e.py` and GitHub #6.
+Project: `qwiklabs-gcp-03-e1024cd263b6`, zone `us-central1-b`.
+
+- **Spot provisioning was not viable here**: the VM was preempted twice
+  within ~15 minutes (once mid-conversion), so the run VM was switched to
+  on-demand (`--provisioning-model` omitted) instead. Worth noting for
+  any future large batch run (Task 7) on a similarly quota-constrained
+  project.
+- `tel_aviv_2026.pdf` (363pp per docling's page count): converted in
+  **1081.7s (~18min)**, `status=success`. Code `631` in the resulting
+  `normalized.json` maps to `19,640,900 / 20,000,000 / 20,000,000` —
+  reproducing the Task 0 spike's finding through the production
+  normalize.py output (table-32 and table-93, both matching).
+- `shafir_2026.pdf` (144pp, scanned): first attempt failed —
+  `pdf_pipeline.py`'s `TESSERACT_CMD` default is a hardcoded Windows path
+  (`C:\Program Files\Tesseract-OCR\tesseract.exe`), so
+  `pipeline_used=docling_pdf_ocr` crashes at model-init on any Linux host
+  unless `TESSERACT_CMD=tesseract` (or the real binary path) is set via
+  env var. **Not fixed here** (out of scope for a verification run) —
+  flagging as a real portability bug for a follow-up, since Task 7's
+  real batch run would hit this on any Linux/GCP host. Rerun with the
+  env var set: converted in **1551.1s (~25.9min)**, `status=success`.
+- Batch summary: 2/2 success, 0 failed.
