@@ -53,7 +53,7 @@ from typing import Any, Dict, List, Optional
 
 OUTPUT_DIR = Path(__file__).parent / "spike_output" / "scope_classify"
 
-MODEL_NAME = "gemini-2.0-flash-001"
+MODEL_NAME = "gemini-2.5-flash"
 
 SYSTEM_PROMPT = """You are classifying one table from a municipal budget document (Hebrew, RTL). \
 You are told the section heading, the table's column headers, and the first cell of every row. \
