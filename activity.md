@@ -29,6 +29,17 @@ access) — fixed — plus 2 documentation-only findings, addressed via
 docstring notes rather than added complexity (per ADR-0002's
 don't-over-invest guidance).
 
+## Task 5: pdf_pipeline.py
+
+`convert_pdf`/`merge_multipage_tables`/`build_ocr_options` (OCR-backend
+seam for future GCP-native OCR). Docling 2.116.0 API verified empirically
+first (`iterate_items()`, `table.data.grid`, `TableItem.self_ref`) before
+implementation. Reviewer found a real HIGH-severity bug (unreliable
+`is_header` flag left a duplicated header row in merged tables uncorrected)
+and a robustness issue (`id()` vs `self_ref` for cross-pass table
+identity) — both fixed, plus the missing positive-merge test added
+(synthetic `DoclingDocument`, not mocks). 5/5 tests pass.
+
 ## Task 3: ingest.py
 
 `compute_sha256`/`detect_file_type`/`resolve_source`/`is_already_processed`/
