@@ -1,0 +1,8 @@
+jaljulya_2026.pdf (Jaljulya municipal budget, scanned/image-only, 9 pages,
+~9.1 MB) is too large to commit to git.
+
+No hosting link yet — source URL/upload is TODO. Whoever added this sample
+locally should either upload it to the project's Google Drive folder (see
+docs/examples/docling/tel_aviv_2026/native.json.link.txt for the existing
+folder) and replace this note with the link, or record the original
+municipality-website download URL here if known.
