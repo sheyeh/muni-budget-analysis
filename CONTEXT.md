@@ -1,6 +1,6 @@
 # Muni Budget Analysis
 
-Pipeline turning scraped municipal budget files into a structured, browsable dataset. Four stages: scraping, file processing, file analysis, web UI.
+Pipeline turning scraped municipal budget files into a structured, browsable dataset. Stages: scraping, file processing, scope filtering, file analysis, web UI.
 
 ## Language
 
@@ -19,3 +19,7 @@ _Avoid_: "processed file" (ambiguous — could mean the manifest, the docling na
 **Budget line item**:
 A semantically resolved row produced by stage 3: a classification code placed in its hierarchy, a resolved fiscal year/amount-type per value (actual vs. budgeted vs. execution %), read off of one or more table rows in a normalized document. This is the "well-defined table of interesting values" stage 3 exists to produce.
 _Avoid_: "table row" for this — a table row is stage 2's raw, uninterpreted unit; a budget line item is stage 3's interpreted one.
+
+**Year axis** / **keep**:
+Per-table fields produced by the new scope-filtering stage (between stages 2 and 3, see `docs/adr/0003-*`), stored in `scoped.json`, never in `normalized.json` — the normalized document stays stage 2's untouched contract. `year_axis` says which dimension of a table carries the year (`column` — the common case, e.g. `even_yehuda_2025`'s comparison table; `row` — multi-year forecast tables like `jerusalem_2026`'s 15-year debt-repayment schedule; or `none` — no year dimension detectable, table unusable for fiscal-year-specific extraction). `keep` is a per-column-or-per-row boolean along that axis: `true` for the slice matching the target fiscal year, and for structural (non-year) columns/rows needed to interpret it (category names, codes); `false` for every other year's slice.
+_Avoid_: whole-table in/out labels — a single real budget table routinely mixes target-year and other-year columns (or rows) together, so scoping is a row/column selection within a table, not a table-level classification.
