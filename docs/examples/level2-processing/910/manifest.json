@@ -1,0 +1,18 @@
+{
+  "muni_id": 910,
+  "source_filename": "lachish_2026.pdf",
+  "source_sha256": "86cf7dfb8e9a11f4b48c54c690a76633e379e2c7ee9ef19037d95c7c67b8f0b2",
+  "detected_type": "pdf",
+  "pipeline_used": "docling_pdf_ocr",
+  "docling_version": "2.117.0",
+  "processed_at": "2026-07-30T20:54:26.417289+00:00",
+  "status": "success",
+  "page_count": 3,
+  "warnings": [],
+  "error": null,
+  "outputs": {
+    "docling_native": "docling_native.json",
+    "markdown": "document.md",
+    "normalized": "normalized.json"
+  }
+}

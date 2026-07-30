@@ -17,15 +17,19 @@ The `normalized.json` file per source file — the concrete artifact holding one
 _Avoid_: "processed file" (ambiguous — could mean the manifest, the docling native export, or this).
 
 **Budget line item**:
-A semantically resolved row produced by stage 3: a classification code placed in its hierarchy, a resolved fiscal year/amount-type per value (actual vs. budgeted vs. execution %), read off of one or more table rows in a normalized document. This is the "well-defined table of interesting values" stage 3 exists to produce.
+A semantically resolved row produced by stage 3: a classification code placed in its hierarchy, a resolved fiscal year/amount-type per value (actual vs. budgeted vs. execution %), read off of one or more table rows in a normalized document. This is the "well-defined table of interesting values" stage 3 exists to produce. Not every source row becomes a leaf value — see **Row type**.
 _Avoid_: "table row" for this — a table row is stage 2's raw, uninterpreted unit; a budget line item is stage 3's interpreted one.
+
+**Row type**:
+What kind of row a budget line item came from: `line_item` (a real leaf value), `subtotal` (a "סה״כ ..." row naming one category, e.g. "סה״כ חינוך" — still carries that category's classification code, since it *is* the sum of its own line-item children, not a sibling of them), `grand_total` (spans multiple categories or isn't a category at all, e.g. "סה״כ הכנסות", "עודף/גרעון" — no classification code applies), or `divider` (a bare structural header like "הכנסות"/"הוצאות" with no values — dropped before reaching a budget line item at all).
+_Avoid_: summing amounts by classification code without filtering on this — a `subtotal` row shares its code with its `line_item` children and double-counts if not excluded.
 
 **Year axis** / **keep**:
 Per-table fields produced by the new scope-filtering stage (between stages 2 and 3, see `docs/adr/0003-*`), stored in `scoped.json`, never in `normalized.json` — the normalized document stays stage 2's untouched contract. `year_axis` says which dimension of a table carries the year (`column` — the common case, e.g. `even_yehuda_2025`'s comparison table; `row` — multi-year forecast tables like `jerusalem_2026`'s 15-year debt-repayment schedule; or `none` — no year dimension detectable, table unusable for fiscal-year-specific extraction). `keep` is a per-column-or-per-row boolean along that axis: `true` for the slice matching the target fiscal year, and for structural (non-year) columns/rows needed to interpret it (category names, codes, and — per `docs/adr/0004-*` — execution-rate % and change/delta columns, which describe the target year's own execution rather than carrying a different year); `false` for every other year's slice.
 _Avoid_: whole-table in/out labels — a single real budget table routinely mixes target-year and other-year columns (or rows) together, so scoping is a row/column selection within a table, not a table-level classification.
 
 **Classification code**:
-A code from the national standard chart-of-accounts for Israeli local authorities (תקן תקציבי אחיד), e.g. `631` — shared and hierarchical (parent/child codes), not muni-specific. A budget line item's code is a foreign key into this shared taxonomy, not a copy of whatever string appeared in the source cell, so line items compare across munis. Populated top-down from the official code list (a tracked, separate sourcing task), not inferred bottom-up from whatever codes happen to appear in processed documents.
+A code from the national standard chart-of-accounts for Israeli local authorities (תקן תקציבי אחיד), e.g. `631` — shared and hierarchical (parent/child codes), not muni-specific. A budget line item's code is a foreign key into this shared taxonomy, not a copy of whatever string appeared in the source cell, so line items compare across munis. Populated top-down from the official code list — already parsed into `pipeline/analysis/moi_budget_codes.json` (~672 codes, via `scripts/parse_codebook.py`), not inferred bottom-up from whatever codes happen to appear in processed documents.
 _Avoid_: "budget code" as a project-invented term — it names an existing external standard, not something this project defines.
 
 **Amount type**:

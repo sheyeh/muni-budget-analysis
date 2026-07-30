@@ -45,6 +45,14 @@ DEFAULT_PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 # monkeypatching this constant.
 TABLE_MODE = TableFormerMode.ACCURATE
 
+# OCR backend for the scanned-PDF path ("docling_pdf_ocr"). Cloud Vision per
+# the hybrid decision in docs/adr/0001-docling-primary-extraction-engine.md's
+# Status section (issue #4): docling's own TableFormer still does table
+# geometry, this only swaps the text-recognition step Tesseract garbled
+# Hebrew labels on (docs/examples/gcp_vision/README.md). Unused for the
+# "docling_pdf" (text-layer) path, which never calls build_ocr_options().
+OCR_BACKEND = "cloud_vision"
+
 NATIVE_JSON_FILENAME = "docling_native.json"
 MARKDOWN_FILENAME = "document.md"
 
@@ -129,7 +137,10 @@ def process_one(record: Dict[str, Any], raw_dir: Path, processed_dir: Path) -> D
         if pipeline_used in ("docling_pdf", "docling_pdf_ocr"):
             docling_version = pdf_pipeline.get_docling_version()
             pdf_result, doc = pdf_pipeline.convert_pdf_with_document(
-                ingested["local_path"], pipeline_used=pipeline_used, table_mode=TABLE_MODE
+                ingested["local_path"],
+                pipeline_used=pipeline_used,
+                table_mode=TABLE_MODE,
+                ocr_backend=OCR_BACKEND,
             )
             page_count = pdf_result["page_count"]
             normalized = normalize.pdf_result_to_normalized(
