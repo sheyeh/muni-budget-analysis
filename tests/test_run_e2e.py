@@ -80,6 +80,20 @@ def fast_table_mode(monkeypatch):
     monkeypatch.setattr(run_module, "TABLE_MODE", TableFormerMode.FAST)
 
 
+@pytest.fixture(autouse=True)
+def tesseract_ocr_backend(monkeypatch):
+    """
+    Force run.py's OCR_BACKEND back to "tesseract" for this test. run.py's
+    real default is "cloud_vision" (issue #4) which calls the live Cloud
+    Vision API over the network with Application Default Credentials -- not
+    something this test suite should depend on being configured. The
+    cloud_vision backend itself is covered by tests/test_cloud_vision_ocr.py
+    (wiring, no live calls) and manually verified end-to-end against
+    mate_yehuda_2024.pdf.
+    """
+    monkeypatch.setattr(run_module, "OCR_BACKEND", "tesseract")
+
+
 def test_run_batch_produces_populated_normalized_json_for_all_three_samples(tmp_path):
     raw_dir = tmp_path / "raw"
     processed_dir = tmp_path / "processed"

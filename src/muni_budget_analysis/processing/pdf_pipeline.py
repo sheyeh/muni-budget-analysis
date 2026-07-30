@@ -65,6 +65,15 @@ def build_ocr_options(backend: str = "tesseract") -> OcrOptions:
             tesseract_cmd=TESSERACT_CMD,
             path=TESSDATA_DIR,
         )
+    if backend == "cloud_vision":
+        # Lazy import: keeps google-cloud-vision an optional dependency for
+        # callers that never select this backend (e.g. the default
+        # "tesseract" path, and every text-layer/"docling_pdf" conversion,
+        # which never calls build_ocr_options() at all).
+        from .cloud_vision_ocr import CloudVisionOcrOptions, register_cloud_vision_ocr
+
+        register_cloud_vision_ocr()
+        return CloudVisionOcrOptions(force_full_page_ocr=True)
     raise ValueError(f"Unknown OCR backend: {backend!r}")
 
 
