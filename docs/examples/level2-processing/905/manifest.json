@@ -1,0 +1,18 @@
+{
+  "muni_id": 905,
+  "source_filename": "shafir_2026.pdf",
+  "source_sha256": "3d2ff73a9163daa1210588ae46f86edb08957a51f78f33d30f6229e4ec877245",
+  "detected_type": "pdf",
+  "pipeline_used": "docling_pdf_ocr",
+  "docling_version": "2.117.0",
+  "processed_at": "2026-07-30T19:20:46.969065+00:00",
+  "status": "success",
+  "page_count": 144,
+  "warnings": [],
+  "error": null,
+  "outputs": {
+    "docling_native": "docling_native.json",
+    "markdown": "document.md",
+    "normalized": "normalized.json"
+  }
+}

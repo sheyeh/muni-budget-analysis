@@ -1,0 +1,2730 @@
+{
+  "muni_id": 901,
+  "source_filename": "even_yehuda_2025.pdf",
+  "pipeline_used": "docling_pdf",
+  "sections": [
+    {
+      "section_id": "sec-0",
+      "title": "מועצה  מקומית  אבן  יהודה",
+      "page_range": [
+        1,
+        1
+      ],
+      "table_ids": []
+    },
+    {
+      "section_id": "sec-1",
+      "title": ": 2025 ת ð תקציב  רגיל  לש",
+      "page_range": [
+        1,
+        1
+      ],
+      "table_ids": [
+        "table-0"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "table-0",
+      "section_id": "sec-1",
+      "page_range": [
+        1,
+        1
+      ],
+      "num_rows": 48,
+      "num_cols": 9,
+      "rows": [
+        [
+          {
+            "text": "מסגרת תקציב לשנת 2025 7",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          },
+          {
+            "text": "/ פירוט מס' הסבר לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          },
+          {
+            "text": "שינויים כולל התייעלות 7 - 6",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          },
+          {
+            "text": "ביצוע 2024 מקודם 2025 למחירי 6",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          },
+          {
+            "text": "מקדמים בשימוש הרשות 5",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          },
+          {
+            "text": "ביצוע 2024 מחירים שוטפים 4",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          },
+          {
+            "text": "מסגרת תקציב לשנת 2024 3",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          },
+          {
+            "text": "ביצוע 2023 מחירים שוטפים 2",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          },
+          {
+            "text": "הסעיף התקציבי",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "הכנסות",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "63,403",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1,670",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "61,733",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "105.29%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "58,631",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "58,391",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "52,067",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": ")מיסים( כללית ארנונה",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "המים מפעל",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "1,205",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "2",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "227",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "978",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "978",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "978",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "770",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "חינוך עצמיות",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "240",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "3",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "3",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "237",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "237",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "237",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "210",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "רווחה עצמיות",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "13,343",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "4",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1,462",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "14,805",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "14,805",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "14,805",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "10,053",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "אחר עצמיות",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "78,191",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "438",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "77,753",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "74,651",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "74,411",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "63,100",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "עצמיות הכנסות סה\"כ",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "21,453",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "5",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "785",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "20,668",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "20,668",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "20,668",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "19,637",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "החינוך משרד תקבולים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "7,894",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "6",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "171",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "7,723",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "7,723",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "7,723",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "7,348",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "הרווחה משרד תקבולים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "709",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "7",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "709",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "709",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "709",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "485",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "אחרים ממשלתיים תקבולים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "8",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "לאיזון כללי מענק",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "9",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "257",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "הפנים משרד אחרים מענקים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "30,056",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "956",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "29,100",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "29,100",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "29,100",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "27,727",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "ממשלה תקבולי סה\"כ",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "1,945",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "10",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "176",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "2,121",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "2,121",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "2,121",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1,229",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "ח\"פ ותקבולים אחרים תקבולים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "11",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "קודמות שנים בגין הכנסות",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "הנחות לפני הכנסות סה\"כ",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "110,192",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1,218",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "108,974",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "105,872",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "105,632",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "92,056",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "נצבר גרעון וכיסוי בארנונה",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "8,200",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "12",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "830",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "7,370",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "105.29%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "7,000",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "6,999",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "6,629",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "בארנונה הנחות",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "13",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "נצבר גרעון לכיסוי הכנסות",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "118,392",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "2,048",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "116,344",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "112,872",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "112,631",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "98,685",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "מותנה ללא הכנסות סה\"כ",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "מותנה הכנסה",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "118,392",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "2,048",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "116,344",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "112,872",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "112,631",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "98,685",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "מותנה כולל הכנסות סה\"כ",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "הוצאות",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "16,146",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "14",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "527",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "16,673",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "103.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "16,187",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "16,212",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "12,308",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "כללי שכר",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "36,559",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "15",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "369",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "36,190",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "36,190",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "36,189",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "31,459",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "כלליות פעולות",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "המים מפעל",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "52,705",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "158",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "52,863",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "52,377",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "52,401",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "43,767",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "כלליות הוצאות סה\"כ",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "20,514",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "16",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1,342",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "19,172",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "103.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "18,614",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "18,614",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "16,350",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "חינוך עובדי שכר",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "21,990",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "17",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "2,660",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "19,330",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "21,291",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "21,291",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "19,297",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "חינוך פעולות",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "42,504",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "4,002",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "38,502",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "39,905",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "39,905",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "35,647",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "חינוך סה\"כ",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "3,113",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "18",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "338",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "2,775",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "103.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "2,694",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "2,694",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "2,207",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "רווחה עובדי שכר",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "10,315",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "19",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "413",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "9,902",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "9,902",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "9,902",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "8,715",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "רווחה פעולות",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "13,428",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "751",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "12,677",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "12,596",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "12,596",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "10,922",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "רווחה סה\"כ",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "וביוב מים מלוות פרעון",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "20",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "אחר פרעון",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "מלוות פרעון סה\"כ",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "396",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "21",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "20",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "376",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "376",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "376",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "356",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "מימון הוצאות",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "159",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "159",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "159",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "159",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "בחירות בגין הוצאות",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "1,215",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "22",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "965",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "250",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "250",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "250",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1,061",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "קודמות שנים ובגין ח\"פ הוצאות",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "הנחות לפני הוצאות סה\"כ",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "110,248",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "5,421",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "104,827",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "105,663",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "105,687",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "91,753",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "נצבר גרעון וכיסוי בארנונה",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "8,144",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "23",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "833",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "7,311",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "105.29%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "6,944",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "6,944",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "6,564",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "בארנונה הנחות",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "24",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "נצבר גרעון לכיסוי הוצאות",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "118,392",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "6,254",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "112,138",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "112,607",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "112,631",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "98,317",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "מותנה ללא הוצאות סה\"כ",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100.00%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "מותנות הוצאות",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "118,392",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "6,254",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "112,138",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "112,607",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "112,631",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "98,317",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "מותנה כולל הוצאות סה\"כ",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "4,206 -",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "4,206",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "265",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "-",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "368",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "( גרעון ) עודף",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ]
+      ],
+      "sheet_name": null
+    }
+  ]
+}

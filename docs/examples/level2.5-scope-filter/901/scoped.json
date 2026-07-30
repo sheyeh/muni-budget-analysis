@@ -1,0 +1,71 @@
+{
+  "muni_id": 901,
+  "source_filename": "even_yehuda_2025.pdf",
+  "target_year": 2025,
+  "tables_total": 1,
+  "tables_classified": 1,
+  "table_scopes": [
+    {
+      "table_id": "table-0",
+      "section_title": ": 2025 ת ð תקציב  רגיל  לש",
+      "year_axis": "column",
+      "columns": [
+        {
+          "index": 0,
+          "header": "מסגרת תקציב לשנת 2025 7",
+          "detected_year": 2025,
+          "keep": true
+        },
+        {
+          "index": 1,
+          "header": "/ פירוט מס' הסבר לשינויים",
+          "detected_year": null,
+          "keep": true
+        },
+        {
+          "index": 2,
+          "header": "שינויים כולל התייעלות 7 - 6",
+          "detected_year": null,
+          "keep": true
+        },
+        {
+          "index": 3,
+          "header": "ביצוע 2024 מקודם 2025 למחירי 6",
+          "detected_year": 2025,
+          "keep": true
+        },
+        {
+          "index": 4,
+          "header": "מקדמים בשימוש הרשות 5",
+          "detected_year": null,
+          "keep": true
+        },
+        {
+          "index": 5,
+          "header": "ביצוע 2024 מחירים שוטפים 4",
+          "detected_year": 2024,
+          "keep": false
+        },
+        {
+          "index": 6,
+          "header": "מסגרת תקציב לשנת 2024 3",
+          "detected_year": 2024,
+          "keep": false
+        },
+        {
+          "index": 7,
+          "header": "ביצוע 2023 מחירים שוטפים 2",
+          "detected_year": 2023,
+          "keep": false
+        },
+        {
+          "index": 8,
+          "header": "הסעיף התקציבי",
+          "detected_year": null,
+          "keep": true
+        }
+      ],
+      "confidence": 0.95
+    }
+  ]
+}

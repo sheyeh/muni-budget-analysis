@@ -1,0 +1,13 @@
+tel_aviv_2026's normalized.json (14MB, from data/processed/904/tel_aviv_2026/normalized.json)
+is kept out of git per CLAUDE.md's large-file convention (>~2MB).
+
+No external hosting link exists yet for this specific file -- unlike
+docling_native.json.link.txt in this same directory (Google Drive), this
+file was not uploaded anywhere. Don't assume the same link covers it.
+
+Regenerate locally: run the level-2 batch entrypoint
+(src/muni_budget_analysis/processing/run.py) against
+budget_examples/tel_aviv_2026.pdf via a level-1 manifest record with
+muni_id=904. On CPU this is a multi-hour job (see
+docs/gcp-gpu-docling.md) -- use scripts/gcp_gpu_spike.sh's create/bootstrap
+pattern on a GPU VM instead (~18min on a T4).

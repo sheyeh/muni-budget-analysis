@@ -1,0 +1,9 @@
+native.json for jerusalem_2026 (docling native/lossless export, ~4.7 MB) is
+too large to commit to git. Hosted instead on Google Drive:
+
+File: https://drive.google.com/file/d/1VgVH8_4h22VNPUiDxMeqTjAtyPmNrabB/view?usp=drive_link
+
+Regenerate locally at any time with:
+    python scripts/spike_docling.py --fast --only jerusalem_2026
+(FAST table mode: 323.6s on CPU, zero errors, 16 tables found. See
+docs/examples/docling/README.md for the full finding.)

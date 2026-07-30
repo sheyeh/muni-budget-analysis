@@ -1,0 +1,18 @@
+{
+  "muni_id": 906,
+  "source_filename": "elyakin_2026.pdf",
+  "source_sha256": "9135bbcd77890876cacc2343135d61aba9c40dacbec67506563922269dbd9cca",
+  "detected_type": "pdf",
+  "pipeline_used": "docling_pdf_ocr",
+  "docling_version": "2.117.0",
+  "processed_at": "2026-07-30T20:53:55.119289+00:00",
+  "status": "success",
+  "page_count": 3,
+  "warnings": [],
+  "error": null,
+  "outputs": {
+    "docling_native": "docling_native.json",
+    "markdown": "document.md",
+    "normalized": "normalized.json"
+  }
+}

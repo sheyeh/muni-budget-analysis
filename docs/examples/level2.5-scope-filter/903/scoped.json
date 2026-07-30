@@ -1,0 +1,17 @@
+{
+  "muni_id": 903,
+  "source_filename": "elad_2022.xlsx",
+  "target_year": 2022,
+  "tables_total": 1,
+  "tables_classified": 1,
+  "table_scopes": [
+    {
+      "table_id": "table-0",
+      "section_title": " EPR דוח",
+      "year_axis": "none",
+      "keep": false,
+      "reason": "No fiscal year information detected in column headers or row labels. The table appears to list account details, number of positions, and budget amounts without specifying a year for these figures within its structure.",
+      "confidence": 0.95
+    }
+  ]
+}
