@@ -1,5 +1,5 @@
 """
-Loader for pipeline/analysis/data/moi_budget_codes.json (produced by
+Loader for pipeline/analysis/moi_budget_codes.json (produced by
 scripts/parse_codebook.py from ספר-קידודים-ברשויות-מקומיות.pdf, the
 Ministry of Interior's chart of accounts).
 """
@@ -9,7 +9,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-DEFAULT_PATH = Path(__file__).resolve().parent / "data" / "moi_budget_codes.json"
+DEFAULT_PATH = Path(__file__).resolve().parent / "moi_budget_codes.json"
 
 
 def load_codebook(path: Path = DEFAULT_PATH) -> list[dict]:

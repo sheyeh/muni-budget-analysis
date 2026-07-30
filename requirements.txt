@@ -3,5 +3,9 @@ requests>=2.28.0
 pandas>=2.0.0
 openpyxl>=3.1.0
 
+# Stage-3 category/unit normalization spike (pipeline/analysis/)
+pdfplumber>=0.11.0
+google-genai>=1.0.0
+
 # Development & testing dependencies
 pytest>=7.0.0
