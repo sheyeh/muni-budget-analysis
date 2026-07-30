@@ -1,0 +1,16 @@
+{
+  "muni_id": 903,
+  "source_filename": "elad_2022.xlsx",
+  "source_sha256": "8692fc8e2cbf45442220f2f40a3f6d77e9b4843d2e2e2acbe241c9cbd5f1c70b",
+  "detected_type": "xlsx",
+  "pipeline_used": "excel_native",
+  "docling_version": null,
+  "processed_at": "2026-07-30T20:53:23.504758+00:00",
+  "status": "success",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "outputs": {
+    "normalized": "normalized.json"
+  }
+}

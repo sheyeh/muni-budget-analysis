@@ -1,0 +1,3220 @@
+{
+  "muni_id": 908,
+  "source_filename": "jaljulya_2026.pdf",
+  "pipeline_used": "docling_pdf_ocr",
+  "sections": [
+    {
+      "section_id": "sec-0",
+      "title": "'לנ' ג'לג'וליה תקציב לשנת 2026",
+      "page_range": [
+        1,
+        1
+      ],
+      "table_ids": []
+    },
+    {
+      "section_id": "sec-1",
+      "title": "פרטי מגיש",
+      "page_range": [
+        1,
+        1
+      ],
+      "table_ids": []
+    },
+    {
+      "section_id": "sec-2",
+      "title": "פרטים כללים",
+      "page_range": [
+        1,
+        1
+      ],
+      "table_ids": []
+    },
+    {
+      "section_id": "sec-3",
+      "title": "הערות לטופס:",
+      "page_range": [
+        1,
+        1
+      ],
+      "table_ids": []
+    },
+    {
+      "section_id": "sec-4",
+      "title": "01/02/2026 הצעת התקציב הרגיל של רשוות מקומית (נספח א')",
+      "page_range": [
+        2,
+        2
+      ],
+      "table_ids": []
+    },
+    {
+      "section_id": "sec-5",
+      "title": "ג'לג'וליה תקציב לשנת 2026",
+      "page_range": [
+        2,
+        2
+      ],
+      "table_ids": []
+    },
+    {
+      "section_id": "sec-6",
+      "title": "טבלה 1הצעת התקציב הרגיל של הרשות המקומית",
+      "page_range": [
+        2,
+        2
+      ],
+      "table_ids": [
+        "table-0"
+      ]
+    },
+    {
+      "section_id": "sec-7",
+      "title": "01/02/2026 הצעת התקציב הרגיל של רשוות מקומית (נספח א",
+      "page_range": [
+        3,
+        3
+      ],
+      "table_ids": []
+    },
+    {
+      "section_id": "sec-8",
+      "title": "ג'לג'וליה תקציב לשנת 2026",
+      "page_range": [
+        3,
+        3
+      ],
+      "table_ids": []
+    },
+    {
+      "section_id": "sec-9",
+      "title": "הערות והבהרות עבור טבלה 1הצעת התקציב הרגיל של הרשות המקומית",
+      "page_range": [
+        3,
+        3
+      ],
+      "table_ids": [
+        "table-1"
+      ]
+    },
+    {
+      "section_id": "sec-10",
+      "title": "01/02/2026 הצעת התקציב הרגיל של רששות מקומית (נספח א')",
+      "page_range": [
+        4,
+        4
+      ],
+      "table_ids": []
+    },
+    {
+      "section_id": "sec-11",
+      "title": "1 ג'לג'וליה תקציב לשנת 2026",
+      "page_range": [
+        4,
+        4
+      ],
+      "table_ids": []
+    },
+    {
+      "section_id": "sec-12",
+      "title": "טבלה 2הרכב הכנסות עצמיות והוצאות מקבילות בתקציב הרגיל של הרשות המקומית",
+      "page_range": [
+        4,
+        4
+      ],
+      "table_ids": [
+        "table-2"
+      ]
+    },
+    {
+      "section_id": "sec-13",
+      "title": "01/02/2026 הצעת התקציב הרגיל של רשוות מקומית (נספח א')",
+      "page_range": [
+        5,
+        5
+      ],
+      "table_ids": []
+    },
+    {
+      "section_id": "sec-14",
+      "title": ". ו ג'לג'וליה תקציב לשנת 2026",
+      "page_range": [
+        5,
+        5
+      ],
+      "table_ids": []
+    },
+    {
+      "section_id": "sec-15",
+      "title": "טבלה 3תקציב 2026 בפועל לעומת תקציב 2026 על פי תכנית הבראה לרששות",
+      "page_range": [
+        5,
+        5
+      ],
+      "table_ids": [
+        "table-3"
+      ]
+    },
+    {
+      "section_id": "sec-16",
+      "title": "ג'לג'וליה תקציב לשנת 2026",
+      "page_range": [
+        6,
+        6
+      ],
+      "table_ids": []
+    },
+    {
+      "section_id": "sec-17",
+      "title": "הערות והבהרות עבור טבלה 3תקציב 2026 בפועל לעומת תקציב 2026 על פי תכנית הבראה לרשוות",
+      "page_range": [
+        6,
+        6
+      ],
+      "table_ids": [
+        "table-4"
+      ]
+    },
+    {
+      "section_id": "sec-18",
+      "title": "ג'לג'וליה תקציב לשנת 2026",
+      "page_range": [
+        7,
+        7
+      ],
+      "table_ids": []
+    },
+    {
+      "section_id": "sec-19",
+      "title": "טבלה 4שכר ומשרות לפי פרקי תקציב",
+      "page_range": [
+        7,
+        7
+      ],
+      "table_ids": [
+        "table-5"
+      ]
+    },
+    {
+      "section_id": "sec-20",
+      "title": "ג'לג'וליה תקציב לשנת 2026",
+      "page_range": [
+        8,
+        8
+      ],
+      "table_ids": []
+    },
+    {
+      "section_id": "sec-21",
+      "title": "הערות והבהרות עבור טבלה 4שכר ומשרות לפי פרקי תקציב",
+      "page_range": [
+        8,
+        8
+      ],
+      "table_ids": [
+        "table-6"
+      ]
+    },
+    {
+      "section_id": "sec-22",
+      "title": "טבלה 5רכישת שירותי כח אדם",
+      "page_range": [
+        8,
+        8
+      ],
+      "table_ids": [
+        "table-7"
+      ]
+    },
+    {
+      "section_id": "sec-23",
+      "title": "ג'לג'וליה תקציב לשנת 2026",
+      "page_range": [
+        9,
+        9
+      ],
+      "table_ids": []
+    },
+    {
+      "section_id": "sec-24",
+      "title": "טבלה 7נתוני תעריפים וגבייה בחוקי עזר",
+      "page_range": [
+        9,
+        9
+      ],
+      "table_ids": [
+        "table-8"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "table-0",
+      "section_id": "sec-6",
+      "page_range": [
+        2,
+        2
+      ],
+      "num_rows": 21,
+      "num_cols": 8,
+      "rows": [
+        [
+          {
+            "text": "15,692",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "4741",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "1,828",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "248",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1,580",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100 %",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1,580",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "2,247",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "2,183",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "152",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "96",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "56",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "100 %",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "66",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "3,738",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "(156)",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "3es0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "ag |",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "21,410",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "אה‎",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "16,481",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "ומר ₪",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "as",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "| un",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "23,348",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": ".- os",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "11,728",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "11,419",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1,644",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "2,546",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "15,274",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "16,078",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1,033",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "13,907",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "13,213",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "a",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "אע‎",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "שאר",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "103.29 %",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "102.9 %",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "31,484",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "ae",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "3,392",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "(340)",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "103.29 %",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "11,815",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "(1,001)",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "102.9 %",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "ee‏",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "ורד",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "ב- 5-75",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ]
+      ],
+      "sheet_name": null
+    },
+    {
+      "table_id": "table-1",
+      "section_id": "sec-9",
+      "page_range": [
+        3,
+        3
+      ],
+      "num_rows": 31,
+      "num_cols": 2,
+      "rows": [
+        [
+          {
+            "text": "המועצה מטמיעה סקר נכסים תוך הגברת האכיפה לגביית ארנונה",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "אין",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "גידול בהשתתפות רששת חינוך",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "צפי לגידול בעצמיות רווחה בהתאם לתחזית לשונת 2026",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "ירידה בהכנסות חומל",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "עיקר הגידול הוא בסעיף סייעות צמודות כמיליון ש\"ח וגידול שכל\"מ גננות טרום חובה בסך 700 אלפי ש\"ח",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "תקציב הרווחה הוא בהתאם לתקציב הרשות מול משרד הרווחה בהכנסות וגם בהוצאות.",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "עיקר הגידול הוא בסעיף סל ספור בסך 250 אלפי ש\"ח, בסעיף השותתפות מפעל הפיס בארועי תרבות בסך 406 אלפי ש\"ח, הששתתפות תב\"ר בפיקוח עירוני בסך 298 מימון יחידת נוער ממעורד החינוך 90 אלפי ש\"ח וסעיפים נוספים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "אלפי ש\"ח וסעיף",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "הירידה במענק האיזון תקצוב לפי 95% בהתאם להנחיות.",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "עיקר הקיטון תקצוב מענק קצל\"ט 50%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "בשנת 2025 נתקבלה הלוואה לאחון בסך 1475 אלפי ש\"ח ונרשמה הכנסה כנגד הקטנת הפרשוה לתביעות תלויות שבוטלו בתקציב 2026 בנוסף תוקצבה קרן ארנונה ש\"ח",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "בסך 339 אלפי",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "₪",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "גידול בהנחות הארנונה בעקבות הטמעת סקר נכסים והגברת הגבייה",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "rx‏",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "הרכב הכנסה מותנ:",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "מענק קצל\"פ 50% בסך 414 אלפי ש\"ח",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "עיקר גידול איוש משרת מהנדס לרעוות לשנה שלמה",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "ירידה במספר סעיפים במצטבר",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "אין",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "aman לא‎",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "סעיף שירותי ניקיון יסודיים בסך 440 אלפי ש\"ח סעיף נוער ישובי בסך 277 אלפי ש\"ח (מקביל לגידול בהוצאה) סעיף קייטנת קיץ בסך 388 אלפי ש\"ח (מקביל לגידול בהוצאת). סעיף קייטנת חורף בסך 197 אלפי עו\"ח (מקביל לגידול בהוצאה) סעיף ניצנים בסך 234 אלפי ש\"ח (מקביל לגידול בהוצאה) ועוד סעיפים אחרים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "ירידה ב- 1.35 משרות בשנת 2026",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "תקציב הרווחה הוא בהתאנו לתקציב הרעוות מול משרד הרווחה בהכנסות וגם בהוצאות",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "אין",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "גידול בפרע\"מ אחר בעקבות קבלת הלוואות חדשוות.",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "הקטנת אעוראי",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "אין",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "לא מהותי",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "גידול בהנחות הארנונה בעקבות הטמעת סקר נכסים והגברת הגבייה",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "אין",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "כנגד הכנסה מותנה",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ]
+      ],
+      "sheet_name": null
+    },
+    {
+      "table_id": "table-2",
+      "section_id": "sec-12",
+      "page_range": [
+        4,
+        4
+      ],
+      "num_rows": 12,
+      "num_cols": 4,
+      "rows": [
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "898",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "897",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "862",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "534",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "1,500",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1,500",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1,500",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "eet",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "661",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "661",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "661",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "8",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ]
+      ],
+      "sheet_name": null
+    },
+    {
+      "table_id": "table-3",
+      "section_id": "sec-15",
+      "page_range": [
+        5,
+        5
+      ],
+      "num_rows": 6,
+      "num_cols": 2,
+      "rows": [
+        [
+          {
+            "text": "3 11,235",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "13,907",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "20,442",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "20,767",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "11,042",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "11,123",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "3,392",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "11,815",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ]
+      ],
+      "sheet_name": null
+    },
+    {
+      "table_id": "table-4",
+      "section_id": "sec-17",
+      "page_range": [
+        6,
+        6
+      ],
+      "num_rows": 21,
+      "num_cols": 1,
+      "rows": [
+        [
+          {
+            "text": "תקציב ההתייעלות לעונת 2026 התבסס על ביצוע לשנת 2024 שקודם לשנת 2025 ולשנת 2026. במהלך עונת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המות מים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": ".תקציב ההתייעלות לשנת 2026 התבסס על ביצוע לעונת 2024 שקודם לשנת 2025 ולשנת 2026. במהלך שנת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המות אמים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": ".תקציב ההתייעלות לשנת 2026 התבסס על ביצוע לשנת 2024 שקודם לשנת 2025 ולשנת 2026. במהלך שנת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המות אמים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תקציב ההתייעלות לשנת 2026 התבסס על ביצוע לשנת 2024 שקודם לשנת 2025 ולשנת 2026. במהלך שנת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המותא מים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תקציב ההתייעלות לשנת 2026 התבסס על ביצוע לשנת 2024 שקודם לשנת 2025 ולשנת 2026. במהלך שנת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המותא מים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תקציב ההתייעלות לשנת 2026 התבסס על ביצוע לשנת 2024 שקודם לשנת 2025 ולשנת 2026. במהלך שנת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המותא מים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תקציב ההתייעלות לשנת 2026 התבסס על ביצוע לשנת 2024 שקודם לשנת 2025 ולשנת 2026. במהלך שנת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המות מים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תקציב ההתייעלות לשנת 2026 התבסס על ביצוע לשנת 2024 שקודם לשנת 2025 ולשנת 2026. במהלך שנת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המותא מים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תקציב ההתייעלות לשונת 2026 התבסס על ביצוע לשנת 2024 שקודם לשנת 2025 ולשנת 2026. במהלך שונת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המות מים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תקציב ההתייעלות לשנת 2026 התבסס על ביצוע לשונת 2024 שקודם לשנת 2025 ולשנת 2026. במהלך שנת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המותא מים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תקציב ההתייעלות לשנת 2026 התבסס על ביצוע לשנת 2024 שקודם לשנת 2025 ולשנת 2026. במהלך ונת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המותא לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "\\תקציב ההתייעלות לשונת. 6 התבסס על ביצוע לעונת 2024 שקודם לשנת 2025 ולשנת 2026. במהלך שנת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המותא מים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תקציב ההתייעלות לשנת 2026 התבסס על ביצוע לשנת 2024 שקודם לשנת 2025 ולשנת 2026. במהלך שנת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המותא מים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תקציב ההתייעלות לשנת 2026 התבסס על ביצוע לשנת 2024 שקודם לשנת 5 ולשנת 2026. במהלך שנת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המותא מים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תקציב ההתייעלות לשנת 2026 התבסס על ביצוע לעונת 2024 שקודם לשנת 5 ולשנת 2026. במהלך שנת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המותא מים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תקציב ההתייעלות לשנת 2026 התבסס על ביצוע לשנת 2024 שקודם לשנת 2025 ולשנת 2026. במהלך שונת 2025 חלו שוינויים כמותיים המחייבים שינויים בהיקףפי התקציב המותא on‏ לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תקציב ההתייעלות לשונת 2026 התבסס על\" ביצוע לשנת 2024 שקודם לשנת 2025 ולשנת 2026. במהלך שנת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המותא. מים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תקציב ההתייעלות לשנת 2026 התבס על ביצוע לשנת 2024 שקודם לשנת 2025 ולשנת 2026. במהלך שנת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המותא מים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תקציב ההתייעלות לשנת 2026 התבסס על ביצוע לשנת 2024 שקודם לששנת 2025 yw'n‏ 6. במהלך שנת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המותא מים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תקציב ההתייעלות לשנת 2026 התבסס על ביצוע לשנת 2024 שקודם לשנת 2025 ולשנת. 6. במהלך שנת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המותא מים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תקציב ההתייעלות לשנת 2026 התבסס על ביצוע לשנת 2024 שקודם לשנת 2025 ולשנת 2026. במהלך שנת 2025 חלו שינויים כמותיים המחייבים שינויים בהיקףפי התקציב המותא מים לשינויים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ]
+      ],
+      "sheet_name": null
+    },
+    {
+      "table_id": "table-5",
+      "section_id": "sec-19",
+      "page_range": [
+        7,
+        7
+      ],
+      "num_rows": 16,
+      "num_cols": 7,
+      "rows": [
+        [
+          {
+            "text": "904",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "881",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "918",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "1,577",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "5",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1,365",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "3.67",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1,332",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "3.7",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "1,280",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "5.7",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1,066",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "5",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "455",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "22 |",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "463",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "2.18",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "545",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "2.75",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "1,093",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "4",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "574",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "3.17",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "496",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "3",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "110",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0.67",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "144",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0.67",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "ATTY",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "709",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "4",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "וו‎",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "2.22",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "419",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "2",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "20,572",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "131.32 ai",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "19,909",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "124.87",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "20,561",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "125.23",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "1,018",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "5.69",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1,551",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "8.99",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1,692",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "₪",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "239",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1.6",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "240",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1.6",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "226",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1.6",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "3,392",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "16.26",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "3,619",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "17.61",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "3,490",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "15.91",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "253",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1.5",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "24",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "1.5",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "262",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "0",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ]
+      ],
+      "sheet_name": null
+    },
+    {
+      "table_id": "table-6",
+      "section_id": "sec-21",
+      "page_range": [
+        8,
+        8
+      ],
+      "num_rows": 5,
+      "num_cols": 1,
+      "rows": [
+        [
+          {
+            "text": "לא מהותי",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "|תוספת משרת מהנדס 100%",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "|תוספת שני פקחים",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תוספת משרות חדעוות.",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ],
+        [
+          {
+            "text": "תקצוב עובדים שהתחילו לקבל את השכר במהלך שנת 2025 ובשונת 2026 תוקצב לשנה שלמה",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": true
+          }
+        ]
+      ],
+      "sheet_name": null
+    },
+    {
+      "table_id": "table-7",
+      "section_id": "sec-22",
+      "page_range": [
+        8,
+        8
+      ],
+      "num_rows": 0,
+      "num_cols": 0,
+      "rows": [],
+      "sheet_name": null
+    },
+    {
+      "table_id": "table-8",
+      "section_id": "sec-24",
+      "page_range": [
+        9,
+        9
+      ],
+      "num_rows": 3,
+      "num_cols": 3,
+      "rows": [
+        [
+          {
+            "text": "31/12/2026",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "30/06/2025",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "| 9",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "31/12/2026",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "30/06/2025",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "15/08/2019",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ],
+        [
+          {
+            "text": "31/12/2026",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "30/06/2025",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          },
+          {
+            "text": "15/08/2019",
+            "row_span": 1,
+            "col_span": 1,
+            "is_header": false
+          }
+        ]
+      ],
+      "sheet_name": null
+    }
+  ]
+}

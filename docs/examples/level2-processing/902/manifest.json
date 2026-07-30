@@ -1,0 +1,18 @@
+{
+  "muni_id": 902,
+  "source_filename": "mate_yehuda_2024.pdf",
+  "source_sha256": "aae82340f3013c4cf6d3472bfd03e27872bd8635a20c608e4db01614d28a769a",
+  "detected_type": "pdf",
+  "pipeline_used": "docling_pdf_ocr",
+  "docling_version": "2.117.0",
+  "processed_at": "2026-07-30T20:53:23.347630+00:00",
+  "status": "success",
+  "page_count": 3,
+  "warnings": [],
+  "error": null,
+  "outputs": {
+    "docling_native": "docling_native.json",
+    "markdown": "document.md",
+    "normalized": "normalized.json"
+  }
+}

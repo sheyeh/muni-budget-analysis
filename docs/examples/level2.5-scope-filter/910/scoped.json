@@ -1,0 +1,17 @@
+{
+  "muni_id": 910,
+  "source_filename": "lachish_2026.pdf",
+  "target_year": 2026,
+  "tables_total": 2,
+  "tables_classified": 1,
+  "table_scopes": [
+    {
+      "table_id": "table-0",
+      "section_title": "2026 DDIN Nw",
+      "year_axis": "none",
+      "keep": false,
+      "reason": "No fiscal year information detected in headers or row labels. The provided 'first_column_values' appear to be data, not row labels.",
+      "confidence": 1.0
+    }
+  ]
+}

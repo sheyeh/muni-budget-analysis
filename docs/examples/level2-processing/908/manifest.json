@@ -1,0 +1,18 @@
+{
+  "muni_id": 908,
+  "source_filename": "jaljulya_2026.pdf",
+  "source_sha256": "0d6f15632df10982e4f7b479d8ee19d8ef4dc91fdf2aa3cef83afa090da9814d",
+  "detected_type": "pdf",
+  "pipeline_used": "docling_pdf_ocr",
+  "docling_version": "2.117.0",
+  "processed_at": "2026-07-30T20:53:52.622709+00:00",
+  "status": "success",
+  "page_count": 9,
+  "warnings": [],
+  "error": null,
+  "outputs": {
+    "docling_native": "docling_native.json",
+    "markdown": "document.md",
+    "normalized": "normalized.json"
+  }
+}

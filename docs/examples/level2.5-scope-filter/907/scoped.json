@@ -1,0 +1,150 @@
+{
+  "muni_id": 907,
+  "source_filename": "gezer_2026.pdf",
+  "target_year": 2026,
+  "tables_total": 18,
+  "tables_classified": 3,
+  "table_scopes": [
+    {
+      "table_id": "table-0",
+      "section_title": "",
+      "year_axis": "column",
+      "columns": [
+        {
+          "index": 0,
+          "header": "2026 תקציב",
+          "detected_year": 2026,
+          "keep": true
+        },
+        {
+          "index": 1,
+          "header": "2025 שני עדכון",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 2,
+          "header": "ראשון עדכון 2025",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 3,
+          "header": "2025 תקציב",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 4,
+          "header": "כרטיס שם",
+          "detected_year": null,
+          "keep": true
+        },
+        {
+          "index": 5,
+          "header": "כרטיס",
+          "detected_year": null,
+          "keep": true
+        }
+      ],
+      "reason": null,
+      "confidence": 1.0
+    },
+    {
+      "table_id": "table-1",
+      "section_title": "",
+      "year_axis": "column",
+      "columns": [
+        {
+          "index": 0,
+          "header": "הערות",
+          "detected_year": null,
+          "keep": true
+        },
+        {
+          "index": 1,
+          "header": "2026 תקציב",
+          "detected_year": 2026,
+          "keep": true
+        },
+        {
+          "index": 2,
+          "header": "2025 שני עדכון",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 3,
+          "header": "ראשון עדכון 2025",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 4,
+          "header": "2025 תקציב",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 5,
+          "header": "כרטיס שם",
+          "detected_year": null,
+          "keep": true
+        },
+        {
+          "index": 6,
+          "header": "כרטיס",
+          "detected_year": null,
+          "keep": true
+        }
+      ],
+      "reason": null,
+      "confidence": 1.0
+    },
+    {
+      "table_id": "table-2",
+      "section_title": "",
+      "year_axis": "column",
+      "columns": [
+        {
+          "index": 0,
+          "header": "2026 תקציב",
+          "detected_year": 2026,
+          "keep": true
+        },
+        {
+          "index": 1,
+          "header": "2025 שני עדכון",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 2,
+          "header": "ראשון עדכון 2025",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 3,
+          "header": "2025 תקציב",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 4,
+          "header": "כרטיס שם",
+          "detected_year": null,
+          "keep": true
+        },
+        {
+          "index": 5,
+          "header": "כרטיס",
+          "detected_year": null,
+          "keep": true
+        }
+      ],
+      "reason": null,
+      "confidence": 1.0
+    }
+  ]
+}

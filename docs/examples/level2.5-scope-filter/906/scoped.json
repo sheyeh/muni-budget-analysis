@@ -1,0 +1,25 @@
+{
+  "muni_id": 906,
+  "source_filename": "elyakin_2026.pdf",
+  "target_year": 2026,
+  "tables_total": 2,
+  "tables_classified": 2,
+  "table_scopes": [
+    {
+      "table_id": "table-0",
+      "section_title": "2026 ppavan mw?",
+      "year_axis": "none",
+      "keep": false,
+      "reason": "No fiscal year information found in headers or row labels. The table appears to present data for a single year (implied by section title) without explicit year breakdown within the table structure.",
+      "confidence": 1.0
+    },
+    {
+      "table_id": "table-1",
+      "section_title": "2026 ppavan mw?",
+      "year_axis": "none",
+      "keep": false,
+      "reason": "No fiscal year detected in column headers or row labels. The first column values appear to be data rather than descriptive row labels, and neither headers nor these values contain year information.",
+      "confidence": 1.0
+    }
+  ]
+}
