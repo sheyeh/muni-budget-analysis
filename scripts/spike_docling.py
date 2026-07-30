@@ -55,6 +55,8 @@ from pathlib import Path
 
 from docling.datamodel.base_models import InputFormat
 from docling.datamodel.pipeline_options import (
+    AcceleratorDevice,
+    AcceleratorOptions,
     PdfPipelineOptions,
     TableFormerMode,
     TesseractCliOcrOptions,
@@ -122,11 +124,14 @@ def has_text_layer(pdf_path: Path) -> bool:
     return False
 
 
-def build_pipeline_options(force_ocr: bool, table_mode: TableFormerMode) -> PdfPipelineOptions:
+def build_pipeline_options(
+    force_ocr: bool, table_mode: TableFormerMode, device: AcceleratorDevice
+) -> PdfPipelineOptions:
     opts = PdfPipelineOptions()
     opts.do_table_structure = True
     opts.table_structure_options.do_cell_matching = True
     opts.table_structure_options.mode = table_mode
+    opts.accelerator_options = AcceleratorOptions(device=device)
 
     if force_ocr:
         opts.do_ocr = True
@@ -145,8 +150,10 @@ def build_pipeline_options(force_ocr: bool, table_mode: TableFormerMode) -> PdfP
     return opts
 
 
-def make_converter(force_ocr: bool, table_mode: TableFormerMode) -> DocumentConverter:
-    pipeline_options = build_pipeline_options(force_ocr, table_mode)
+def make_converter(
+    force_ocr: bool, table_mode: TableFormerMode, device: AcceleratorDevice
+) -> DocumentConverter:
+    pipeline_options = build_pipeline_options(force_ocr, table_mode, device)
     return DocumentConverter(
         format_options={InputFormat.PDF: PdfFormatOption(pipeline_options=pipeline_options)}
     )
@@ -164,7 +171,12 @@ def dump_markdown(doc, out_path: Path) -> None:
     out_path.write_text(doc.export_to_markdown(), encoding="utf-8")
 
 
-def run_one(target: SpikeTarget, table_mode: TableFormerMode, summary_lines: list[str]) -> None:
+def run_one(
+    target: SpikeTarget,
+    table_mode: TableFormerMode,
+    device: AcceleratorDevice,
+    summary_lines: list[str],
+) -> None:
     src = SAMPLES_DIR / target.filename
     out_dir = OUTPUT_ROOT / src.stem
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -183,7 +195,7 @@ def run_one(target: SpikeTarget, table_mode: TableFormerMode, summary_lines: lis
         print(f"{target.filename}: text layer present={has_text} -> resolved_mode={resolved_mode}")
 
     force_ocr = resolved_mode == "ocr"
-    converter = make_converter(force_ocr, table_mode)
+    converter = make_converter(force_ocr, table_mode, device)
 
     t0 = time.time()
     try:
@@ -231,6 +243,13 @@ def parse_args() -> argparse.Namespace:
         "--only",
         help="Comma-separated substrings to filter target filenames (e.g. --only even_yehuda)",
     )
+    p.add_argument(
+        "--device",
+        choices=["auto", "cpu", "cuda"],
+        default="auto",
+        help="Accelerator device for docling's layout/TableFormer models "
+        "(default: auto-detect, picks CUDA if a GPU is visible to torch).",
+    )
     return p.parse_args()
 
 
@@ -248,13 +267,29 @@ def main() -> None:
 
     import docling
 
+    device = {
+        "auto": AcceleratorDevice.AUTO,
+        "cpu": AcceleratorDevice.CPU,
+        "cuda": AcceleratorDevice.CUDA,
+    }[args.device]
+
+    try:
+        import torch
+
+        cuda_available = torch.cuda.is_available()
+        cuda_name = torch.cuda.get_device_name(0) if cuda_available else None
+    except ImportError:
+        cuda_available = "unknown (torch not importable)"
+        cuda_name = None
+
     print(f"docling version: {getattr(docling, '__version__', 'unknown')}")
     print(f"table_mode: {table_mode}")
+    print(f"requested device: {args.device} -> torch.cuda.is_available()={cuda_available} name={cuda_name}")
     OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
 
     summary_lines: list[str] = []
     for target in targets:
-        run_one(target, table_mode, summary_lines)
+        run_one(target, table_mode, device, summary_lines)
 
     print("\n=== SUMMARY ===")
     print("\n".join(summary_lines))
