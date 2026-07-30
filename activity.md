@@ -2,6 +2,25 @@
 
 Completion log for `prd.md` tasks. One entry per task, written when reviewer approves + tests pass.
 
+## PR #5 follow-up: Excel ground-truth fidelity check
+
+Closed the excel_pipeline.py fidelity gap flagged in PR #5's test plan
+(previously smoke-tested only). Added `TestRealSamplesFidelity` to
+`tests/test_excel_pipeline.py`, asserting `extract_excel_tables()` output
+against cell values read directly from `elad_2022.xlsx` and
+`tel_aviv_2026.xlsx` (independently verified via openpyxl): region bounds,
+header/data cell text, and span values. Along the way, confirmed neither
+real sample exercises the multi-region gap-splitting branch (both are one
+continuous region, zero blank-row gaps, zero merged cells) — that path is
+still only covered by the synthetic test. Also surfaced (not fixed, per
+ADR-0002's "don't over-invest in heuristics" guidance) that
+`segment_sheet_tables`'s "first row of region = header" rule mislabels
+tel_aviv_2026.xlsx's row 1 (a single-cell title banner) as the header
+instead of row 2's real column names — asserted explicitly in the new test
+so a future fix has something to flip. 6/6 excel_pipeline tests pass.
+Tier B (GPU VM run on tel_aviv_2026.pdf/shafir_2026.pdf) remains open,
+pending explicit go-ahead for GCP GPU VM cost.
+
 ## Task 1: Scaffolding & dependencies
 
 `src/muni_budget_analysis/processing/` subpackage created; `docling`,

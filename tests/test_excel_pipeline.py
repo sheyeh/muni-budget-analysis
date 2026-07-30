@@ -97,5 +97,77 @@ class TestRealSamplesSmoke(unittest.TestCase):
         self._assert_smoke(ELAD_XLSX)
 
 
+class TestRealSamplesFidelity(unittest.TestCase):
+    """
+    Ground-truth fidelity check against real sample workbooks: unlike
+    TestRealSamplesSmoke (crash-only), these assert extracted cell text and
+    segmentation bounds match values read directly from the source files
+    (verified independently via openpyxl against the raw .xlsx).
+    """
+
+    def test_elad_2022_single_continuous_region(self):
+        result = extract_excel_tables(ELAD_XLSX)
+
+        self.assertEqual(len(result["sheets"]), 1)
+        sheet = result["sheets"][0]
+        self.assertEqual(len(sheet["regions"]), 1)
+
+        region = sheet["regions"][0]
+        self.assertEqual(region["min_row"], 1)
+        self.assertEqual(len(region["rows"]), 625)  # whole sheet, no blank-row gaps
+
+        header_row = region["rows"][0]
+        self.assertEqual(
+            [c["text"] for c in header_row],
+            ["מס כרטיס", "שם כרטיס", "מספר משרות", "תקציב באלפי שח"],
+        )
+        self.assertTrue(all(c["is_header"] for c in header_row))
+
+        first_data_row = region["rows"][1]
+        self.assertEqual(
+            [c["text"] for c in first_data_row],
+            ["1111100100", "ארנונה מגורים", "0", "44500"],
+        )
+        self.assertFalse(any(c["is_header"] for c in first_data_row))
+
+        # no merged cells anywhere in this file -> every cell is a plain 1x1 span
+        self.assertTrue(all(
+            c["row_span"] == 1 and c["col_span"] == 1
+            for row in region["rows"] for c in row
+        ))
+
+    def test_tel_aviv_2026_income_sheet_known_values(self):
+        result = extract_excel_tables(TEL_AVIV_XLSX)
+        sheets = {s["sheet_name"]: s for s in result["sheets"]}
+        region = sheets["הכנסות"]["regions"][0]
+
+        self.assertEqual(region["min_row"], 1)
+        self.assertEqual(len(region["rows"]), 397)
+
+        # Row 1 is a single-cell title banner ("הצעת תקציב רגיל..."), not the
+        # real column-header row -- segment_sheet_tables' gap heuristic can't
+        # tell the two apart (both just look like "a non-empty row" to it), so
+        # is_header ends up on the banner instead of row 2's actual column
+        # names. Known gap per ADR-0002 / PR #5, not fixed here -- asserted
+        # explicitly so a future fix has a test to flip instead of this
+        # passing silently on the wrong row.
+        title_row = region["rows"][0]
+        self.assertEqual(
+            title_row[0]["text"], "הצעת תקציב רגיל \nלשנת הכספים תשפ\"ג  2023\nהכנסות"
+        )
+        self.assertTrue(title_row[0]["is_header"])
+
+        real_header_row = region["rows"][1]
+        self.assertEqual(real_header_row[0]["text"], "פרק")
+        self.assertEqual(real_header_row[3]["text"], "שם סעיף")
+        self.assertFalse(real_header_row[0]["is_header"])
+
+        first_data_row = region["rows"][2]
+        self.assertEqual(first_data_row[0]["text"], "11000")
+        self.assertEqual(first_data_row[2]["text"], "11000/121/8")
+        self.assertEqual(first_data_row[3]["text"], "גביה שוטפת-מגורים")
+        self.assertEqual(first_data_row[4]["text"], "1320000000")
+
+
 if __name__ == "__main__":
     unittest.main()
