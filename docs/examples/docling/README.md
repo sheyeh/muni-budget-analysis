@@ -78,3 +78,56 @@ configured; Tesseract must be the OCR fallback for scanned Hebrew PDFs.
   cell) and at least one pair of rows collapses into a single merged,
   unreadable cell. Forced-OCR output is usable for amounts but not reliable
   for label text without cleanup.
+
+## New sample corpus (added alongside prd.md Tasks 1-7 implementation)
+
+The 4 below were run in `--fast` (TableFormerMode.FAST, not ACCURATE) to
+keep this a cheap validation pass — they're not the corpus's flagship hard
+case (`tel_aviv_2026.pdf` remains that), so exact-cell fidelity wasn't
+re-verified in the same depth as the code-`631` check above. All 4
+converted with **zero errors**.
+
+## gezer_2026
+
+- **Pages:** 52, vectored (text layer present)
+- **Mode:** default text-layer extraction, FAST table mode
+- **Elapsed:** 740.6s on CPU (the slowest of the 4 — page count dominates
+  even in FAST mode; would benefit from the GPU path for repeated runs)
+- **Output sizes:** `native.json` ~13.7 MB (gitignored, see
+  `native.json.link.txt` — exceeds the repo's large-file threshold),
+  `document.md` ~275 KB
+- **Tables:** 52, zero errors
+
+## jaljulya_2026
+
+- **Pages:** 9, scanned/image-only (no text layer — high-res images explain
+  the file's 9.1 MB size for so few pages)
+- **Mode:** forced OCR (Tesseract, `heb+eng`), FAST table mode
+- **Elapsed:** 137.4s on CPU
+- **Output sizes:** `native.json` ~724 KB, `document.md` ~18.7 KB
+- **Tables:** 10, zero errors
+
+## jerusalem_2026
+
+- **Pages:** 17, vectored (text layer present)
+- **Mode:** default text-layer extraction, FAST table mode
+- **Elapsed:** 323.6s on CPU
+- **Output sizes:** `native.json` ~4.7 MB (gitignored, see
+  `native.json.link.txt`), `document.md` ~302 KB
+- **Tables:** 16, zero errors
+
+## lachish_2026
+
+- **Pages:** 3, scanned/image-only (no text layer)
+- **Mode:** forced OCR (Tesseract, `heb+eng`), FAST table mode
+- **Elapsed:** 23.7s on CPU (fastest of the 4 — smallest page count)
+- **Output sizes:** `native.json` ~147 KB, `document.md` ~3.7 KB
+- **Tables:** 2, zero errors
+
+## shafir_2026 (not yet run)
+
+144 pages, scanned/image-only, 66.2 MB — combines forced OCR with the
+largest page count in the corpus after `tel_aviv_2026.pdf`. Deferred:
+needs the GCP T4 GPU path (`scripts/gcp_gpu_spike.sh`), not run on CPU per
+the same reasoning as `tel_aviv_2026.pdf` above. Source file itself is
+gitignored (see `budget_examples/shafir_2026.pdf.link.txt`).

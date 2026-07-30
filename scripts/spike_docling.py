@@ -109,6 +109,26 @@ TARGETS = [
         "auto",
         "new sample, type unknown -- text layer checked at runtime via pypdf",
     ),
+    SpikeTarget(
+        "gezer_2026.pdf",
+        "auto",
+        "52pp, vectored per pypdfium2 pre-check",
+    ),
+    SpikeTarget(
+        "jaljulya_2026.pdf",
+        "auto",
+        "9pp, high-res scanned per pypdfium2 pre-check, no text layer",
+    ),
+    SpikeTarget(
+        "jerusalem_2026.pdf",
+        "auto",
+        "17pp, vectored per pypdfium2 pre-check",
+    ),
+    SpikeTarget(
+        "lachish_2026.pdf",
+        "auto",
+        "3pp, scanned per pypdfium2 pre-check, no text layer",
+    ),
 ]
 
 
