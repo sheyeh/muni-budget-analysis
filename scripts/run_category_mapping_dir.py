@@ -2,20 +2,9 @@
 scripts/run_category_mapping_dir.py
 
 Batch wrapper around scripts/spike_category_mapping.py: given a source
-directory, discovers one docling native.json per municipality and runs the
-mapping spike over all of them in one go, writing out/<name>.json per
-municipality (matching name).
-
-Discovery rules (checked in order, first one that finds anything wins):
-  1. Each immediate subdirectory of --source-dir that contains a
-     native.json (or --pattern) -> one source per subdirectory, named
-     after the subdirectory (matches docs/examples/docling/<name>/native.json).
-  2. Otherwise, each *.json file directly inside --source-dir -> one
-     source per file, named after the file stem.
-
-Usage:
-    python scripts/run_category_mapping_dir.py --api-key YOUR_KEY \\
-        --source-dir docs/examples/docling --out-dir out
+directory, discovers normalized.json files per municipality and runs the
+mapping over all of them in one go, writing output line_items.json per
+municipality into their respective directories.
 """
 
 from __future__ import annotations
@@ -31,19 +20,28 @@ SPIKE_SCRIPT = REPO_ROOT / "scripts" / "spike_category_mapping.py"
 
 def discover_sources(source_dir: Path, pattern: str) -> list[tuple[str, Path]]:
     sources = []
+    # 1. Try immediate subdirectories
     for child in sorted(source_dir.iterdir()):
         if child.is_dir() and (child / pattern).is_file():
             sources.append((child.name, child / pattern))
     if sources:
         return sources
+        
+    # 2. Try nested subdirectories recursively (e.g., data/processed/{muni_id}/{filename_stem}/normalized.json)
+    for p in sorted(source_dir.glob(f"**/{pattern}")):
+        sources.append((p.parent.name, p))
+    if sources:
+        return sources
+        
+    # 3. Fallback to json files directly in source_dir
     return [(p.stem, p) for p in sorted(source_dir.glob("*.json"))]
 
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--source-dir", required=True, help="directory to scan for docling native.json files")
-    p.add_argument("--out-dir", required=True, help="directory to write one <name>.json per source into")
-    p.add_argument("--pattern", default="native.json", help="filename to look for inside each subdirectory (default: native.json)")
+    p.add_argument("--source-dir", required=True, help="directory to scan for normalized.json files")
+    p.add_argument("--out-dir", required=True, help="directory to write combined outputs into")
+    p.add_argument("--pattern", default="normalized.json", help="filename to look for inside each subdirectory (default: normalized.json)")
     p.add_argument("--api-key", help="Gemini API key (or set GEMINI_API_KEY and omit this)")
     p.add_argument("--model", default="gemini-3.5-flash-lite")
     return p.parse_args()

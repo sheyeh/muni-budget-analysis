@@ -167,11 +167,22 @@ class QuotaExhaustedError(Exception):
     """Raised in place of the raw 429 when it's a per-day quota (won't clear on retry)."""
 
 
-def _call_gemini(prompt: str, api_key: str, model: str) -> str:
+def _call_gemini(prompt: str, api_key: str | None, model: str) -> str:
+    import os
     from google import genai
     from google.genai import types
 
-    client = genai.Client(api_key=api_key)
+    project = os.environ.get("GOOGLE_CLOUD_PROJECT")
+    if project:
+        location = os.environ.get("GOOGLE_CLOUD_LOCATION", "us-central1")
+        client = genai.Client(vertexai=True, project=project, location=location)
+    elif api_key:
+        client = genai.Client(api_key=api_key)
+    else:
+        raise RuntimeError(
+            "Neither GOOGLE_CLOUD_PROJECT (Vertex AI) nor GEMINI_API_KEY/GOOGLE_API_KEY "
+            "(Gemini Developer API) is set."
+        )
     delay = RETRY_BASE_DELAY_SECONDS
     for attempt in range(1, MAX_RETRIES + 1):
         try:
@@ -235,7 +246,7 @@ def classify_table(
     codebook_listing: str,
     rows: list[tuple[int, str, str]],
     unit_known: str | None,
-    api_key: str,
+    api_key: str | None,
     model: str = DEFAULT_MODEL,
 ) -> ClassificationResult:
     prompt = _build_prompt(codebook_listing, rows, unit_known)

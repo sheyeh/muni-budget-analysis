@@ -4,8 +4,10 @@ from pipeline.analysis.build_output import (
     is_percentage_value,
     parse_percentage_val,
     build_records,
+    build_line_items_json,
     OutputRecord,
 )
+from pipeline.analysis.resolver import resolve_amount_type, resolve_fiscal_year
 
 
 def test_is_percentage_value():
@@ -103,17 +105,21 @@ def test_build_records_scope_filtering():
     
     # We want to keep only row_index=1 (חינוך) and column "תקציב 2025"
     scope_data = {
-        "0": {
-            "year_axis": "column",
-            "rows": [
-                {"index": 1, "row_label": "חינוך", "keep": True},
-                {"index": 2, "row_label": "ספורט", "keep": False},
-            ],
-            "columns": [
-                {"index": 0, "header": "תקציב 2024", "keep": False},
-                {"index": 1, "header": "תקציב 2025", "keep": True},
-            ]
-        }
+        "target_year": 2025,
+        "table_scopes": [
+            {
+                "table_id": "table-0",
+                "year_axis": "column",
+                "rows": [
+                    {"index": 1, "row_label": "חינוך", "keep": True},
+                    {"index": 2, "row_label": "ספורט", "keep": False},
+                ],
+                "columns": [
+                    {"index": 0, "header": "תקציב 2024", "keep": False, "detected_year": 2024},
+                    {"index": 1, "header": "תקציב 2025", "keep": True, "detected_year": 2025},
+                ]
+            }
+        ]
     }
 
     records = build_records(
@@ -129,6 +135,8 @@ def test_build_records_scope_filtering():
     assert records[0].row_index == 1
     assert records[0].amount_label == "תקציב 2025"
     assert records[0].amount_ils == 600000.0
+    assert records[0].fiscal_year_value == 2025
+    assert records[0].amount_type == "budgeted"
 
 
 def test_validation_warnings():
@@ -173,3 +181,106 @@ def test_validation_warnings():
     assert len(records_hallucinated) == 1
     assert "Hallucinated code" in records_hallucinated[0].validation_warning
     assert records_hallucinated[0].unusable_input is True
+
+
+def test_resolver_heuristics():
+    # Test amount_type resolution
+    assert resolve_amount_type("הצעת תקציב 2025", "100") == "budgeted"
+    assert resolve_amount_type("ביצוע למעשה 2024", "100") == "actual_current_prices"
+    assert resolve_amount_type("ביצוע מתואם", "100") == "actual_adjusted_prices"
+    assert resolve_amount_type("אחוז גבייה", "85%") == "execution_pct"
+    assert resolve_amount_type("שינוי תקציבי", "50") == "change"
+
+    # Test fiscal year resolution
+    assert resolve_fiscal_year("תקציב שנת 2026", 2025) == 2026
+    assert resolve_fiscal_year("ביצוע למעשה", 2025) == 2025
+
+
+def test_build_line_items_json():
+    codebook = {
+        "111": {"label": "ארנונה", "side": "receipts"},
+        "6111": {"label": "חינוך", "side": "payments"},
+    }
+    
+    records = [
+        OutputRecord(
+            source="test",
+            table_index=0,
+            row_index=1,
+            source_label="הכנסות מארנונה",
+            matched_code="111",
+            matched_label="ארנונה",
+            row_type="line_item",
+            confidence=0.9,
+            note="OK",
+            amount_label="תקציב 2025",
+            raw_value="1,000",
+            amount_ils=1000000.0,
+            unit_status="explicit",
+            unit_multiplier=1000,
+            amount_type="budgeted",
+            fiscal_year_value=2025,
+        ),
+        OutputRecord(
+            source="test",
+            table_index=0,
+            row_index=2,
+            source_label="הוצאות חינוך",
+            matched_code="6111",
+            matched_label="חינוך",
+            row_type="line_item",
+            confidence=0.9,
+            note="OK",
+            amount_label="ביצוע 2024",
+            raw_value="500",
+            amount_ils=500000.0,
+            unit_status="explicit",
+            unit_multiplier=1000,
+            amount_type="actual_current_prices",
+            fiscal_year_value=2024,
+        ),
+        OutputRecord(
+            source="test",
+            table_index=0,
+            row_index=3,
+            source_label="כותרת מדור",
+            matched_code=None,
+            matched_label=None,
+            row_type="divider",
+            confidence=0.0,
+            note="Divider ignored",
+            amount_label="",
+            raw_value="",
+            amount_ils=None,
+            unit_status="explicit",
+            unit_multiplier=1000,
+        )
+    ]
+
+    output = build_line_items_json(
+        muni_id=901,
+        target_year=2025,
+        unit="thousands_nis",
+        records=records,
+        warnings=["Some warnings"],
+        codebook_by_code=codebook,
+    )
+
+    assert output["muni_id"] == 901
+    assert output["fiscal_year"] == 2025
+    assert output["unit"] == "thousands_nis"
+    assert len(output["line_items"]) == 2  # Divider is ignored!
+
+    item1 = output["line_items"][0]
+    assert item1["classification_code"] == "111"
+    assert item1["category"] == "income"  # receipts -> income
+    assert item1["amount"] == 1000000.0  # pre-normalized!
+    assert item1["amount_type"] == "budgeted"
+    assert item1["fiscal_year_value"] == 2025
+
+    item2 = output["line_items"][1]
+    assert item2["classification_code"] == "6111"
+    assert item2["category"] == "expense"  # payments -> expense
+    assert item2["amount"] == 500000.0
+    assert item2["amount_type"] == "actual_current_prices"
+    assert item2["fiscal_year_value"] == 2024
