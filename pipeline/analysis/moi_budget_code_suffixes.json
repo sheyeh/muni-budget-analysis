@@ -1,0 +1,1306 @@
+[
+  {
+    "suffix_code": "001",
+    "label": "העברה )מספר שלילי(",
+    "side": "payments",
+    "level": 3,
+    "parent": "00",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "011",
+    "label": "השתתפות בפרקים אחרים",
+    "side": "payments",
+    "level": 3,
+    "parent": "01",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "1",
+    "label": "משכורות ושכר עבודה לעובדים לפי תקן",
+    "side": "payments",
+    "level": 1,
+    "parent": null,
+    "source_page": 14
+  },
+  {
+    "suffix_code": "11",
+    "label": "השכר הקובע",
+    "side": "payments",
+    "level": 2,
+    "parent": "1",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "12",
+    "label": "תוספות שאינן נכללות בשכר הקובע",
+    "side": "payments",
+    "level": 2,
+    "parent": "1",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "13",
+    "label": "שעות נוספות",
+    "side": "payments",
+    "level": 2,
+    "parent": "1",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "14",
+    "label": "החזר הוצאות",
+    "side": "payments",
+    "level": 2,
+    "parent": "1",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "18",
+    "label": "נלוות לשכר",
+    "side": "payments",
+    "level": 2,
+    "parent": "1",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "181",
+    "label": "הפרשות סוציאליות",
+    "side": "payments",
+    "level": 3,
+    "parent": "18",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "182",
+    "label": "מיסים ועלויות",
+    "side": "payments",
+    "level": 3,
+    "parent": "18",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "2",
+    "label": "משכורות ושכר עבודה לעובדים בלי תקן",
+    "side": "payments",
+    "level": 1,
+    "parent": null,
+    "source_page": 14
+  },
+  {
+    "suffix_code": "21",
+    "label": "השכר הקובע",
+    "side": "payments",
+    "level": 2,
+    "parent": "2",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "22",
+    "label": "תוספות שאינן נכללות בשכר הקובע",
+    "side": "payments",
+    "level": 2,
+    "parent": "2",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "23",
+    "label": "שעות נוספות",
+    "side": "payments",
+    "level": 2,
+    "parent": "2",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "24",
+    "label": "החזר הוצאות",
+    "side": "payments",
+    "level": 2,
+    "parent": "2",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "28",
+    "label": "נלוות לשכר",
+    "side": "payments",
+    "level": 2,
+    "parent": "2",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "281",
+    "label": "הפרשות סוציאליות",
+    "side": "payments",
+    "level": 3,
+    "parent": "28",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "282",
+    "label": "מיסים ועלויות",
+    "side": "payments",
+    "level": 3,
+    "parent": "28",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "3",
+    "label": "פנסיה ופיצויים",
+    "side": "payments",
+    "level": 1,
+    "parent": null,
+    "source_page": 14
+  },
+  {
+    "suffix_code": "31",
+    "label": "פנסיה ופיצויים",
+    "side": "payments",
+    "level": 2,
+    "parent": "3",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "32",
+    "label": "פיצויים",
+    "side": "payments",
+    "level": 2,
+    "parent": "3",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "391",
+    "label": "השתתפות בתקציב עזר גמלאות ופיצויים",
+    "side": "payments",
+    "level": 3,
+    "parent": "39",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "4",
+    "label": "אחזקת בנינים ואספקה וציוד",
+    "side": "payments",
+    "level": 1,
+    "parent": null,
+    "source_page": 14
+  },
+  {
+    "suffix_code": "41",
+    "label": "שכר דירה ודמי חכירה",
+    "side": "payments",
+    "level": 2,
+    "parent": "4",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "42",
+    "label": "תחזוקת מבנים",
+    "side": "payments",
+    "level": 2,
+    "parent": "4",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "421",
+    "label": "עבודה קבלנית",
+    "side": "payments",
+    "level": 3,
+    "parent": "42",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "422",
+    "label": "חומרים",
+    "side": "payments",
+    "level": 3,
+    "parent": "42",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "43",
+    "label": "חשמל, מים, וחמרי נקיון",
+    "side": "payments",
+    "level": 2,
+    "parent": "4",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "431",
+    "label": "חשמל",
+    "side": "payments",
+    "level": 3,
+    "parent": "43",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "432",
+    "label": "מים",
+    "side": "payments",
+    "level": 3,
+    "parent": "43",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "433",
+    "label": "חמרי נקיון",
+    "side": "payments",
+    "level": 3,
+    "parent": "43",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "434",
+    "label": "שרותי נקיון",
+    "side": "payments",
+    "level": 3,
+    "parent": "43",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "44",
+    "label": "ביטוח",
+    "side": "payments",
+    "level": 2,
+    "parent": "4",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "441",
+    "label": "ביטוח",
+    "side": "payments",
+    "level": 3,
+    "parent": "44",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "442",
+    "label": "שיפוי עבור נזקים",
+    "side": "payments",
+    "level": 3,
+    "parent": "44",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "443",
+    "label": "השתתפות עצמית",
+    "side": "payments",
+    "level": 3,
+    "parent": "44",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "45",
+    "label": "רהוט ותחזקתו",
+    "side": "payments",
+    "level": 2,
+    "parent": "4",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "47",
+    "label": "ציוד משרדי מתכלה",
+    "side": "payments",
+    "level": 2,
+    "parent": "4",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "492",
+    "label": "השתתפות בתקציב עזר (משרד הרשות ושרותים)",
+    "side": "payments",
+    "level": 3,
+    "parent": "49",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "5",
+    "label": "הוצאות מינהליות",
+    "side": "payments",
+    "level": 1,
+    "parent": null,
+    "source_page": 14
+  },
+  {
+    "suffix_code": "51",
+    "label": "אש\"ל וכיבודים",
+    "side": "payments",
+    "level": 2,
+    "parent": "5",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "511",
+    "label": "אירוח וכיבוד",
+    "side": "payments",
+    "level": 3,
+    "parent": "51",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "512",
+    "label": "אש\"ל ונסיעות",
+    "side": "payments",
+    "level": 3,
+    "parent": "51",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "513",
+    "label": "נסיעות לחו\"ל",
+    "side": "payments",
+    "level": 3,
+    "parent": "51",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "514",
+    "label": "רכישת מתנות",
+    "side": "payments",
+    "level": 3,
+    "parent": "51",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "52",
+    "label": "השתלמויות וספרות מקצועית",
+    "side": "payments",
+    "level": 2,
+    "parent": "5",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "521",
+    "label": "השתלמויות",
+    "side": "payments",
+    "level": 3,
+    "parent": "52",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "522",
+    "label": "ספרות מקצועית ועתונות",
+    "side": "payments",
+    "level": 3,
+    "parent": "52",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "523",
+    "label": "דמי חבר בארגונים",
+    "side": "payments",
+    "level": 3,
+    "parent": "52",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "53",
+    "label": "הוצאות רכב מינהלי",
+    "side": "payments",
+    "level": 2,
+    "parent": "5",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "531",
+    "label": "דלק ושמנים",
+    "side": "payments",
+    "level": 3,
+    "parent": "53",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "532",
+    "label": "תיקונים",
+    "side": "payments",
+    "level": 3,
+    "parent": "53",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "533",
+    "label": "רישוי וביטוח",
+    "side": "payments",
+    "level": 3,
+    "parent": "53",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "535",
+    "label": "מכירת רכב",
+    "side": "payments",
+    "level": 3,
+    "parent": "53",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "54",
+    "label": "הוצאות תקשורת",
+    "side": "payments",
+    "level": 2,
+    "parent": "5",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "55",
+    "label": "הוצאות פרסום",
+    "side": "payments",
+    "level": 2,
+    "parent": "5",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "56",
+    "label": "הוצאות משרדיות",
+    "side": "payments",
+    "level": 2,
+    "parent": "5",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "57",
+    "label": "מיכון ועיבוד נתונים",
+    "side": "payments",
+    "level": 2,
+    "parent": "5",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "58",
+    "label": "הוצאות אירגוניות שונות",
+    "side": "payments",
+    "level": 2,
+    "parent": "5",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "581",
+    "label": "הוצאות משפטיות )אגרות בולים...(",
+    "side": "payments",
+    "level": 3,
+    "parent": "58",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "59",
+    "label": "השתתפות בתקציבי עזר",
+    "side": "payments",
+    "level": 2,
+    "parent": "5",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "593",
+    "label": "מיכון ת. עזר",
+    "side": "payments",
+    "level": 3,
+    "parent": "59",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "596",
+    "label": "מוסך ורכב ת. עזר",
+    "side": "payments",
+    "level": 3,
+    "parent": "59",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "597",
+    "label": "שרותי הסעה והובלה ת. עזר",
+    "side": "payments",
+    "level": 3,
+    "parent": "59",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "6",
+    "label": "מימון ופרעון מלוות",
+    "side": "payments",
+    "level": 1,
+    "parent": null,
+    "source_page": 14
+  },
+  {
+    "suffix_code": "61",
+    "label": "עמלות",
+    "side": "payments",
+    "level": 2,
+    "parent": "6",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "62",
+    "label": "ריבית משיכות יתר",
+    "side": "payments",
+    "level": 2,
+    "parent": "6",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "63",
+    "label": "ריבית מיחזור",
+    "side": "payments",
+    "level": 2,
+    "parent": "6",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "64",
+    "label": "ריבית ביטוח לאומי ומס הכנסה",
+    "side": "payments",
+    "level": 2,
+    "parent": "6",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "65",
+    "label": "ריבית פיגורים לספקים ונותני שרות",
+    "side": "payments",
+    "level": 2,
+    "parent": "6",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "66",
+    "label": "ריבית על קרנות הרשות",
+    "side": "payments",
+    "level": 2,
+    "parent": "6",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "68",
+    "label": "ריבית על הוצאות אחרות",
+    "side": "payments",
+    "level": 2,
+    "parent": "6",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "69",
+    "label": "שונות",
+    "side": "payments",
+    "level": 2,
+    "parent": "6",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "691",
+    "label": "תשלום ע\"ח קרן",
+    "side": "payments",
+    "level": 3,
+    "parent": "69",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "692",
+    "label": "תשלום ע\"ח ריבית",
+    "side": "payments",
+    "level": 3,
+    "parent": "69",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "693",
+    "label": "תשלום ע\"ח הצמדה וערך",
+    "side": "payments",
+    "level": 3,
+    "parent": "69",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "699",
+    "label": "השתתפות בתקציב עזר פרעון מלוות )990(",
+    "side": "payments",
+    "level": 3,
+    "parent": "69",
+    "source_page": 14
+  },
+  {
+    "suffix_code": "7",
+    "label": "הוצאות לפעולות",
+    "side": "payments",
+    "level": 1,
+    "parent": null,
+    "source_page": 15
+  },
+  {
+    "suffix_code": "71",
+    "label": "הובלות והסעות קבלניות",
+    "side": "payments",
+    "level": 2,
+    "parent": "7",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "72",
+    "label": "חמרים",
+    "side": "payments",
+    "level": 2,
+    "parent": "7",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "73",
+    "label": "תחזוקת רכב תפעולי",
+    "side": "payments",
+    "level": 2,
+    "parent": "7",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "731",
+    "label": "דלק ושמנים",
+    "side": "payments",
+    "level": 3,
+    "parent": "73",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "732",
+    "label": "תיקונים",
+    "side": "payments",
+    "level": 3,
+    "parent": "73",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "733",
+    "label": "רישוי ובטוח",
+    "side": "payments",
+    "level": 3,
+    "parent": "73",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "735",
+    "label": "שכירת רכב",
+    "side": "payments",
+    "level": 3,
+    "parent": "73",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "74",
+    "label": "כלים, מכשירים וציוד",
+    "side": "payments",
+    "level": 2,
+    "parent": "7",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "741",
+    "label": "השכרת כלים, מכשירים וציוד",
+    "side": "payments",
+    "level": 3,
+    "parent": "74",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "742",
+    "label": "אחזקת כלים, מכשירים וציוד",
+    "side": "payments",
+    "level": 3,
+    "parent": "74",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "743",
+    "label": "רכישת כלים, מכשירים וציוד",
+    "side": "payments",
+    "level": 3,
+    "parent": "74",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "75",
+    "label": "עבודות קבלניות",
+    "side": "payments",
+    "level": 2,
+    "parent": "7",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "76",
+    "label": "קניית שרותים מרשויות ומוסדות",
+    "side": "payments",
+    "level": 2,
+    "parent": "7",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "77",
+    "label": "חשמל ומים לפעולות",
+    "side": "payments",
+    "level": 2,
+    "parent": "7",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "771",
+    "label": "חשמל לפעולות",
+    "side": "payments",
+    "level": 3,
+    "parent": "77",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "772",
+    "label": "מים לפעולות",
+    "side": "payments",
+    "level": 3,
+    "parent": "77",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "78",
+    "label": "הוצאות שונות",
+    "side": "payments",
+    "level": 2,
+    "parent": "7",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "79",
+    "label": "השתת' בתקציבי עזר",
+    "side": "payments",
+    "level": 2,
+    "parent": "7",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "794",
+    "label": "אפסנות תקציב עזר",
+    "side": "payments",
+    "level": 3,
+    "parent": "79",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "795",
+    "label": "בתי מלאכה תקציב עזר",
+    "side": "payments",
+    "level": 3,
+    "parent": "79",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "796",
+    "label": "מוסך תקציב עזר",
+    "side": "payments",
+    "level": 3,
+    "parent": "79",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "797",
+    "label": "הסעות תקציב עזר",
+    "side": "payments",
+    "level": 3,
+    "parent": "79",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "798",
+    "label": "תחזוקה תקציב עזר",
+    "side": "payments",
+    "level": 3,
+    "parent": "79",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "8",
+    "label": "השתתפויות תמיכות ותרומות",
+    "side": "payments",
+    "level": 1,
+    "parent": null,
+    "source_page": 15
+  },
+  {
+    "suffix_code": "81",
+    "label": "השתתפויות ותרומות למוסדות עפ\"י חוק והסכמים",
+    "side": "payments",
+    "level": 2,
+    "parent": "8",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "82",
+    "label": "הקצבות בהמלצת ועדת ההקצבות",
+    "side": "payments",
+    "level": 2,
+    "parent": "8",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "83",
+    "label": "השתתפויות באגודי ערים",
+    "side": "payments",
+    "level": 2,
+    "parent": "8",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "84",
+    "label": "תמיכות רווחה",
+    "side": "payments",
+    "level": 2,
+    "parent": "8",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "85",
+    "label": "מילגות לתלמידים וסטודנטים",
+    "side": "payments",
+    "level": 2,
+    "parent": "8",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "86",
+    "label": "הנחות",
+    "side": "payments",
+    "level": 2,
+    "parent": "8",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "87",
+    "label": "תמיכות ביחידות סמך ומוסדות הרשות",
+    "side": "payments",
+    "level": 2,
+    "parent": "8",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "9",
+    "label": "הוצאות חד פעמיות",
+    "side": "payments",
+    "level": 1,
+    "parent": null,
+    "source_page": 15
+  },
+  {
+    "suffix_code": "91",
+    "label": "השתתפות בתקציב בלתי רגיל",
+    "side": "payments",
+    "level": 2,
+    "parent": "9",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "92",
+    "label": "הוצאות לעבודות פתוח",
+    "side": "payments",
+    "level": 2,
+    "parent": "9",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "93",
+    "label": "רכישת ציוד יסודי",
+    "side": "payments",
+    "level": 2,
+    "parent": "9",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "94",
+    "label": "רכישת נדל\"ן",
+    "side": "payments",
+    "level": 2,
+    "parent": "9",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "95",
+    "label": "הוצאות תכנון",
+    "side": "payments",
+    "level": 2,
+    "parent": "9",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "96",
+    "label": "רזרבה",
+    "side": "payments",
+    "level": 2,
+    "parent": "9",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "97",
+    "label": "מקדמה על הוצאות עודפות",
+    "side": "payments",
+    "level": 2,
+    "parent": "9",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "98",
+    "label": "הוצאות אחרות",
+    "side": "payments",
+    "level": 2,
+    "parent": "9",
+    "source_page": 15
+  },
+  {
+    "suffix_code": "1",
+    "label": "ארנונות",
+    "side": "receipts",
+    "level": 1,
+    "parent": null,
+    "source_page": 13
+  },
+  {
+    "suffix_code": "21",
+    "label": "אגרות מים וביוב",
+    "side": "receipts",
+    "level": 2,
+    "parent": "2",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "22",
+    "label": "אגרות בגין שרותים וחומרים",
+    "side": "receipts",
+    "level": 2,
+    "parent": "2",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "29",
+    "label": "אגרות אחרות",
+    "side": "receipts",
+    "level": 2,
+    "parent": "2",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "4",
+    "label": "שרותים ושכר לימוד",
+    "side": "receipts",
+    "level": 1,
+    "parent": null,
+    "source_page": 13
+  },
+  {
+    "suffix_code": "41",
+    "label": "שכל\"מ מתושבים",
+    "side": "receipts",
+    "level": 2,
+    "parent": "4",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "42",
+    "label": "השתתפות תושבים בשירותים משלימים",
+    "side": "receipts",
+    "level": 2,
+    "parent": "4",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "43",
+    "label": "השתתפויות מוסדות ורשויות בשכל\"מ",
+    "side": "receipts",
+    "level": 2,
+    "parent": "4",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "44",
+    "label": "השתתפות מוסדות ורשויות בשירותים משלימים",
+    "side": "receipts",
+    "level": 2,
+    "parent": "4",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "49",
+    "label": "שונות",
+    "side": "receipts",
+    "level": 2,
+    "parent": "4",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "5",
+    "label": "החזרות",
+    "side": "receipts",
+    "level": 1,
+    "parent": null,
+    "source_page": 13
+  },
+  {
+    "suffix_code": "51",
+    "label": "החזרות מתקציב רגיל קודם",
+    "side": "receipts",
+    "level": 2,
+    "parent": "5",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "54",
+    "label": "החזר מחברת ביטוח",
+    "side": "receipts",
+    "level": 2,
+    "parent": "5",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "59",
+    "label": "החזרות מקרנות",
+    "side": "receipts",
+    "level": 2,
+    "parent": "5",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "6",
+    "label": "רכוש ומפעלים",
+    "side": "receipts",
+    "level": 1,
+    "parent": null,
+    "source_page": 13
+  },
+  {
+    "suffix_code": "61",
+    "label": "מכירת חומרים",
+    "side": "receipts",
+    "level": 2,
+    "parent": "6",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "62",
+    "label": "מכירת ציוד יסודי",
+    "side": "receipts",
+    "level": 2,
+    "parent": "6",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "63",
+    "label": "מכירת נכסי דלא ניידי",
+    "side": "receipts",
+    "level": 2,
+    "parent": "6",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "64",
+    "label": "שכ\"ד ודמי מפתח",
+    "side": "receipts",
+    "level": 2,
+    "parent": "6",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "65",
+    "label": "דמי שימוש",
+    "side": "receipts",
+    "level": 2,
+    "parent": "6",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "66",
+    "label": "הכנסות מימון",
+    "side": "receipts",
+    "level": 2,
+    "parent": "6",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "661",
+    "label": "ריבית הצמדה והפרשי שער",
+    "side": "receipts",
+    "level": 3,
+    "parent": "66",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "662",
+    "label": "דיבידנד",
+    "side": "receipts",
+    "level": 3,
+    "parent": "66",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "663",
+    "label": "מדמי ניהול ותאגידים",
+    "side": "receipts",
+    "level": 3,
+    "parent": "66",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "67",
+    "label": "הכנסות מזכיונות",
+    "side": "receipts",
+    "level": 2,
+    "parent": "6",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "69",
+    "label": "שונות",
+    "side": "receipts",
+    "level": 2,
+    "parent": "6",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "7",
+    "label": "השתתפות מוסדות ותרומות",
+    "side": "receipts",
+    "level": 1,
+    "parent": null,
+    "source_page": 13
+  },
+  {
+    "suffix_code": "71",
+    "label": "השתתפות ועדים מקומיים",
+    "side": "receipts",
+    "level": 2,
+    "parent": "7",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "72",
+    "label": "השתתפות חברות תחבורה",
+    "side": "receipts",
+    "level": 2,
+    "parent": "7",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "73",
+    "label": "השתתפות מוסד לביטוח לאומי",
+    "side": "receipts",
+    "level": 2,
+    "parent": "7",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "74",
+    "label": "השתתפות מפעל הפיס",
+    "side": "receipts",
+    "level": 2,
+    "parent": "7",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "75",
+    "label": "השתתפות הסוכנות היהודית",
+    "side": "receipts",
+    "level": 2,
+    "parent": "7",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "77",
+    "label": "השתתפות קהילות מחו\"ל",
+    "side": "receipts",
+    "level": 2,
+    "parent": "7",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "78",
+    "label": "אשראי / הלוואה ממוסד בנקאי",
+    "side": "receipts",
+    "level": 2,
+    "parent": "7",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "8",
+    "label": "השתתפות בעלים ע\"ח עבודות פתוח",
+    "side": "receipts",
+    "level": 1,
+    "parent": null,
+    "source_page": 13
+  },
+  {
+    "suffix_code": "9",
+    "label": "השתתפות משרדי ממשלה",
+    "side": "receipts",
+    "level": 1,
+    "parent": null,
+    "source_page": 13
+  },
+  {
+    "suffix_code": "91",
+    "label": "השתתפות משרד הפנים",
+    "side": "receipts",
+    "level": 2,
+    "parent": "9",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "92",
+    "label": "השתתפות משרד החנוך והתרבות",
+    "side": "receipts",
+    "level": 2,
+    "parent": "9",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "93",
+    "label": "השתתפות משרד העבודה והרווחה",
+    "side": "receipts",
+    "level": 2,
+    "parent": "9",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "94",
+    "label": "השתתפות משרד הבריאות",
+    "side": "receipts",
+    "level": 2,
+    "parent": "9",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "95",
+    "label": "השתתפות משרד הקליטה",
+    "side": "receipts",
+    "level": 2,
+    "parent": "9",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "96",
+    "label": "השתתפות משרד החקלאות",
+    "side": "receipts",
+    "level": 2,
+    "parent": "9",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "97",
+    "label": "השתתפות משרד הבטחון",
+    "side": "receipts",
+    "level": 2,
+    "parent": "9",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "98",
+    "label": "השתתפות משרד השיכון",
+    "side": "receipts",
+    "level": 2,
+    "parent": "9",
+    "source_page": 13
+  },
+  {
+    "suffix_code": "99",
+    "label": "השתתפות משרדי ממשלה אחרים",
+    "side": "receipts",
+    "level": 2,
+    "parent": "9",
+    "source_page": 13
+  }
+]
