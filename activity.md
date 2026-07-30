@@ -29,6 +29,22 @@ access) — fixed — plus 2 documentation-only findings, addressed via
 docstring notes rather than added complexity (per ADR-0002's
 don't-over-invest guidance).
 
+## Task 7: run.py + Tier A e2e verification
+
+`load_level1_manifest`/`process_one`/`run_batch`/`main`. `pdf_pipeline.py`
+gained `convert_pdf_with_document()` for a single-conversion dump of
+`docling_native.json`/`document.md` alongside `normalized.json`.
+Reviewer found a real TOCTOU bug (skip-cache path could return `None`
+and crash `run_batch`) and an unguarded exception-handler write, both
+fixed; also correctly flagged the e2e test's Tier A/B scope split as
+undocumented in the test file itself (it traces back to the approved
+plan, `.claude/plans/piped-noodling-ocean.md` — now cross-referenced in
+the test docstring). Full suite: 40/40 tests pass. **This completes all
+7 prd.md tasks** — the Level-2 file processing pipeline is implemented
+end-to-end for the Tier A (CPU, fast) sample set. Tier B (GPU,
+tel_aviv_2026.pdf/shafir_2026.pdf, code-631 check) remains an outstanding
+follow-up requiring an explicit go-ahead for GCP VM cost.
+
 ## Task 6 (2/2): normalize.py
 
 `pdf_result_to_normalized`/`excel_to_normalized`/`write_normalized`. Both
