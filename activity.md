@@ -20,3 +20,18 @@ reference instead of copied) — fixed, retested, clean.
 
 `has_text_layer` + `route()`. 7/7 tests pass against real PDF/xlsx
 samples. Reviewer approved with no issues.
+
+## Task 6 (1/2): excel_pipeline.py
+
+`read_workbook`/`segment_sheet_tables`/`extract_excel_tables`. 4/4 tests
+pass. Reviewer found a real bug (`read_only=True` breaks merged_cells
+access) — fixed — plus 2 documentation-only findings, addressed via
+docstring notes rather than added complexity (per ADR-0002's
+don't-over-invest guidance).
+
+## Task 3: ingest.py
+
+`compute_sha256`/`detect_file_type`/`resolve_source`/`is_already_processed`/
+`ingest`. 12/12 tests pass. Reviewer found a real bug (url download
+buffered the whole response into memory instead of streaming — would OOM
+on large files like shafir_2026.pdf) — fixed.
