@@ -21,9 +21,9 @@ class TestMunicipalityWebsitesScraper(unittest.TestCase):
         self.assertEqual(clean_muni_name("מודיעין -מכבים -רעות"), "מודיעין-מכבים-רעות")
 
     def test_normalize_url(self):
-        self.assertEqual(normalize_url("http://www.tel-aviv.gov.il/"), "http://www.tel-aviv.gov.il")
-        self.assertEqual(normalize_url("[http://ashdod.muni.il]"), "http://ashdod.muni.il")
-        self.assertEqual(normalize_url("www.haifa.muni.il"), "http://www.haifa.muni.il")
+        self.assertEqual(normalize_url("https://www.tel-aviv.gov.il/"), "https://www.tel-aviv.gov.il")
+        self.assertEqual(normalize_url("[https://ashdod.muni.il]"), "https://ashdod.muni.il")
+        self.assertEqual(normalize_url("www.haifa.muni.il"), "https://www.haifa.muni.il")
         self.assertIsNone(normalize_url("not_a_url"))
 
     def test_resolve_known_registry(self):
@@ -42,9 +42,9 @@ class TestMunicipalityWebsitesScraper(unittest.TestCase):
             "municipality_name": "רשות טסט ייחודית",
             "municipality_type": "עירייה"
         }
-        wd_map = {"רשות טסט ייחודית": "http://www.test-muni.muni.il"}
+        wd_map = {"רשות טסט ייחודית": "https://www.test-muni.muni.il"}
         res = resolve_municipality_website(muni, wd_map=wd_map)
-        self.assertEqual(res["website_url"], "http://www.test-muni.muni.il")
+        self.assertEqual(res["website_url"], "https://www.test-muni.muni.il")
         self.assertEqual(res["resolution_source"], "wikidata_sparql")
 
 
