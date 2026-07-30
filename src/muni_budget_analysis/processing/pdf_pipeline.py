@@ -22,7 +22,7 @@ import json
 import logging
 import os
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 from docling.datamodel.base_models import InputFormat
 from docling.datamodel.pipeline_options import (
@@ -202,19 +202,26 @@ def _assemble_group_rows(group: List[TableItem]) -> List[List[Dict[str, Any]]]:
     return rows
 
 
-def convert_pdf(
+def _run_conversion(
     path: Path,
     pipeline_used: str,
-    table_mode: TableFormerMode = TableFormerMode.ACCURATE,
-    ocr_backend: str = "tesseract",
-) -> Dict[str, Any]:
+    table_mode: TableFormerMode,
+    ocr_backend: str,
+) -> DoclingDocument:
+    """Run docling's DocumentConverter and return the raw DoclingDocument."""
+    force_ocr = pipeline_used == "docling_pdf_ocr"
+    converter = make_converter(force_ocr, table_mode, ocr_backend)
+
+    logger.info("Converting %s (pipeline_used=%s)", path, pipeline_used)
+    result = converter.convert(str(path))
+    return result.document
+
+
+def _document_to_result(doc: DoclingDocument) -> Dict[str, Any]:
     """
-    Convert one PDF via docling and return the engine-agnostic intermediate
+    Turn a converted DoclingDocument into the engine-agnostic intermediate
     shape (sections + merged tables + page_count) that normalize.py (Task 6)
     consumes without ever importing docling or touching a DoclingDocument.
-
-    pipeline_used: "docling_pdf" (text-layer) or "docling_pdf_ocr" (forced
-    OCR) -- as produced by router.route().
 
     Caveat for normalize.py (Task 6): rows are NOT guaranteed rectangular.
     _extract_table_rows() skips grid positions covered by a spanning cell
@@ -227,13 +234,6 @@ def convert_pdf(
     likely to have them. A consumer doing positional column indexing on
     `rows` should not assume every row has `num_cols` entries.
     """
-    force_ocr = pipeline_used == "docling_pdf_ocr"
-    converter = make_converter(force_ocr, table_mode, ocr_backend)
-
-    logger.info("Converting %s (pipeline_used=%s)", path, pipeline_used)
-    result = converter.convert(str(path))
-    doc = result.document
-
     # Pass 1: walk reading order once to build sections and record, for
     # each pre-merge table (in traversal order), the section_id of the
     # nearest preceding heading (None if no heading precedes it yet).
@@ -304,6 +304,47 @@ def convert_pdf(
         "tables": tables_out,
         "page_count": len(doc.pages),
     }
+
+
+def convert_pdf(
+    path: Path,
+    pipeline_used: str,
+    table_mode: TableFormerMode = TableFormerMode.ACCURATE,
+    ocr_backend: str = "tesseract",
+) -> Dict[str, Any]:
+    """
+    Convert one PDF via docling and return the engine-agnostic intermediate
+    shape (sections + merged tables + page_count) that normalize.py (Task 6)
+    consumes without ever importing docling or touching a DoclingDocument.
+
+    pipeline_used: "docling_pdf" (text-layer) or "docling_pdf_ocr" (forced
+    OCR) -- as produced by router.route().
+
+    Thin composition of _run_conversion() + _document_to_result(). Callers
+    that also need the raw DoclingDocument (e.g. run.py dumping
+    docling_native.json/document.md) should use convert_pdf_with_document()
+    instead, to avoid converting the same PDF twice.
+    """
+    doc = _run_conversion(path, pipeline_used, table_mode, ocr_backend)
+    return _document_to_result(doc)
+
+
+def convert_pdf_with_document(
+    path: Path,
+    pipeline_used: str,
+    table_mode: TableFormerMode = TableFormerMode.ACCURATE,
+    ocr_backend: str = "tesseract",
+) -> Tuple[Dict[str, Any], DoclingDocument]:
+    """
+    Same conversion as convert_pdf(), but also returns the raw
+    DoclingDocument alongside the normalized-ready result dict, so a caller
+    that needs both (e.g. run.py, which also wants to dump
+    docling_native.json/document.md via dump_native_json()/dump_markdown())
+    can do so from a single docling conversion instead of running the PDF
+    through the converter twice.
+    """
+    doc = _run_conversion(path, pipeline_used, table_mode, ocr_backend)
+    return _document_to_result(doc), doc
 
 
 def dump_native_json(doc: DoclingDocument, out_path: Path) -> None:
