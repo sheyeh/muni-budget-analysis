@@ -13,3 +13,7 @@ google-genai>=1.0.0
 
 # Development & testing dependencies
 pytest>=7.0.0
+
+# Supabase DB connection
+supabase>=2.0.0
+python-dotenv>=1.0.0
