@@ -12,11 +12,14 @@ To ensure only actual annual municipal budget documents are downloaded and analy
 A budget inclusion keyword (e.g. `תקציב`, `ספר תקציב`, `חוברת תקציב`, `תקציב רגיל`, `תקציב מותאם`, `תבר`, `תב"ר`, `הצעת תקציב`, `עיקרי התקציב`, `תמצית תקציב`, `ספר תוכניות`) must appear in the link's own text, its URL, **or** its surrounding context (see [context scoping](#context-scoping) below) - the context fallback exists specifically for generic link text like `"לחץ כאן"` or `"להורדה"`.
 
 ### Exclusion Keywords (`STRICT_EXCLUSIONS`)
-A link is rejected if any of the following non-budget categories appear in its own text, its URL, **or its tight local context only** (never page-wide context - see below):
-- **FOI & Accessibility**: `חופש המידע`, `ממונה`, `דיווח ממונה`, `הנגשה`, `נגישות`, `נגיש`, `הצהרת נגישות`
-- **Forms & Tenders**: `טופס`, `טפסים`, `בקשה`, `ספקים`, `מכרז`, `מכרזים`, `ארנונה`, `פרוטוקול`, `אגרת`
-- **Audited Financial Statements & Reports**: `מבוקר`, `דו"ח כספי`, `דוח כספי`, `דוח חתום`, `דו"ח חתום`, `רבעון` (quarterly reports)
-- **Local Committees & Development Budgets**: `וועדים`, `ועדים`, `ועד מקומי`, `תקציב פיתוח`, `תקציב_פיתוח`, `פיתוח`, `ptuach`
+A link is rejected if any of the following non-budget categories appear in its own text, its URL, **or its tight local context only** (never page-wide context - see below). This list grows in an ad-hoc way as new false positives are found in practice, so treat the categories below as illustrative, not exhaustive - **`src/muni_budget_analysis/config/budget_keywords.json` is always the current source of truth** for the exact list:
+- **FOI, Accessibility & Public Info**: `חופש המידע`, `ממונה`, `דיווח ממונה`, `דוח_ממונה`, `הנגשה`, `גזרי מידע`
+- **Forms, Tenders & Suppliers**: `טופס`, `טפסים`, `בקשה`, `ספקים`, `מכרז`, `מכרזים`, `ארנונה`, `פרוטוקול`, `אגרת`, `רישום`, `הנחיות`
+- **Audited Financial Statements & Reports**: `מבוקר`, `דו"ח כספי`, `דוח כספי`, `דוח חתום`, `דו"ח חתום`, `רבעון`, `רבעוני` (quarterly reports)
+- **Local Committees, Development & Municipal Departments**: `וועדים`, `ועדים`, `ועדה`, `ועד מקומי`, `נציגי ציבור`, `תקציב פיתוח`, `תקציב_פיתוח`, `פיתוח`, `ptuach`, `הנהלה`, `הנדסה`, `מתאר`, `רשות המים`
+- **Municipal Services Unrelated to Budget**: `מזון`, `גני ילדים`, `גן המשחקים`, `גינות`, `גנים`, `היחידה הסביבתית`, `מיחזור`, `תברואה`, `חוגים`, `עסקים`, `תמיכות`, `בידוד`, `תעבורה`, `מקלטים`, `מיסים`, `זכויות`, `מבנים`, `מדיניות`
+
+Every exclusion keyword lives in one flat JSON list regardless of category - the categories above are purely for readability in this doc.
 
 Every exclusion match is logged (`Excluding candidate '...' (...): matched exclusion keyword(s) [...]`) so false positives are traceable back to the exact keyword that fired.
 
@@ -161,6 +164,16 @@ python3 src/muni_budget_analysis/scrapers/budget_files.py --municipality-name "�
 ```
 
 Both flags can be combined; if nothing matches, the run exits immediately with an error instead of silently scraping everything.
+
+### Concurrency
+
+Both discovery and downloading run across a `ThreadPoolExecutor`, controlled by `-w`/`--workers` (default 10):
+
+```bash
+python3 src/muni_budget_analysis/scrapers/budget_files.py --workers 20
+```
+
+Each worker thread that hits a JS-rendered page creates its own independent `sync_playwright()` instance (Playwright's sync API is not shared across threads, but each thread using its own instance works correctly - verified under concurrent load). A headless render is much heavier per-thread than a plain HTTP fetch (30-60+ seconds, a real Chromium process), so if several municipalities needing the fallback land in the same batch, consider a lower worker count than the default to avoid overloading the machine.
 
 Run test suite:
 
