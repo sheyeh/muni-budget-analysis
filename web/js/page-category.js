@@ -168,7 +168,10 @@ const PageCategory = (() => {
       Data.getMunicipalities(),
       Data.getCategories(),
       Data.getCategoryValues(),
-      Data.getGeoJSON(),
+      Data.getGeoJSON().catch((err) => {
+        console.error(err);
+        return null; // chart/list still render; choropleth just shows base map with no polygons
+      }),
     ]);
     municipalities = munisData;
     categories = cats;
