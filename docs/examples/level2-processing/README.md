@@ -45,7 +45,7 @@ python -m muni_budget_analysis.processing.run \
 
 Large/scanned PDFs (`tel_aviv_2026.pdf`, `shafir_2026.pdf`, and anything
 similarly sized) should run on a GCP T4 GPU rather than CPU -- see
-`docs/gcp-gpu-docling.md`. For files needing forced OCR on a Linux host,
-set `TESSERACT_CMD=tesseract` (the default in `pdf_pipeline.py` is a
-Windows path) and make sure `tesseract-ocr`/`tesseract-ocr-heb` are
-installed.
+`docs/gcp-gpu-docling.md`. For files needing forced OCR, `pdf_pipeline.py`
+resolves the `tesseract` binary from `TESSERACT_CMD` if set, else from
+`PATH` -- make sure `tesseract-ocr`/`tesseract-ocr-heb` are installed and
+either on `PATH` or pointed to via `TESSERACT_CMD`.

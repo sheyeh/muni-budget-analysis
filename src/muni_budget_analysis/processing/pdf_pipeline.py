@@ -21,6 +21,7 @@ DoclingDocument.
 import json
 import logging
 import os
+import shutil
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -41,13 +42,33 @@ logger = logging.getLogger(__name__)
 # version) -- forcing lang=["he"] raises ValueError at model init. These
 # budget PDFs are Hebrew, so forced-OCR mode uses Tesseract instead, which
 # does have a Hebrew ("heb") trained-data model. Tesseract must be installed
-# separately (e.g. `winget install UB-Mannheim.TesseractOCR`) with heb.traineddata
-# available in a tessdata directory; point TESSERACT_CMD / TESSDATA_DIR below
-# (or the env vars of the same name) at your install if they differ.
-TESSERACT_CMD = os.environ.get(
-    "TESSERACT_CMD", r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-)
+# separately (e.g. `winget install UB-Mannheim.TesseractOCR` on Windows,
+# `apt install tesseract-ocr tesseract-ocr-heb` on Linux) with the heb
+# trained-data available in a tessdata directory. Resolution order for the
+# binary: TESSERACT_CMD env var, then PATH (see _resolve_tesseract_cmd()).
+# Point TESSDATA_DIR (or the env var of the same name) at your install if
+# tessdata isn't in Tesseract's own default location.
 TESSDATA_DIR = os.environ.get("TESSDATA_DIR")  # None -> Tesseract's own default
+
+
+def _resolve_tesseract_cmd() -> str:
+    """
+    Cross-platform tesseract binary resolution: explicit env var first, then
+    PATH lookup. Raises instead of silently falling back to a hardcoded,
+    platform-specific path (see issue #25 -- a hardcoded Windows path here
+    used to crash model-init on Linux/GCP hosts).
+    """
+    env_value = os.environ.get("TESSERACT_CMD")
+    if env_value:
+        return env_value
+    found = shutil.which("tesseract")
+    if found:
+        return found
+    raise RuntimeError(
+        "Tesseract executable not found. Install Tesseract OCR and ensure "
+        "it's on PATH, or set the TESSERACT_CMD environment variable to the "
+        "full path of the tesseract binary."
+    )
 
 
 def build_ocr_options(backend: str = "tesseract") -> OcrOptions:
@@ -62,7 +83,7 @@ def build_ocr_options(backend: str = "tesseract") -> OcrOptions:
         return TesseractCliOcrOptions(
             lang=["heb", "eng"],
             force_full_page_ocr=True,
-            tesseract_cmd=TESSERACT_CMD,
+            tesseract_cmd=_resolve_tesseract_cmd(),
             path=TESSDATA_DIR,
         )
     if backend == "cloud_vision":
