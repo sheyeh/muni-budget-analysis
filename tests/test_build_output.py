@@ -284,3 +284,91 @@ def test_build_line_items_json():
     assert item2["amount"] == 500000.0
     assert item2["amount_type"] == "actual_current_prices"
     assert item2["fiscal_year_value"] == 2024
+
+
+def test_document_fallback_multiplier_resolution():
+    from muni_budget_analysis.analysis.run import (
+        calculate_table_raw_sum,
+        determine_document_fallback_multiplier,
+    )
+
+    # 1. Test raw table sum calculation
+    table_thousands = TableExtract(
+        table_index=0,
+        unit="unknown",
+        unit_explicit=False,
+        unit_evidence=None,
+        header_texts=["תקציב"],
+        rows=[
+            TableRow(row_index=1, label="חינוך", values={"תקציב": "10,000"}),
+            TableRow(row_index=2, label="רווחה", values={"תקציב": "5,000"}),
+            TableRow(row_index=3, label="ביצוע", values={"ביצוע %": "105%"}),  # should ignore percentages
+        ],
+    )
+    
+    assert calculate_table_raw_sum(table_thousands) == 15000.0
+
+    # 2. Test fallback resolution: thousands of NIS
+    # Raw total is 15,000 -> 15,000 * 1000 = 15,000,000 (within 5M - 30B)
+    mult_thousands = determine_document_fallback_multiplier(
+        tables=[table_thousands],
+        classification_by_table={},
+        scope_data=None,
+    )
+    assert mult_thousands == 1000
+
+    # 3. Test fallback resolution: full NIS
+    # Raw total is 15,000,000 -> 15,000,000 * 1 = 15,000,000 (within 5M - 30B)
+    table_full = TableExtract(
+        table_index=1,
+        unit="unknown",
+        unit_explicit=False,
+        unit_evidence=None,
+        header_texts=["תקציב"],
+        rows=[
+            TableRow(row_index=1, label="חינוך", values={"תקציב": "10,000,000"}),
+            TableRow(row_index=2, label="רווחה", values={"תקציב": "5,000,000"}),
+        ],
+    )
+    mult_full = determine_document_fallback_multiplier(
+        tables=[table_full],
+        classification_by_table={},
+        scope_data=None,
+    )
+    assert mult_full == 1
+
+    # 4. Test fallback resolution: millions of NIS
+    # Raw total is 150 -> 150 * 1,000,000 = 150,000,000 (within 5M - 30B)
+    table_millions = TableExtract(
+        table_index=2,
+        unit="unknown",
+        unit_explicit=False,
+        unit_evidence=None,
+        header_texts=["תקציב"],
+        rows=[
+            TableRow(row_index=1, label="חינוך", values={"תקציב": "100"}),
+            TableRow(row_index=2, label="רווחה", values={"תקציב": "50"}),
+        ],
+    )
+    mult_millions = determine_document_fallback_multiplier(
+        tables=[table_millions],
+        classification_by_table={},
+        scope_data=None,
+    )
+    assert mult_millions == 1000000
+
+    # 5. Edge case: sum is 0
+    table_empty = TableExtract(
+        table_index=3,
+        unit="unknown",
+        unit_explicit=False,
+        unit_evidence=None,
+        header_texts=["תקציב"],
+        rows=[],
+    )
+    mult_empty = determine_document_fallback_multiplier(
+        tables=[table_empty],
+        classification_by_table={},
+        scope_data=None,
+    )
+    assert mult_empty == 1000  # defaults to 1000

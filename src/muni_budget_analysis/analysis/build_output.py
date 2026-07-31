@@ -123,6 +123,7 @@ def build_records(
     classification: ClassificationResult,
     codebook_by_code: dict[str, dict],
     scope_data: dict | list | None = None,
+    doc_fallback_multiplier: int | None = None,
 ) -> list[OutputRecord]:
     # 1. Flexible Multipliers
     multiplier = None
@@ -139,6 +140,8 @@ def build_records(
         unit_status, multiplier = "inferred", 1000
     elif classification.inferred_unit == "full":
         unit_status, multiplier = "inferred", 1
+    elif doc_fallback_multiplier is not None:
+        unit_status, multiplier = "inferred_heuristic", doc_fallback_multiplier
 
     # Get document-level nominal fiscal target year
     target_year = 2025
