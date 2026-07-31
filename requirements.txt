@@ -2,6 +2,9 @@
 requests>=2.28.0
 pandas>=2.0.0
 openpyxl>=3.1.0
+beautifulsoup4>=4.11.0
+Pillow>=9.0.0
+playwright>=1.40.0
 
 # Development & testing dependencies
 pytest>=7.0.0
