@@ -32,12 +32,25 @@ def process_one_document(
     codebook_listing: str,
     codebook_by_code: dict[str, dict],
     force: bool = False,
+    processed_dir: Path | None = None,
+    analysis_dir: Path | None = None,
 ) -> bool:
     """Process a single document directory. Returns True if successfully analyzed."""
     normalized_path = doc_dir / "normalized.json"
     manifest_path = doc_dir / "manifest.json"
     scoped_path = doc_dir / "scoped.json"
-    output_path = doc_dir / "line_items.json"
+
+    # Determine separated output directory
+    if processed_dir and analysis_dir:
+        try:
+            relative_path = doc_dir.relative_to(processed_dir)
+            output_dir = analysis_dir / relative_path
+        except ValueError:
+            output_dir = doc_dir
+    else:
+        output_dir = doc_dir
+
+    output_path = output_dir / "line_items.json"
 
     if not normalized_path.exists():
         logger.warning(f"Skipping {doc_dir.name}: normalized.json does not exist.")
@@ -171,10 +184,11 @@ def process_one_document(
     )
 
     try:
+        output_dir.mkdir(parents=True, exist_ok=True)
         output_path.write_text(
             json.dumps(production_output, ensure_ascii=False, indent=2), encoding="utf-8"
         )
-        logger.info(f"Successfully wrote contract output: {output_path.name}")
+        logger.info(f"Successfully wrote contract output: {output_path}")
         return True
     except Exception as exc:
         logger.error(f"Failed to write line_items.json for {doc_dir.name}: {exc!r}")
@@ -186,11 +200,18 @@ def run_analysis_batch(
     api_key: str | None = None,
     model: str = DEFAULT_MODEL,
     force: bool = False,
+    analysis_dir: Path | None = None,
 ) -> dict[str, int]:
     """Run Level 3 batch analysis over all processed directories under processed_dir."""
     api_key = api_key or os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
     if not api_key and not os.environ.get("GOOGLE_CLOUD_PROJECT"):
         raise RuntimeError("No Gemini/GCP credentials found. Set GEMINI_API_KEY or GOOGLE_CLOUD_PROJECT.")
+
+    if analysis_dir is None:
+        if processed_dir.name == "processed":
+            analysis_dir = processed_dir.parent / "analysis"
+        else:
+            analysis_dir = processed_dir / "analysis"
 
     codebook = load_codebook()
     codebook_listing = as_prompt_listing(codebook)
@@ -207,10 +228,19 @@ def run_analysis_batch(
 
     for doc_dir in doc_dirs:
         logger.info(f"=== Analyzing {doc_dir.relative_to(processed_dir)} ===")
+        
         try:
+            # Determine output directory
+            try:
+                relative_path = doc_dir.relative_to(processed_dir)
+                output_dir = analysis_dir / relative_path
+            except ValueError:
+                output_dir = doc_dir
+            output_path = output_dir / "line_items.json"
+
             # Check if output exists and we are not forcing
-            if (doc_dir / "line_items.json").exists() and not force:
-                logger.info("  Skipping: line_items.json already exists.")
+            if output_path.exists() and not force:
+                logger.info(f"  Skipping: line_items.json already exists in {output_dir}.")
                 skipped += 1
                 continue
 
@@ -221,6 +251,8 @@ def run_analysis_batch(
                 codebook_listing=codebook_listing,
                 codebook_by_code=codebook_by_code,
                 force=force,
+                processed_dir=processed_dir,
+                analysis_dir=analysis_dir,
             )
             if success:
                 succeeded += 1
@@ -236,6 +268,7 @@ def run_analysis_batch(
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run Stage 3 category classification & normalization over processed files")
     parser.add_argument("--processed-dir", type=Path, default=Path("data/processed"), help="Path to processed/ directory")
+    parser.add_argument("--analysis-dir", type=Path, default=None, help="Path to analysis/ output directory")
     parser.add_argument("--api-key", default=None, help="Gemini API Key")
     parser.add_argument("--model", default=DEFAULT_MODEL, help="Gemini model name")
     parser.add_argument("--force", action="store_true", help="Overwrite existing line_items.json")
@@ -249,6 +282,7 @@ def main() -> int:
             api_key=args.api_key,
             model=args.model,
             force=args.force,
+            analysis_dir=args.analysis_dir,
         )
         print(f"\n=== Level 3 Classification & Normalization Complete ===")
         print(f"Succeeded: {stats['succeeded']}")

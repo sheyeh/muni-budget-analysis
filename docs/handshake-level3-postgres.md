@@ -73,9 +73,8 @@ idempotent, no versioning/history.
 
 ## `line_items.json` — level 3's output contract
 
-One file per processed budget, parallel to level 2's `normalized.json`
-and level 2.5's `scoped.json`, e.g.
-`processed/{muni_id}/{filename_stem}/line_items.json`. Level 3 reads
+One file per processed budget, stored in the designated Level 3 analysis output directory, parallel to the Level 2/2.5 layouts:
+`data/analysis/{muni_id}/{filename_stem}/line_items.json` (or `docs/examples/level3-analysis/{muni_id}/line_items.json` for example fixtures). Level 3 reads
 `normalized.json` + `scoped.json` (when present, per
 `docs/handshake-level2-level3.md`'s join logic) and resolves every kept
 slice into this shape:

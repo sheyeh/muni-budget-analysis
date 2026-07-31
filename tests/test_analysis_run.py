@@ -239,5 +239,6 @@ def test_run_analysis_batch(
     assert stats["skipped"] == 0
     assert stats["failed"] == 0  # doc_dir_2 has no normalized.json, so it's excluded from doc_dirs discovery list completely
 
-    assert (doc_dir_1 / "line_items.json").exists()
-    assert not (doc_dir_2 / "line_items.json").exists()
+    analysis_dir = tmp_path / "analysis"
+    assert (analysis_dir / "901" / "even_yehuda_2025_pdf" / "line_items.json").exists()
+    assert not (analysis_dir / "902" / "no_normalized_here" / "line_items.json").exists()

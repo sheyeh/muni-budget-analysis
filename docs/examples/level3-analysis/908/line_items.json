@@ -1,0 +1,1610 @@
+{
+  "muni_id": 908,
+  "fiscal_year": 2026,
+  "unit": "thousands_nis",
+  "line_items": [
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "2,183",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 1828.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "2,183",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 248.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "2,183",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 1580.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "2,183",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "execution_pct",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "2,183",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 1580.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "2,183",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 2247.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "2,183",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "66",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 152.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "66",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 96.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "66",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 56.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "66",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "execution_pct",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "66",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "66",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "66",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ag |",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 3738.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ag |",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ag |",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ag |",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ag |",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ag |",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ag |",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "| un",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 21410.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "| un",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "| un",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 16481.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "| un",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "| un",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "| un",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "| un",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "13,213",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "13,213",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "13,213",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "13,213",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "13,213",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 13907.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "13,213",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "13,213",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "שאר",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "שאר",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "שאר",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "שאר",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "שאר",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "שאר",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "שאר",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ee‏",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 11815.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ee‏",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ee‏",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ee‏",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "execution_pct",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ee‏",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ee‏",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ee‏",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ב- 5-75",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ב- 5-75",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ב- 5-75",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ב- 5-75",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ב- 5-75",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ב- 5-75",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ב- 5-75",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "אין",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": "31",
+      "row_type": "subtotal",
+      "raw_label_he": "גידול בהשתתפות רששת חינוך",
+      "category": "income",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": "34",
+      "row_type": "subtotal",
+      "raw_label_he": "צפי לגידול בעצמיות רווחה בהתאם לתחזית לשונת 2026",
+      "category": "income",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ירידה בהכנסות חומל",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": "31",
+      "row_type": "line_item",
+      "raw_label_he": "עיקר הגידול הוא בסעיף סייעות צמודות כמיליון ש\"ח וגידול שכל\"מ גננות טרום חובה בסך 700 אלפי ש\"ח",
+      "category": "income",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": "34",
+      "row_type": "subtotal",
+      "raw_label_he": "תקציב הרווחה הוא בהתאם לתקציב הרשות מול משרד הרווחה בהכנסות וגם בהוצאות.",
+      "category": "income",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": "32",
+      "row_type": "line_item",
+      "raw_label_he": "עיקר הגידול הוא בסעיף סל ספור בסך 250 אלפי ש\"ח, בסעיף השותתפות מפעל הפיס בארועי תרבות בסך 406 אלפי ש\"ח, הששתתפות תב\"ר בפיקוח עירוני בסך 298 מימון יחידת נוער ממעורד החינוך 90 אלפי ש\"ח וסעיפים נוספים",
+      "category": "income",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": "191",
+      "row_type": "line_item",
+      "raw_label_he": "הירידה במענק האיזון תקצוב לפי 95% בהתאם להנחיות.",
+      "category": "income",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": "19",
+      "row_type": "subtotal",
+      "raw_label_he": "עיקר הקיטון תקצוב מענק קצל\"ט 50%",
+      "category": "income",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": "111",
+      "row_type": "line_item",
+      "raw_label_he": "בשנת 2025 נתקבלה הלוואה לאחון בסך 1475 אלפי ש\"ח ונרשמה הכנסה כנגד הקטנת הפרשוה לתביעות תלויות שבוטלו בתקציב 2026 בנוסף תוקצבה קרן ארנונה ש\"ח",
+      "category": "income",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "₪",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": "115",
+      "row_type": "line_item",
+      "raw_label_he": "גידול בהנחות הארנונה בעקבות הטמעת סקר נכסים והגברת הגבייה",
+      "category": "income",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "rx‏",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "הרכב הכנסה מותנ:",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": "19",
+      "row_type": "line_item",
+      "raw_label_he": "מענק קצל\"פ 50% בסך 414 אלפי ש\"ח",
+      "category": "income",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": "231",
+      "row_type": "line_item",
+      "raw_label_he": "עיקר גידול איוש משרת מהנדס לרעוות לשנה שלמה",
+      "category": "income",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ירידה במספר סעיפים במצטבר",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "אין",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "aman לא‎",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": "212",
+      "row_type": "line_item",
+      "raw_label_he": "סעיף שירותי ניקיון יסודיים בסך 440 אלפי ש\"ח סעיף נוער ישובי בסך 277 אלפי ש\"ח (מקביל לגידול בהוצאה) סעיף קייטנת קיץ בסך 388 אלפי ש\"ח (מקביל לגידול בהוצאת). סעיף קייטנת חורף בסך 197 אלפי עו\"ח (מקביל לגידול בהוצאה) סעיף ניצנים בסך 234 אלפי ש\"ח (מקביל לגידול בהוצאה) ועוד סעיפים אחרים",
+      "category": "income",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ירידה ב- 1.35 משרות בשנת 2026",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": "34",
+      "row_type": "subtotal",
+      "raw_label_he": "תקציב הרווחה הוא בהתאנו לתקציב הרעוות מול משרד הרווחה בהכנסות וגם בהוצאות",
+      "category": "income",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "אין",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": "64",
+      "row_type": "subtotal",
+      "raw_label_he": "גידול בפרע\"מ אחר בעקבות קבלת הלוואות חדשוות.",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "הקטנת אעוראי",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "אין",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "לא מהותי",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": "115",
+      "row_type": "line_item",
+      "raw_label_he": "גידול בהנחות הארנונה בעקבות הטמעת סקר נכסים והגברת הגבייה",
+      "category": "income",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "אין",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "כנגד הכנסה מותנה",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "898",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 897000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "898",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 862000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "898",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 534000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "1,500",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 1500000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "1,500",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 1500000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "1,500",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "eet",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 661000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "eet",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 661000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "eet",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 661000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 8000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "13,907",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "20,442",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 20767000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "11,042",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 11123000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "3,392",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "11,815",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "5",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 1577000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "5",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 1365000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "5",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 3700.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "5",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 1332000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "5",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "5.7",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 1280000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "5.7",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 1066000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "5.7",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "5.7",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "5.7",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "22 |",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 455000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "22 |",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 463000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "22 |",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 2750.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "22 |",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 545000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "22 |",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "4",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 1093000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "4",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 574000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "4",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 3000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "4",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 496000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "4",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0.67",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 110000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0.67",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 144000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0.67",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0.67",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "0.67",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "4",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 709000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "4",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "4",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 2000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "4",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 419000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "4",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "131.32 ai",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 20572000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "131.32 ai",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 19909000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "131.32 ai",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 125230.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "131.32 ai",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 20561000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "131.32 ai",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "5.69",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 1018000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "5.69",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 1551000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "5.69",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "5.69",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 1692000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "5.69",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "1.6",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 239000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "1.6",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 240000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "1.6",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 1600.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "1.6",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 226000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "1.6",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "16.26",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 3392000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "16.26",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 3619000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "16.26",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 15910.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "16.26",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 3490000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "16.26",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "1.5",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 253000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "1.5",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 24000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "1.5",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "1.5",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 262000.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "1.5",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "31/12/2026",
+      "category": "expense",
+      "fiscal_year_value": 2025,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "31/12/2026",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "31/12/2026",
+      "category": "expense",
+      "fiscal_year_value": 2025,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "31/12/2026",
+      "category": "expense",
+      "fiscal_year_value": 2026,
+      "amount_type": "budgeted",
+      "amount": null
+    }
+  ],
+  "warnings": []
+}
