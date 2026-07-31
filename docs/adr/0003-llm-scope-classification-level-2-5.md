@@ -1,0 +1,34 @@
+# LLM-based row/column scope selection as a new stage between level 2 and level 3
+
+Real samples show the "many other years" problem isn't whole tables being off-topic — it's that every real budget table is inherently multi-year by design. `even_yehuda_2025.pdf`'s single budget table has columns for 2023 actual / 2024 budget / 2024 actual / 2025 proposed, all in one table (exactly what `CONTEXT.md`'s "budget line item" is meant to read fiscal year off of). `jerusalem_2026.pdf` (364pp) has a 15-year debt-repayment forecast table ("תחזית פירעון מלוות העירייה לשנים 2040-2026"), same table shape, years as rows instead of columns. Whole-table classification (in-scope / out-of-scope) doesn't fit: the same table mixes target-year data with other-year data along one axis. What stage 3 needs is the *slice* of each table — the row or column — that belongs to the target fiscal year, plus whatever structural row/column (category name, code) is needed to interpret it. Everything else along that axis is the noise the user flagged.
+
+`normalized.json` sections carry only heading titles (`item.text` at each heading, per `pdf_pipeline.py`) — no prose body is captured. So there is no narrative content for this stage to filter; the entire job is table-internal.
+
+## Decision
+
+New stage, level 2.5, between file processing (2) and file analysis (3). Input: one `normalized.json`. Output: a new artifact, `scoped.json`, non-destructive — `normalized.json` is untouched (stage 2's contract with stage 3 doesn't change).
+
+Per table, in two steps:
+1. **Detect year axis** — do this table's *columns* carry the year dimension (the common case), its *rows* (multi-year forecast tables), or neither (no year dimension detectable — e.g. a static lookup table, not usable for fiscal-year-specific extraction at all).
+2. **Select the target-year slice** along that axis — each column (or row) gets a `detected_year` (nullable) and a `keep` boolean. `keep = true` when `detected_year` matches the target fiscal year (known from the level-1 input record, e.g. `jerusalem_2026` → 2026), or when the column/row is structural (a category-name/code column, not year-bearing) and therefore needed regardless of which year is kept. Everything else is `keep = false`.
+
+Classifier input per table: column headers plus the first cell of every row (covers the row-axis case) — small payload, no full numeric grid sent, no hallucination surface from row data that doesn't change the axis/year judgment.
+
+Backend: Vertex AI Gemini (flash tier — classification, not generation; team already has GCP experience in this repo: `docs/gcp-gpu-docling.md`, `docs/examples/document_ai`, `docs/examples/gcp_vision` from other worktrees' spikes). Isolated behind one function (`classify_table(section_title, headers, first_column_values, target_year) -> TableScope`), same isolation pattern as ADR-0001's docling carve-out — swappable, and a future heuristic pre-filter (cheap regex check on headers first, fall back to this function only when inconclusive) can wrap it later without changing the module boundary, output schema, or stage 3's contract.
+
+Before full implementation: a POC (throwaway script, hand-picked table snippets from the real samples, real Vertex AI calls, real `scoped.json`-shaped output) is sent to the level 3 dev team for contract sign-off, before the classifier module/batch runner/tests are built. Same gating pattern as `prd.md` Task 0's docling validation spike.
+
+## Considered options
+
+- **Whole-table classification** (label each table `relevant`/`irrelevant` as a unit) — rejected. Doesn't fit the data: the real budget table itself mixes target-year and other-year columns in one table, so a table-level label can't express "keep this table but only some of its columns."
+- **Heuristic-only (regex/keyword rules on headers)** — no GCP cost, deterministic, but brittle: Hebrew header phrasing already varies across the 7 sample municipalities, and the corpus is ~200 files across many municipalities. Rejected as the primary mechanism; worth adding later as a cheap pre-filter once real classification patterns are known (hybrid, below).
+- **Hybrid (heuristics first pass, LLM fallback for low-confidence tables)** — cheapest at scale, but needs a heuristic baseline that doesn't exist yet, best mined from the LLM classifier's own output once run across the real corpus. Deferred, not rejected: the LLM-only design is built so this is additive later.
+- **Filter-and-drop instead of tag-and-retain** — rejected. A misclassification would permanently lose data unless re-run from stage 2; tagging costs one extra field and keeps every option open (stage 3, a human reviewer, or a future heuristic pass can all still see what was excluded and why).
+
+## Status
+
+POC run (`scripts/spike_scope_classify.py`, `gemini-2.5-flash` — `gemini-2.0-flash-001` no longer exists on Vertex AI as of this writing, don't pin a specific version in this doc, it will drift): all 4 hand-transcribed real samples classified correctly on the first live run, including the row-axis case (`jerusalem_2026`'s 15-year debt forecast, only 2026 kept) and a nested/grouped-header case. Full findings and open judgment calls for the level 3 team: `docs/examples/level2.5-scope-filter/poc/FINDINGS.md` (moved from `scripts/spike_output/scope_classify/` — issue #12's folder reorg). Two things flagged there that affect this ADR's design before full implementation:
+- ~~What "structural, keep regardless of year" should include beyond the bare row-label/code column (e.g. execution-rate %, year-over-year delta columns) is a real judgment call the model made without being told either way — needs explicit level-3-team sign-off, not just "it seemed reasonable."~~ **Resolved, see ADR-0004**: execution-rate % and change/delta columns do count as structural/keep-regardless-of-year — they're derived metrics about the target year's execution, not raw other-year data.
+- The POC's header text was hand-cleaned; it does not prove the classifier handles docling's raw grouped/merged-header markdown output for a table like `jerusalem_2026`'s staffing table. That's unverified until level 2's Task 7 (`run.py`) lands and produces a real `normalized.json` to test against.
+
+**Update (2026-07-31):** level 2's Task 7 has landed. `scripts/run_scope_classify.py` (a new, still-POC-shaped batch runner, not a production module) ran the same classifier against real `normalized.json` output for all 10 files in `budget_examples/` — see `docs/examples/level2.5-scope-filter/{muni_id}/scoped.json` and `docs/handshake-level2-level3.md` for the resulting contract with level 3. It classifies a capped sample of tables per document (cost/quota guard), not every table — the "raw grouped-header markdown" question above is still open pending a real run against `jerusalem_2026`'s staffing table specifically (not one of the tables the cap happened to select this run).

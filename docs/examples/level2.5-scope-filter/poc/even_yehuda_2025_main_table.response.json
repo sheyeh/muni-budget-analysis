@@ -1,0 +1,60 @@
+{
+  "year_axis": "column",
+  "columns": [
+    {
+      "index": 0,
+      "header": "הסעיף התקציבי",
+      "detected_year": null,
+      "keep": true
+    },
+    {
+      "index": 1,
+      "header": "ביצוע 2023 מחירים שוטפים",
+      "detected_year": 2023,
+      "keep": false
+    },
+    {
+      "index": 2,
+      "header": "מסגרת תקציב לשנת 2024",
+      "detected_year": 2024,
+      "keep": false
+    },
+    {
+      "index": 3,
+      "header": "ביצוע 2024 מחירים שוטפים",
+      "detected_year": 2024,
+      "keep": false
+    },
+    {
+      "index": 4,
+      "header": "מקדמים בשימוש הרשות",
+      "detected_year": null,
+      "keep": true
+    },
+    {
+      "index": 5,
+      "header": "ביצוע 2024 מקודם למחירי 2025",
+      "detected_year": 2024,
+      "keep": false
+    },
+    {
+      "index": 6,
+      "header": "שינויים כולל התייעלות",
+      "detected_year": null,
+      "keep": true
+    },
+    {
+      "index": 7,
+      "header": "פירוט מס' הסבר לשינויים",
+      "detected_year": null,
+      "keep": true
+    },
+    {
+      "index": 8,
+      "header": "מסגרת תקציב לשנת 2025",
+      "detected_year": 2025,
+      "keep": true
+    }
+  ],
+  "confidence": 0.95
+}

@@ -1,0 +1,18 @@
+{
+  "muni_id": 907,
+  "source_filename": "gezer_2026.pdf",
+  "source_sha256": "4321b5079b4ba11294054ca4beb9f1476acfa155c109b22974bb5d25cdc7ddd2",
+  "detected_type": "pdf",
+  "pipeline_used": "docling_pdf",
+  "docling_version": "2.117.0",
+  "processed_at": "2026-07-30T20:52:46.076631+00:00",
+  "status": "success",
+  "page_count": 52,
+  "warnings": [],
+  "error": null,
+  "outputs": {
+    "docling_native": "docling_native.json",
+    "markdown": "document.md",
+    "normalized": "normalized.json"
+  }
+}

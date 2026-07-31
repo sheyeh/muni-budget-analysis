@@ -38,5 +38,23 @@ data/
 .DS_Store
 *.swp
 
-# Large docling native exports kept outside git (see accompanying .link.txt)
-docs/examples/docling/tel_aviv_2026/native.json
+# Claude Code local state (worktrees, settings, skill cache)
+.claude/
+
+# Large docling native exports / normalized.json kept outside git (see
+# accompanying .link.txt in the same directory)
+docs/examples/level2-processing/904/docling_native.json
+docs/examples/level2-processing/904/normalized.json
+docs/examples/level2-processing/907/docling_native.json
+docs/examples/level2-processing/909/docling_native.json
+docs/examples/level2-processing/905/normalized.json
+
+# Large source budget files kept outside git (see accompanying .link.txt)
+budget_examples/jaljulya_2026.pdf
+budget_examples/shafir_2026.pdf
+
+# Throwaway spike output (scripts/spike_*.py) -- scratch, ok to regenerate
+# or delete any time. Real deliverables that came out of a spike (e.g. the
+# level-2.5 scope-classify POC) get moved into docs/examples/ as committed
+# examples instead of living here -- see docs/agents/... issue #12.
+scripts/spike_output/
