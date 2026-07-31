@@ -1,13 +1,13 @@
-from pipeline.analysis.docling_rows import TableExtract, TableRow
-from pipeline.analysis.llm_classify import ClassificationResult, RowClassification
-from pipeline.analysis.build_output import (
+from muni_budget_analysis.analysis.docling_rows import TableExtract, TableRow
+from muni_budget_analysis.analysis.llm_classify import ClassificationResult, RowClassification
+from muni_budget_analysis.analysis.build_output import (
     is_percentage_value,
     parse_percentage_val,
     build_records,
     build_line_items_json,
     OutputRecord,
 )
-from pipeline.analysis.resolver import resolve_amount_type, resolve_fiscal_year
+from muni_budget_analysis.analysis.resolver import resolve_amount_type, resolve_fiscal_year
 
 
 def test_is_percentage_value():
