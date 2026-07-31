@@ -1,0 +1,30 @@
+municipalities.geojson (~15MB) — not committed, per this repo's large-binary convention
+(CLAUDE.md: "Large files: never commit, always do the link trick").
+
+What it is: Israeli municipal/local-authority boundary polygons, vendored from the Ministry of
+Interior's public ArcGIS FeatureServer. Used by web/js/choropleth.js for the Page 1/2 maps.
+Full provenance, join-key format, and known data gaps are documented in
+web/site-data/geo/JOIN_NOTES.md — read that first.
+
+No external hosting link exists for this file (it's fully reproducible from a live public API,
+so there's nothing to host) — regenerate it locally with:
+
+curl -sS -G "https://services1.arcgis.com/hWUp5lYOh3Fi9WoQ/arcgis/rest/services/GvulotShputRashuyotVaadim/FeatureServer/0/query" \
+  --data-urlencode "where=1=1" \
+  --data-urlencode "outFields=Muni_Heb,Muni_Eng,Sug_Muni,CR_PNIM,Vaad_Heb,Machoz" \
+  --data-urlencode "outSR=4326" \
+  --data-urlencode "resultOffset=0" --data-urlencode "resultRecordCount=1000" \
+  --data-urlencode "f=geojson" -o /tmp/_page1.geojson
+
+curl -sS -G "https://services1.arcgis.com/hWUp5lYOh3Fi9WoQ/arcgis/rest/services/GvulotShputRashuyotVaadim/FeatureServer/0/query" \
+  --data-urlencode "where=1=1" \
+  --data-urlencode "outFields=Muni_Heb,Muni_Eng,Sug_Muni,CR_PNIM,Vaad_Heb,Machoz" \
+  --data-urlencode "outSR=4326" \
+  --data-urlencode "resultOffset=1000" --data-urlencode "resultRecordCount=1000" \
+  --data-urlencode "f=geojson" -o /tmp/_page2.geojson
+
+Then merge both pages and filter to Vaad_Heb === "שטח כללי" OR Vaad_Heb === " " (one
+polygon-group per municipality, not per sub-committee) — see JOIN_NOTES.md's "Filtering applied"
+section for the exact rule and why server-side `where` filtering on the Hebrew value is
+unreliable (must filter client-side after fetching, not via the ArcGIS query itself). Save the
+result to web/site-data/geo/municipalities.geojson.

@@ -2,8 +2,8 @@
   "muni_id": 905,
   "source_filename": "shafir_2026.pdf",
   "target_year": 2026,
-  "tables_total": 200,
-  "tables_classified": 3,
+  "tables_total": 199,
+  "tables_classified": 5,
   "table_scopes": [
     {
       "table_id": "table-0",
@@ -39,12 +39,12 @@
     },
     {
       "table_id": "table-1",
-      "section_title": "הפרעשי תקציב",
+      "section_title": "הפרשי תקציב",
       "year_axis": "column",
       "columns": [
         {
           "index": 0,
-          "header": "הפרעו בין תקציב מקור 2026 לתקציב סופי 2025",
+          "header": "הפרש בין תקציב מקור 2026 לתקציב סופי 2025",
           "detected_year": 2026,
           "keep": true
         },
@@ -52,24 +52,24 @@
           "index": 1,
           "header": "תקציב",
           "detected_year": null,
-          "keep": false
+          "keep": true
         },
         {
           "index": 2,
           "header": "הוצאות",
           "detected_year": null,
-          "keep": false
+          "keep": true
         },
         {
           "index": 3,
           "header": "הכנסות",
           "detected_year": null,
-          "keep": false
+          "keep": true
         },
         {
           "index": 4,
-          "header": "הפרעו בין תקציב סופי 5 לתקציב מקור 2005",
-          "detected_year": 2005,
+          "header": "הפרש בין תקציב סופי 2025 לתקציב מקור 2025",
+          "detected_year": 2025,
           "keep": false
         },
         {
@@ -94,108 +94,301 @@
           "index": 8,
           "header": "תקציב",
           "detected_year": null,
-          "keep": false
+          "keep": true
         },
         {
           "index": 9,
           "header": "הוצאות",
           "detected_year": null,
-          "keep": false
+          "keep": true
         },
         {
           "index": 10,
           "header": "הכנסות",
           "detected_year": null,
-          "keep": false
+          "keep": true
         },
         {
           "index": 11,
-          "header": "שם אגף/מחלקה",
-          "detected_year": null,
-          "keep": true
-        }
-      ],
-      "confidence": 0.7
-    },
-    {
-      "table_id": "table-2",
-      "section_title": "הפרעשי תקציב",
-      "year_axis": "column",
-      "columns": [
-        {
-          "index": 0,
-          "header": "הפרעו בין תקציב מקור 2026 לתקציב סופי 2025",
-          "detected_year": 2026,
-          "keep": true
-        },
-        {
-          "index": 1,
-          "header": "תקציב",
-          "detected_year": 2026,
-          "keep": true
-        },
-        {
-          "index": 2,
-          "header": "הוצאות",
-          "detected_year": 2026,
-          "keep": true
-        },
-        {
-          "index": 3,
-          "header": "הכנסות",
-          "detected_year": 2026,
-          "keep": true
-        },
-        {
-          "index": 4,
-          "header": "הפרעו בין תקציב סופי 5 לתקציב מקור 2005",
-          "detected_year": 2005,
-          "keep": false
-        },
-        {
-          "index": 5,
-          "header": "תקציב",
-          "detected_year": 2005,
-          "keep": false
-        },
-        {
-          "index": 6,
-          "header": "הוצאות",
-          "detected_year": 2005,
-          "keep": false
-        },
-        {
-          "index": 7,
-          "header": "הכנסות",
-          "detected_year": 2005,
-          "keep": false
-        },
-        {
-          "index": 8,
-          "header": "תקציב",
-          "detected_year": null,
-          "keep": false
-        },
-        {
-          "index": 9,
-          "header": "הוצאות",
-          "detected_year": null,
-          "keep": false
-        },
-        {
-          "index": 10,
-          "header": "הכנסות",
-          "detected_year": null,
-          "keep": false
-        },
-        {
-          "index": 11,
-          "header": "שם אגף/מחלקה",
+          "header": "שם אגף / מחלקה",
           "detected_year": null,
           "keep": true
         }
       ],
       "confidence": 0.9
+    },
+    {
+      "table_id": "table-2",
+      "section_title": "הפרשי תקציב",
+      "year_axis": "column",
+      "columns": [
+        {
+          "index": 0,
+          "header": "הפרש בין תקציב מקור 2026 לתקציב סופי 2025",
+          "detected_year": 2026,
+          "keep": true
+        },
+        {
+          "index": 1,
+          "header": "תקציב",
+          "detected_year": 2026,
+          "keep": true
+        },
+        {
+          "index": 2,
+          "header": "הוצאות",
+          "detected_year": 2026,
+          "keep": true
+        },
+        {
+          "index": 3,
+          "header": "הכנסות",
+          "detected_year": 2026,
+          "keep": true
+        },
+        {
+          "index": 4,
+          "header": "הפרש בין תקציב סופי 2025 לתקציב מקור 2025",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 5,
+          "header": "תקציב",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 6,
+          "header": "הוצאות",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 7,
+          "header": "הכנסות",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 8,
+          "header": "תקציב",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 9,
+          "header": "הוצאות",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 10,
+          "header": "הכנסות",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 11,
+          "header": "שם אגף / מחלקה",
+          "detected_year": null,
+          "keep": true
+        }
+      ],
+      "reason": null,
+      "confidence": 0.8
+    },
+    {
+      "table_id": "table-3",
+      "section_title": "הצעת תקציב לשנת 2026",
+      "year_axis": "column",
+      "columns": [
+        {
+          "index": 0,
+          "header": "תקציב שכך ב- ₪",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 1,
+          "header": "מספר משרות",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 2,
+          "header": "תקציב שכך ב- ₪",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 3,
+          "header": "מספר משרות",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 4,
+          "header": "תקציב שכך ב- ₪",
+          "detected_year": 2026,
+          "keep": true
+        },
+        {
+          "index": 5,
+          "header": "מספר משרות",
+          "detected_year": 2026,
+          "keep": true
+        },
+        {
+          "index": 6,
+          "header": "פרק תקציבי שם הפרק",
+          "detected_year": null,
+          "keep": true
+        }
+      ],
+      "confidence": 0.9
+    },
+    {
+      "table_id": "table-5",
+      "section_title": "ניתוח חיוב / גביה בארנונה",
+      "year_axis": "row",
+      "columns": [
+        {
+          "index": 0,
+          "header": "אחוז גבייה שוטף",
+          "detected_year": null,
+          "keep": true
+        },
+        {
+          "index": 1,
+          "header": "גביית שוטף",
+          "detected_year": null,
+          "keep": true
+        },
+        {
+          "index": 2,
+          "header": "חיוב שוטף",
+          "detected_year": null,
+          "keep": true
+        },
+        {
+          "index": 3,
+          "header": "אחוז גבייה שוטף",
+          "detected_year": null,
+          "keep": true
+        },
+        {
+          "index": 4,
+          "header": "גביית שוטף",
+          "detected_year": null,
+          "keep": true
+        },
+        {
+          "index": 5,
+          "header": "חיוב שוטף",
+          "detected_year": null,
+          "keep": true
+        },
+        {
+          "index": 6,
+          "header": "אחוז גבייה שוטף",
+          "detected_year": null,
+          "keep": true
+        },
+        {
+          "index": 7,
+          "header": "גביית שוטף",
+          "detected_year": null,
+          "keep": true
+        },
+        {
+          "index": 8,
+          "header": "חיוב שוטף",
+          "detected_year": null,
+          "keep": true
+        },
+        {
+          "index": 9,
+          "header": "תיאור",
+          "detected_year": null,
+          "keep": true
+        }
+      ],
+      "rows": [
+        {
+          "index": 0,
+          "row_label": "יעד 2026",
+          "detected_year": 2026,
+          "keep": true
+        },
+        {
+          "index": 1,
+          "row_label": "94 %",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 2,
+          "row_label": "93 %",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 3,
+          "row_label": "63 %",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 4,
+          "row_label": "100 %",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 5,
+          "row_label": "100 %",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 6,
+          "row_label": "80 %",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 7,
+          "row_label": "89 %",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 8,
+          "row_label": "98 %",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 9,
+          "row_label": "97 %",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 10,
+          "row_label": "95 %",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 11,
+          "row_label": "94.00 %",
+          "detected_year": null,
+          "keep": false
+        }
+      ],
+      "confidence": 0.7
     }
   ]
 }
