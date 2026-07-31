@@ -3,7 +3,7 @@
   "source_filename": "tel_aviv_2026.pdf",
   "target_year": 2026,
   "tables_total": 353,
-  "tables_classified": 3,
+  "tables_classified": 5,
   "table_scopes": [
     {
       "table_id": "table-0",
@@ -27,6 +27,22 @@
       "year_axis": "none",
       "keep": false,
       "reason": "Neither column headers nor row labels contain any fiscal year information. The table appears to be a table of contents, not a financial data table.",
+      "confidence": 1.0
+    },
+    {
+      "table_id": "table-3",
+      "section_title": "תוכן   עניינים",
+      "year_axis": "none",
+      "keep": false,
+      "reason": "This table appears to be a table of contents, indicated by the section title and headers ('Page', 'Detail', 'Item Number'). It does not contain any fiscal year data.",
+      "confidence": 1.0
+    },
+    {
+      "table_id": "table-4",
+      "section_title": "תוכן   עניינים",
+      "year_axis": "none",
+      "keep": false,
+      "reason": "This table appears to be a table of contents, not a financial statement. Neither the headers nor the row labels contain any fiscal year information.",
       "confidence": 1.0
     }
   ]

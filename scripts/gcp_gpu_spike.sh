@@ -30,6 +30,10 @@
 #   IMAGE_FAMILY     default: pytorch-2-9-cu129-ubuntu-2204-nvidia-580
 #   IMAGE_PROJECT    default: ml-images
 #   BOOT_DISK_SIZE   default: 100GB
+#   SCOPES           default: cloud-platform -- the real run.py pipeline's
+#                    docling_pdf_ocr path calls GCP Vision from the VM
+#                    (cloud_vision_ocr.py), which needs this scope on the
+#                    instance's default service account.
 #   REMOTE_DIR       default: ~/repo  -- files are uploaded/run under this
 #                    path so scripts/spike_docling.py's REPO_ROOT resolution
 #                    (parent.parent of the script) lines up, same as the
@@ -45,6 +49,7 @@ GPU_TYPE="${GPU_TYPE:-nvidia-tesla-t4}"
 IMAGE_FAMILY="${IMAGE_FAMILY:-pytorch-2-9-cu129-ubuntu-2204-nvidia-580}"
 IMAGE_PROJECT="${IMAGE_PROJECT:-ml-images}"
 BOOT_DISK_SIZE="${BOOT_DISK_SIZE:-100GB}"
+SCOPES="${SCOPES:-cloud-platform}"
 REMOTE_DIR="${REMOTE_DIR:-repo}"
 
 gcp() { gcloud "$@" --project="$GCP_PROJECT" --zone="$GCP_ZONE"; }
@@ -59,7 +64,8 @@ cmd_create() {
     --provisioning-model=SPOT \
     --instance-termination-action=STOP \
     --boot-disk-size="$BOOT_DISK_SIZE" \
-    --boot-disk-type=pd-balanced
+    --boot-disk-type=pd-balanced \
+    --scopes="$SCOPES"
 }
 
 cmd_bootstrap() {

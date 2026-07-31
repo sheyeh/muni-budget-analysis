@@ -48,6 +48,7 @@ docs/examples/level2-processing/904/normalized.json
 docs/examples/level2-processing/907/docling_native.json
 docs/examples/level2-processing/909/docling_native.json
 docs/examples/level2-processing/905/normalized.json
+docs/examples/level2-processing/905/docling_native.json
 
 # Large source budget files kept outside git (see accompanying .link.txt)
 budget_examples/jaljulya_2026.pdf
