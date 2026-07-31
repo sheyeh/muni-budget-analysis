@@ -1,0 +1,341 @@
+{
+  "muni_id": 902,
+  "fiscal_year": 2024,
+  "unit": "nis",
+  "line_items": [
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "3999 ANININ",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 198473.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "on JyaN",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "Yn nynyy",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 22299.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "AN Nynasy",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 2761.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "INR NYY",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 74038.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "NYY n9I9n W/No",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 297571.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "Tynn Twn DDIApPN",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 160200.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "AMIN TAwWnN D-DAPNH",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 39341.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "DANN DYNIvNN OIAPNH",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 13024.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "VPNI 999 Pry",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 23962.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "D09N TWN DANN DIN",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 3276.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "nyvnaN Napn no",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 239803.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "DOINN DIApN",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "MnP Dw Prd nNyays TN NIN A24NA NIN 9999 NVIDIA I/D 438) 95) 0110999",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "7IINA NNN JAS) PY 10999 N0I9N",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "mam NID NID DN",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 552317.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "nana N0VIIN",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": null
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "AIM 9519 NV0IIN I’",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 552317.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "9997 DV",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 83167.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ny972 mayo",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 119465.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "my559 mNMIN W/O",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 202632.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "Dyn may ADV",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 85793.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "Dyn mry9",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 164347.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "pyn 70",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 250140.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ANN TT Dw",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 10555.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ANI M9",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 47243.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ANN I/D",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 57798.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "apn) on nNNIN pyts",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 5745.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "NN NIN pyro",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 17862.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "DIN pys9 2/N0",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 23607.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "yn NIN",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "MNTIP DIY pra NVYPAYS TN MNS",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "99NA NININ 9999 NNN IW’ AS) YA) 99099)",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "ANN Ninn",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "MIN NID NNYIN I/D",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "nINW2 NX",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 0.0
+    },
+    {
+      "classification_code": null,
+      "row_type": "line_item",
+      "raw_label_he": "AM 9599 NNSIN D/A",
+      "category": "expense",
+      "fiscal_year_value": 2024,
+      "amount_type": "budgeted",
+      "amount": 552317.0
+    }
+  ],
+  "warnings": []
+}

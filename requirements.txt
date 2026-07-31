@@ -2,10 +2,17 @@
 requests>=2.28.0
 pandas>=2.0.0
 openpyxl>=3.1.0
+docling>=2.116.0
+pypdf>=6.14.0
+filetype>=1.2.0
+google-cloud-vision>=3.15.0
 
 # Stage-3 category/unit normalization spike (pipeline/analysis/)
 pdfplumber>=0.11.0
 google-genai>=1.0.0
+beautifulsoup4>=4.11.0
+Pillow>=9.0.0
+playwright>=1.40.0
 
 # Development & testing dependencies
 pytest>=7.0.0

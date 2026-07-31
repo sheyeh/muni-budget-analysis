@@ -1,0 +1,63 @@
+{
+  "muni_id": 909,
+  "source_filename": "jerusalem_2026.pdf",
+  "target_year": 2026,
+  "tables_total": 16,
+  "tables_classified": 3,
+  "table_scopes": [
+    {
+      "table_id": "table-0",
+      "section_title": "פירוט עיקרי ההוצאה וההכנסה (אלפי ש\"ח)",
+      "year_axis": "column",
+      "columns": [
+        {
+          "index": 0,
+          "header": "שיעור השינוי",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 1,
+          "header": "שינוי",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 2,
+          "header": "תקציב 2025 מעודכן",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 3,
+          "header": "תקציב הצעת לשנת 2026",
+          "detected_year": 2026,
+          "keep": true
+        },
+        {
+          "index": 4,
+          "header": "הוצאה רכיב / הכנסה",
+          "detected_year": null,
+          "keep": true
+        }
+      ],
+      "confidence": 1.0
+    },
+    {
+      "table_id": "table-1",
+      "section_title": "איזון התקציב",
+      "year_axis": "none",
+      "keep": false,
+      "reason": "The table has only one column header, which explicitly mentions and combines data for multiple fiscal years (2026 and 2025). This structure makes it impossible to isolate data specifically for the target year 2026.",
+      "confidence": 0.8
+    },
+    {
+      "table_id": "table-2",
+      "section_title": "איזון התקציב",
+      "year_axis": "none",
+      "keep": false,
+      "reason": "The table has only one data column, and its header indicates a comparison or combined data for multiple fiscal years (2026 and 2025), rather than distinct data for the target year 2026. Therefore, it cannot be classified as a table specifically for the target year.",
+      "confidence": 0.9
+    }
+  ]
+}

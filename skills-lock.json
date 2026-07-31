@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "gcloud-cli": {
+      "source": "oimiragieo/agent-studio",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/gcloud-cli/SKILL.md",
+      "computedHash": "45cad7178863855e07be008e6c93b9949a9c60a030a37cb5fba08a2e5b556ba6"
+    }
+  }
+}

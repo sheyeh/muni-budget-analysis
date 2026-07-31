@@ -47,6 +47,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import shutil
 import sys
 import time
 import traceback
@@ -72,13 +73,28 @@ OUTPUT_ROOT = REPO_ROOT / "docs" / "examples" / "docling"
 # version) -- forcing lang=["he"] raises ValueError at model init. These
 # budget PDFs are Hebrew, so forced-OCR mode uses Tesseract instead, which
 # does have a Hebrew ("heb") trained-data model. Tesseract must be installed
-# separately (e.g. `winget install UB-Mannheim.TesseractOCR`) with heb.traineddata
-# available in a tessdata directory; point TESSERACT_CMD / TESSDATA_DIR below
-# (or the env vars of the same name) at your install if they differ.
-TESSERACT_CMD = os.environ.get(
-    "TESSERACT_CMD", r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-)
+# separately (e.g. `winget install UB-Mannheim.TesseractOCR` on Windows,
+# `apt install tesseract-ocr tesseract-ocr-heb` on Linux) with the heb
+# trained-data available in a tessdata directory. Resolution order for the
+# binary: TESSERACT_CMD env var, then PATH (see _resolve_tesseract_cmd()).
+# Point TESSDATA_DIR (or the env var of the same name) at your install if
+# tessdata isn't in Tesseract's own default location.
 TESSDATA_DIR = os.environ.get("TESSDATA_DIR")  # None -> Tesseract's own default
+
+
+def _resolve_tesseract_cmd() -> str:
+    """Cross-platform tesseract binary resolution: env var first, then PATH."""
+    env_value = os.environ.get("TESSERACT_CMD")
+    if env_value:
+        return env_value
+    found = shutil.which("tesseract")
+    if found:
+        return found
+    raise RuntimeError(
+        "Tesseract executable not found. Install Tesseract OCR and ensure "
+        "it's on PATH, or set the TESSERACT_CMD environment variable to the "
+        "full path of the tesseract binary."
+    )
 
 
 @dataclass
@@ -109,6 +125,26 @@ TARGETS = [
         "auto",
         "new sample, type unknown -- text layer checked at runtime via pypdf",
     ),
+    SpikeTarget(
+        "gezer_2026.pdf",
+        "auto",
+        "52pp, vectored per pypdfium2 pre-check",
+    ),
+    SpikeTarget(
+        "jaljulya_2026.pdf",
+        "auto",
+        "9pp, high-res scanned per pypdfium2 pre-check, no text layer",
+    ),
+    SpikeTarget(
+        "jerusalem_2026.pdf",
+        "auto",
+        "17pp, vectored per pypdfium2 pre-check",
+    ),
+    SpikeTarget(
+        "lachish_2026.pdf",
+        "auto",
+        "3pp, scanned per pypdfium2 pre-check, no text layer",
+    ),
 ]
 
 
@@ -138,7 +174,7 @@ def build_pipeline_options(
         opts.ocr_options = TesseractCliOcrOptions(
             lang=["heb", "eng"],
             force_full_page_ocr=True,
-            tesseract_cmd=TESSERACT_CMD,
+            tesseract_cmd=_resolve_tesseract_cmd(),
             path=TESSDATA_DIR,
         )
     else:

@@ -2,8 +2,10 @@
 scripts/parse_codebook.py
 
 Parses ספר-קידודים-ברשויות-מקומיות.pdf (the Ministry of Interior's "Yellow
-Book" chart of accounts for Israeli local authorities) into a structured,
-machine-usable taxonomy: pipeline/analysis/data/moi_budget_codes.json.
+Book" chart of accounts for Israeli local authorities) into two structured,
+machine-usable taxonomies: pipeline/analysis/moi_budget_codes.json (the main
+hierarchical code tree) and pipeline/analysis/moi_budget_code_suffixes.json
+(the orthogonal suffix-code catalog, see Scope below).
 
 Why this needs custom parsing instead of plain pypdf/pdftotext:
   1. The PDF's font has a broken cmap: the Hebrew letter "נ" (nun) is mapped
@@ -23,11 +25,16 @@ Why this needs custom parsing instead of plain pypdf/pdftotext:
      (c) sort each zone's words by x0 descending (RTL reading order) to
      reconstruct "<code> <label>" for that zone independently.
 
-Scope: only the main hierarchical code tree (PDF pages 2-12, 0-indexed
-pages 2-12 whose printed page numbers are 2-12) is parsed. Pages 13-15
-("סיומות סעיפי תקבולים/תשלומים") are a separate, orthogonal 1-2 digit
-suffix-code catalog (appended to a base code to form a 5-6 digit account
-number) and are NOT covered here -- a known gap, not a bug.
+Scope: the main hierarchical code tree lives on pages 2-12 (0-indexed,
+printed page numbers 2-12; parse_codebook()). Pages 13-15 ("סיומות סעיפי
+תקבולים/תשלומים", parse_suffix_codebook()) are a separate, orthogonal 1-3
+digit suffix-code catalog appended to a base code to form a 5-6 digit
+account number -- e.g. "21" here means "אגרות מים וביוב" (a receipts
+suffix), unrelated to main-tree code "21" ("תברואה"). Written to a
+separate output file rather than merged into moi_budget_codes.json,
+because suffix codes collide with main-tree code strings and reuse the
+same 1-9 digits once per side (side is assigned per-page, not by leading
+digit, since -- unlike the main tree -- each suffix page is single-side).
 
 Side is inferred from the code's leading digit: '1'-'5' -> תקבולים
 (income), '6'-'9' -> תשלומים (expense). This holds even for the
@@ -51,11 +58,20 @@ import pdfplumber
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PDF_PATH = REPO_ROOT / "ספר-קידודים-ברשויות-מקומיות.pdf"
-OUTPUT_PATH = REPO_ROOT / "pipeline" / "analysis" / "data" / "moi_budget_codes.json"
+# NOTE: this constant previously said ".../data/moi_budget_codes.json", but the
+# file actually loaded at runtime (pipeline/analysis/codebook.py's DEFAULT_PATH)
+# has no "data/" subdirectory -- fixed here so a re-run writes where it's read from.
+OUTPUT_PATH = REPO_ROOT / "pipeline" / "analysis" / "moi_budget_codes.json"
+SUFFIX_OUTPUT_PATH = REPO_ROOT / "pipeline" / "analysis" / "moi_budget_code_suffixes.json"
 
 MOJIBAKE_NUN = "ð"  # 'ð' stands in for Hebrew 'נ' in this PDF's font
 FIRST_CONTENT_PAGE = 2   # printed page 2 (0-indexed page 2)
 LAST_CONTENT_PAGE = 12   # printed page 12 (0-indexed page 12); 13-15 are suffix tables
+# Suffix pages (see module docstring, item 3): a separate, orthogonal 1-3 digit
+# code space appended to a base code to form a 5-6 digit account number. Unlike
+# the main tree's pages, each suffix page is single-side -- side is determined
+# by which page a row came from, not by the code's leading digit.
+SUFFIX_PAGE_SIDES = {13: "receipts", 14: "payments", 15: "payments"}
 FOOTER_TOP_CUTOFF = 780  # branding/page-number band, always below this
 ROW_TOP_TOLERANCE = 2.0  # px tolerance for grouping words into the same row
 ZONE_GAP_THRESHOLD = 40.0  # px gap that signals a left/right column split
@@ -74,6 +90,22 @@ ZONE_GAP_THRESHOLD = 40.0  # px gap that signals a left/right column split
 LEVEL1_LABEL_OVERRIDES = {
     "4": "מפעלים",
     "9": "מפעלים",
+}
+
+# Several suffix-page category banners wrap across 2-3 lines (same class of
+# issue as LEVEL1_LABEL_OVERRIDES above, just more of them here): the digit
+# token sits on one line while earlier line(s) of the title have no digit
+# token at all, so parse_zone() -- correctly, for the normal one-line case --
+# treats them as a labelless stray banner fragment and drops them. Verified
+# against the source PDF's visual layout, not guessed.
+SUFFIX_LABEL_OVERRIDES = {
+    ("receipts", "8"): 'השתתפות בעלים ע"ח עבודות פתוח',
+    ("payments", "1"): "משכורות ושכר עבודה לעובדים לפי תקן",
+    ("payments", "2"): "משכורות ושכר עבודה לעובדים בלי תקן",
+    ("payments", "4"): "אחזקת בנינים ואספקה וציוד",
+    ("payments", "8"): "השתתפויות תמיכות ותרומות",
+    ("payments", "81"): 'השתתפויות ותרומות למוסדות עפ"י חוק והסכמים',
+    ("payments", "492"): "השתתפות בתקציב עזר (משרד הרשות ושרותים)",
 }
 
 
@@ -184,6 +216,62 @@ def parse_codebook() -> tuple[list[dict], list[str]]:
     return ordered, warnings
 
 
+def parse_suffix_codebook() -> tuple[list[dict], list[str]]:
+    """Parse the suffix-code pages (SUFFIX_PAGE_SIDES) into the orthogonal
+    suffix-code namespace. Kept in a separate output file from
+    parse_codebook()'s main tree: suffix codes collide with main-tree code
+    strings (e.g. "21" is a main-tree code AND an unrelated receipts-suffix
+    code), and reuse the same 1-9 digits once per side, so entries here are
+    keyed by (side, suffix_code), not by suffix_code alone.
+    """
+    entries: dict[tuple[str, str], dict] = {}
+    warnings: list[str] = []
+
+    with pdfplumber.open(str(PDF_PATH)) as pdf:
+        for page_num, side in SUFFIX_PAGE_SIDES.items():
+            page = pdf.pages[page_num]
+            words = [w for w in page.extract_words(use_text_flow=False) if w["top"] < FOOTER_TOP_CUTOFF]
+            for row in group_rows(words):
+                for zone in split_zones(row):
+                    for parsed in parse_zone(zone):
+                        code, label = parsed["code"], parsed["label"]
+                        key = (side, code)
+                        if key in entries and entries[key]["label"] != label:
+                            warnings.append(
+                                f"page {page_num}: suffix code {code} ({side}) already seen as "
+                                f"{entries[key]['label']!r} (page {entries[key]['source_page']}), "
+                                f"now {label!r} -- keeping first"
+                            )
+                            continue
+                        if key in entries:
+                            continue
+                        entries[key] = {
+                            "suffix_code": code,
+                            "label": label,
+                            "side": side,
+                            "level": len(code),
+                            "parent": code[:-1] if len(code) > 1 else None,
+                            "source_page": page_num,
+                        }
+
+    for (side, code), label in SUFFIX_LABEL_OVERRIDES.items():
+        key = (side, code)
+        if key in entries:
+            entries[key]["label"] = label
+        else:
+            entries[key] = {
+                "suffix_code": code,
+                "label": label,
+                "side": side,
+                "level": len(code),
+                "parent": code[:-1] if len(code) > 1 else None,
+                "source_page": min(p for p, s in SUFFIX_PAGE_SIDES.items() if s == side),
+            }
+
+    ordered = sorted(entries.values(), key=lambda e: (e["side"], e["suffix_code"]))
+    return ordered, warnings
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", help="comma-separated codes to print and exit, e.g. 631,111")
@@ -216,6 +304,18 @@ def main() -> None:
         for w in warnings:
             print(f"  {w}")
     print(f"\nWritten to {OUTPUT_PATH}")
+
+    suffix_entries, suffix_warnings = parse_suffix_codebook()
+    SUFFIX_OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    SUFFIX_OUTPUT_PATH.write_text(
+        json.dumps(suffix_entries, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    print(f"\nParsed {len(suffix_entries)} suffix codes from pages {sorted(SUFFIX_PAGE_SIDES)}")
+    if suffix_warnings:
+        print(f"\n{len(suffix_warnings)} suffix warning(s):")
+        for w in suffix_warnings:
+            print(f"  {w}")
+    print(f"Written to {SUFFIX_OUTPUT_PATH}")
 
 
 if __name__ == "__main__":

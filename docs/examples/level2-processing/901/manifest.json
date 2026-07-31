@@ -1,0 +1,18 @@
+{
+  "muni_id": 901,
+  "source_filename": "even_yehuda_2025.pdf",
+  "source_sha256": "7424ee56ee319fade107dcf9309fee2d7e39ea8e0d2373e2dd59039ff95f8f45",
+  "detected_type": "pdf",
+  "pipeline_used": "docling_pdf",
+  "docling_version": "2.117.0",
+  "processed_at": "2026-07-30T20:52:51.803177+00:00",
+  "status": "success",
+  "page_count": 1,
+  "warnings": [],
+  "error": null,
+  "outputs": {
+    "docling_native": "docling_native.json",
+    "markdown": "document.md",
+    "normalized": "normalized.json"
+  }
+}

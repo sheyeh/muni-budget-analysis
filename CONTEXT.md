@@ -12,14 +12,38 @@ _Avoid_: "parsed budget data", "extracted budget" — these imply semantic under
 The official Israeli municipality identifier (semel yishuv, Ministry of Interior / CBS code), reused as-is rather than inventing a project-internal ID — lets other public datasets be joined on the same key later.
 _Avoid_: "municipality code" as a project-invented term — it's an existing external identifier, not something this project defines.
 
+**Level-1 manifest**:
+The `[{muni_id, budget_filename, source: {kind, value}}]` JSON array (e.g. `data/level1_manifest.json`) bridging stage 1 (scraping) into stage 2 — `run.py`'s `load_level1_manifest()` reads it, `ingest.py`'s `resolve_source()` resolves each record's `source` to a local file. One record per source file to process, not per muni or per scrape attempt. `scripts/build_level1_manifest.py` builds this from the real `data/` corpus (see `docs/data-directory.md`).
+_Avoid_: confusing with **Processing manifest** below — same word ("manifest"), opposite end of stage 2: this is stage 2's *input* list, that's stage 2's *output* receipt.
+
+**Processing manifest**:
+The per-file `manifest.json` written by stage 2 to `processed/{muni_id}/{filename_stem}/manifest.json` (`build_manifest_record()` / `write_manifest()` in `src/muni_budget_analysis/processing/manifest.py`) — one processed file's provenance, pipeline outcome, and `status` (`success`/`partial`/`failed`). Read back by `is_already_processed()` for cache-by-content-hash skip logic.
+_Avoid_: confusing with **Level-1 manifest** above.
+
 **Normalized document**:
 The `normalized.json` file per source file — the concrete artifact holding one file's structural extraction (sections + tables). This is stage 2's contract with stage 3.
-_Avoid_: "processed file" (ambiguous — could mean the manifest, the docling native export, or this).
+_Avoid_: "processed file" (ambiguous — could mean the processing manifest, the docling native export, or this).
 
 **Budget line item**:
-A semantically resolved row produced by stage 3: a classification code placed in its hierarchy, a resolved fiscal year/amount-type per value (actual vs. budgeted vs. execution %), read off of one or more table rows in a normalized document. This is the "well-defined table of interesting values" stage 3 exists to produce.
+A semantically resolved row produced by stage 3: a classification code placed in its hierarchy, a resolved fiscal year/amount-type per value (actual vs. budgeted vs. execution %), read off of one or more table rows in a normalized document. This is the "well-defined table of interesting values" stage 3 exists to produce. Not every source row becomes a leaf value — see **Row type**.
 _Avoid_: "table row" for this — a table row is stage 2's raw, uninterpreted unit; a budget line item is stage 3's interpreted one.
 
+**Row type**:
+What kind of row a budget line item came from: `line_item` (a real leaf value), `subtotal` (a "סה״כ ..." row naming one category, e.g. "סה״כ חינוך" — still carries that category's classification code, since it *is* the sum of its own line-item children, not a sibling of them), `grand_total` (spans multiple categories or isn't a category at all, e.g. "סה״כ הכנסות", "עודף/גרעון" — no classification code applies), or `divider` (a bare structural header like "הכנסות"/"הוצאות" with no values — dropped before reaching a budget line item at all).
+_Avoid_: summing amounts by classification code without filtering on this — a `subtotal` row shares its code with its `line_item` children and double-counts if not excluded.
+
 **Year axis** / **keep**:
-Per-table fields produced by the new scope-filtering stage (between stages 2 and 3, see `docs/adr/0003-*`), stored in `scoped.json`, never in `normalized.json` — the normalized document stays stage 2's untouched contract. `year_axis` says which dimension of a table carries the year (`column` — the common case, e.g. `even_yehuda_2025`'s comparison table; `row` — multi-year forecast tables like `jerusalem_2026`'s 15-year debt-repayment schedule; or `none` — no year dimension detectable, table unusable for fiscal-year-specific extraction). `keep` is a per-column-or-per-row boolean along that axis: `true` for the slice matching the target fiscal year, and for structural (non-year) columns/rows needed to interpret it (category names, codes); `false` for every other year's slice.
+Per-table fields produced by the new scope-filtering stage (between stages 2 and 3, see `docs/adr/0003-*`), stored in `scoped.json`, never in `normalized.json` — the normalized document stays stage 2's untouched contract. `year_axis` says which dimension of a table carries the year (`column` — the common case, e.g. `even_yehuda_2025`'s comparison table; `row` — multi-year forecast tables like `jerusalem_2026`'s 15-year debt-repayment schedule; or `none` — no year dimension detectable, table unusable for fiscal-year-specific extraction). `keep` is a per-column-or-per-row boolean along that axis: `true` for the slice matching the target fiscal year, and for structural (non-year) columns/rows needed to interpret it (category names, codes, and — per `docs/adr/0004-*` — execution-rate % and change/delta columns, which describe the target year's own execution rather than carrying a different year); `false` for every other year's slice.
 _Avoid_: whole-table in/out labels — a single real budget table routinely mixes target-year and other-year columns (or rows) together, so scoping is a row/column selection within a table, not a table-level classification.
+
+**Classification code**:
+A code from the national standard chart-of-accounts for Israeli local authorities (תקן תקציבי אחיד), e.g. `631` — shared and hierarchical (parent/child codes), not muni-specific. A budget line item's code is a foreign key into this shared taxonomy, not a copy of whatever string appeared in the source cell, so line items compare across munis. Populated top-down from the official code list — already parsed into `pipeline/analysis/moi_budget_codes.json` (~672 codes, via `scripts/parse_codebook.py`), not inferred bottom-up from whatever codes happen to appear in processed documents.
+_Avoid_: "budget code" as a project-invented term — it names an existing external standard, not something this project defines.
+
+**Amount type**:
+The closed vocabulary distinguishing what kind of value a budget line item's amount represents: `budgeted`, `actual_current_prices`, `actual_adjusted_prices`, `execution_pct`, `change`. Closed deliberately — a source column stage 3 can't map to one of these is a warning, not a silently-added new type. `execution_pct` and `change` are "structural, keep regardless of year" for scope-filtering purposes (`docs/adr/0004-*`): they describe the target year's own execution/change, not a different year's data, even though their source column header rarely names a specific year.
+_Avoid_: conflating with `year_axis`/`keep` — those decide which table slice survives into stage 3; amount type is what stage 3 calls the value once it has it.
+
+**Budget coverage**:
+Whether a muni's budget for a given fiscal year was found and processed at all — tracked per `(muni_id, fiscal_year)`. A row's absence means "not yet attempted"; an explicit `not_found` status means scraping actively looked and confirmed no document exists for that muni-year. The full expected muni × year matrix, including gaps, is a query (muni list × year range, compared against what actually exists), not a stored/pre-seeded field.
+_Avoid_: treating a missing row as a confirmed gap — only an explicit `not_found` status means that; absence just means the work hasn't happened yet.

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "muni-budget-analysis"
+version = "0.1.0"
+description = "Analysis and scraping tools for Israeli municipal budgets and locality datasets."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Shai Benjamin"}
+]
+dependencies = [
+    "requests>=2.28.0",
+    "pandas>=2.0.0",
+    "openpyxl>=3.1.0",
+    "beautifulsoup4>=4.11.0",
+    "Pillow>=9.0.0",
+    "playwright>=1.40.0",
+]
+
+[project.scripts]
+muni-scrape-localities = "muni_budget_analysis.scrapers.localities:main"
+muni-scrape-websites = "muni_budget_analysis.scrapers.municipality_websites:main"
+muni-scrape-budgets = "muni_budget_analysis.scrapers.budget_files:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

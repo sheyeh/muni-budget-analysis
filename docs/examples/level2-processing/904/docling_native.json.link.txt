@@ -1,0 +1,14 @@
+docling_native.json for tel_aviv_2026 (docling native/lossless export,
+~100 MB, 363 pages) is too large to commit to git. Hosted on Google Cloud
+Storage instead (public-read, bucket in a GCP project — note: this is a
+Qwiklabs training-lab project, which expires/gets reclaimed on a timer; if
+this link goes dead, re-upload from a fresh regeneration):
+
+https://storage.googleapis.com/qwiklabs-gcp-03-e1024cd263b6-muni-budget-examples/904/docling_native.json
+
+Regenerate locally: run the level-2 batch entrypoint
+(src/muni_budget_analysis/processing/run.py) against
+budget_examples/tel_aviv_2026.pdf via a level-1 manifest record with
+muni_id=904. On CPU this is a multi-hour job — use scripts/gcp_gpu_spike.sh's
+create/bootstrap/upload/delete pattern on a GPU VM instead (see
+docs/gcp-gpu-docling.md; took ~17.6min on a spot NVIDIA L4).

@@ -1,0 +1,16 @@
+shafir_2026's normalized.json (~2.77MB, from
+data/processed/905/shafir_2026/normalized.json) is kept out of git per
+CLAUDE.md's large-file convention (>~2MB). Hosted on Google Cloud Storage
+instead (public-read, bucket in a GCP project — note: this is a Qwiklabs
+training-lab project, which expires/gets reclaimed on a timer; if this link
+goes dead, re-upload from a fresh regeneration):
+
+https://storage.googleapis.com/qwiklabs-gcp-03-e1024cd263b6-muni-budget-examples/905/normalized.json
+
+Regenerate locally: run the level-2 batch entrypoint
+(src/muni_budget_analysis/processing/run.py) against
+budget_examples/shafir_2026.pdf (source PDF itself is also externally
+hosted, see budget_examples/shafir_2026.pdf.link.txt) via a level-1
+manifest record with muni_id=905. This file is scanned (OCR path,
+docling_pdf_ocr, uses GCP Vision — see docs/adr/0001-*) — took ~15min on a
+spot NVIDIA L4 GPU VM (see docs/gcp-gpu-docling.md).

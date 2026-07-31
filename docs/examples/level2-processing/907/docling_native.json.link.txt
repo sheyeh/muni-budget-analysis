@@ -1,0 +1,9 @@
+native.json for gezer_2026 (docling native/lossless export, ~13.7 MB) is
+too large to commit to git. Hosted instead on Google Drive:
+
+File: https://drive.google.com/file/d/1iIBd_2CDWfF_phK-k1DxVrUxolwhqVCj/view?usp=drive_link
+
+Regenerate locally at any time with:
+    python scripts/spike_docling.py --fast --only gezer_2026
+(FAST table mode: 740.6s on CPU, zero errors, 52 tables found. See
+docs/examples/docling/README.md for the full finding.)

@@ -1,9 +1,0 @@
-native.json for tel_aviv_2026 (docling native/lossless export, ~100 MB) is
-too large to commit to git. It is hosted on Google Drive instead:
-
-Folder: https://drive.google.com/drive/folders/1PUlzhY99FYE73IfwfXGp5FgHxaUaKC0r
-File:   https://drive.google.com/file/d/1tkX5EQmulcrdupcpINf1Utzdy3iZgQqp/view?usp=sharing
-
-Regenerate locally at any time with:
-    scripts/spike_docling.py --only tel_aviv_2026 --device cuda
-(see docs/gcp-gpu-docling.md — GPU required, CPU is infeasible for this file)
