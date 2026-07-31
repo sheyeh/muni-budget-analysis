@@ -139,7 +139,7 @@
       "amount": null
     },
     {
-      "classification_code": null,
+      "classification_code": "31",
       "row_type": "line_item",
       "raw_label_he": "חינוך עצמיות",
       "category": "income",
@@ -148,7 +148,7 @@
       "amount": 1205000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "31",
       "row_type": "line_item",
       "raw_label_he": "חינוך עצמיות",
       "category": "income",
@@ -157,7 +157,7 @@
       "amount": 2000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "31",
       "row_type": "line_item",
       "raw_label_he": "חינוך עצמיות",
       "category": "income",
@@ -166,7 +166,7 @@
       "amount": 227000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "31",
       "row_type": "line_item",
       "raw_label_he": "חינוך עצמיות",
       "category": "income",
@@ -175,7 +175,7 @@
       "amount": 978000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "31",
       "row_type": "line_item",
       "raw_label_he": "חינוך עצמיות",
       "category": "income",
@@ -184,7 +184,7 @@
       "amount": null
     },
     {
-      "classification_code": null,
+      "classification_code": "34",
       "row_type": "line_item",
       "raw_label_he": "רווחה עצמיות",
       "category": "income",
@@ -193,7 +193,7 @@
       "amount": 240000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "34",
       "row_type": "line_item",
       "raw_label_he": "רווחה עצמיות",
       "category": "income",
@@ -202,7 +202,7 @@
       "amount": 3000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "34",
       "row_type": "line_item",
       "raw_label_he": "רווחה עצמיות",
       "category": "income",
@@ -211,7 +211,7 @@
       "amount": 3000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "34",
       "row_type": "line_item",
       "raw_label_he": "רווחה עצמיות",
       "category": "income",
@@ -220,7 +220,7 @@
       "amount": 237000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "34",
       "row_type": "line_item",
       "raw_label_he": "רווחה עצמיות",
       "category": "income",
@@ -229,7 +229,7 @@
       "amount": null
     },
     {
-      "classification_code": null,
+      "classification_code": "269",
       "row_type": "line_item",
       "raw_label_he": "אחר עצמיות",
       "category": "income",
@@ -238,7 +238,7 @@
       "amount": 13343000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "269",
       "row_type": "line_item",
       "raw_label_he": "אחר עצמיות",
       "category": "income",
@@ -247,7 +247,7 @@
       "amount": 4000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "269",
       "row_type": "line_item",
       "raw_label_he": "אחר עצמיות",
       "category": "income",
@@ -256,7 +256,7 @@
       "amount": 1462000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "269",
       "row_type": "line_item",
       "raw_label_he": "אחר עצמיות",
       "category": "income",
@@ -265,7 +265,7 @@
       "amount": 14805000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "269",
       "row_type": "line_item",
       "raw_label_he": "אחר עצמיות",
       "category": "income",
@@ -274,7 +274,7 @@
       "amount": null
     },
     {
-      "classification_code": null,
+      "classification_code": "1",
       "row_type": "subtotal",
       "raw_label_he": "עצמיות הכנסות סה\"כ",
       "category": "income",
@@ -283,7 +283,7 @@
       "amount": 78191000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "1",
       "row_type": "subtotal",
       "raw_label_he": "עצמיות הכנסות סה\"כ",
       "category": "income",
@@ -292,7 +292,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "1",
       "row_type": "subtotal",
       "raw_label_he": "עצמיות הכנסות סה\"כ",
       "category": "income",
@@ -301,7 +301,7 @@
       "amount": 438000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "1",
       "row_type": "subtotal",
       "raw_label_he": "עצמיות הכנסות סה\"כ",
       "category": "income",
@@ -310,7 +310,7 @@
       "amount": 77753000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "1",
       "row_type": "subtotal",
       "raw_label_he": "עצמיות הכנסות סה\"כ",
       "category": "income",
@@ -409,7 +409,7 @@
       "amount": null
     },
     {
-      "classification_code": null,
+      "classification_code": "15",
       "row_type": "line_item",
       "raw_label_he": "אחרים ממשלתיים תקבולים",
       "category": "income",
@@ -418,7 +418,7 @@
       "amount": 709000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "15",
       "row_type": "line_item",
       "raw_label_he": "אחרים ממשלתיים תקבולים",
       "category": "income",
@@ -427,7 +427,7 @@
       "amount": 7000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "15",
       "row_type": "line_item",
       "raw_label_he": "אחרים ממשלתיים תקבולים",
       "category": "income",
@@ -436,7 +436,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "15",
       "row_type": "line_item",
       "raw_label_he": "אחרים ממשלתיים תקבולים",
       "category": "income",
@@ -445,7 +445,7 @@
       "amount": 709000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "15",
       "row_type": "line_item",
       "raw_label_he": "אחרים ממשלתיים תקבולים",
       "category": "income",
@@ -544,7 +544,7 @@
       "amount": null
     },
     {
-      "classification_code": null,
+      "classification_code": "19",
       "row_type": "subtotal",
       "raw_label_he": "ממשלה תקבולי סה\"כ",
       "category": "income",
@@ -553,7 +553,7 @@
       "amount": 30056000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "19",
       "row_type": "subtotal",
       "raw_label_he": "ממשלה תקבולי סה\"כ",
       "category": "income",
@@ -562,7 +562,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "19",
       "row_type": "subtotal",
       "raw_label_he": "ממשלה תקבולי סה\"כ",
       "category": "income",
@@ -571,7 +571,7 @@
       "amount": 956000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "19",
       "row_type": "subtotal",
       "raw_label_he": "ממשלה תקבולי סה\"כ",
       "category": "income",
@@ -580,7 +580,7 @@
       "amount": 29100000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "19",
       "row_type": "subtotal",
       "raw_label_he": "ממשלה תקבולי סה\"כ",
       "category": "income",
@@ -589,7 +589,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "51",
       "row_type": "line_item",
       "raw_label_he": "ח\"פ ותקבולים אחרים תקבולים",
       "category": "income",
@@ -598,7 +598,7 @@
       "amount": 1945000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "51",
       "row_type": "line_item",
       "raw_label_he": "ח\"פ ותקבולים אחרים תקבולים",
       "category": "income",
@@ -607,7 +607,7 @@
       "amount": 10000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "51",
       "row_type": "line_item",
       "raw_label_he": "ח\"פ ותקבולים אחרים תקבולים",
       "category": "income",
@@ -616,7 +616,7 @@
       "amount": 176000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "51",
       "row_type": "line_item",
       "raw_label_he": "ח\"פ ותקבולים אחרים תקבולים",
       "category": "income",
@@ -625,7 +625,7 @@
       "amount": 2121000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "51",
       "row_type": "line_item",
       "raw_label_he": "ח\"פ ותקבולים אחרים תקבולים",
       "category": "income",
@@ -634,7 +634,7 @@
       "amount": null
     },
     {
-      "classification_code": null,
+      "classification_code": "513",
       "row_type": "line_item",
       "raw_label_he": "קודמות שנים בגין הכנסות",
       "category": "income",
@@ -643,7 +643,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "513",
       "row_type": "line_item",
       "raw_label_he": "קודמות שנים בגין הכנסות",
       "category": "income",
@@ -652,7 +652,7 @@
       "amount": 11000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "513",
       "row_type": "line_item",
       "raw_label_he": "קודמות שנים בגין הכנסות",
       "category": "income",
@@ -661,7 +661,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "513",
       "row_type": "line_item",
       "raw_label_he": "קודמות שנים בגין הכנסות",
       "category": "income",
@@ -670,7 +670,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "513",
       "row_type": "line_item",
       "raw_label_he": "קודמות שנים בגין הכנסות",
       "category": "income",
@@ -680,7 +680,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "הנחות לפני הכנסות סה\"כ",
       "category": "income",
       "fiscal_year_value": 2025,
@@ -689,7 +689,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "הנחות לפני הכנסות סה\"כ",
       "category": "income",
       "fiscal_year_value": 2025,
@@ -698,7 +698,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "הנחות לפני הכנסות סה\"כ",
       "category": "income",
       "fiscal_year_value": 2025,
@@ -707,7 +707,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "הנחות לפני הכנסות סה\"כ",
       "category": "income",
       "fiscal_year_value": 2025,
@@ -716,7 +716,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "הנחות לפני הכנסות סה\"כ",
       "category": "income",
       "fiscal_year_value": 2025,
@@ -724,7 +724,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "599",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון וכיסוי בארנונה",
       "category": "income",
@@ -733,7 +733,7 @@
       "amount": 110192000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "599",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון וכיסוי בארנונה",
       "category": "income",
@@ -742,7 +742,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "599",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון וכיסוי בארנונה",
       "category": "income",
@@ -751,7 +751,7 @@
       "amount": 1218000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "599",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון וכיסוי בארנונה",
       "category": "income",
@@ -760,7 +760,7 @@
       "amount": 108974000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "599",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון וכיסוי בארנונה",
       "category": "income",
@@ -814,7 +814,7 @@
       "amount": null
     },
     {
-      "classification_code": null,
+      "classification_code": "599",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון לכיסוי הכנסות",
       "category": "income",
@@ -823,7 +823,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "599",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון לכיסוי הכנסות",
       "category": "income",
@@ -832,7 +832,7 @@
       "amount": 13000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "599",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון לכיסוי הכנסות",
       "category": "income",
@@ -841,7 +841,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "599",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון לכיסוי הכנסות",
       "category": "income",
@@ -850,7 +850,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "599",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון לכיסוי הכנסות",
       "category": "income",
@@ -860,7 +860,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "מותנה ללא הכנסות סה\"כ",
       "category": "income",
       "fiscal_year_value": 2025,
@@ -869,7 +869,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "מותנה ללא הכנסות סה\"כ",
       "category": "income",
       "fiscal_year_value": 2025,
@@ -878,7 +878,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "מותנה ללא הכנסות סה\"כ",
       "category": "income",
       "fiscal_year_value": 2025,
@@ -887,7 +887,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "מותנה ללא הכנסות סה\"כ",
       "category": "income",
       "fiscal_year_value": 2025,
@@ -896,7 +896,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "מותנה ללא הכנסות סה\"כ",
       "category": "income",
       "fiscal_year_value": 2025,
@@ -1219,7 +1219,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": "811",
+      "classification_code": "81",
       "row_type": "line_item",
       "raw_label_he": "חינוך עובדי שכר",
       "category": "expense",
@@ -1228,7 +1228,7 @@
       "amount": 20514000.0
     },
     {
-      "classification_code": "811",
+      "classification_code": "81",
       "row_type": "line_item",
       "raw_label_he": "חינוך עובדי שכר",
       "category": "expense",
@@ -1237,7 +1237,7 @@
       "amount": 16000.0
     },
     {
-      "classification_code": "811",
+      "classification_code": "81",
       "row_type": "line_item",
       "raw_label_he": "חינוך עובדי שכר",
       "category": "expense",
@@ -1246,7 +1246,7 @@
       "amount": 1342000.0
     },
     {
-      "classification_code": "811",
+      "classification_code": "81",
       "row_type": "line_item",
       "raw_label_he": "חינוך עובדי שכר",
       "category": "expense",
@@ -1255,7 +1255,7 @@
       "amount": 19172000.0
     },
     {
-      "classification_code": "811",
+      "classification_code": "81",
       "row_type": "line_item",
       "raw_label_he": "חינוך עובדי שכר",
       "category": "expense",
@@ -1354,7 +1354,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": "841",
+      "classification_code": "84",
       "row_type": "line_item",
       "raw_label_he": "רווחה עובדי שכר",
       "category": "expense",
@@ -1363,7 +1363,7 @@
       "amount": 3113000.0
     },
     {
-      "classification_code": "841",
+      "classification_code": "84",
       "row_type": "line_item",
       "raw_label_he": "רווחה עובדי שכר",
       "category": "expense",
@@ -1372,7 +1372,7 @@
       "amount": 18000.0
     },
     {
-      "classification_code": "841",
+      "classification_code": "84",
       "row_type": "line_item",
       "raw_label_he": "רווחה עובדי שכר",
       "category": "expense",
@@ -1381,7 +1381,7 @@
       "amount": 338000.0
     },
     {
-      "classification_code": "841",
+      "classification_code": "84",
       "row_type": "line_item",
       "raw_label_he": "רווחה עובדי שכר",
       "category": "expense",
@@ -1390,7 +1390,7 @@
       "amount": 2775000.0
     },
     {
-      "classification_code": "841",
+      "classification_code": "84",
       "row_type": "line_item",
       "raw_label_he": "רווחה עובדי שכר",
       "category": "expense",
@@ -1669,7 +1669,7 @@
       "amount": null
     },
     {
-      "classification_code": null,
+      "classification_code": "619",
       "row_type": "line_item",
       "raw_label_he": "בחירות בגין הוצאות",
       "category": "expense",
@@ -1678,7 +1678,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "619",
       "row_type": "line_item",
       "raw_label_he": "בחירות בגין הוצאות",
       "category": "expense",
@@ -1687,7 +1687,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "619",
       "row_type": "line_item",
       "raw_label_he": "בחירות בגין הוצאות",
       "category": "expense",
@@ -1696,7 +1696,7 @@
       "amount": 159000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "619",
       "row_type": "line_item",
       "raw_label_he": "בחירות בגין הוצאות",
       "category": "expense",
@@ -1705,7 +1705,7 @@
       "amount": 159000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "619",
       "row_type": "line_item",
       "raw_label_he": "בחירות בגין הוצאות",
       "category": "expense",
@@ -1714,53 +1714,53 @@
       "amount": null
     },
     {
-      "classification_code": null,
+      "classification_code": "513",
       "row_type": "line_item",
       "raw_label_he": "קודמות שנים ובגין ח\"פ הוצאות",
-      "category": "expense",
+      "category": "income",
       "fiscal_year_value": 2025,
       "amount_type": "budgeted",
       "amount": 1215000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "513",
       "row_type": "line_item",
       "raw_label_he": "קודמות שנים ובגין ח\"פ הוצאות",
-      "category": "expense",
+      "category": "income",
       "fiscal_year_value": 2025,
       "amount_type": "change",
       "amount": 22000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "513",
       "row_type": "line_item",
       "raw_label_he": "קודמות שנים ובגין ח\"פ הוצאות",
-      "category": "expense",
+      "category": "income",
       "fiscal_year_value": 2025,
       "amount_type": "change",
       "amount": 965000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "513",
       "row_type": "line_item",
       "raw_label_he": "קודמות שנים ובגין ח\"פ הוצאות",
-      "category": "expense",
+      "category": "income",
       "fiscal_year_value": 2025,
       "amount_type": "actual_adjusted_prices",
       "amount": 250000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "513",
       "row_type": "line_item",
       "raw_label_he": "קודמות שנים ובגין ח\"פ הוצאות",
-      "category": "expense",
+      "category": "income",
       "fiscal_year_value": 2025,
       "amount_type": "execution_pct",
       "amount": null
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "הנחות לפני הוצאות סה\"כ",
       "category": "expense",
       "fiscal_year_value": 2025,
@@ -1769,7 +1769,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "הנחות לפני הוצאות סה\"כ",
       "category": "expense",
       "fiscal_year_value": 2025,
@@ -1778,7 +1778,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "הנחות לפני הוצאות סה\"כ",
       "category": "expense",
       "fiscal_year_value": 2025,
@@ -1787,7 +1787,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "הנחות לפני הוצאות סה\"כ",
       "category": "expense",
       "fiscal_year_value": 2025,
@@ -1796,7 +1796,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "הנחות לפני הוצאות סה\"כ",
       "category": "expense",
       "fiscal_year_value": 2025,
@@ -1804,7 +1804,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "999",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון וכיסוי בארנונה",
       "category": "expense",
@@ -1813,7 +1813,7 @@
       "amount": 110248000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "999",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון וכיסוי בארנונה",
       "category": "expense",
@@ -1822,7 +1822,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "999",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון וכיסוי בארנונה",
       "category": "expense",
@@ -1831,7 +1831,7 @@
       "amount": 5421000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "999",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון וכיסוי בארנונה",
       "category": "expense",
@@ -1840,7 +1840,7 @@
       "amount": 104827000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "999",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון וכיסוי בארנונה",
       "category": "expense",
@@ -1894,7 +1894,7 @@
       "amount": null
     },
     {
-      "classification_code": null,
+      "classification_code": "999",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון לכיסוי הוצאות",
       "category": "expense",
@@ -1903,7 +1903,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "999",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון לכיסוי הוצאות",
       "category": "expense",
@@ -1912,7 +1912,7 @@
       "amount": 24000.0
     },
     {
-      "classification_code": null,
+      "classification_code": "999",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון לכיסוי הוצאות",
       "category": "expense",
@@ -1921,7 +1921,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "999",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון לכיסוי הוצאות",
       "category": "expense",
@@ -1930,7 +1930,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": null,
+      "classification_code": "999",
       "row_type": "line_item",
       "raw_label_he": "נצבר גרעון לכיסוי הוצאות",
       "category": "expense",
@@ -1940,7 +1940,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "מותנה ללא הוצאות סה\"כ",
       "category": "expense",
       "fiscal_year_value": 2025,
@@ -1949,7 +1949,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "מותנה ללא הוצאות סה\"כ",
       "category": "expense",
       "fiscal_year_value": 2025,
@@ -1958,7 +1958,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "מותנה ללא הוצאות סה\"כ",
       "category": "expense",
       "fiscal_year_value": 2025,
@@ -1967,7 +1967,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "מותנה ללא הוצאות סה\"כ",
       "category": "expense",
       "fiscal_year_value": 2025,
@@ -1976,7 +1976,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "subtotal",
       "raw_label_he": "מותנה ללא הוצאות סה\"כ",
       "category": "expense",
       "fiscal_year_value": 2025,

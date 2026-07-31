@@ -139,7 +139,7 @@
       "amount": 345.0
     },
     {
-      "classification_code": "995",
+      "classification_code": null,
       "row_type": "line_item",
       "raw_label_he": "ANANA NyNIN 9999 NINSIN INO 448) 995) 9910999",
       "category": "expense",
@@ -148,7 +148,7 @@
       "amount": null
     },
     {
-      "classification_code": "995",
+      "classification_code": null,
       "row_type": "line_item",
       "raw_label_he": "ADNAN Nn JAN) PY 7710997 MINSIN",
       "category": "expense",

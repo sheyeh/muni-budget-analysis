@@ -152,7 +152,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--input", action="append", required=True, dest="inputs", help="path to a normalized.json or docling native.json (repeatable)")
     p.add_argument("--source", action="append", required=True, dest="sources", help="label for the matching --input, e.g. a municipality/year slug (repeatable, same order as --input)")
     p.add_argument("--out", help="write combined legacy output to this single JSON file")
-    p.add_argument("--out-dir", help="write one JSON file per --source into this directory")
+    p.add_argument("--out-dir", default=str(REPO_ROOT / "docs" / "examples" / "level3-analysis" / "out"), help="write one JSON file per --source into this directory (default: docs/examples/level3-analysis/out)")
     return p.parse_args()
 
 

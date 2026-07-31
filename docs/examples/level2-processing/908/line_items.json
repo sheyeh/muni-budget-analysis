@@ -607,7 +607,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": "312",
+      "classification_code": "31",
       "row_type": "line_item",
       "raw_label_he": "עיקר הגידול הוא בסעיף סייעות צמודות כמיליון ש\"ח וגידול שכל\"מ גננות טרום חובה בסך 700 אלפי ש\"ח",
       "category": "income",
@@ -652,10 +652,10 @@
       "amount": 0.0
     },
     {
-      "classification_code": "111",
+      "classification_code": null,
       "row_type": "line_item",
       "raw_label_he": "בשנת 2025 נתקבלה הלוואה לאחון בסך 1475 אלפי ש\"ח ונרשמה הכנסה כנגד הקטנת הפרשוה לתביעות תלויות שבוטלו בתקציב 2026 בנוסף תוקצבה קרן ארנונה ש\"ח",
-      "category": "income",
+      "category": "expense",
       "fiscal_year_value": 2026,
       "amount_type": "budgeted",
       "amount": null
@@ -670,7 +670,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": "11",
+      "classification_code": "111",
       "row_type": "line_item",
       "raw_label_he": "גידול בהנחות הארנונה בעקבות הטמעת סקר נכסים והגברת הגבייה",
       "category": "income",
@@ -742,7 +742,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": "32",
+      "classification_code": "212",
       "row_type": "line_item",
       "raw_label_he": "סעיף שירותי ניקיון יסודיים בסך 440 אלפי ש\"ח סעיף נוער ישובי בסך 277 אלפי ש\"ח (מקביל לגידול בהוצאה) סעיף קייטנת קיץ בסך 388 אלפי ש\"ח (מקביל לגידול בהוצאת). סעיף קייטנת חורף בסך 197 אלפי עו\"ח (מקביל לגידול בהוצאה) סעיף ניצנים בסך 234 אלפי ש\"ח (מקביל לגידול בהוצאה) ועוד סעיפים אחרים",
       "category": "income",
@@ -814,7 +814,7 @@
       "amount": 0.0
     },
     {
-      "classification_code": "11",
+      "classification_code": "111",
       "row_type": "line_item",
       "raw_label_he": "גידול בהנחות הארנונה בעקבות הטמעת סקר נכסים והגברת הגבייה",
       "category": "income",
@@ -1031,7 +1031,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "line_item",
       "raw_label_he": "13,907",
       "category": "expense",
       "fiscal_year_value": 2026,
@@ -1040,25 +1040,25 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "line_item",
       "raw_label_he": "20,442",
       "category": "expense",
       "fiscal_year_value": 2026,
       "amount_type": "budgeted",
-      "amount": 20767000.0
+      "amount": 20767.0
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "line_item",
       "raw_label_he": "11,042",
       "category": "expense",
       "fiscal_year_value": 2026,
       "amount_type": "budgeted",
-      "amount": 11123000.0
+      "amount": 11123.0
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "line_item",
       "raw_label_he": "3,392",
       "category": "expense",
       "fiscal_year_value": 2026,
@@ -1067,7 +1067,7 @@
     },
     {
       "classification_code": null,
-      "row_type": "grand_total",
+      "row_type": "line_item",
       "raw_label_he": "11,815",
       "category": "expense",
       "fiscal_year_value": 2026,

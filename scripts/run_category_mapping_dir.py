@@ -40,7 +40,7 @@ def discover_sources(source_dir: Path, pattern: str) -> list[tuple[str, Path]]:
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--source-dir", required=True, help="directory to scan for normalized.json files")
-    p.add_argument("--out-dir", required=True, help="directory to write combined outputs into")
+    p.add_argument("--out-dir", default=str(REPO_ROOT / "docs" / "examples" / "level3-analysis" / "out"), help="directory to write combined outputs into (default: docs/examples/level3-analysis/out)")
     p.add_argument("--pattern", default="normalized.json", help="filename to look for inside each subdirectory (default: normalized.json)")
     p.add_argument("--api-key", help="Gemini API key (or set GEMINI_API_KEY and omit this)")
     p.add_argument("--model", default="gemini-3.5-flash-lite")
