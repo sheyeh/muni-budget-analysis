@@ -15,7 +15,7 @@ const DbData = (() => {
   const SUPABASE_ANON_KEY = "sb_publishable_EfmOSiqflmh3cEprA1A7Sg_k2hCKJOk";
 
   const YEARS = [2026, 2025, 2024, 2023, 2022];
-  const TYPE_HE = { "local council": "מועצה מקומית", city: "עיריה", "regional council": "מועצה אזורית" };
+  const TYPE_HE = { "local council": "מועצה מקומית", city: "עיריה", "regional council": "מועצה אזורית", unknown: "לא ידוע" };
   const UNIT_MULTIPLIER = { nis: 1, thousands_nis: 1000 };
   const STATUS_MAP = {
     processed_success: "detailed",
