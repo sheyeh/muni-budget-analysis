@@ -179,7 +179,13 @@ const PageMap = (() => {
   }
 
   async function render(container) {
-    const [munisData, geo] = await Promise.all([Data.getMunicipalities(), Data.getGeoJSON()]);
+    const [munisData, geo] = await Promise.all([
+      Data.getMunicipalities(),
+      Data.getGeoJSON().catch((err) => {
+        console.error(err);
+        return null; // table still renders; choropleth just shows base map with no polygons
+      }),
+    ]);
     municipalities = munisData;
 
     container.innerHTML = `
