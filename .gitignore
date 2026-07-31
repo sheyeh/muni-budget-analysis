@@ -29,7 +29,12 @@ htmlcov/
 .ipynb_checkpoints
 
 # Data downloads
-data/
+data/*
+# Real municipality dimension data (issue #28) -- small (~1.5MB total for
+# 1484 locality records / 260 aggregated municipalities), committed for
+# reproducibility. Raw intermediate download kept out.
+!data/localities/
+data/localities/bycode_latest.xlsx
 
 # IDE & OS files
 .idea/
