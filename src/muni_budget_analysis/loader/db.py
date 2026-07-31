@@ -67,8 +67,10 @@ def replace_line_items(cur, budget_id: int, muni_id: int, rows: List[Dict[str, A
     cur.executemany(INSERT_LINE_ITEM_SQL, params)
 
 
-def sync_one(conn, manifest_path: Path) -> Dict[str, Any]:
-    """Load one manifest.json + sibling line_items.json/scoped.json, upsert
+def sync_one(conn, manifest_path: Path, processed_dir: Path, analysis_dir: Path) -> Dict[str, Any]:
+    """Load one manifest.json (under processed_dir) + its line_items.json
+    (under the parallel analysis_dir tree, per
+    docs/handshake-level3-postgres.md) + sibling scoped.json, upsert
     budget + wholesale-replace its line items in one transaction. Never
     raises -- returns a summary dict, including on failure.
     """
@@ -77,7 +79,8 @@ def sync_one(conn, manifest_path: Path) -> Dict[str, Any]:
     muni_id = manifest["muni_id"]
 
     try:
-        line_items_doc = sync.load_line_items(manifest_dir)
+        analysis_doc_dir = sync.resolve_analysis_dir(manifest_path, processed_dir, analysis_dir)
+        line_items_doc = sync.load_line_items(analysis_doc_dir)
         fiscal_year = sync.resolve_fiscal_year(manifest_dir, line_items_doc)
 
         if fiscal_year is None:
@@ -114,12 +117,20 @@ def sync_one(conn, manifest_path: Path) -> Dict[str, Any]:
         return {"muni_id": muni_id, "status": "error", "reason": str(exc)}
 
 
-def sync_all(database_url: str, processed_dir: Path) -> List[Dict[str, Any]]:
+def sync_all(
+    database_url: str, processed_dir: Path, analysis_dir: Path | None = None
+) -> List[Dict[str, Any]]:
     """Sync every discovered budget under processed_dir. A single budget's
     failure never aborts the batch (mirrors run.py's run_batch()).
+
+    analysis_dir defaults to processed_dir.parent / "analysis", matching
+    analysis/run.py's own default when it isn't given --analysis-dir.
     """
+    if analysis_dir is None:
+        analysis_dir = processed_dir.parent / "analysis"
+
     manifest_paths = sync.discover_budgets(processed_dir)
     logger.info("Found %d manifest(s) under %s", len(manifest_paths), processed_dir)
 
     with connect(database_url) as conn:
-        return [sync_one(conn, path) for path in manifest_paths]
+        return [sync_one(conn, path, processed_dir, analysis_dir) for path in manifest_paths]

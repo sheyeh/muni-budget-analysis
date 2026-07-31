@@ -37,6 +37,12 @@ def parse_args() -> argparse.Namespace:
         help=f"directory to scan for {{muni_id}}/{{output_key}}/manifest.json (default: {DEFAULT_PROCESSED_DIR})",
     )
     p.add_argument(
+        "--analysis-dir", type=Path, default=None,
+        help="directory to read {muni_id}/{output_key}/line_items.json from "
+        "(default: --processed-dir's sibling 'analysis' directory, matching "
+        "analysis/run.py's own default)",
+    )
+    p.add_argument(
         "--database-url", default=os.environ.get("DATABASE_URL"),
         help="Postgres connection string (or set DATABASE_URL)",
     )
@@ -54,7 +60,7 @@ def main() -> None:
         print(f"Not a directory: {args.processed_dir}", file=sys.stderr)
         sys.exit(1)
 
-    results = sync_all(args.database_url, args.processed_dir)
+    results = sync_all(args.database_url, args.processed_dir, args.analysis_dir)
 
     status_counts: dict[str, int] = {}
     for result in results:

@@ -24,9 +24,20 @@ def discover_budgets(processed_dir: Path) -> List[Path]:
     return sorted(processed_dir.glob(f"*/*/{MANIFEST_FILENAME}"))
 
 
-def load_line_items(manifest_dir: Path) -> Optional[Dict[str, Any]]:
-    """Read manifest_dir/line_items.json, or None if absent."""
-    path = manifest_dir / LINE_ITEMS_FILENAME
+def resolve_analysis_dir(manifest_path: Path, processed_dir: Path, analysis_dir: Path) -> Path:
+    """Map a discovered manifest.json's directory to its sibling under the
+    analysis tree -- stage 3 (`analysis/run.py`) writes line_items.json to a
+    separate `{analysis_dir}/{muni_id}/{output_key}/` tree, not alongside
+    manifest.json, per docs/handshake-level3-postgres.md. `manifest_path`
+    always comes from `discover_budgets(processed_dir)`, so it is always
+    actually under `processed_dir` -- no fallback if that invariant breaks.
+    """
+    return analysis_dir / manifest_path.parent.relative_to(processed_dir)
+
+
+def load_line_items(analysis_doc_dir: Path) -> Optional[Dict[str, Any]]:
+    """Read analysis_doc_dir/line_items.json, or None if absent."""
+    path = analysis_doc_dir / LINE_ITEMS_FILENAME
     if not path.exists():
         return None
     return json.loads(path.read_text(encoding="utf-8"))

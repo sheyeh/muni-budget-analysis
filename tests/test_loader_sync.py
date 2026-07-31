@@ -12,11 +12,13 @@ from muni_budget_analysis.loader.sync import (
     build_line_item_rows,
     derive_status,
     discover_budgets,
+    resolve_analysis_dir,
     resolve_fiscal_year,
 )
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 LEVEL2_DIR = REPO_ROOT / "docs" / "examples" / "level2-processing"
+LEVEL3_DIR = REPO_ROOT / "docs" / "examples" / "level3-analysis"
 
 
 def load_manifest(muni_id: int) -> dict:
@@ -24,7 +26,7 @@ def load_manifest(muni_id: int) -> dict:
 
 
 def load_line_items(muni_id: int) -> dict:
-    return json.loads((LEVEL2_DIR / str(muni_id) / "line_items.json").read_text(encoding="utf-8"))
+    return json.loads((LEVEL3_DIR / str(muni_id) / "line_items.json").read_text(encoding="utf-8"))
 
 
 # --- derive_status ------------------------------------------------------
@@ -197,3 +199,34 @@ def test_discover_budgets_two_levels_deep(tmp_path):
 
 def test_discover_budgets_empty_dir(tmp_path):
     assert discover_budgets(tmp_path) == []
+
+
+# --- resolve_analysis_dir -------------------------------------------------
+
+
+def test_resolve_analysis_dir_maps_processed_manifest_to_analysis_tree(tmp_path):
+    # Reproduces the real bug: manifest.json lives under processed/, but
+    # line_items.json lives under a *separate* analysis/ tree (stage 3's
+    # default output location) -- not alongside manifest.json.
+    processed_dir = tmp_path / "processed"
+    analysis_dir = tmp_path / "analysis"
+    manifest_dir = processed_dir / "901" / "even_yehuda_2025"
+    manifest_dir.mkdir(parents=True)
+    manifest_path = manifest_dir / "manifest.json"
+    manifest_path.write_text("{}", encoding="utf-8")
+
+    analysis_doc_dir = analysis_dir / "901" / "even_yehuda_2025"
+    analysis_doc_dir.mkdir(parents=True)
+    (analysis_doc_dir / "line_items.json").write_text(
+        json.dumps({"fiscal_year": 2025, "unit": "nis", "line_items": [], "warnings": []}),
+        encoding="utf-8",
+    )
+
+    resolved = resolve_analysis_dir(manifest_path, processed_dir, analysis_dir)
+
+    assert resolved == analysis_doc_dir
+    from muni_budget_analysis.loader.sync import load_line_items
+
+    assert load_line_items(resolved) is not None
+    # the old (buggy) lookup location must NOT have the file
+    assert not (manifest_dir / "line_items.json").exists()
