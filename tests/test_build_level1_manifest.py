@@ -1,6 +1,7 @@
 import importlib.util
 from pathlib import Path
 
+import pypdf
 import pytest
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -81,6 +82,164 @@ def test_discover_year_records_multi_file_skips_with_warning(tmp_path, caplog):
     assert skipped[0]["year"] == 2020
     assert set(skipped[0]["file_names"]) == {"a.pdf", "b.pdf"}
     assert "needs manual resolution" in caplog.text
+
+
+def _make_pdf(path: Path, num_pages: int = 1) -> Path:
+    writer = pypdf.PdfWriter()
+    for _ in range(num_pages):
+        writer.add_blank_page(width=72, height=72)
+    with open(path, "wb") as f:
+        writer.write(f)
+    return path
+
+
+def test_select_multi_file_candidate_merges_part_files(tmp_path):
+    year_dir = tmp_path / "5000_תל_אביב_-יפו" / "2009"
+    year_dir.mkdir(parents=True)
+    # out of numeric order on purpose
+    files = [
+        _make_pdf(year_dir / "תקציב העירייה לשנת 2009 - תקציב רגיל-חלק 3.pdf"),
+        _make_pdf(year_dir / "תקציב העירייה לשנת 2009 - תקציב רגיל-חלק 1.pdf"),
+        _make_pdf(year_dir / "תקציב העירייה לשנת 2009 - תקציב רגיל-חלק 2.pdf"),
+    ]
+    merged_dir = tmp_path / "data_merged"
+
+    result = build_level1_manifest.select_multi_file_candidate(
+        files, "5000_תל_אביב_-יפו", 2009, merged_dir
+    )
+
+    assert result == merged_dir / "5000_תל_אביב_-יפו_2009-merged.pdf"
+    assert len(pypdf.PdfReader(result).pages) == 3
+
+
+def test_select_multi_file_candidate_merge_is_idempotent(tmp_path):
+    year_dir = tmp_path / "5000_תל_אביב_-יפו" / "2009"
+    year_dir.mkdir(parents=True)
+    files = [
+        _make_pdf(year_dir / "חלק 1.pdf"),
+        _make_pdf(year_dir / "חלק 2.pdf"),
+    ]
+    merged_dir = tmp_path / "data_merged"
+
+    first = build_level1_manifest.select_multi_file_candidate(
+        files, "5000_תל_אביב_-יפו", 2009, merged_dir
+    )
+    first_mtime = first.stat().st_mtime
+    second = build_level1_manifest.select_multi_file_candidate(
+        files, "5000_תל_אביב_-יפו", 2009, merged_dir
+    )
+
+    assert second == first
+    assert second.stat().st_mtime == first_mtime
+
+
+def test_select_multi_file_candidate_prefers_full_over_summary_sikumim(tmp_path):
+    year_dir = tmp_path / "5000_תל_אביב_-יפו" / "2013"
+    year_dir.mkdir(parents=True)
+    full = year_dir / "תקציב העירייה הרגיל לשנת 2013.xls"
+    full.write_bytes(b"full")
+    summary = year_dir / "תקציב העירייה הרגיל לשנת 2013 - סיכומים.xls"
+    summary.write_bytes(b"summary")
+
+    result = build_level1_manifest.select_multi_file_candidate(
+        [full, summary], "5000_תל_אביב_-יפו", 2013, tmp_path / "data_merged"
+    )
+
+    assert result == full
+
+
+def test_select_multi_file_candidate_prefers_full_over_summary_tamzit(tmp_path):
+    year_dir = tmp_path / "6600_חולון" / "2011"
+    year_dir.mkdir(parents=True)
+    summary = year_dir / "תמצית תקציב רגיל לשנת 2011.pdf"
+    summary.write_bytes(b"summary")
+    full = year_dir / "תקציב רגיל לשנת 2011.xls"
+    full.write_bytes(b"full")
+
+    result = build_level1_manifest.select_multi_file_candidate(
+        [summary, full], "6600_חולון", 2011, tmp_path / "data_merged"
+    )
+
+    assert result == full
+
+
+def test_select_multi_file_candidate_prefers_excel_over_pdf_companions(tmp_path):
+    year_dir = tmp_path / "5000_תל_אביב_-יפו" / "2022"
+    year_dir.mkdir(parents=True)
+    full_xlsx = year_dir / "תקציב העירייה הרגיל לשנת 2022.xlsx"
+    full_xlsx.write_bytes(b"full")
+    summary_xlsx = year_dir / "תקציב העירייה הרגיל לשנת 2022 - סיכומים.xlsx"
+    summary_xlsx.write_bytes(b"summary")
+    notes_pdf = year_dir / "דברי הסבר הצעת תקציב רגיל 2022.pdf"
+    notes_pdf.write_bytes(b"notes")
+    book_pdf = year_dir / "ספר תקציב רגיל - פירוט 2022.pdf"
+    book_pdf.write_bytes(b"book")
+
+    result = build_level1_manifest.select_multi_file_candidate(
+        [full_xlsx, summary_xlsx, notes_pdf, book_pdf],
+        "5000_תל_אביב_-יפו", 2022, tmp_path / "data_merged",
+    )
+
+    assert result == full_xlsx
+
+
+def test_select_multi_file_candidate_prefers_updated_variant(tmp_path):
+    year_dir = tmp_path / "6600_חולון" / "2017"
+    year_dir.mkdir(parents=True)
+    original = year_dir / "תקציב רגיל 2017.xls"
+    original.write_bytes(b"original")
+    updated = year_dir / "תקציב רגיל מעודכן 2017.xls"
+    updated.write_bytes(b"updated")
+
+    result = build_level1_manifest.select_multi_file_candidate(
+        [original, updated], "6600_חולון", 2017, tmp_path / "data_merged"
+    )
+
+    assert result == updated
+
+
+def test_select_multi_file_candidate_returns_none_when_still_ambiguous(tmp_path):
+    year_dir = tmp_path / "5000_תל_אביב_-יפו" / "2020"
+    year_dir.mkdir(parents=True)
+    excel_a = year_dir / "תקציב העירייה הרגיל לשנת 2020 אקסל.xls"
+    excel_a.write_bytes(b"a")
+    excel_b = year_dir / "תקציב העירייה הרגיל לשנת 2020.xlsx"
+    excel_b.write_bytes(b"b")
+    notes_pdf = year_dir / "דברי הסבר הצעת תקציב רגיל 2020.pdf"
+    notes_pdf.write_bytes(b"notes")
+
+    result = build_level1_manifest.select_multi_file_candidate(
+        [excel_a, excel_b, notes_pdf], "5000_תל_אביב_-יפו", 2020, tmp_path / "data_merged"
+    )
+
+    assert result is None
+
+
+def test_discover_year_records_multi_file_auto_resolves_and_reports_fewer_skips(tmp_path, caplog):
+    data_dir = tmp_path / "data"
+    merged_dir = tmp_path / "data_merged"
+
+    resolvable_dir = data_dir / "6600_חולון" / "2011"
+    resolvable_dir.mkdir(parents=True)
+    (resolvable_dir / "תמצית תקציב רגיל לשנת 2011.pdf").write_bytes(b"summary")
+    full = resolvable_dir / "תקציב רגיל לשנת 2011.xls"
+    full.write_bytes(b"full")
+
+    ambiguous_dir = data_dir / "5000_תל_אביב_-יפו" / "2020"
+    ambiguous_dir.mkdir(parents=True)
+    (ambiguous_dir / "תקציב העירייה הרגיל לשנת 2020 אקסל.xls").write_bytes(b"a")
+    (ambiguous_dir / "תקציב העירייה הרגיל לשנת 2020.xlsx").write_bytes(b"b")
+
+    with caplog.at_level("WARNING"):
+        records, skipped = build_level1_manifest.discover_year_records(data_dir, merged_dir)
+
+    assert len(records) == 1
+    assert records[0]["muni_id"] == 6600
+    assert records[0]["file_path"] == full
+
+    assert len(skipped) == 1
+    assert skipped[0]["muni_id"] == 5000
+    assert skipped[0]["year"] == 2020
 
 
 def test_load_csv_index_match_and_year_zero_excluded(tmp_path):
