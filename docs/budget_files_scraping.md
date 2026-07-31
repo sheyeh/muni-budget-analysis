@@ -57,6 +57,14 @@ For every municipality and budget year (e.g. 2026, 2025, 2024, 2023...), the scr
 | **Priority 2** | **PDF Files** | `.pdf` | Selected ONLY if no Excel file exists for that municipality and year. |
 | **Priority 3** | **FlipHTML5 Publications** | `fliphtml5.com`, `online.fliphtml5.com` | Selected ONLY if neither Excel nor PDF files exist for that year. Automatically converted to PDF. |
 
+### FlipHTML5 Conversion (`convert_fliphtml_to_pdf`)
+
+FlipHTML5-hosted publications are converted to PDF via, in order:
+
+1. **Direct PDF download link** (`files/download/<book_id>.pdf`), if the publisher enabled it.
+2. **Headless-browser page extraction**: FlipHTML5's per-page images are never present as static links (the only one in the plain HTML is the cover thumbnail, `files/shot.jpg`), and the reader's own page manifest is a proprietary-obfuscated blob inside `javascript/config.js` - not something regex can parse. Instead, the reader exposes a "thumbnail preview" panel whose items already exist in the DOM (hidden until toggled), one per page, each with an `aria-label="page N"`. The scraper opens this panel and clicks through every item, capturing each page's real `files/large/<hash>.<ext>` image via network response interception - keyed by page number, since the hashed filenames carry no inherent order. A couple of retry passes over whatever pages were missed on the first sweep improve completeness (the swiper appears to virtualize/recycle its DOM nodes while scrolling, which drops some clicks unpredictably). This is a best-effort process, not a guaranteed 100% capture - if fewer pages were captured than the panel reported existing, this is logged as a **warning** (`FlipHTML thumbnail capture incomplete for ...: got X of Y expected pages`) rather than silently producing an incomplete PDF unnoticed.
+3. **Last resort - static HTML fallback**: whatever page image references happen to be in the plain HTML response. In practice this is only ever the single cover thumbnail, so this path alone previously caused FlipHTML5 conversions to silently produce a 1-page PDF; it now only runs if the browser-based extraction above found nothing at all (e.g. Playwright isn't installed).
+
 ### Regular vs. Non-Regular Budgets
 
 Some municipalities (e.g. Tel Aviv) publish both a "regular" budget (`תקציב רגיל`/`רגיל`) and a "non-regular"/supplementary budget (`תקציב בלתי רגיל`/`בלתי רגיל`) for the same year, each with several distinct documents (a details book, a summary spreadsheet, explanatory notes, etc.). When a municipality's candidates for a year include this distinction:

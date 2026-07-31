@@ -312,12 +312,120 @@ def fetch_rendered_html(url: str, timeout: int = 20) -> Optional[str]:
         return None
 
 
+def _extract_fliphtml_page_images_via_browser(clean_url: str, timeout: int = 30) -> Dict[int, str]:
+    """
+    Render a FlipHTML5 publication and collect each page's full-resolution image URL.
+
+    FlipHTML5's per-page images are never present as static links (only the cover
+    thumbnail `files/shot.jpg` is), and the reader's own page manifest is a
+    proprietary-obfuscated blob inside `javascript/config.js` - not something we can
+    regex-parse. The reader does, however, expose a "thumbnail preview" panel whose
+    items already exist in the DOM (though hidden until toggled) with an
+    `aria-label="page N"` per page. Clicking each one triggers the reader to fetch
+    that page's real `files/large/<hash>.<ext>` image, which we capture via response
+    interception - keyed by page number, since the hashed filenames carry no
+    order/sequence info of their own.
+    """
+    page_images: Dict[int, str] = {}
+    if sync_playwright is None:
+        return page_images
+
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+            try:
+                page = browser.new_page()
+                current_click_matches: List[str] = []
+
+                def on_response(resp):
+                    if re.search(r"files/large/[^?]*\.(?:jpe?g|png|webp)", resp.url, re.I):
+                        current_click_matches.append(resp.url)
+
+                page.on("response", on_response)
+                page.goto(clean_url + "/", timeout=timeout * 1000, wait_until="load")
+                page.wait_for_timeout(2000)
+
+                # Toggle the thumbnail-preview panel open - its items are hidden until
+                # this is clicked, regardless of the reader's UI language/theme, so we
+                # match on the Hebrew label already seen in the wild as well as the
+                # generic "thumbnail" substring.
+                thumb_btn = page.query_selector(
+                    "[aria-label*='ממוזערות'], [aria-label*='thumbnail' i]"
+                )
+                if thumb_btn:
+                    try:
+                        thumb_btn.click(timeout=3000)
+                        page.wait_for_timeout(1500)
+                    except Exception:
+                        pass
+
+                def click_pass(wait_ms: int) -> int:
+                    """One pass over every thumbnail item still missing from
+                    page_images. Re-queries elements fresh each pass, since the
+                    swiper appears to virtualize/recycle its DOM nodes as it
+                    scrolls, making stale element handles from an earlier pass
+                    unreliable. Returns how many items were still missing going in."""
+                    items = page.query_selector_all(".thumbnailSwiper .item")
+                    missing_count = 0
+                    for item in items:
+                        aria = item.get_attribute("aria-label") or ""
+                        page_num_match = re.search(r"(\d+)", aria)
+                        if not page_num_match:
+                            continue
+                        page_num = int(page_num_match.group(1))
+                        if page_num in page_images:
+                            continue
+                        missing_count += 1
+
+                        current_click_matches.clear()
+                        try:
+                            item.scroll_into_view_if_needed(timeout=1500)
+                            page.wait_for_timeout(60)
+                            item.click(timeout=1500)
+                        except Exception:
+                            continue
+                        page.wait_for_timeout(wait_ms)
+
+                        if current_click_matches:
+                            page_images[page_num] = current_click_matches[-1]
+                    return missing_count
+
+                total_items = len(page.query_selector_all(".thumbnailSwiper .item"))
+                click_pass(300)
+                # A couple of retry passes for whatever the swiper's DOM virtualization
+                # or click-timing caused to be missed on the first sweep - re-querying
+                # fresh elements and waiting a bit longer tends to pick up the rest.
+                for _ in range(2):
+                    if len(page_images) >= total_items:
+                        break
+                    click_pass(500)
+
+                page.wait_for_timeout(1500)
+
+                if total_items and len(page_images) < total_items:
+                    logger.warning(
+                        "FlipHTML thumbnail capture incomplete for %s: got %d of %d expected pages",
+                        clean_url, len(page_images), total_items
+                    )
+            finally:
+                browser.close()
+    except Exception as e:
+        logger.warning("FlipHTML browser-based page extraction failed for %s: %s", clean_url, e)
+
+    return page_images
+
+
 def convert_fliphtml_to_pdf(flip_url: str, save_path: Path) -> bool:
     """
     Convert a FlipHTML5 publication link to a PDF document.
-    Attempts:
+    Attempts, in order:
     1. Direct PDF download link (`files/download/<name>.pdf`).
-    2. Extracting page images (`files/large/...` or `files/shot.jpg`) from publication HTML and compiling via Pillow.
+    2. Rendering the reader with a headless browser and clicking through its
+       thumbnail-preview panel to collect every page's real image (see
+       `_extract_fliphtml_page_images_via_browser`).
+    3. Last resort: whatever page image references happen to be in the static HTML -
+       in practice this is only ever the cover thumbnail (`files/shot.jpg`), since
+       FlipHTML5 loads every other page's image dynamically via JS.
     """
     clean_url = urllib.parse.urldefrag(flip_url)[0].split("?")[0].rstrip("/")
     if "index.html" in clean_url:
@@ -340,40 +448,49 @@ def convert_fliphtml_to_pdf(flip_url: str, save_path: Path) -> bool:
         except Exception:
             pass
 
-    # 2. Extract page images from publication HTML
     if Image is None:
         logger.warning("Pillow library not available for FlipHTML image-to-PDF conversion.")
         return False
 
-    try:
-        req = urllib.request.Request(clean_url + "/", headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=6) as resp:
-            html = resp.read().decode("utf-8", errors="ignore")
-            img_rel_paths = re.findall(r"files/(?:large|shot)[^\s\"'\\)\?>]+\.(?:webp|jpg|png)", html)
-            img_rel_paths = sorted(list(set(img_rel_paths)))
+    # 2. Render with a headless browser and capture every page's real image
+    img_urls_ordered: List[str] = []
+    page_images = _extract_fliphtml_page_images_via_browser(clean_url)
+    if page_images:
+        img_urls_ordered = [page_images[n] for n in sorted(page_images)]
 
-            if not img_rel_paths:
-                img_rel_paths = ["files/shot.jpg"]
+    # 3. Last resort: whatever's in the static HTML (in practice just the cover)
+    if not img_urls_ordered:
+        try:
+            req = urllib.request.Request(clean_url + "/", headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=6) as resp:
+                html = resp.read().decode("utf-8", errors="ignore")
+                img_rel_paths = re.findall(r"files/(?:large|shot)[^\s\"'\\)\?>]+\.(?:webp|jpg|png)", html)
+                img_rel_paths = sorted(list(set(img_rel_paths)))
+                if not img_rel_paths:
+                    img_rel_paths = ["files/shot.jpg"]
+                img_urls_ordered = [f"{clean_url}/{rel}" for rel in img_rel_paths]
+        except Exception as e:
+            logger.warning("FlipHTML static-HTML fallback failed for %s: %s", flip_url, e)
 
-            images = []
-            for rel in img_rel_paths:
-                img_url = f"{clean_url}/{rel}"
-                try:
-                    ireq = urllib.request.Request(img_url, headers=HEADERS)
-                    with urllib.request.urlopen(ireq, timeout=4) as iresp:
-                        if iresp.status == 200:
-                            img = Image.open(io.BytesIO(iresp.read())).convert("RGB")
-                            images.append(img)
-                except Exception:
-                    pass
+    if not img_urls_ordered:
+        return False
 
-            if images:
-                save_path.parent.mkdir(parents=True, exist_ok=True)
-                images[0].save(save_path, "PDF", save_all=True, append_images=images[1:])
-                logger.info("Compiled %d FlipHTML page images into PDF: %s", len(images), save_path)
-                return True
-    except Exception as e:
-        logger.warning("FlipHTML conversion failed for %s: %s", flip_url, e)
+    images = []
+    for img_url in img_urls_ordered:
+        try:
+            ireq = urllib.request.Request(img_url, headers=HEADERS)
+            with urllib.request.urlopen(ireq, timeout=8) as iresp:
+                if iresp.status == 200:
+                    img = Image.open(io.BytesIO(iresp.read())).convert("RGB")
+                    images.append(img)
+        except Exception:
+            pass
+
+    if images:
+        save_path.parent.mkdir(parents=True, exist_ok=True)
+        images[0].save(save_path, "PDF", save_all=True, append_images=images[1:])
+        logger.info("Compiled %d FlipHTML page images into PDF: %s", len(images), save_path)
+        return True
 
     return False
 
