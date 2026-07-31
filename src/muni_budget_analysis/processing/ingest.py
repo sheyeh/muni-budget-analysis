@@ -79,11 +79,19 @@ def resolve_source(record: Dict[str, Any], raw_dir: Path) -> Path:
     raise ValueError(f"Unrecognized source kind: {kind!r}")
 
 
+def output_dir_key(filename: str) -> str:
+    """Collision-safe output-dir key: stem + extension, so files that share a
+    stem but differ in extension (e.g. tel_aviv_2026.pdf vs .xlsx) don't
+    collide under the same muni_id."""
+    path = Path(filename)
+    return f"{path.stem}_{path.suffix.lstrip('.')}" if path.suffix else path.stem
+
+
 def is_already_processed(
-    processed_dir: Path, muni_id: int, filename_stem: str, source_sha256: str
+    processed_dir: Path, muni_id: int, output_key: str, source_sha256: str
 ) -> bool:
     """Check whether a file with this content hash already has a manifest on disk."""
-    target_dir = processed_dir / str(muni_id) / filename_stem
+    target_dir = processed_dir / str(muni_id) / output_key
     existing = read_manifest(target_dir)
     return existing is not None and existing.get("source_sha256") == source_sha256
 
@@ -93,12 +101,12 @@ def ingest(record: Dict[str, Any], raw_dir: Path, processed_dir: Path) -> Dict[s
     local_path = resolve_source(record, raw_dir)
     source_sha256 = compute_sha256(local_path)
     detected_type = detect_file_type(local_path)
-    filename_stem = Path(record["budget_filename"]).stem
-    skip = is_already_processed(processed_dir, record["muni_id"], filename_stem, source_sha256)
+    key = output_dir_key(record["budget_filename"])
+    skip = is_already_processed(processed_dir, record["muni_id"], key, source_sha256)
     return {
         "local_path": local_path,
         "source_sha256": source_sha256,
         "detected_type": detected_type,
-        "filename_stem": filename_stem,
+        "output_key": key,
         "skip": skip,
     }

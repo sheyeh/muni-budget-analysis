@@ -35,6 +35,7 @@ if str(SRC_DIR) not in sys.path:
 from docling.datamodel.pipeline_options import TableFormerMode
 
 from muni_budget_analysis.processing import run as run_module
+from muni_budget_analysis.processing.ingest import output_dir_key
 from muni_budget_analysis.processing.run import process_one, run_batch
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -114,7 +115,7 @@ def test_run_batch_produces_populated_normalized_json_for_all_three_samples(tmp_
         normalized_path = (
             processed_dir
             / str(source_record["muni_id"])
-            / Path(source_record["budget_filename"]).stem
+            / output_dir_key(source_record["budget_filename"])
             / normalized_filename
         )
         assert normalized_path.exists()
@@ -144,3 +145,44 @@ def test_process_one_nonexistent_local_file_does_not_raise(tmp_path):
     assert result["status"] == "failed"
     assert result["error"] is not None
     assert result["outputs"] == {}
+
+
+def test_same_stem_different_extension_do_not_collide(tmp_path):
+    """Regression for issue #26: a .pdf and .xlsx sharing a filename stem
+    under the same muni_id must land in distinct output directories rather
+    than one overwriting the other."""
+    raw_dir = tmp_path / "raw"
+    processed_dir = tmp_path / "processed"
+    manifest_records = [
+        {
+            "muni_id": 950,
+            "budget_filename": "same_stem.pdf",
+            "source": {
+                "kind": "local",
+                "value": str((BUDGET_EXAMPLES_DIR / "even_yehuda_2025.pdf").relative_to(REPO_ROOT)),
+            },
+        },
+        {
+            "muni_id": 950,
+            "budget_filename": "same_stem.xlsx",
+            "source": {
+                "kind": "local",
+                "value": str((BUDGET_EXAMPLES_DIR / "elad_2022.xlsx").relative_to(REPO_ROOT)),
+            },
+        },
+    ]
+    level1_manifest_path = tmp_path / "level1_manifest.json"
+    with open(level1_manifest_path, "w", encoding="utf-8") as f:
+        json.dump(manifest_records, f, ensure_ascii=False, indent=2)
+
+    results = run_batch(level1_manifest_path, raw_dir, processed_dir)
+
+    assert len(results) == 2
+    for manifest_record, source_record in zip(results, manifest_records):
+        assert manifest_record["status"] == "success", manifest_record
+
+    pdf_dir = processed_dir / "950" / output_dir_key("same_stem.pdf")
+    xlsx_dir = processed_dir / "950" / output_dir_key("same_stem.xlsx")
+    assert pdf_dir != xlsx_dir
+    assert (pdf_dir / "normalized.json").exists()
+    assert (xlsx_dir / "normalized.json").exists()

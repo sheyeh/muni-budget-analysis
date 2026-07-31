@@ -164,3 +164,19 @@ run through production `run.py`).
   from `Path(budget_filename).stem`, so `tel_aviv_2026.pdf` and
   `tel_aviv_2026.xlsx` would collide under the same `muni_id` — only the
   PDF was processed here.
+
+## Issue #26: fix run.py output-dir collision
+
+Replaced the bare `Path(budget_filename).stem` output-directory key (in
+both `ingest.py` and `run.py`, previously computed twice) with a single
+shared `ingest.output_dir_key()`: `{stem}_{ext}`. Same-stem files of
+different types (e.g. `tel_aviv_2026.pdf` / `tel_aviv_2026.xlsx`) now land
+in distinct `processed/{muni_id}/` subdirectories instead of one
+overwriting the other. Renamed the `filename_stem` field to `output_key`
+throughout (`ingest()`'s return dict, `is_already_processed()`'s param) since
+it's no longer a bare stem. Added
+`test_same_stem_different_extension_do_not_collide` to
+`tests/test_run_e2e.py` as a regression test. Not observed in the real
+corpus (no muni/year has both file types today), but reachable now that
+issue #23's manifest adapter synthesizes `budget_filename` as
+`{muni_slug}_{year}{ext}`.

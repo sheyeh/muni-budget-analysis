@@ -28,12 +28,12 @@ existing 901/902/903 convention.
 | 909 | `jerusalem_2026.pdf` | `docling_pdf` | 17 | vectored; ran on GCP T4 GPU |
 | 910 | `lachish_2026.pdf` | `docling_pdf_ocr` | 3 | scanned |
 
-`tel_aviv_2026.xlsx` was not processed separately: `run.py` derives its
-output directory from `Path(budget_filename).stem`, which collides with
-`tel_aviv_2026.pdf`'s stem under the same `muni_id` -- a real gap in the
-pipeline (both can't be processed into the same `muni_id` today without
-one overwriting the other), left as a follow-up rather than fixed here
-(surgical scope).
+`tel_aviv_2026.xlsx` was not processed separately in this run. At the time,
+`run.py` derived its output directory from `Path(budget_filename).stem`
+alone, which would have collided with `tel_aviv_2026.pdf`'s stem under the
+same `muni_id`. Fixed (issue #26): the output-directory key now includes
+the extension (`{stem}_{ext}`), so same-stem files of different types no
+longer collide.
 
 ## Regenerating
 
