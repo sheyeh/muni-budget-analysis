@@ -74,7 +74,7 @@ unusable for fiscal-year-specific extraction: keep = false, and say why in "reas
 
 MODEL_NAME = "gemini-2.5-flash"
 SCOPED_FILENAME = "scoped.json"
-YEAR_RE = re.compile(r"(20\d{2})")
+YEAR_RE = re.compile(r"((?:19|20)\d{2})")
 
 
 def extract_year(source_filename: str) -> Optional[int]:
