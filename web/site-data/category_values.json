@@ -1,0 +1,890 @@
+{
+  "categories": {
+    "61": {
+      "label": "מינהל כללי",
+      "by_municipality": {
+        "154": {
+          "2024": {
+            "total_ils": 10902000,
+            "pct_of_budget": 0.073,
+            "per_capita": 681
+          },
+          "2025": {
+            "total_ils": 10908000,
+            "pct_of_budget": 0.073,
+            "per_capita": 682
+          }
+        },
+        "182": {
+          "2025": {
+            "total_ils": 7483200,
+            "pct_of_budget": 0.062,
+            "per_capita": 535
+          }
+        },
+        "666": {
+          "2025": {
+            "total_ils": 6782400,
+            "pct_of_budget": 0.075,
+            "per_capita": 754
+          }
+        },
+        "3000": {
+          "2024": {
+            "total_ils": 876240000,
+            "pct_of_budget": 0.097,
+            "per_capita": 889
+          },
+          "2025": {
+            "total_ils": 876600000,
+            "pct_of_budget": 0.097,
+            "per_capita": 889
+          }
+        },
+        "5000": {
+          "2023": {
+            "total_ils": 865440000,
+            "pct_of_budget": 0.072,
+            "per_capita": 1879
+          },
+          "2024": {
+            "total_ils": 865920000,
+            "pct_of_budget": 0.072,
+            "per_capita": 1880
+          },
+          "2025": {
+            "total_ils": 866400000,
+            "pct_of_budget": 0.072,
+            "per_capita": 1881
+          }
+        },
+        "5526": {
+          "2024": {
+            "total_ils": 202632000,
+            "pct_of_budget": 0.367,
+            "per_capita": 3684
+          }
+        },
+        "6400": {
+          "2025": {
+            "total_ils": 108680000,
+            "pct_of_budget": 0.084,
+            "per_capita": 1035
+          }
+        },
+        "6900": {
+          "2024": {
+            "total_ils": 78192000,
+            "pct_of_budget": 0.087,
+            "per_capita": 782
+          },
+          "2025": {
+            "total_ils": 78228000,
+            "pct_of_budget": 0.087,
+            "per_capita": 782
+          }
+        },
+        "7400": {
+          "2023": {
+            "total_ils": 161364000,
+            "pct_of_budget": 0.077,
+            "per_capita": 702
+          },
+          "2024": {
+            "total_ils": 161448000,
+            "pct_of_budget": 0.077,
+            "per_capita": 702
+          },
+          "2025": {
+            "total_ils": 161532000,
+            "pct_of_budget": 0.077,
+            "per_capita": 702
+          }
+        },
+        "7900": {
+          "2025": {
+            "total_ils": 192576000,
+            "pct_of_budget": 0.08,
+            "per_capita": 741
+          }
+        },
+        "8300": {
+          "2025": {
+            "total_ils": 222732000,
+            "pct_of_budget": 0.097,
+            "per_capita": 876
+          }
+        },
+        "8600": {
+          "2022": {
+            "total_ils": 109860000,
+            "pct_of_budget": 0.073,
+            "per_capita": 674
+          },
+          "2023": {
+            "total_ils": 109920000,
+            "pct_of_budget": 0.073,
+            "per_capita": 674
+          },
+          "2024": {
+            "total_ils": 109980000,
+            "pct_of_budget": 0.073,
+            "per_capita": 675
+          },
+          "2025": {
+            "total_ils": 110040000,
+            "pct_of_budget": 0.073,
+            "per_capita": 675
+          }
+        },
+        "8700": {
+          "2024": {
+            "total_ils": 73712000,
+            "pct_of_budget": 0.087,
+            "per_capita": 819
+          },
+          "2025": {
+            "total_ils": 73746000,
+            "pct_of_budget": 0.087,
+            "per_capita": 819
+          }
+        },
+        "9000": {
+          "2025": {
+            "total_ils": 170924000,
+            "pct_of_budget": 0.09,
+            "per_capita": 802
+          }
+        }
+      }
+    },
+    "71": {
+      "label": "תברואה",
+      "by_municipality": {
+        "182": {
+          "2025": {
+            "total_ils": 9360000,
+            "pct_of_budget": 0.078,
+            "per_capita": 669
+          }
+        },
+        "3000": {
+          "2024": {
+            "total_ils": 685080000,
+            "pct_of_budget": 0.076,
+            "per_capita": 695
+          },
+          "2025": {
+            "total_ils": 685440000,
+            "pct_of_budget": 0.076,
+            "per_capita": 695
+          }
+        },
+        "5000": {
+          "2023": {
+            "total_ils": 610560000,
+            "pct_of_budget": 0.051,
+            "per_capita": 1326
+          },
+          "2024": {
+            "total_ils": 611040000,
+            "pct_of_budget": 0.051,
+            "per_capita": 1327
+          },
+          "2025": {
+            "total_ils": 611520000,
+            "pct_of_budget": 0.051,
+            "per_capita": 1328
+          }
+        },
+        "6400": {
+          "2025": {
+            "total_ils": 81068000,
+            "pct_of_budget": 0.062,
+            "per_capita": 772
+          }
+        },
+        "6900": {
+          "2024": {
+            "total_ils": 59076000,
+            "pct_of_budget": 0.066,
+            "per_capita": 591
+          },
+          "2025": {
+            "total_ils": 59112000,
+            "pct_of_budget": 0.066,
+            "per_capita": 591
+          }
+        },
+        "7400": {
+          "2023": {
+            "total_ils": 116760000,
+            "pct_of_budget": 0.056,
+            "per_capita": 508
+          },
+          "2024": {
+            "total_ils": 116844000,
+            "pct_of_budget": 0.056,
+            "per_capita": 508
+          },
+          "2025": {
+            "total_ils": 116928000,
+            "pct_of_budget": 0.056,
+            "per_capita": 508
+          }
+        },
+        "7900": {
+          "2025": {
+            "total_ils": 141600000,
+            "pct_of_budget": 0.059,
+            "per_capita": 545
+          }
+        },
+        "8300": {
+          "2025": {
+            "total_ils": 173880000,
+            "pct_of_budget": 0.076,
+            "per_capita": 684
+          }
+        },
+        "8600": {
+          "2022": {
+            "total_ils": 78000000,
+            "pct_of_budget": 0.052,
+            "per_capita": 479
+          },
+          "2023": {
+            "total_ils": 78060000,
+            "pct_of_budget": 0.052,
+            "per_capita": 479
+          },
+          "2024": {
+            "total_ils": 78120000,
+            "pct_of_budget": 0.052,
+            "per_capita": 479
+          },
+          "2025": {
+            "total_ils": 78180000,
+            "pct_of_budget": 0.052,
+            "per_capita": 480
+          }
+        },
+        "8700": {
+          "2024": {
+            "total_ils": 55658000,
+            "pct_of_budget": 0.065,
+            "per_capita": 618
+          },
+          "2025": {
+            "total_ils": 55692000,
+            "pct_of_budget": 0.066,
+            "per_capita": 619
+          }
+        },
+        "9000": {
+          "2025": {
+            "total_ils": 130568000,
+            "pct_of_budget": 0.069,
+            "per_capita": 613
+          }
+        }
+      }
+    },
+    "73": {
+      "label": "תכנון ובנין עיר",
+      "by_municipality": {
+        "3000": {
+          "2024": {
+            "total_ils": 242370000,
+            "pct_of_budget": 0.027,
+            "per_capita": 246
+          },
+          "2025": {
+            "total_ils": 242640000,
+            "pct_of_budget": 0.027,
+            "per_capita": 246
+          }
+        },
+        "5000": {
+          "2023": {
+            "total_ils": 349440000,
+            "pct_of_budget": 0.029,
+            "per_capita": 759
+          },
+          "2024": {
+            "total_ils": 349800000,
+            "pct_of_budget": 0.029,
+            "per_capita": 759
+          },
+          "2025": {
+            "total_ils": 350160000,
+            "pct_of_budget": 0.029,
+            "per_capita": 760
+          }
+        },
+        "6400": {
+          "2025": {
+            "total_ils": 60593000,
+            "pct_of_budget": 0.047,
+            "per_capita": 577
+          }
+        },
+        "7400": {
+          "2023": {
+            "total_ils": 87234000,
+            "pct_of_budget": 0.042,
+            "per_capita": 379
+          },
+          "2024": {
+            "total_ils": 87297000,
+            "pct_of_budget": 0.042,
+            "per_capita": 380
+          },
+          "2025": {
+            "total_ils": 87360000,
+            "pct_of_budget": 0.042,
+            "per_capita": 380
+          }
+        },
+        "7900": {
+          "2025": {
+            "total_ils": 105816000,
+            "pct_of_budget": 0.044,
+            "per_capita": 407
+          }
+        },
+        "8300": {
+          "2025": {
+            "total_ils": 109618000,
+            "pct_of_budget": 0.048,
+            "per_capita": 431
+          }
+        },
+        "8600": {
+          "2022": {
+            "total_ils": 58260000,
+            "pct_of_budget": 0.039,
+            "per_capita": 357
+          },
+          "2023": {
+            "total_ils": 58305000,
+            "pct_of_budget": 0.039,
+            "per_capita": 358
+          },
+          "2024": {
+            "total_ils": 58350000,
+            "pct_of_budget": 0.039,
+            "per_capita": 358
+          },
+          "2025": {
+            "total_ils": 58395000,
+            "pct_of_budget": 0.039,
+            "per_capita": 358
+          }
+        },
+        "9000": {
+          "2025": {
+            "total_ils": 40622000,
+            "pct_of_budget": 0.021,
+            "per_capita": 191
+          }
+        }
+      }
+    },
+    "81": {
+      "label": "חינוך",
+      "by_municipality": {
+        "154": {
+          "2024": {
+            "total_ils": 37740000,
+            "pct_of_budget": 0.252,
+            "per_capita": 2359
+          },
+          "2025": {
+            "total_ils": 37752000,
+            "pct_of_budget": 0.252,
+            "per_capita": 2360
+          }
+        },
+        "182": {
+          "2025": {
+            "total_ils": 27715200,
+            "pct_of_budget": 0.231,
+            "per_capita": 1980
+          }
+        },
+        "195": {
+          "2025": {
+            "total_ils": 50140000,
+            "pct_of_budget": 0.218,
+            "per_capita": 2006
+          }
+        },
+        "666": {
+          "2025": {
+            "total_ils": 23126400,
+            "pct_of_budget": 0.257,
+            "per_capita": 2570
+          }
+        },
+        "3000": {
+          "2024": {
+            "total_ils": 1887840000,
+            "pct_of_budget": 0.21,
+            "per_capita": 1915
+          },
+          "2025": {
+            "total_ils": 1888560000,
+            "pct_of_budget": 0.21,
+            "per_capita": 1915
+          }
+        },
+        "5000": {
+          "2023": {
+            "total_ils": 2871360000,
+            "pct_of_budget": 0.239,
+            "per_capita": 6234
+          },
+          "2024": {
+            "total_ils": 2872320000,
+            "pct_of_budget": 0.239,
+            "per_capita": 6236
+          },
+          "2025": {
+            "total_ils": 2873280000,
+            "pct_of_budget": 0.239,
+            "per_capita": 6238
+          }
+        },
+        "5526": {
+          "2024": {
+            "total_ils": 250140000,
+            "pct_of_budget": 0.453,
+            "per_capita": 4548
+          }
+        },
+        "5530": {
+          "2024": {
+            "total_ils": 72243200,
+            "pct_of_budget": 0.226,
+            "per_capita": 1605
+          },
+          "2025": {
+            "total_ils": 72268800,
+            "pct_of_budget": 0.226,
+            "per_capita": 1606
+          }
+        },
+        "5538": {
+          "2025": {
+            "total_ils": 31522400,
+            "pct_of_budget": 0.242,
+            "per_capita": 2252
+          }
+        },
+        "5571": {
+          "2024": {
+            "total_ils": 38416000,
+            "pct_of_budget": 0.192,
+            "per_capita": 1746
+          },
+          "2025": {
+            "total_ils": 38432000,
+            "pct_of_budget": 0.192,
+            "per_capita": 1747
+          }
+        },
+        "6400": {
+          "2025": {
+            "total_ils": 236912000,
+            "pct_of_budget": 0.182,
+            "per_capita": 2256
+          }
+        },
+        "6900": {
+          "2024": {
+            "total_ils": 169920000,
+            "pct_of_budget": 0.189,
+            "per_capita": 1699
+          },
+          "2025": {
+            "total_ils": 169992000,
+            "pct_of_budget": 0.189,
+            "per_capita": 1700
+          }
+        },
+        "7400": {
+          "2023": {
+            "total_ils": 522312000,
+            "pct_of_budget": 0.249,
+            "per_capita": 2271
+          },
+          "2024": {
+            "total_ils": 522480000,
+            "pct_of_budget": 0.249,
+            "per_capita": 2272
+          },
+          "2025": {
+            "total_ils": 522648000,
+            "pct_of_budget": 0.249,
+            "per_capita": 2272
+          }
+        },
+        "7900": {
+          "2025": {
+            "total_ils": 613248000,
+            "pct_of_budget": 0.256,
+            "per_capita": 2359
+          }
+        },
+        "8300": {
+          "2025": {
+            "total_ils": 480056000,
+            "pct_of_budget": 0.209,
+            "per_capita": 1887
+          }
+        },
+        "8600": {
+          "2022": {
+            "total_ils": 362280000,
+            "pct_of_budget": 0.242,
+            "per_capita": 2223
+          },
+          "2023": {
+            "total_ils": 362400000,
+            "pct_of_budget": 0.242,
+            "per_capita": 2223
+          },
+          "2024": {
+            "total_ils": 362520000,
+            "pct_of_budget": 0.242,
+            "per_capita": 2224
+          },
+          "2025": {
+            "total_ils": 362640000,
+            "pct_of_budget": 0.242,
+            "per_capita": 2225
+          }
+        },
+        "8700": {
+          "2024": {
+            "total_ils": 160208000,
+            "pct_of_budget": 0.188,
+            "per_capita": 1780
+          },
+          "2025": {
+            "total_ils": 160276000,
+            "pct_of_budget": 0.189,
+            "per_capita": 1781
+          }
+        },
+        "9000": {
+          "2025": {
+            "total_ils": 370424000,
+            "pct_of_budget": 0.195,
+            "per_capita": 1739
+          }
+        },
+        "9300": {
+          "2025": {
+            "total_ils": 55369600,
+            "pct_of_budget": 0.252,
+            "per_capita": 2407
+          }
+        }
+      }
+    },
+    "84": {
+      "label": "רווחה",
+      "by_municipality": {
+        "154": {
+          "2024": {
+            "total_ils": 15420000,
+            "pct_of_budget": 0.103,
+            "per_capita": 964
+          },
+          "2025": {
+            "total_ils": 15429000,
+            "pct_of_budget": 0.103,
+            "per_capita": 964
+          }
+        },
+        "182": {
+          "2025": {
+            "total_ils": 10478400,
+            "pct_of_budget": 0.087,
+            "per_capita": 748
+          }
+        },
+        "195": {
+          "2025": {
+            "total_ils": 31648000,
+            "pct_of_budget": 0.138,
+            "per_capita": 1266
+          }
+        },
+        "666": {
+          "2025": {
+            "total_ils": 9613800,
+            "pct_of_budget": 0.107,
+            "per_capita": 1068
+          }
+        },
+        "3000": {
+          "2024": {
+            "total_ils": 1039140000,
+            "pct_of_budget": 0.115,
+            "per_capita": 1054
+          },
+          "2025": {
+            "total_ils": 1039680000,
+            "pct_of_budget": 0.116,
+            "per_capita": 1054
+          }
+        },
+        "5000": {
+          "2023": {
+            "total_ils": 1651200000,
+            "pct_of_budget": 0.138,
+            "per_capita": 3585
+          },
+          "2024": {
+            "total_ils": 1651920000,
+            "pct_of_budget": 0.138,
+            "per_capita": 3586
+          },
+          "2025": {
+            "total_ils": 1652640000,
+            "pct_of_budget": 0.138,
+            "per_capita": 3588
+          }
+        },
+        "5526": {
+          "2024": {
+            "total_ils": 57798000,
+            "pct_of_budget": 0.105,
+            "per_capita": 1051
+          }
+        },
+        "6400": {
+          "2025": {
+            "total_ils": 146354000,
+            "pct_of_budget": 0.113,
+            "per_capita": 1394
+          }
+        },
+        "6900": {
+          "2024": {
+            "total_ils": 105750000,
+            "pct_of_budget": 0.118,
+            "per_capita": 1058
+          },
+          "2025": {
+            "total_ils": 105804000,
+            "pct_of_budget": 0.118,
+            "per_capita": 1058
+          }
+        },
+        "7400": {
+          "2023": {
+            "total_ils": 177828000,
+            "pct_of_budget": 0.085,
+            "per_capita": 773
+          },
+          "2024": {
+            "total_ils": 177954000,
+            "pct_of_budget": 0.085,
+            "per_capita": 774
+          },
+          "2025": {
+            "total_ils": 178080000,
+            "pct_of_budget": 0.085,
+            "per_capita": 774
+          }
+        },
+        "7900": {
+          "2025": {
+            "total_ils": 215472000,
+            "pct_of_budget": 0.09,
+            "per_capita": 829
+          }
+        },
+        "8300": {
+          "2025": {
+            "total_ils": 263764000,
+            "pct_of_budget": 0.115,
+            "per_capita": 1037
+          }
+        },
+        "8600": {
+          "2022": {
+            "total_ils": 145560000,
+            "pct_of_budget": 0.097,
+            "per_capita": 893
+          },
+          "2023": {
+            "total_ils": 145650000,
+            "pct_of_budget": 0.097,
+            "per_capita": 894
+          },
+          "2024": {
+            "total_ils": 145740000,
+            "pct_of_budget": 0.097,
+            "per_capita": 894
+          },
+          "2025": {
+            "total_ils": 145830000,
+            "pct_of_budget": 0.097,
+            "per_capita": 895
+          }
+        },
+        "8700": {
+          "2024": {
+            "total_ils": 84575000,
+            "pct_of_budget": 0.1,
+            "per_capita": 940
+          },
+          "2025": {
+            "total_ils": 84626000,
+            "pct_of_budget": 0.1,
+            "per_capita": 940
+          }
+        },
+        "9000": {
+          "2025": {
+            "total_ils": 198284000,
+            "pct_of_budget": 0.104,
+            "per_capita": 931
+          }
+        },
+        "9300": {
+          "2025": {
+            "total_ils": 19118000,
+            "pct_of_budget": 0.087,
+            "per_capita": 831
+          }
+        }
+      }
+    },
+    "87": {
+      "label": "איכות הסביבה",
+      "by_municipality": {
+        "3000": {
+          "2024": {
+            "total_ils": 280800000,
+            "pct_of_budget": 0.031,
+            "per_capita": 285
+          },
+          "2025": {
+            "total_ils": 280980000,
+            "pct_of_budget": 0.031,
+            "per_capita": 285
+          }
+        },
+        "5000": {
+          "2023": {
+            "total_ils": 222960000,
+            "pct_of_budget": 0.019,
+            "per_capita": 484
+          },
+          "2024": {
+            "total_ils": 223200000,
+            "pct_of_budget": 0.019,
+            "per_capita": 485
+          },
+          "2025": {
+            "total_ils": 223440000,
+            "pct_of_budget": 0.019,
+            "per_capita": 485
+          }
+        },
+        "7400": {
+          "2023": {
+            "total_ils": 43974000,
+            "pct_of_budget": 0.021,
+            "per_capita": 191
+          },
+          "2024": {
+            "total_ils": 44016000,
+            "pct_of_budget": 0.021,
+            "per_capita": 191
+          },
+          "2025": {
+            "total_ils": 44058000,
+            "pct_of_budget": 0.021,
+            "per_capita": 192
+          }
+        },
+        "7900": {
+          "2025": {
+            "total_ils": 54336000,
+            "pct_of_budget": 0.023,
+            "per_capita": 209
+          }
+        },
+        "8300": {
+          "2025": {
+            "total_ils": 71162000,
+            "pct_of_budget": 0.031,
+            "per_capita": 280
+          }
+        },
+        "9000": {
+          "2025": {
+            "total_ils": 63498000,
+            "pct_of_budget": 0.033,
+            "per_capita": 298
+          }
+        }
+      }
+    },
+    "91": {
+      "label": "מים",
+      "by_municipality": {
+        "3000": {
+          "2024": {
+            "total_ils": 212760000,
+            "pct_of_budget": 0.024,
+            "per_capita": 216
+          },
+          "2025": {
+            "total_ils": 213120000,
+            "pct_of_budget": 0.024,
+            "per_capita": 216
+          }
+        },
+        "5000": {
+          "2023": {
+            "total_ils": 460800000,
+            "pct_of_budget": 0.038,
+            "per_capita": 1000
+          },
+          "2024": {
+            "total_ils": 461280000,
+            "pct_of_budget": 0.038,
+            "per_capita": 1001
+          },
+          "2025": {
+            "total_ils": 461760000,
+            "pct_of_budget": 0.038,
+            "per_capita": 1002
+          }
+        },
+        "7900": {
+          "2025": {
+            "total_ils": 111648000,
+            "pct_of_budget": 0.047,
+            "per_capita": 429
+          }
+        },
+        "8300": {
+          "2025": {
+            "total_ils": 53176000,
+            "pct_of_budget": 0.023,
+            "per_capita": 209
+          }
+        }
+      }
+    }
+  }
+}

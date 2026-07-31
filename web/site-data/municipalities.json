@@ -1,0 +1,1562 @@
+[
+  {
+    "muni_id": "5000",
+    "name": "תל אביב-יפו",
+    "type": "עיריה",
+    "population": 460613,
+    "cluster": 8,
+    "latest_budget_ils": 12000000000,
+    "website_url": "https://www.tel-aviv.gov.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "detailed",
+        "item_count": 340,
+        "format": "xlsx",
+        "is_xls": true,
+        "has_explanation": true,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "detailed",
+        "item_count": 322,
+        "format": "xlsx",
+        "is_xls": true,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "detailed",
+        "item_count": 340,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": "xlsx",
+    "checked_years_count": 3,
+    "transparency_score": 88
+  },
+  {
+    "muni_id": "3000",
+    "name": "ירושלים",
+    "type": "עיריה",
+    "population": 986000,
+    "cluster": 4,
+    "latest_budget_ils": 9000000000,
+    "website_url": "https://www.jerusalem.muni.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "summary",
+        "item_count": 6,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "summary",
+        "item_count": 6,
+        "format": "pdf_scanned",
+        "is_xls": false,
+        "has_explanation": true,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": "pdf_generated",
+    "checked_years_count": 2,
+    "transparency_score": 40
+  },
+  {
+    "muni_id": "4000",
+    "name": "חיפה",
+    "type": "עיריה",
+    "population": 285000,
+    "cluster": 6,
+    "latest_budget_ils": 3000000000,
+    "website_url": "https://www.haifa.muni.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "missing",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": null,
+    "checked_years_count": 1,
+    "transparency_score": 0
+  },
+  {
+    "muni_id": "8300",
+    "name": "ראשון לציון",
+    "type": "עיריה",
+    "population": 254384,
+    "cluster": 7,
+    "latest_budget_ils": 2300000000,
+    "website_url": "https://www.rishonlezion.muni.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "detailed",
+        "item_count": 210,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": "pdf_generated",
+    "checked_years_count": 1,
+    "transparency_score": 75
+  },
+  {
+    "muni_id": "7900",
+    "name": "פתח תקווה",
+    "type": "עיריה",
+    "population": 260000,
+    "cluster": 6,
+    "latest_budget_ils": 2400000000,
+    "website_url": "https://www.pt.gov.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "summary",
+        "item_count": 5,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "missing",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": "pdf_generated",
+    "checked_years_count": 2,
+    "transparency_score": 18
+  },
+  {
+    "muni_id": "70",
+    "name": "אשדוד",
+    "type": "עיריה",
+    "population": 225939,
+    "cluster": 4,
+    "latest_budget_ils": 2000000000,
+    "website_url": "https://www.ashdod.muni.il",
+    "has_pipeline_data": false,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": null,
+    "checked_years_count": 0,
+    "transparency_score": null
+  },
+  {
+    "muni_id": "7400",
+    "name": "נתניה",
+    "type": "עיריה",
+    "population": 230000,
+    "cluster": 5,
+    "latest_budget_ils": 2100000000,
+    "website_url": "https://www.netanya.muni.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "detailed",
+        "item_count": 260,
+        "format": "xlsx",
+        "is_xls": true,
+        "has_explanation": true,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "detailed",
+        "item_count": 250,
+        "format": "xlsx",
+        "is_xls": true,
+        "has_explanation": true,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "summary",
+        "item_count": 6,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": "xlsx",
+    "checked_years_count": 3,
+    "transparency_score": 78
+  },
+  {
+    "muni_id": "9000",
+    "name": "באר שבע",
+    "type": "עיריה",
+    "population": 213000,
+    "cluster": 4,
+    "latest_budget_ils": 1900000000,
+    "website_url": "https://www.beer-sheva.muni.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "summary",
+        "item_count": 6,
+        "format": "xlsx",
+        "is_xls": true,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": "xlsx",
+    "checked_years_count": 1,
+    "transparency_score": 50
+  },
+  {
+    "muni_id": "8600",
+    "name": "רמת גן",
+    "type": "עיריה",
+    "population": 163000,
+    "cluster": 7,
+    "latest_budget_ils": 1500000000,
+    "website_url": "https://www.ramat-gan.muni.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "detailed",
+        "item_count": 180,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "detailed",
+        "item_count": 175,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "detailed",
+        "item_count": 170,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "detailed",
+        "item_count": 165,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      }
+    ],
+    "latest_format": "pdf_generated",
+    "checked_years_count": 4,
+    "transparency_score": 75
+  },
+  {
+    "muni_id": "6200",
+    "name": "בת ים",
+    "type": "עיריה",
+    "population": 130000,
+    "cluster": 4,
+    "latest_budget_ils": 1000000000,
+    "website_url": "https://www.bat-yam.muni.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "missing",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "missing",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": null,
+    "checked_years_count": 2,
+    "transparency_score": 0
+  },
+  {
+    "muni_id": "6400",
+    "name": "הרצליה",
+    "type": "עיריה",
+    "population": 105000,
+    "cluster": 8,
+    "latest_budget_ils": 1300000000,
+    "website_url": "https://www.herzliya.muni.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "detailed",
+        "item_count": 200,
+        "format": "xlsx",
+        "is_xls": true,
+        "has_explanation": true,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": "xlsx",
+    "checked_years_count": 1,
+    "transparency_score": 100
+  },
+  {
+    "muni_id": "6900",
+    "name": "כפר סבא",
+    "type": "עיריה",
+    "population": 100000,
+    "cluster": 8,
+    "latest_budget_ils": 900000000,
+    "website_url": "https://www.kfar-saba.muni.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "summary",
+        "item_count": 6,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "summary",
+        "item_count": 6,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": "pdf_generated",
+    "checked_years_count": 2,
+    "transparency_score": 35
+  },
+  {
+    "muni_id": "8700",
+    "name": "רעננה",
+    "type": "עיריה",
+    "population": 90000,
+    "cluster": 9,
+    "latest_budget_ils": 850000000,
+    "website_url": "https://www.raanana.muni.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "detailed",
+        "item_count": 190,
+        "format": "xlsx",
+        "is_xls": true,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "summary",
+        "item_count": 6,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": "xlsx",
+    "checked_years_count": 2,
+    "transparency_score": 63
+  },
+  {
+    "muni_id": "1200",
+    "name": "מודיעין-מכבים-רעות",
+    "type": "עיריה",
+    "population": 105000,
+    "cluster": 8,
+    "latest_budget_ils": 950000000,
+    "website_url": "https://www.modiin.muni.il",
+    "has_pipeline_data": false,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": null,
+    "checked_years_count": 0,
+    "transparency_score": null
+  },
+  {
+    "muni_id": "182",
+    "name": "אבן יהודה",
+    "type": "מועצה מקומית",
+    "population": 14000,
+    "cluster": 7,
+    "latest_budget_ils": 120000000,
+    "website_url": "https://www.even-yehuda.muni.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "detailed",
+        "item_count": 20,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": true,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": "pdf_generated",
+    "checked_years_count": 1,
+    "transparency_score": 85
+  },
+  {
+    "muni_id": "154",
+    "name": "תל מונד",
+    "type": "מועצה מקומית",
+    "population": 16000,
+    "cluster": 8,
+    "latest_budget_ils": 150000000,
+    "website_url": "https://www.tel-mond.muni.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "detailed",
+        "item_count": 90,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "summary",
+        "item_count": 6,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": "pdf_generated",
+    "checked_years_count": 2,
+    "transparency_score": 55
+  },
+  {
+    "muni_id": "666",
+    "name": "עומר",
+    "type": "מועצה מקומית",
+    "population": 9000,
+    "cluster": 9,
+    "latest_budget_ils": 90000000,
+    "website_url": "https://www.omer.muni.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "detailed",
+        "item_count": 80,
+        "format": "xlsx",
+        "is_xls": true,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": "xlsx",
+    "checked_years_count": 1,
+    "transparency_score": 90
+  },
+  {
+    "muni_id": "9300",
+    "name": "זכרון יעקב",
+    "type": "מועצה מקומית",
+    "population": 23000,
+    "cluster": 6,
+    "latest_budget_ils": 220000000,
+    "website_url": "https://www.zichron.muni.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "summary",
+        "item_count": 6,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": "pdf_generated",
+    "checked_years_count": 1,
+    "transparency_score": 35
+  },
+  {
+    "muni_id": "1224",
+    "name": "כוכב יאיר-צור יגאל",
+    "type": "מועצה מקומית",
+    "population": 8000,
+    "cluster": 8,
+    "latest_budget_ils": 75000000,
+    "website_url": "https://www.kochav-yair.muni.il",
+    "has_pipeline_data": false,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": null,
+    "checked_years_count": 0,
+    "transparency_score": null
+  },
+  {
+    "muni_id": "195",
+    "name": "קדימה-צורן",
+    "type": "מועצה מקומית",
+    "population": 25000,
+    "cluster": 7,
+    "latest_budget_ils": 230000000,
+    "website_url": "https://www.kzoran.muni.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "summary",
+        "item_count": 6,
+        "format": "xlsx",
+        "is_xls": true,
+        "has_explanation": true,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": "xlsx",
+    "checked_years_count": 1,
+    "transparency_score": 60
+  },
+  {
+    "muni_id": "5526",
+    "name": "מטה יהודה",
+    "type": "מועצה אזורית",
+    "population": 55000,
+    "cluster": 6,
+    "latest_budget_ils": 552317000,
+    "website_url": "https://www.m-yehuda.org.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "detailed",
+        "item_count": 4,
+        "format": "pdf_scanned",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": "pdf_scanned",
+    "checked_years_count": 1,
+    "transparency_score": 75
+  },
+  {
+    "muni_id": "5530",
+    "name": "גזר",
+    "type": "מועצה אזורית",
+    "population": 45000,
+    "cluster": 5,
+    "latest_budget_ils": 320000000,
+    "website_url": "https://www.gezer.org.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "summary",
+        "item_count": 6,
+        "format": "pdf_scanned",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "detailed",
+        "item_count": 60,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": "pdf_scanned",
+    "checked_years_count": 2,
+    "transparency_score": 55
+  },
+  {
+    "muni_id": "5525",
+    "name": "חבל מודיעין",
+    "type": "מועצה אזורית",
+    "population": 20000,
+    "cluster": 6,
+    "latest_budget_ils": 180000000,
+    "website_url": "https://www.hevel-modiin.org.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "missing",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": null,
+    "checked_years_count": 1,
+    "transparency_score": 0
+  },
+  {
+    "muni_id": "5513",
+    "name": "מגידו",
+    "type": "מועצה אזורית",
+    "population": 15000,
+    "cluster": 5,
+    "latest_budget_ils": 140000000,
+    "website_url": "https://www.megido.org.il",
+    "has_pipeline_data": false,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": null,
+    "checked_years_count": 0,
+    "transparency_score": null
+  },
+  {
+    "muni_id": "5538",
+    "name": "אשכול",
+    "type": "מועצה אזורית",
+    "population": 14000,
+    "cluster": 4,
+    "latest_budget_ils": 130000000,
+    "website_url": "https://www.eshkol.org.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "detailed",
+        "item_count": 70,
+        "format": "xlsx",
+        "is_xls": true,
+        "has_explanation": true,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": "xlsx",
+    "checked_years_count": 1,
+    "transparency_score": 100
+  },
+  {
+    "muni_id": "5571",
+    "name": "גולן",
+    "type": "מועצה אזורית",
+    "population": 22000,
+    "cluster": 6,
+    "latest_budget_ils": 200000000,
+    "website_url": "https://www.golan.org.il",
+    "has_pipeline_data": true,
+    "years": [
+      {
+        "year": 2026,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2025,
+        "status": "detailed",
+        "item_count": 55,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2024,
+        "status": "summary",
+        "item_count": 6,
+        "format": "pdf_generated",
+        "is_xls": false,
+        "has_explanation": false,
+        "source_url": null
+      },
+      {
+        "year": 2023,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      },
+      {
+        "year": 2022,
+        "status": "not_checked",
+        "item_count": null,
+        "format": null,
+        "is_xls": null,
+        "has_explanation": null,
+        "source_url": null
+      }
+    ],
+    "latest_format": "pdf_generated",
+    "checked_years_count": 2,
+    "transparency_score": 55
+  }
+]

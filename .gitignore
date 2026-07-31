@@ -43,6 +43,11 @@ data/localities/bycode_latest.xlsx
 .DS_Store
 *.swp
 
+# Large docling native exports kept outside git (see accompanying .link.txt)
+docs/examples/docling/tel_aviv_2026/native.json
+
+# Large vendored map data kept outside git (see accompanying .link.txt)
+web/site-data/geo/municipalities.geojson
 # Claude Code local state (worktrees, settings, skill cache)
 .claude/
 

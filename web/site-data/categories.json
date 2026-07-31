@@ -1,0 +1,51 @@
+[
+  {
+    "code": "81",
+    "label": "חינוך",
+    "level": 2,
+    "parent": "8",
+    "municipality_count": 19
+  },
+  {
+    "code": "84",
+    "label": "רווחה",
+    "level": 2,
+    "parent": "8",
+    "municipality_count": 16
+  },
+  {
+    "code": "61",
+    "label": "מינהל כללי",
+    "level": 2,
+    "parent": "6",
+    "municipality_count": 14
+  },
+  {
+    "code": "71",
+    "label": "תברואה",
+    "level": 2,
+    "parent": "7",
+    "municipality_count": 11
+  },
+  {
+    "code": "73",
+    "label": "תכנון ובנין עיר",
+    "level": 2,
+    "parent": "7",
+    "municipality_count": 8
+  },
+  {
+    "code": "87",
+    "label": "איכות הסביבה",
+    "level": 2,
+    "parent": "8",
+    "municipality_count": 6
+  },
+  {
+    "code": "91",
+    "label": "מים",
+    "level": 2,
+    "parent": "9",
+    "municipality_count": 4
+  }
+]

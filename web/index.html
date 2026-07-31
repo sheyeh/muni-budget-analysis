@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>money צִיפָּלִי — מפת השקיפות התקציבית</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-brand">money<br />צִיפָּלִי</div>
+    <nav class="tabs" id="tabs">
+      <a href="#/map" data-tab="map" class="tab">מפת השקיפות</a>
+      <span class="tab-sep">/</span>
+      <a href="#/category" data-tab="category" class="tab">לפי סעיף</a>
+      <span class="tab-sep">/</span>
+      <a href="#/authority" data-tab="authority" class="tab">לפי רשות</a>
+    </nav>
+  </header>
+
+  <main id="app">
+    <section id="view-map" class="view"></section>
+    <section id="view-category" class="view hidden"></section>
+    <section id="view-authority" class="view hidden"></section>
+  </main>
+
+  <script src="js/db-data.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/format.js"></script>
+  <script src="js/choropleth.js"></script>
+  <script src="js/searchable-select.js"></script>
+  <script src="js/page-map.js"></script>
+  <script src="js/page-category.js"></script>
+  <script src="js/page-authority.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
