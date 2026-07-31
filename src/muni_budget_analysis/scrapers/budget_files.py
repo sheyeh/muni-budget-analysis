@@ -26,7 +26,6 @@ Outputs:
 
 import argparse
 import csv
-import io
 import json
 import logging
 import re
@@ -48,9 +47,9 @@ except ImportError:
     BeautifulSoup = None
 
 try:
-    from PIL import Image
+    import img2pdf
 except ImportError:
-    Image = None
+    img2pdf = None
 
 try:
     from playwright.sync_api import sync_playwright
@@ -448,8 +447,8 @@ def convert_fliphtml_to_pdf(flip_url: str, save_path: Path) -> bool:
         except Exception:
             pass
 
-    if Image is None:
-        logger.warning("Pillow library not available for FlipHTML image-to-PDF conversion.")
+    if img2pdf is None:
+        logger.warning("img2pdf library not available for FlipHTML image-to-PDF conversion.")
         return False
 
     # 2. Render with a headless browser and capture every page's real image
@@ -458,37 +457,45 @@ def convert_fliphtml_to_pdf(flip_url: str, save_path: Path) -> bool:
     if page_images:
         img_urls_ordered = [page_images[n] for n in sorted(page_images)]
 
-    # 3. Last resort: whatever's in the static HTML (in practice just the cover)
+    # 3. Last resort: whatever's in the static HTML (in practice just the cover,
+    # since FlipHTML5 loads every other page's image dynamically via JS)
     if not img_urls_ordered:
+        if BeautifulSoup is None:
+            return False
         try:
             req = urllib.request.Request(clean_url + "/", headers=HEADERS)
             with urllib.request.urlopen(req, timeout=6) as resp:
                 html = resp.read().decode("utf-8", errors="ignore")
-                img_rel_paths = re.findall(r"files/(?:large|shot)[^\s\"'\\)\?>]+\.(?:webp|jpg|png)", html)
-                img_rel_paths = sorted(list(set(img_rel_paths)))
+                soup = BeautifulSoup(html, "html.parser")
+                img_rel_paths: Set[str] = set()
+                for tag in soup.find_all(["img", "a"]):
+                    for attr in ("src", "href", "data-src"):
+                        val = tag.get(attr)
+                        if val and re.search(r"files/(?:large|shot)[^\s\"'?]*\.(?:webp|jpg|jpeg|png)", val, re.I):
+                            img_rel_paths.add(val.split("?")[0].lstrip("/"))
                 if not img_rel_paths:
-                    img_rel_paths = ["files/shot.jpg"]
-                img_urls_ordered = [f"{clean_url}/{rel}" for rel in img_rel_paths]
+                    img_rel_paths = {"files/shot.jpg"}
+                img_urls_ordered = sorted(f"{clean_url}/{rel}" for rel in img_rel_paths)
         except Exception as e:
             logger.warning("FlipHTML static-HTML fallback failed for %s: %s", flip_url, e)
 
     if not img_urls_ordered:
         return False
 
-    images = []
+    images: List[bytes] = []
     for img_url in img_urls_ordered:
         try:
             ireq = urllib.request.Request(img_url, headers=HEADERS)
             with urllib.request.urlopen(ireq, timeout=8) as iresp:
                 if iresp.status == 200:
-                    img = Image.open(io.BytesIO(iresp.read())).convert("RGB")
-                    images.append(img)
+                    images.append(iresp.read())
         except Exception:
             pass
 
     if images:
         save_path.parent.mkdir(parents=True, exist_ok=True)
-        images[0].save(save_path, "PDF", save_all=True, append_images=images[1:])
+        with open(save_path, "wb") as f:
+            f.write(img2pdf.convert(images))
         logger.info("Compiled %d FlipHTML page images into PDF: %s", len(images), save_path)
         return True
 

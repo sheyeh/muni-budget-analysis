@@ -63,7 +63,9 @@ FlipHTML5-hosted publications are converted to PDF via, in order:
 
 1. **Direct PDF download link** (`files/download/<book_id>.pdf`), if the publisher enabled it.
 2. **Headless-browser page extraction**: FlipHTML5's per-page images are never present as static links (the only one in the plain HTML is the cover thumbnail, `files/shot.jpg`), and the reader's own page manifest is a proprietary-obfuscated blob inside `javascript/config.js` - not something regex can parse. Instead, the reader exposes a "thumbnail preview" panel whose items already exist in the DOM (hidden until toggled), one per page, each with an `aria-label="page N"`. The scraper opens this panel and clicks through every item, capturing each page's real `files/large/<hash>.<ext>` image via network response interception - keyed by page number, since the hashed filenames carry no inherent order. A couple of retry passes over whatever pages were missed on the first sweep improve completeness (the swiper appears to virtualize/recycle its DOM nodes while scrolling, which drops some clicks unpredictably). This is a best-effort process, not a guaranteed 100% capture - if fewer pages were captured than the panel reported existing, this is logged as a **warning** (`FlipHTML thumbnail capture incomplete for ...: got X of Y expected pages`) rather than silently producing an incomplete PDF unnoticed.
-3. **Last resort - static HTML fallback**: whatever page image references happen to be in the plain HTML response. In practice this is only ever the single cover thumbnail, so this path alone previously caused FlipHTML5 conversions to silently produce a 1-page PDF; it now only runs if the browser-based extraction above found nothing at all (e.g. Playwright isn't installed).
+3. **Last resort - static HTML fallback**: parses the plain HTML response with BeautifulSoup for any `<img>`/`<a>` tag whose `src`/`href`/`data-src` looks like a page image. In practice this is only ever the single cover thumbnail, so this path alone previously caused FlipHTML5 conversions to silently produce a 1-page PDF; it now only runs if the browser-based extraction above found nothing at all (e.g. Playwright isn't installed).
+
+Whichever step produces image URLs, they're downloaded and assembled into the final PDF with **img2pdf** rather than Pillow - it embeds each image (JPEG/PNG/WebP) into the PDF losslessly, without Pillow's implicit re-encode/recompress step, and needs no image-library format conversion first.
 
 ### Regular vs. Non-Regular Budgets
 
@@ -100,7 +102,7 @@ flowchart TD
     G -- No Excel/PDF, FlipHTML Found --> J[Priority 3: Select FlipHTML Publication]
     J --> K{Direct PDF Link Available?}
     K -- Yes --> L[Download Direct PDF File]
-    K -- No --> M[Extract Page Images & Compile to PDF via Pillow]
+    K -- No --> M[Extract Page Images & Compile to PDF via img2pdf]
     H & I & L & M --> N[Save to data/budgets/muni_code_name/year/]
     N --> O[Export Metadata to budget_files.json & CSV]
 ```
