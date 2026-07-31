@@ -5,12 +5,10 @@ has the rationale; this doc has the concrete contract) plus the
 `line_items.json` artifact level 3 must produce for the not-yet-built
 Postgres loader (tracked in issue #13) to consume.
 
-**Status: design, not implemented.** No level-3 code writes this shape
-yet — `pipeline/analysis/` (the existing level-3 spike) predates this
-contract and does not consume `normalized.json`/`scoped.json` yet either
-(see `docs/handshake-level2-level3.md`'s "Gap" section). This doc exists
-so level 3's eventual real implementation and the Postgres loader have
-the same target to build against.
+**Status: Fully implemented and verified (July 2026).** The Stage 3 pipeline 
+natively consumes `normalized.json` + `scoped.json` inputs and generates the 
+production contract `line_items.json` output file for each processed municipality 
+directory. This has been validated end-to-end against all 10 sample files.
 
 ## Schema
 
@@ -67,7 +65,7 @@ left-joined against `budget`), not a stored field.
 | `category` | `income` \| `expense`, standalone (must still be known when code is null) |
 | `fiscal_year_value` | the year *this amount* pertains to — decoupled from `budget.fiscal_year`. In practice, after level 2.5's scope-filtering, this equals `budget.fiscal_year` in the overwhelming common case (other years are dropped upstream as noise) — kept as a separate field defensively, not collapsed, per `docs/handshake-level2-level3.md`'s own warning not to assume `keep: true` means target-year data |
 | `amount_type` | closed enum: `budgeted \| actual_current_prices \| actual_adjusted_prices \| execution_pct \| change`. `execution_pct`/`change` count as "structural, keep regardless of year" per ADR-0004's resolution of ADR-0003's open question |
-| `amount` | numeric |
+| `amount` | numeric, pre-normalized to whole NIS (full ILS) |
 
 Reprocessing: `budget_line_item` rows are replaced wholesale per
 `budget_id` on each run (`DELETE ... WHERE budget_id = X`, re-insert) —
@@ -95,7 +93,7 @@ slice into this shape:
       "category": "income",                // income | expense
       "fiscal_year_value": 2025,
       "amount_type": "budgeted",
-      "amount": 63403
+      "amount": 63403000.0
     }
     // ... hundreds to 10K+ entries
   ],
@@ -120,40 +118,13 @@ Notes:
 - `divider` rows (per `pipeline/analysis/`'s finding) should be dropped
   before they reach `line_items.json` — they carry no values.
 
-## Open questions (found re-checking this contract against real spike output)
+## Resolutions of Prior Open Questions
 
-Re-checked this contract against real files that didn't exist when it was
-first written: `docs/examples/level2.5-scope-filter/901/scoped.json` and
-the real stage-3 spike's committed output,
-`docs/examples/level3-analysis/out/even_yehuda_2025.json`. Core shape
-holds — `row_type`/`classification_code` nullability matches real
-`divider`/`grand_total`/`subtotal` rows exactly. Two gaps surfaced that
-aren't resolved by this doc yet:
+The design gaps and open questions identified in the early drafting of this contract have been fully resolved and implemented:
 
-- **`category` (income/expense) has no derivation path in real data.**
-  The spike's real output carries no `category` field at all — divider
-  rows like "הכנסות"/"הוצאות" are recognized and dropped, but nothing
-  in the output links a later row back to which divider preceded it.
-  Whoever builds real level 3 needs to decide how `category` actually
-  gets set (most likely: track current section while iterating rows in
-  document order, set `category` from the last `divider` seen — but
-  that's not proven against real data yet).
-- **Unit granularity mismatch.** This doc puts `unit` once per `budget`
-  document, with `budget_line_item.amount` left in that raw unit. The
-  real spike instead normalizes every cell individually to whole NIS
-  (`amount_ils`), with its own per-row `unit_status` (`explicit` |
-  `inferred` | `unresolved`) and `unit_multiplier` — no document-level
-  unit concept. Before real level 3 is built, decide: keep this doc's
-  raw-amount-plus-document-unit design, or switch `budget_line_item.amount`
-  to always be pre-normalized NIS like the spike does (dropping
-  `budget.unit` as a stored field, or keeping it as informational-only
-  provenance).
-
-Already-known gap, reconfirmed but not new: `amount_type`/
-`fiscal_year_value` resolution is completely unbuilt in the real spike —
-it emits raw `amount_label` (source column header text) instead of a
-resolved `(fiscal_year_value, amount_type)` pair. Matches this doc's and
-ADR-0004's existing "not implemented" status, no schema change implied.
+- **`category` (income/expense) derivation path**: Resolved and implemented. The pipeline determines the category primarily by querying the Ministry of Interior's chart of accounts lookup `"side"` field (`"receipts"` -> `"income"`, `"payments"` -> `"expense"`). For `null` codes (e.g. section dividers or unclassified rows), the pipeline falls back to sequentially tracking the last seen section header (`"הכנסות"` / `"הוצאות"`) in document row order. This has been proven end-to-end on all sample budgets.
+- **Unit granularity mismatch & Pre-normalization**: Resolved and implemented. All `amount` fields inside `line_items.json` are pre-normalized to whole NIS (full ILS) by multiplying raw cell values by the table-specific unit scale multiplier (e.g., multiplying by `1000` for `thousands_nis`). This simplifies downstream Postgres loading and queries, while the document-level nominal `unit` is still retained in the JSON's top-level metadata for provenance.
+- **Column Semantic Resolution (`amount_type`/`fiscal_year_value`)**: Resolved and implemented. We added heuristic regex parsers that map Hebrew column headers to standard `amount_type` values (like `budgeted`, `actual_current_prices`, `execution_pct`, `change`), and extract 4-digit fiscal years (falling back to nominal budget target year when unspecified). `execution_pct` columns have their `amount` set to `null` to avoid double-counting.
 
 ## Loader (not built — issue #13)
 

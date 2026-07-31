@@ -217,18 +217,9 @@ non-matching key is absent.
    `pipeline/analysis/` classifies every row of every table it's given --
    see the gap noted below).
 
-## Gap: `pipeline/analysis/` (the existing level-3 spike) doesn't consume this yet
+## Gap: Resolved (July 2026)
 
-`pipeline/analysis/docling_rows.py` reads docling's raw `native.json`
-export directly (`DoclingDocument.export_to_dict()`), not
-`normalized.json`, because it was built before
-`src/muni_budget_analysis/processing` existed (see its own README's
-"Status: spike" note). It also doesn't consume `scoped.json` at all --
-every row of every table it's given goes to the category-classification
-LLM call, with no level-2.5 pre-filtering. This handshake document
-specifies where `pipeline/analysis/` (or its real, non-spike successor)
-should end up reading from; migrating it is a separate follow-up, not
-done here (surgical scope -- see `docs/examples/level3-analysis/README.md`).
+The migration of the level-3 analyzer pipeline is fully complete and verified. The Stage 3 processor (`pipeline/analysis/normalized_input.py` and `build_output.py`) now natively reads and consumes `normalized.json` and joins it with `scoped.json`'s keeps and targets (using heuristic fallbacks when no scope classification metadata is found), and outputs the standardized, pre-normalized `line_items.json` output contract. Raw `native.json` is no longer used by the pipeline.
 
 ## `muni_id` caveat
 

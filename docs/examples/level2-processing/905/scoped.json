@@ -1,0 +1,201 @@
+{
+  "muni_id": 905,
+  "source_filename": "shafir_2026.pdf",
+  "target_year": 2026,
+  "tables_total": 200,
+  "tables_classified": 3,
+  "table_scopes": [
+    {
+      "table_id": "table-0",
+      "section_title": "מספר תושבים בכל ישוב",
+      "year_axis": "column",
+      "columns": [
+        {
+          "index": 0,
+          "header": "הצעת תקציב 2026",
+          "detected_year": 2026,
+          "keep": true
+        },
+        {
+          "index": 1,
+          "header": "תקציב 2025 מעודכן",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 2,
+          "header": "תקציב 2025 מאושר",
+          "detected_year": 2025,
+          "keep": false
+        },
+        {
+          "index": 3,
+          "header": "נושא",
+          "detected_year": null,
+          "keep": true
+        }
+      ],
+      "confidence": 1.0
+    },
+    {
+      "table_id": "table-1",
+      "section_title": "הפרעשי תקציב",
+      "year_axis": "column",
+      "columns": [
+        {
+          "index": 0,
+          "header": "הפרעו בין תקציב מקור 2026 לתקציב סופי 2025",
+          "detected_year": 2026,
+          "keep": true
+        },
+        {
+          "index": 1,
+          "header": "תקציב",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 2,
+          "header": "הוצאות",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 3,
+          "header": "הכנסות",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 4,
+          "header": "הפרעו בין תקציב סופי 5 לתקציב מקור 2005",
+          "detected_year": 2005,
+          "keep": false
+        },
+        {
+          "index": 5,
+          "header": "תקציב",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 6,
+          "header": "הוצאות",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 7,
+          "header": "הכנסות",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 8,
+          "header": "תקציב",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 9,
+          "header": "הוצאות",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 10,
+          "header": "הכנסות",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 11,
+          "header": "שם אגף/מחלקה",
+          "detected_year": null,
+          "keep": true
+        }
+      ],
+      "confidence": 0.7
+    },
+    {
+      "table_id": "table-2",
+      "section_title": "הפרעשי תקציב",
+      "year_axis": "column",
+      "columns": [
+        {
+          "index": 0,
+          "header": "הפרעו בין תקציב מקור 2026 לתקציב סופי 2025",
+          "detected_year": 2026,
+          "keep": true
+        },
+        {
+          "index": 1,
+          "header": "תקציב",
+          "detected_year": 2026,
+          "keep": true
+        },
+        {
+          "index": 2,
+          "header": "הוצאות",
+          "detected_year": 2026,
+          "keep": true
+        },
+        {
+          "index": 3,
+          "header": "הכנסות",
+          "detected_year": 2026,
+          "keep": true
+        },
+        {
+          "index": 4,
+          "header": "הפרעו בין תקציב סופי 5 לתקציב מקור 2005",
+          "detected_year": 2005,
+          "keep": false
+        },
+        {
+          "index": 5,
+          "header": "תקציב",
+          "detected_year": 2005,
+          "keep": false
+        },
+        {
+          "index": 6,
+          "header": "הוצאות",
+          "detected_year": 2005,
+          "keep": false
+        },
+        {
+          "index": 7,
+          "header": "הכנסות",
+          "detected_year": 2005,
+          "keep": false
+        },
+        {
+          "index": 8,
+          "header": "תקציב",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 9,
+          "header": "הוצאות",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 10,
+          "header": "הכנסות",
+          "detected_year": null,
+          "keep": false
+        },
+        {
+          "index": 11,
+          "header": "שם אגף/מחלקה",
+          "detected_year": null,
+          "keep": true
+        }
+      ],
+      "confidence": 0.9
+    }
+  ]
+}
