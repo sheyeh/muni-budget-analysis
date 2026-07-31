@@ -25,6 +25,78 @@ from muni_budget_analysis.analysis.build_output import build_records, build_line
 logger = logging.getLogger(__name__)
 
 
+def calculate_table_raw_sum(table) -> float:
+    from muni_budget_analysis.analysis.build_output import is_percentage_value, parse_amount
+    raw_sum = 0.0
+    for row in table.rows:
+        for amount_label, raw_value in row.values.items():
+            if raw_value is not None and not is_percentage_value(raw_value, amount_label):
+                amount = parse_amount(raw_value)
+                if amount is not None:
+                    raw_sum += abs(amount)
+    return raw_sum
+
+
+def determine_document_fallback_multiplier(tables, classification_by_table, scope_data) -> int:
+    from muni_budget_analysis.analysis.build_output import get_table_scope_filters
+    
+    resolved_total = 0.0
+    unresolved_raw_total = 0.0
+    
+    for table in tables:
+        table_keep, _, _, _ = get_table_scope_filters(table, scope_data)
+        if not table_keep:
+            continue
+            
+        raw_sum = calculate_table_raw_sum(table)
+        
+        # Determine if this table already has a resolved multiplier
+        multiplier = None
+        if table.unit_explicit:
+            multiplier = 1000 if table.unit == "thousands" else (1 if table.unit == "full" else 1000)
+        else:
+            cls = classification_by_table.get(table.table_index)
+            if cls and cls.inferred_unit == "thousands":
+                multiplier = 1000
+            elif cls and cls.inferred_unit == "full":
+                multiplier = 1
+                
+        if multiplier is not None:
+            resolved_total += raw_sum * multiplier
+        else:
+            unresolved_raw_total += raw_sum
+            
+    if unresolved_raw_total <= 0.0:
+        return 1000  # Default fallback
+        
+    candidates = [1000, 1, 1000000]
+    best_multiplier = None
+    min_log_distance = float('inf')
+    target_center = 387298334.0  # geometric center of [5M, 30B]
+    import math
+    
+    for mult in candidates:
+        scaled_doc_total = resolved_total + (unresolved_raw_total * mult)
+        if 5000000 <= scaled_doc_total <= 30000000000:
+            log_dist = abs(math.log10(scaled_doc_total) - math.log10(target_center))
+            if log_dist < min_log_distance:
+                min_log_distance = log_dist
+                best_multiplier = mult
+                
+    if best_multiplier is not None:
+        return best_multiplier
+        
+    # If no candidate gets inside the [5M, 30B] range, pick the one closest to the center in log-space
+    for mult in candidates:
+        scaled_doc_total = resolved_total + (unresolved_raw_total * mult)
+        log_dist = abs(math.log10(scaled_doc_total) - math.log10(target_center))
+        if log_dist < min_log_distance:
+            min_log_distance = log_dist
+            best_multiplier = mult
+            
+    return best_multiplier or 1000
+
+
 def process_one_document(
     doc_dir: Path,
     api_key: str | None,
@@ -151,6 +223,14 @@ def process_one_document(
             else:
                 classification_by_table_index[table_index] = result
 
+    # Determine document-wide fallback multiplier
+    doc_fallback_multiplier = determine_document_fallback_multiplier(
+        tables=tables,
+        classification_by_table=classification_by_table_index,
+        scope_data=scope_data,
+    )
+    logger.info(f"  Resolved document fallback multiplier: {doc_fallback_multiplier}")
+
     # 3. Build records using classification results
     for table in tables:
         # Verify table keep scope
@@ -169,6 +249,7 @@ def process_one_document(
             classification=result,
             codebook_by_code=codebook_by_code,
             scope_data=scope_data,
+            doc_fallback_multiplier=doc_fallback_multiplier,
         )
         all_records.extend(records)
 
