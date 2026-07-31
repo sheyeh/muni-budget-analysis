@@ -41,11 +41,26 @@ client library in requirements.txt, no DB-executing MCP tool wired up at
 the time this was written). This script's primary output is idempotent SQL
 (--sql-out), meant to be pasted into the Supabase SQL editor / run via
 `psql` / `supabase db execute`. If `psycopg` is installed and DATABASE_URL
-is set, --apply runs the same SQL directly.
+is set, --apply runs the same SQL directly via a raw Postgres connection.
+
+--apply-rest is the path that actually works with Supabase's new-style API
+keys (sb_publishable_.../sb_secret_...) -- those are Data API (PostgREST)
+keys, not a Postgres connection string, so raw multi-statement SQL (the
+--apply path's CTEs) can't run through them. --apply-rest instead does the
+same upsert / wholesale-replace semantics as plain REST calls (`requests`,
+already a project dependency): upsert classification_code, then per budget:
+upsert budget (on_conflict=muni_id,fiscal_year, get back the id), DELETE
+existing budget_line_item rows for that id, POST the new ones in batches.
+No `muni` writes: the live `muni` table already holds the real municipality
+registry with correct rows for every source's real semel-yishuv ID (see
+SOURCE_REAL_MUNI_ID below) -- discovered while wiring this up, see
+--delete-mock-data for the now-redundant old mock rows this superseded.
 
 Usage:
     python scripts/load_line_items_to_supabase.py --sql-out out/load.sql
-    python scripts/load_line_items_to_supabase.py --apply   # needs DATABASE_URL + psycopg installed
+    python scripts/load_line_items_to_supabase.py --apply       # needs DATABASE_URL + psycopg installed
+    python scripts/load_line_items_to_supabase.py --apply-rest --supabase-url https://xxx.supabase.co --supabase-key sb_secret_...
+        # or set SUPABASE_URL / SUPABASE_KEY env vars instead of the flags
 """
 
 from __future__ import annotations
@@ -66,11 +81,14 @@ LEVEL2_DIR = REPO_ROOT / "docs" / "examples" / "level2-processing"
 LEVEL25_DIR = REPO_ROOT / "docs" / "examples" / "level2.5-scope-filter"
 LEVEL3_OUT_DIR = REPO_ROOT / "docs" / "examples" / "level3-analysis" / "out"
 
-# source slug -> muni_id, per docs/examples/level2-processing/*/manifest.json.
+# source slug -> synthetic folder id, per docs/examples/level2-processing/*/manifest.json
+# and docs/examples/level2.5-scope-filter/*/scoped.json -- used ONLY to locate
+# those committed files on disk (CONTEXT.md's "muni_id caveat": 901-910 are
+# synthetic placeholders in this repo's examples, not real semel-yishuv codes).
 # Only files that actually went through the level-3 spike are here.
 # elad_2022 (903) is excluded: excel_native input, the spike only reads
 # docling native.json, so it has no line items -- see the plan/PR notes.
-SOURCE_MUNI: dict[str, int] = {
+SOURCE_FOLDER_ID: dict[str, int] = {
     "even_yehuda_2025": 901,
     "mate_yehuda_2024": 902,
     "elyakin_2026": 906,
@@ -80,20 +98,20 @@ SOURCE_MUNI: dict[str, int] = {
     "lachish_2026": 910,
 }
 
-# Best-effort real names for these synthetic muni_ids (901-910 are placeholders,
-# not real semel-yishuv codes -- see CONTEXT.md's "Muni ID" / muni_id caveat in
-# docs/handshake-level2-level3.md). Not sourced from an authoritative registry.
-# 903 (elad_2022) is included so its muni row's fake seed name gets replaced too,
-# even though it gets no budget/line-item rows.
-MUNI_SEED: dict[int, dict[str, str]] = {
-    901: {"name_he": "אבן יהודה", "authority_type": "local council"},
-    902: {"name_he": "מטה יהודה", "authority_type": "regional council"},
-    903: {"name_he": "אלעד", "authority_type": "city"},
-    906: {"name_he": "אליכין", "authority_type": "local council"},
-    907: {"name_he": "גזר", "authority_type": "regional council"},
-    908: {"name_he": "ג'לג'וליה", "authority_type": "city"},
-    909: {"name_he": "ירושלים", "authority_type": "city"},
-    910: {"name_he": "לכיש", "authority_type": "regional council"},
+# source slug -> REAL semel-yishuv muni_id. The live Supabase `muni` table
+# turned out to already hold the full real municipality registry (discovered
+# while wiring up --apply-rest) -- so budget/budget_line_item rows use the
+# real ID, not the synthetic folder id above, per CONTEXT.md's "Muni ID" rule
+# (reuse the real external identifier rather than inventing a project one).
+# No muni-table write is needed for these: the real rows already exist with
+# correct names.
+SOURCE_REAL_MUNI_ID: dict[str, int] = {
+    "even_yehuda_2025": 60182,
+    "mate_yehuda_2024": 1026,
+    "elyakin_2026": 60041,
+    "gezer_2026": 4330,
+    "jerusalem_2026": 13000,
+    "lachish_2026": 6150,
 }
 
 YEAR_RE = re.compile(r"(19|20)\d{2}")
@@ -187,32 +205,16 @@ def build_line_items(
     return kept, skipped
 
 
-def render_classification_code_sql(codebook: list[dict]) -> str:
-    lines = [
-        "-- classification_code: full MOI codebook "
-        f"({len(codebook)} entries, from pipeline/analysis/moi_budget_codes.json)",
-    ]
-    for entry in sorted(codebook, key=lambda e: e["level"]):
-        category = "income" if entry.get("side") == "receipts" else "expense"
+def render_classification_code_sql(rows: list[dict]) -> str:
+    lines = [f"-- classification_code: full MOI codebook ({len(rows)} entries)"]
+    for r in rows:
         lines.append(
             "INSERT INTO classification_code (code, parent_code, level, category, standard_label_he) "
-            f"VALUES ({sql_value(entry['code'])}, {sql_value(entry.get('parent'))}, "
-            f"{sql_value(entry['level'])}, {sql_value(category)}, {sql_value(entry['label'])}) "
+            f"VALUES ({sql_value(r['code'])}, {sql_value(r['parent_code'])}, "
+            f"{sql_value(r['level'])}, {sql_value(r['category'])}, {sql_value(r['standard_label_he'])}) "
             "ON CONFLICT (code) DO UPDATE SET parent_code = excluded.parent_code, "
             "level = excluded.level, category = excluded.category, "
             "standard_label_he = excluded.standard_label_he;"
-        )
-    return "\n".join(lines)
-
-
-def render_muni_sql() -> str:
-    lines = ["-- muni: real names for the target munis, replacing the fake seed rows"]
-    for muni_id, seed in sorted(MUNI_SEED.items()):
-        lines.append(
-            "INSERT INTO muni (muni_id, name_he, authority_type) "
-            f"VALUES ({muni_id}, {sql_value(seed['name_he'])}, {sql_value(seed['authority_type'])}) "
-            "ON CONFLICT (muni_id) DO UPDATE SET name_he = excluded.name_he, "
-            "authority_type = excluded.authority_type;"
         )
     return "\n".join(lines)
 
@@ -255,20 +257,37 @@ FROM b, (VALUES {values_rows}) AS v(classification_code, row_type, raw_label_he,
 """
 
 
-def build_all_sql(sources: list[str]) -> tuple[str, list[str]]:
+def build_all_data(sources: list[str]) -> tuple[dict, list[str]]:
+    """Structured form of the same data build_all_sql renders to SQL text --
+    used by the REST-apply path, which needs rows/dicts, not SQL strings.
+
+    No `muni` rows here: the live `muni` table turned out to already hold the
+    real municipality registry (discovered wiring up --apply-rest) with
+    correct names for every SOURCE_REAL_MUNI_ID -- nothing to upsert there."""
     codebook = load_codebook()
     codebook_by_code = by_code(codebook)
 
     warnings: list[str] = []
-    parts = [render_classification_code_sql(codebook), render_muni_sql()]
+    classification_code_rows = [
+        {
+            "code": entry["code"],
+            "parent_code": entry.get("parent"),
+            "level": entry["level"],
+            "category": "income" if entry.get("side") == "receipts" else "expense",
+            "standard_label_he": entry["label"],
+        }
+        for entry in sorted(codebook, key=lambda e: e["level"])
+    ]
 
+    budgets = []
     for source in sources:
-        muni_id = SOURCE_MUNI[source]
-        manifest = load_manifest(muni_id)
+        folder_id = SOURCE_FOLDER_ID[source]
+        real_muni_id = SOURCE_REAL_MUNI_ID[source]
+        manifest = load_manifest(folder_id)
         if manifest.get("status") == "failed":
             warnings.append(f"{source}: manifest status=failed, skipping entirely")
             continue
-        scoped = load_scoped(muni_id)
+        scoped = load_scoped(folder_id)
         target_year = scoped["target_year"]
         records = load_spike_output(source)
 
@@ -281,13 +300,123 @@ def build_all_sql(sources: list[str]) -> tuple[str, list[str]]:
             warnings.append(f"{source}: {skipped}/{len(records)} spike records dropped (no category or no amount)")
 
         source_ref = str(
-            (LEVEL2_DIR / str(muni_id) / "manifest.json").relative_to(REPO_ROOT)
+            (LEVEL2_DIR / str(folder_id) / "manifest.json").relative_to(REPO_ROOT)
         ).replace("\\", "/")
-        parts.append(
-            render_budget_and_line_items_sql(muni_id, target_year, status, source_ref, line_items)
+        budgets.append(
+            {
+                "muni_id": real_muni_id,
+                "fiscal_year": target_year,
+                "status": status,
+                "unit": "nis",
+                "source_ref": source_ref,
+                "processed_at": datetime.now(timezone.utc).isoformat(),
+                "line_items": line_items,
+            }
         )
 
+    data = {"classification_code": classification_code_rows, "budgets": budgets}
+    return data, warnings
+
+
+def apply_via_rest(data: dict, base_url: str, api_key: str) -> None:
+    import requests
+
+    base_url = base_url.rstrip("/")
+    headers = {
+        "apikey": api_key,
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json",
+    }
+
+    def upsert(table: str, rows: list[dict], on_conflict: str, chunk_size: int = 200) -> None:
+        params = {"on_conflict": on_conflict}
+        req_headers = {**headers, "Prefer": "resolution=merge-duplicates"}
+        for i in range(0, len(rows), chunk_size):
+            chunk = rows[i : i + chunk_size]
+            resp = requests.post(
+                f"{base_url}/rest/v1/{table}", params=params, headers=req_headers, json=chunk, timeout=60
+            )
+            if not resp.ok:
+                raise RuntimeError(f"upsert {table} failed ({resp.status_code}): {resp.text[:500]}")
+        print(f"  upserted {len(rows)} rows into {table}")
+
+    upsert("classification_code", data["classification_code"], on_conflict="code")
+
+    for budget in data["budgets"]:
+        budget_row = {k: v for k, v in budget.items() if k != "line_items"}
+        resp = requests.post(
+            f"{base_url}/rest/v1/budget",
+            params={"on_conflict": "muni_id,fiscal_year"},
+            headers={**headers, "Prefer": "resolution=merge-duplicates,return=representation"},
+            json=[budget_row],
+            timeout=60,
+        )
+        if not resp.ok:
+            raise RuntimeError(f"upsert budget failed ({resp.status_code}): {resp.text[:500]}")
+        budget_id = resp.json()[0]["id"]
+
+        resp = requests.delete(
+            f"{base_url}/rest/v1/budget_line_item",
+            params={"budget_id": f"eq.{budget_id}"},
+            headers=headers,
+            timeout=60,
+        )
+        if not resp.ok:
+            raise RuntimeError(f"delete budget_line_item failed ({resp.status_code}): {resp.text[:500]}")
+
+        line_item_rows = [{**li, "budget_id": budget_id, "muni_id": budget["muni_id"]} for li in budget["line_items"]]
+        chunk_size = 500
+        for i in range(0, len(line_item_rows), chunk_size):
+            chunk = line_item_rows[i : i + chunk_size]
+            resp = requests.post(
+                f"{base_url}/rest/v1/budget_line_item", headers=headers, json=chunk, timeout=120
+            )
+            if not resp.ok:
+                raise RuntimeError(f"insert budget_line_item failed ({resp.status_code}): {resp.text[:500]}")
+        print(
+            f"  muni_id={budget['muni_id']} fiscal_year={budget['fiscal_year']}: "
+            f"budget_id={budget_id}, {len(line_item_rows)} line items"
+        )
+
+
+def build_all_sql(sources: list[str]) -> tuple[str, list[str]]:
+    data, warnings = build_all_data(sources)
+    parts = [render_classification_code_sql(data["classification_code"])]
+    for budget in data["budgets"]:
+        parts.append(
+            render_budget_and_line_items_sql(
+                budget["muni_id"], budget["fiscal_year"], budget["status"], budget["source_ref"], budget["line_items"]
+            )
+        )
     return "\n\n".join(parts) + "\n", warnings
+
+
+# Old mock/fixture data (supabase/seed.sql), predating the real muni registry
+# discovered while wiring up --apply-rest -- now redundant/confusing since the
+# real munis for these same places (Even Yehuda, Mate Yehuda, Elad) exist
+# under their real semel-yishuv IDs. budget has ON DELETE CASCADE to
+# budget_line_item, so deleting `budget` rows is enough to clean both.
+MOCK_MUNI_IDS = (901, 902, 903)
+
+
+def delete_mock_data(base_url: str, api_key: str) -> None:
+    import requests
+
+    base_url = base_url.rstrip("/")
+    headers = {"apikey": api_key, "Authorization": f"Bearer {api_key}"}
+    id_list = ",".join(str(m) for m in MOCK_MUNI_IDS)
+
+    resp = requests.delete(
+        f"{base_url}/rest/v1/budget", params={"muni_id": f"in.({id_list})"}, headers=headers, timeout=60
+    )
+    if not resp.ok:
+        raise RuntimeError(f"delete mock budget rows failed ({resp.status_code}): {resp.text[:500]}")
+    resp = requests.delete(
+        f"{base_url}/rest/v1/muni", params={"muni_id": f"in.({id_list})"}, headers=headers, timeout=60
+    )
+    if not resp.ok:
+        raise RuntimeError(f"delete mock muni rows failed ({resp.status_code}): {resp.text[:500]}")
+    print(f"Deleted mock muni/budget/budget_line_item rows for muni_id in {MOCK_MUNI_IDS}")
 
 
 def apply_sql(sql: str) -> None:
@@ -319,20 +448,49 @@ def parse_args() -> argparse.Namespace:
     p.add_argument(
         "--sources",
         nargs="*",
-        default=list(SOURCE_MUNI.keys()),
+        default=list(SOURCE_FOLDER_ID.keys()),
         help="source slugs to load (default: all with committed level-3 spike output)",
     )
     p.add_argument("--sql-out", help="write generated SQL to this file")
     p.add_argument("--apply", action="store_true", help="execute the SQL via DATABASE_URL (needs psycopg)")
+    p.add_argument(
+        "--apply-rest",
+        action="store_true",
+        help="apply via the Supabase REST/PostgREST API instead of raw SQL (needs --supabase-url/--supabase-key or SUPABASE_URL/SUPABASE_KEY env vars)",
+    )
+    p.add_argument("--supabase-url", default=None, help="e.g. https://xxxx.supabase.co (or set SUPABASE_URL)")
+    p.add_argument("--supabase-key", default=None, help="Data API key (or set SUPABASE_KEY)")
+    p.add_argument(
+        "--delete-mock-data",
+        action="store_true",
+        help=f"also delete the old mock muni/budget/budget_line_item rows for muni_id in {MOCK_MUNI_IDS} (needs --apply-rest creds)",
+    )
     return p.parse_args()
 
 
 def main() -> None:
+    import os
+
     args = parse_args()
-    unknown = [s for s in args.sources if s not in SOURCE_MUNI]
+    unknown = [s for s in args.sources if s not in SOURCE_FOLDER_ID]
     if unknown:
-        print(f"Unknown source(s), not in SOURCE_MUNI: {unknown}", file=sys.stderr)
+        print(f"Unknown source(s), not in SOURCE_FOLDER_ID: {unknown}", file=sys.stderr)
         sys.exit(1)
+
+    if args.apply_rest or args.delete_mock_data:
+        base_url = args.supabase_url or os.environ.get("SUPABASE_URL")
+        api_key = args.supabase_key or os.environ.get("SUPABASE_KEY")
+        if not base_url or not api_key:
+            print("--apply-rest/--delete-mock-data require --supabase-url/--supabase-key or SUPABASE_URL/SUPABASE_KEY env vars.", file=sys.stderr)
+            sys.exit(1)
+        if args.delete_mock_data:
+            delete_mock_data(base_url, api_key)
+        if args.apply_rest:
+            data, warnings = build_all_data(args.sources)
+            for w in warnings:
+                print(f"WARNING: {w}", file=sys.stderr)
+            apply_via_rest(data, base_url, api_key)
+        return
 
     sql, warnings = build_all_sql(args.sources)
 
