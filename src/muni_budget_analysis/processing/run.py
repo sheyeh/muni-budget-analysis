@@ -3,7 +3,7 @@ run.py
 
 Batch entrypoint for the level-2 file processing pipeline (Task 7): for each
 record in a level-1 manifest, run ingest -> route -> convert -> normalize ->
-persist, writing processed/{muni_id}/{filename_stem}/{manifest.json,
+persist, writing processed/{muni_id}/{output_key}/{manifest.json,
 normalized.json, docling_native.json, document.md}.
 
 Sequential, single-process -- no worker pool, per prd.md ("no SLA, avoid
@@ -30,6 +30,7 @@ from . import excel_pipeline, manifest, normalize, pdf_pipeline, router
 # function, so `from . import ingest` here would silently resolve to the
 # function object, not the module, once __init__.py has run.
 from .ingest import ingest as ingest_file
+from .ingest import output_dir_key
 
 logger = logging.getLogger(__name__)
 
@@ -82,11 +83,11 @@ def process_one(record: Dict[str, Any], raw_dir: Path, processed_dir: Path) -> D
     pipeline_used = None
     docling_version = None
     page_count = None
-    # Derived from the record alone (budget_filename's stem needs no file
-    # access), so it's known even if ingest() itself fails below -- letting
-    # the except branch still write the failed manifest to the right place.
+    # Derived from the record alone (budget_filename needs no file access),
+    # so it's known even if ingest() itself fails below -- letting the
+    # except branch still write the failed manifest to the right place.
     file_processed_dir = (
-        processed_dir / str(muni_id) / Path(source_filename).stem
+        processed_dir / str(muni_id) / output_dir_key(source_filename)
         if muni_id is not None and source_filename
         else None
     )
@@ -95,7 +96,7 @@ def process_one(record: Dict[str, Any], raw_dir: Path, processed_dir: Path) -> D
         ingested = ingest_file(record, raw_dir, processed_dir)
         source_sha256 = ingested["source_sha256"]
         detected_type = ingested["detected_type"]
-        file_processed_dir = processed_dir / str(muni_id) / ingested["filename_stem"]
+        file_processed_dir = processed_dir / str(muni_id) / ingested["output_key"]
 
         if ingested["skip"]:
             existing = manifest.read_manifest(file_processed_dir)
