@@ -1,0 +1,341 @@
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  min-width: 1024px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #222;
+  background: #f7f7f8;
+}
+
+.hidden { display: none !important; }
+
+/* ---- top bar ---- */
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 10px 24px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.topbar-brand {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.1;
+  color: #333;
+}
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  flex: 1;
+  justify-content: center;
+}
+.tab {
+  text-decoration: none;
+  color: #555;
+  padding: 4px 6px;
+}
+.tab.active {
+  color: #111;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.tab-sep { color: #aaa; }
+.search-results {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-height: 260px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+.search-result-row {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.search-result-row:hover { background: #f0f0f0; }
+.search-result-empty {
+  padding: 6px 10px;
+  color: #888;
+}
+
+/* ---- views ---- */
+#app { padding: 16px 24px; }
+.view { min-height: 600px; }
+.page-placeholder {
+  padding: 80px 0;
+  text-align: center;
+  color: #888;
+  font-size: 18px;
+}
+
+/* ---- Page 1 layout ---- */
+.page-map {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+}
+.map-canvas {
+  flex: 1 1 45%;
+  height: 640px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.table-panel {
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.table-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.table-count {
+  font-size: 13px;
+  color: #666;
+}
+.legend-wrap {
+  position: relative;
+}
+.legend-hint {
+  font-size: 13px;
+  color: #1a5fb4;
+  cursor: pointer;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+}
+.legend-popover {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 6px;
+  width: 340px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  padding: 12px 14px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #333;
+  z-index: 50;
+  text-align: right;
+}
+.legend-popover p { margin: 0 0 8px; }
+.legend-popover p:last-child { margin-bottom: 0; }
+.table-scroll {
+  overflow: auto;
+  max-height: 640px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+}
+.muni-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.muni-table th, .muni-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+.muni-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.muni-table th {
+  background: #fafafa;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 2px solid #ddd;
+}
+.filter-row th {
+  cursor: default;
+  padding: 4px 6px;
+  border-bottom: 2px solid #ddd;
+}
+.filter-row input, .filter-row select {
+  width: 100%;
+  min-width: 60px;
+  font-size: 12px;
+  padding: 3px 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.muni-link {
+  color: #1a5fb4;
+  text-decoration: none;
+  font-weight: 600;
+}
+.muni-link:hover { text-decoration: underline; }
+
+/* ---- Page 2 layout ---- */
+.page-category {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+}
+.side-panel {
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.side-block {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.side-block input[type="text"] {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.pick-list, .checklist {
+  max-height: 220px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.pick-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.pick-row:hover { background: #f0f4fa; }
+.pick-row.picked { background: #dbe9f7; font-weight: 700; }
+.pick-count { color: #888; font-size: 12px; }
+.checklist-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.checklist-row:hover { background: #f5f5f5; }
+.category-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+.category-main .map-canvas {
+  /* Override the base .map-canvas rule's `flex: 1 1 45%` (written for Page 1's flex ROW, where
+     45% sizes width) — in this flex COLUMN it would size height instead, fighting the explicit
+     height below and leaving Leaflet initializing against a bad/indeterminate size. */
+  flex: 0 0 420px;
+  height: 420px;
+}
+.mode-toggle {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-size: 14px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+}
+.mode-toggle label { display: flex; align-items: center; gap: 4px; cursor: pointer; }
+.chart-canvas {
+  height: 380px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* ---- Page 3 layout ---- */
+.page-authority {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.side-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #555;
+}
+#authority-picker-input {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.source-files {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.empty-hint { color: #888; font-size: 13px; }
+.authority-main {
+  flex: 1;
+  min-width: 0;
+}
+.authority-charts { display: flex; flex-direction: column; gap: 12px; }
+.authority-row { background: #fff; border: 1px solid #ddd; border-radius: 4px; }
+.treemap-canvas { height: 380px; }
+.authority-row-split {
+  display: flex;
+  gap: 12px;
+  background: none;
+  border: none;
+}
+.pie-canvas {
+  flex: 0 0 380px;
+  height: 360px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.authority-row-split .chart-canvas {
+  flex: 1;
+}
+
+/* ---- badges (per-year status) ---- */
+.badge {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  text-decoration: none;
+}
+.badge-detailed { background: #d7f0d7; color: #1e6b1e; }
+.badge-summary { background: #fbe4c8; color: #8a5a17; }
+.badge-missing { background: #f6d3d3; color: #a32323; }
+.badge-not-checked { background: #eee; color: #888; }
+
+/* ---- transparency score cell / bands ---- */
+.score-cell { font-weight: 700; color: #fff; }
+.score-green { background: #2e8b3d; }
+.score-orange { background: #e08a1e; }
+.score-red { background: #c62f2f; }
+.score-grey { background: #b0b0b0; }
