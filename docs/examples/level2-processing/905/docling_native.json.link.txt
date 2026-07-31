@@ -1,0 +1,17 @@
+docling_native.json for shafir_2026 (docling native/lossless export,
+~21.85 MB, 144 pages, scanned/OCR) is too large to commit to git. Previously
+this file was never captured at all from the original GPU run (see git
+history / this directory's manifest.json processed_at timestamp before this
+regeneration). Hosted on Google Cloud Storage instead (public-read, bucket
+in a GCP project — note: this is a Qwiklabs training-lab project, which
+expires/gets reclaimed on a timer; if this link goes dead, re-upload from a
+fresh regeneration):
+
+https://storage.googleapis.com/qwiklabs-gcp-03-e1024cd263b6-muni-budget-examples/905/docling_native.json
+
+Regenerate locally: run the level-2 batch entrypoint
+(src/muni_budget_analysis/processing/run.py) against
+budget_examples/shafir_2026.pdf via a level-1 manifest record with
+muni_id=905. Scanned PDF (OCR path, docling_pdf_ocr, uses GCP Vision — see
+docs/adr/0001-*) — use scripts/gcp_gpu_spike.sh's create/bootstrap pattern
+on a GPU VM (see docs/gcp-gpu-docling.md; took ~15min on a spot NVIDIA L4).

@@ -1,0 +1,4681 @@
+{
+  "70": {
+    "muni_id": "70",
+    "name": "אשדוד",
+    "has_pipeline_data": false,
+    "website_url": "https://www.ashdod.muni.il",
+    "treemap": {
+      "labels": [],
+      "parents": [],
+      "values_total": [],
+      "values_pct_of_budget": [],
+      "values_per_capita": []
+    },
+    "pie_latest_year": {
+      "year": null,
+      "slices": []
+    },
+    "trend": {
+      "years": [],
+      "series": []
+    },
+    "source_files": []
+  },
+  "154": {
+    "muni_id": "154",
+    "name": "תל מונד",
+    "has_pipeline_data": true,
+    "website_url": "https://www.tel-mond.muni.il",
+    "treemap": {
+      "labels": [
+        "תקציב תל מונד",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי",
+        "רווחה",
+        "מינהל הרווחה",
+        "רווחת הפרט והמשפחה",
+        "מינהל כללי",
+        "הנהלה ומועצה",
+        "מבקר הרשות"
+      ],
+      "parents": [
+        "",
+        "תקציב תל מונד",
+        "חינוך",
+        "חינוך",
+        "תקציב תל מונד",
+        "רווחה",
+        "רווחה",
+        "תקציב תל מונד",
+        "מינהל כללי",
+        "מינהל כללי"
+      ],
+      "values_total": [
+        null,
+        37752000,
+        22651200,
+        15100800,
+        15429000,
+        9257400,
+        6171600,
+        10908000,
+        6544800,
+        4363200
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.252,
+        0.151,
+        0.101,
+        0.103,
+        0.062,
+        0.041,
+        0.073,
+        0.044,
+        0.029
+      ],
+      "values_per_capita": [
+        null,
+        2360,
+        1416,
+        944,
+        964,
+        578,
+        386,
+        682,
+        409,
+        273
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2025,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 37752000,
+          "pct": 0.252
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": 15429000,
+          "pct": 0.103
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": 10908000,
+          "pct": 0.073
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            null,
+            null,
+            37740000,
+            37752000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.252,
+            0.252,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            2359,
+            2360,
+            null
+          ]
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": [
+            null,
+            null,
+            15420000,
+            15429000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.103,
+            0.103,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            964,
+            964,
+            null
+          ]
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": [
+            null,
+            null,
+            10902000,
+            10908000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.073,
+            0.073,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            681,
+            682,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "detailed",
+        "url": null
+      },
+      {
+        "year": 2024,
+        "status": "summary",
+        "url": null
+      }
+    ]
+  },
+  "182": {
+    "muni_id": "182",
+    "name": "אבן יהודה",
+    "has_pipeline_data": true,
+    "website_url": "https://www.even-yehuda.muni.il",
+    "treemap": {
+      "labels": [
+        "תקציב אבן יהודה",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי",
+        "רווחה",
+        "מינהל הרווחה",
+        "רווחת הפרט והמשפחה",
+        "מינהל כללי",
+        "הנהלה ומועצה",
+        "מבקר הרשות",
+        "תברואה",
+        "מינהל תברואה",
+        "שרותי נקיון"
+      ],
+      "parents": [
+        "",
+        "תקציב אבן יהודה",
+        "חינוך",
+        "חינוך",
+        "תקציב אבן יהודה",
+        "רווחה",
+        "רווחה",
+        "תקציב אבן יהודה",
+        "מינהל כללי",
+        "מינהל כללי",
+        "תקציב אבן יהודה",
+        "תברואה",
+        "תברואה"
+      ],
+      "values_total": [
+        null,
+        27715200,
+        16629120,
+        11086080,
+        10478400,
+        6287040,
+        4191360,
+        7483200,
+        4489920,
+        2993280,
+        9360000,
+        5616000,
+        3744000
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.231,
+        0.139,
+        0.092,
+        0.087,
+        0.052,
+        0.035,
+        0.062,
+        0.037,
+        0.025,
+        0.078,
+        0.047,
+        0.031
+      ],
+      "values_per_capita": [
+        null,
+        1980,
+        1188,
+        792,
+        748,
+        449,
+        299,
+        535,
+        321,
+        214,
+        669,
+        401,
+        268
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2025,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 27715200,
+          "pct": 0.231
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": 10478400,
+          "pct": 0.087
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": 7483200,
+          "pct": 0.062
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": 9360000,
+          "pct": 0.078
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            null,
+            null,
+            null,
+            27715200,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.231,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            1980,
+            null
+          ]
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": [
+            null,
+            null,
+            null,
+            10478400,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.087,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            748,
+            null
+          ]
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": [
+            null,
+            null,
+            null,
+            7483200,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.062,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            535,
+            null
+          ]
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": [
+            null,
+            null,
+            null,
+            9360000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.078,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            669,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "detailed",
+        "url": null
+      }
+    ]
+  },
+  "195": {
+    "muni_id": "195",
+    "name": "קדימה-צורן",
+    "has_pipeline_data": true,
+    "website_url": "https://www.kzoran.muni.il",
+    "treemap": {
+      "labels": [
+        "תקציב קדימה-צורן",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי",
+        "רווחה",
+        "מינהל הרווחה",
+        "רווחת הפרט והמשפחה"
+      ],
+      "parents": [
+        "",
+        "תקציב קדימה-צורן",
+        "חינוך",
+        "חינוך",
+        "תקציב קדימה-צורן",
+        "רווחה",
+        "רווחה"
+      ],
+      "values_total": [
+        null,
+        50140000,
+        30084000,
+        20056000,
+        31648000,
+        18988800,
+        12659200
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.218,
+        0.131,
+        0.087,
+        0.138,
+        0.083,
+        0.055
+      ],
+      "values_per_capita": [
+        null,
+        2006,
+        1204,
+        802,
+        1266,
+        760,
+        506
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2025,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 50140000,
+          "pct": 0.218
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": 31648000,
+          "pct": 0.138
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            null,
+            null,
+            null,
+            50140000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.218,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            2006,
+            null
+          ]
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": [
+            null,
+            null,
+            null,
+            31648000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.138,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            1266,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "summary",
+        "url": null
+      }
+    ]
+  },
+  "666": {
+    "muni_id": "666",
+    "name": "עומר",
+    "has_pipeline_data": true,
+    "website_url": "https://www.omer.muni.il",
+    "treemap": {
+      "labels": [
+        "תקציב עומר",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי",
+        "רווחה",
+        "מינהל הרווחה",
+        "רווחת הפרט והמשפחה",
+        "מינהל כללי",
+        "הנהלה ומועצה",
+        "מבקר הרשות"
+      ],
+      "parents": [
+        "",
+        "תקציב עומר",
+        "חינוך",
+        "חינוך",
+        "תקציב עומר",
+        "רווחה",
+        "רווחה",
+        "תקציב עומר",
+        "מינהל כללי",
+        "מינהל כללי"
+      ],
+      "values_total": [
+        null,
+        23126400,
+        13875840,
+        9250560,
+        9613800,
+        5768280,
+        3845520,
+        6782400,
+        4069440,
+        2712960
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.257,
+        0.154,
+        0.103,
+        0.107,
+        0.064,
+        0.043,
+        0.075,
+        0.045,
+        0.03
+      ],
+      "values_per_capita": [
+        null,
+        2570,
+        1542,
+        1028,
+        1068,
+        641,
+        427,
+        754,
+        452,
+        302
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2025,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 23126400,
+          "pct": 0.257
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": 9613800,
+          "pct": 0.107
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": 6782400,
+          "pct": 0.075
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            null,
+            null,
+            null,
+            23126400,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.257,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            2570,
+            null
+          ]
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": [
+            null,
+            null,
+            null,
+            9613800,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.107,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            1068,
+            null
+          ]
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": [
+            null,
+            null,
+            null,
+            6782400,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.075,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            754,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "detailed",
+        "url": null
+      }
+    ]
+  },
+  "1200": {
+    "muni_id": "1200",
+    "name": "מודיעין-מכבים-רעות",
+    "has_pipeline_data": false,
+    "website_url": "https://www.modiin.muni.il",
+    "treemap": {
+      "labels": [],
+      "parents": [],
+      "values_total": [],
+      "values_pct_of_budget": [],
+      "values_per_capita": []
+    },
+    "pie_latest_year": {
+      "year": null,
+      "slices": []
+    },
+    "trend": {
+      "years": [],
+      "series": []
+    },
+    "source_files": []
+  },
+  "1224": {
+    "muni_id": "1224",
+    "name": "כוכב יאיר-צור יגאל",
+    "has_pipeline_data": false,
+    "website_url": "https://www.kochav-yair.muni.il",
+    "treemap": {
+      "labels": [],
+      "parents": [],
+      "values_total": [],
+      "values_pct_of_budget": [],
+      "values_per_capita": []
+    },
+    "pie_latest_year": {
+      "year": null,
+      "slices": []
+    },
+    "trend": {
+      "years": [],
+      "series": []
+    },
+    "source_files": []
+  },
+  "3000": {
+    "muni_id": "3000",
+    "name": "ירושלים",
+    "has_pipeline_data": true,
+    "website_url": "https://www.jerusalem.muni.il",
+    "treemap": {
+      "labels": [
+        "תקציב ירושלים",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי",
+        "רווחה",
+        "מינהל הרווחה",
+        "רווחת הפרט והמשפחה",
+        "מינהל כללי",
+        "הנהלה ומועצה",
+        "מבקר הרשות",
+        "תברואה",
+        "מינהל תברואה",
+        "שרותי נקיון",
+        "תכנון ובנין עיר",
+        "משרד מהנדס הרשות",
+        "תכנון עיר",
+        "איכות הסביבה",
+        "שירותים שונים לאיכות הסביבה",
+        "מים",
+        "מינהל המים",
+        "גביה"
+      ],
+      "parents": [
+        "",
+        "תקציב ירושלים",
+        "חינוך",
+        "חינוך",
+        "תקציב ירושלים",
+        "רווחה",
+        "רווחה",
+        "תקציב ירושלים",
+        "מינהל כללי",
+        "מינהל כללי",
+        "תקציב ירושלים",
+        "תברואה",
+        "תברואה",
+        "תקציב ירושלים",
+        "תכנון ובנין עיר",
+        "תכנון ובנין עיר",
+        "תקציב ירושלים",
+        "איכות הסביבה",
+        "תקציב ירושלים",
+        "מים",
+        "מים"
+      ],
+      "values_total": [
+        null,
+        1888560000,
+        1133136000,
+        755424000,
+        1039680000,
+        623808000,
+        415872000,
+        876600000,
+        525960000,
+        350640000,
+        685440000,
+        411264000,
+        274176000,
+        242640000,
+        145584000,
+        97056000,
+        280980000,
+        168588000,
+        213120000,
+        127872000,
+        85248000
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.21,
+        0.126,
+        0.084,
+        0.116,
+        0.07,
+        0.046,
+        0.097,
+        0.058,
+        0.039,
+        0.076,
+        0.046,
+        0.03,
+        0.027,
+        0.016,
+        0.011,
+        0.031,
+        0.019,
+        0.024,
+        0.014,
+        0.01
+      ],
+      "values_per_capita": [
+        null,
+        1915,
+        1149,
+        766,
+        1054,
+        632,
+        422,
+        889,
+        533,
+        356,
+        695,
+        417,
+        278,
+        246,
+        148,
+        98,
+        285,
+        171,
+        216,
+        130,
+        86
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2025,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 1888560000,
+          "pct": 0.21
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": 1039680000,
+          "pct": 0.116
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": 876600000,
+          "pct": 0.097
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": 685440000,
+          "pct": 0.076
+        },
+        {
+          "code": "73",
+          "label": "תכנון ובנין עיר",
+          "total_ils": 242640000,
+          "pct": 0.027
+        },
+        {
+          "code": "87",
+          "label": "איכות הסביבה",
+          "total_ils": 280980000,
+          "pct": 0.031
+        },
+        {
+          "code": "91",
+          "label": "מים",
+          "total_ils": 213120000,
+          "pct": 0.024
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            null,
+            null,
+            1887840000,
+            1888560000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.21,
+            0.21,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            1915,
+            1915,
+            null
+          ]
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": [
+            null,
+            null,
+            1039140000,
+            1039680000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.115,
+            0.116,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            1054,
+            1054,
+            null
+          ]
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": [
+            null,
+            null,
+            876240000,
+            876600000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.097,
+            0.097,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            889,
+            889,
+            null
+          ]
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": [
+            null,
+            null,
+            685080000,
+            685440000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.076,
+            0.076,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            695,
+            695,
+            null
+          ]
+        },
+        {
+          "code": "73",
+          "label": "תכנון ובנין עיר",
+          "total_ils": [
+            null,
+            null,
+            242370000,
+            242640000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.027,
+            0.027,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            246,
+            246,
+            null
+          ]
+        },
+        {
+          "code": "87",
+          "label": "איכות הסביבה",
+          "total_ils": [
+            null,
+            null,
+            280800000,
+            280980000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.031,
+            0.031,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            285,
+            285,
+            null
+          ]
+        },
+        {
+          "code": "91",
+          "label": "מים",
+          "total_ils": [
+            null,
+            null,
+            212760000,
+            213120000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.024,
+            0.024,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            216,
+            216,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "summary",
+        "url": null
+      },
+      {
+        "year": 2024,
+        "status": "summary",
+        "url": null
+      }
+    ]
+  },
+  "4000": {
+    "muni_id": "4000",
+    "name": "חיפה",
+    "has_pipeline_data": false,
+    "website_url": "https://www.haifa.muni.il",
+    "treemap": {
+      "labels": [],
+      "parents": [],
+      "values_total": [],
+      "values_pct_of_budget": [],
+      "values_per_capita": []
+    },
+    "pie_latest_year": {
+      "year": null,
+      "slices": []
+    },
+    "trend": {
+      "years": [],
+      "series": []
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "missing",
+        "url": null
+      }
+    ]
+  },
+  "5000": {
+    "muni_id": "5000",
+    "name": "תל אביב-יפו",
+    "has_pipeline_data": true,
+    "website_url": "https://www.tel-aviv.gov.il",
+    "treemap": {
+      "labels": [
+        "תקציב תל אביב-יפו",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי",
+        "רווחה",
+        "מינהל הרווחה",
+        "רווחת הפרט והמשפחה",
+        "מינהל כללי",
+        "הנהלה ומועצה",
+        "מבקר הרשות",
+        "תברואה",
+        "מינהל תברואה",
+        "שרותי נקיון",
+        "תכנון ובנין עיר",
+        "משרד מהנדס הרשות",
+        "תכנון עיר",
+        "איכות הסביבה",
+        "שירותים שונים לאיכות הסביבה",
+        "מים",
+        "מינהל המים",
+        "גביה"
+      ],
+      "parents": [
+        "",
+        "תקציב תל אביב-יפו",
+        "חינוך",
+        "חינוך",
+        "תקציב תל אביב-יפו",
+        "רווחה",
+        "רווחה",
+        "תקציב תל אביב-יפו",
+        "מינהל כללי",
+        "מינהל כללי",
+        "תקציב תל אביב-יפו",
+        "תברואה",
+        "תברואה",
+        "תקציב תל אביב-יפו",
+        "תכנון ובנין עיר",
+        "תכנון ובנין עיר",
+        "תקציב תל אביב-יפו",
+        "איכות הסביבה",
+        "תקציב תל אביב-יפו",
+        "מים",
+        "מים"
+      ],
+      "values_total": [
+        null,
+        2873280000,
+        1723968000,
+        1149312000,
+        1652640000,
+        991584000,
+        661056000,
+        866400000,
+        519840000,
+        346560000,
+        611520000,
+        366912000,
+        244608000,
+        350160000,
+        210096000,
+        140064000,
+        223440000,
+        134064000,
+        461760000,
+        277056000,
+        184704000
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.239,
+        0.143,
+        0.096,
+        0.138,
+        0.083,
+        0.055,
+        0.072,
+        0.043,
+        0.029,
+        0.051,
+        0.031,
+        0.02,
+        0.029,
+        0.017,
+        0.012,
+        0.019,
+        0.011,
+        0.038,
+        0.023,
+        0.015
+      ],
+      "values_per_capita": [
+        null,
+        6238,
+        3743,
+        2495,
+        3588,
+        2153,
+        1435,
+        1881,
+        1129,
+        752,
+        1328,
+        797,
+        531,
+        760,
+        456,
+        304,
+        485,
+        291,
+        1002,
+        601,
+        401
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2025,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 2873280000,
+          "pct": 0.239
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": 1652640000,
+          "pct": 0.138
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": 866400000,
+          "pct": 0.072
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": 611520000,
+          "pct": 0.051
+        },
+        {
+          "code": "73",
+          "label": "תכנון ובנין עיר",
+          "total_ils": 350160000,
+          "pct": 0.029
+        },
+        {
+          "code": "87",
+          "label": "איכות הסביבה",
+          "total_ils": 223440000,
+          "pct": 0.019
+        },
+        {
+          "code": "91",
+          "label": "מים",
+          "total_ils": 461760000,
+          "pct": 0.038
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            null,
+            2871360000,
+            2872320000,
+            2873280000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            0.239,
+            0.239,
+            0.239,
+            null
+          ],
+          "per_capita": [
+            null,
+            6234,
+            6236,
+            6238,
+            null
+          ]
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": [
+            null,
+            1651200000,
+            1651920000,
+            1652640000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            0.138,
+            0.138,
+            0.138,
+            null
+          ],
+          "per_capita": [
+            null,
+            3585,
+            3586,
+            3588,
+            null
+          ]
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": [
+            null,
+            865440000,
+            865920000,
+            866400000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            0.072,
+            0.072,
+            0.072,
+            null
+          ],
+          "per_capita": [
+            null,
+            1879,
+            1880,
+            1881,
+            null
+          ]
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": [
+            null,
+            610560000,
+            611040000,
+            611520000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            0.051,
+            0.051,
+            0.051,
+            null
+          ],
+          "per_capita": [
+            null,
+            1326,
+            1327,
+            1328,
+            null
+          ]
+        },
+        {
+          "code": "73",
+          "label": "תכנון ובנין עיר",
+          "total_ils": [
+            null,
+            349440000,
+            349800000,
+            350160000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            0.029,
+            0.029,
+            0.029,
+            null
+          ],
+          "per_capita": [
+            null,
+            759,
+            759,
+            760,
+            null
+          ]
+        },
+        {
+          "code": "87",
+          "label": "איכות הסביבה",
+          "total_ils": [
+            null,
+            222960000,
+            223200000,
+            223440000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            0.019,
+            0.019,
+            0.019,
+            null
+          ],
+          "per_capita": [
+            null,
+            484,
+            485,
+            485,
+            null
+          ]
+        },
+        {
+          "code": "91",
+          "label": "מים",
+          "total_ils": [
+            null,
+            460800000,
+            461280000,
+            461760000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            0.038,
+            0.038,
+            0.038,
+            null
+          ],
+          "per_capita": [
+            null,
+            1000,
+            1001,
+            1002,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "detailed",
+        "url": null
+      },
+      {
+        "year": 2024,
+        "status": "detailed",
+        "url": null
+      },
+      {
+        "year": 2023,
+        "status": "detailed",
+        "url": null
+      }
+    ]
+  },
+  "5513": {
+    "muni_id": "5513",
+    "name": "מגידו",
+    "has_pipeline_data": false,
+    "website_url": "https://www.megido.org.il",
+    "treemap": {
+      "labels": [],
+      "parents": [],
+      "values_total": [],
+      "values_pct_of_budget": [],
+      "values_per_capita": []
+    },
+    "pie_latest_year": {
+      "year": null,
+      "slices": []
+    },
+    "trend": {
+      "years": [],
+      "series": []
+    },
+    "source_files": []
+  },
+  "5525": {
+    "muni_id": "5525",
+    "name": "חבל מודיעין",
+    "has_pipeline_data": false,
+    "website_url": "https://www.hevel-modiin.org.il",
+    "treemap": {
+      "labels": [],
+      "parents": [],
+      "values_total": [],
+      "values_pct_of_budget": [],
+      "values_per_capita": []
+    },
+    "pie_latest_year": {
+      "year": null,
+      "slices": []
+    },
+    "trend": {
+      "years": [],
+      "series": []
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "missing",
+        "url": null
+      }
+    ]
+  },
+  "5526": {
+    "muni_id": "5526",
+    "name": "מטה יהודה",
+    "has_pipeline_data": true,
+    "website_url": "https://www.m-yehuda.org.il",
+    "treemap": {
+      "labels": [
+        "תקציב מטה יהודה",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי",
+        "רווחה",
+        "מינהל הרווחה",
+        "רווחת הפרט והמשפחה",
+        "מינהל כללי",
+        "הנהלה ומועצה",
+        "מבקר הרשות"
+      ],
+      "parents": [
+        "",
+        "תקציב מטה יהודה",
+        "חינוך",
+        "חינוך",
+        "תקציב מטה יהודה",
+        "רווחה",
+        "רווחה",
+        "תקציב מטה יהודה",
+        "מינהל כללי",
+        "מינהל כללי"
+      ],
+      "values_total": [
+        null,
+        250140000,
+        150084000,
+        100056000,
+        57798000,
+        34678800,
+        23119200,
+        202632000,
+        121579200,
+        81052800
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.453,
+        0.272,
+        0.181,
+        0.105,
+        0.063,
+        0.042,
+        0.367,
+        0.22,
+        0.147
+      ],
+      "values_per_capita": [
+        null,
+        4548,
+        2729,
+        1819,
+        1051,
+        631,
+        420,
+        3684,
+        2210,
+        1474
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2024,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 250140000,
+          "pct": 0.453
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": 57798000,
+          "pct": 0.105
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": 202632000,
+          "pct": 0.367
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            null,
+            null,
+            250140000,
+            null,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.453,
+            null,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            4548,
+            null,
+            null
+          ]
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": [
+            null,
+            null,
+            57798000,
+            null,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.105,
+            null,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            1051,
+            null,
+            null
+          ]
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": [
+            null,
+            null,
+            202632000,
+            null,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.367,
+            null,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            3684,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2024,
+        "status": "detailed",
+        "url": null
+      }
+    ]
+  },
+  "5530": {
+    "muni_id": "5530",
+    "name": "גזר",
+    "has_pipeline_data": true,
+    "website_url": "https://www.gezer.org.il",
+    "treemap": {
+      "labels": [
+        "תקציב גזר",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי"
+      ],
+      "parents": [
+        "",
+        "תקציב גזר",
+        "חינוך",
+        "חינוך"
+      ],
+      "values_total": [
+        null,
+        72268800,
+        43361280,
+        28907520
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.226,
+        0.136,
+        0.09
+      ],
+      "values_per_capita": [
+        null,
+        1606,
+        964,
+        642
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2025,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 72268800,
+          "pct": 0.226
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            null,
+            null,
+            72243200,
+            72268800,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.226,
+            0.226,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            1605,
+            1606,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "summary",
+        "url": null
+      },
+      {
+        "year": 2024,
+        "status": "detailed",
+        "url": null
+      }
+    ]
+  },
+  "5538": {
+    "muni_id": "5538",
+    "name": "אשכול",
+    "has_pipeline_data": true,
+    "website_url": "https://www.eshkol.org.il",
+    "treemap": {
+      "labels": [
+        "תקציב אשכול",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי"
+      ],
+      "parents": [
+        "",
+        "תקציב אשכול",
+        "חינוך",
+        "חינוך"
+      ],
+      "values_total": [
+        null,
+        31522400,
+        18913440,
+        12608960
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.242,
+        0.145,
+        0.097
+      ],
+      "values_per_capita": [
+        null,
+        2252,
+        1351,
+        901
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2025,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 31522400,
+          "pct": 0.242
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            null,
+            null,
+            null,
+            31522400,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.242,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            2252,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "detailed",
+        "url": null
+      }
+    ]
+  },
+  "5571": {
+    "muni_id": "5571",
+    "name": "גולן",
+    "has_pipeline_data": true,
+    "website_url": "https://www.golan.org.il",
+    "treemap": {
+      "labels": [
+        "תקציב גולן",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי"
+      ],
+      "parents": [
+        "",
+        "תקציב גולן",
+        "חינוך",
+        "חינוך"
+      ],
+      "values_total": [
+        null,
+        38432000,
+        23059200,
+        15372800
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.192,
+        0.115,
+        0.077
+      ],
+      "values_per_capita": [
+        null,
+        1747,
+        1048,
+        699
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2025,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 38432000,
+          "pct": 0.192
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            null,
+            null,
+            38416000,
+            38432000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.192,
+            0.192,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            1746,
+            1747,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "detailed",
+        "url": null
+      },
+      {
+        "year": 2024,
+        "status": "summary",
+        "url": null
+      }
+    ]
+  },
+  "6200": {
+    "muni_id": "6200",
+    "name": "בת ים",
+    "has_pipeline_data": false,
+    "website_url": "https://www.bat-yam.muni.il",
+    "treemap": {
+      "labels": [],
+      "parents": [],
+      "values_total": [],
+      "values_pct_of_budget": [],
+      "values_per_capita": []
+    },
+    "pie_latest_year": {
+      "year": null,
+      "slices": []
+    },
+    "trend": {
+      "years": [],
+      "series": []
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "missing",
+        "url": null
+      },
+      {
+        "year": 2024,
+        "status": "missing",
+        "url": null
+      }
+    ]
+  },
+  "6400": {
+    "muni_id": "6400",
+    "name": "הרצליה",
+    "has_pipeline_data": true,
+    "website_url": "https://www.herzliya.muni.il",
+    "treemap": {
+      "labels": [
+        "תקציב הרצליה",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי",
+        "רווחה",
+        "מינהל הרווחה",
+        "רווחת הפרט והמשפחה",
+        "מינהל כללי",
+        "הנהלה ומועצה",
+        "מבקר הרשות",
+        "תברואה",
+        "מינהל תברואה",
+        "שרותי נקיון",
+        "תכנון ובנין עיר",
+        "משרד מהנדס הרשות",
+        "תכנון עיר"
+      ],
+      "parents": [
+        "",
+        "תקציב הרצליה",
+        "חינוך",
+        "חינוך",
+        "תקציב הרצליה",
+        "רווחה",
+        "רווחה",
+        "תקציב הרצליה",
+        "מינהל כללי",
+        "מינהל כללי",
+        "תקציב הרצליה",
+        "תברואה",
+        "תברואה",
+        "תקציב הרצליה",
+        "תכנון ובנין עיר",
+        "תכנון ובנין עיר"
+      ],
+      "values_total": [
+        null,
+        236912000,
+        142147200,
+        94764800,
+        146354000,
+        87812400,
+        58541600,
+        108680000,
+        65208000,
+        43472000,
+        81068000,
+        48640800,
+        32427200,
+        60593000,
+        36355800,
+        24237200
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.182,
+        0.109,
+        0.073,
+        0.113,
+        0.068,
+        0.045,
+        0.084,
+        0.05,
+        0.034,
+        0.062,
+        0.037,
+        0.025,
+        0.047,
+        0.028,
+        0.019
+      ],
+      "values_per_capita": [
+        null,
+        2256,
+        1354,
+        902,
+        1394,
+        836,
+        558,
+        1035,
+        621,
+        414,
+        772,
+        463,
+        309,
+        577,
+        346,
+        231
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2025,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 236912000,
+          "pct": 0.182
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": 146354000,
+          "pct": 0.113
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": 108680000,
+          "pct": 0.084
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": 81068000,
+          "pct": 0.062
+        },
+        {
+          "code": "73",
+          "label": "תכנון ובנין עיר",
+          "total_ils": 60593000,
+          "pct": 0.047
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            null,
+            null,
+            null,
+            236912000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.182,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            2256,
+            null
+          ]
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": [
+            null,
+            null,
+            null,
+            146354000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.113,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            1394,
+            null
+          ]
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": [
+            null,
+            null,
+            null,
+            108680000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.084,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            1035,
+            null
+          ]
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": [
+            null,
+            null,
+            null,
+            81068000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.062,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            772,
+            null
+          ]
+        },
+        {
+          "code": "73",
+          "label": "תכנון ובנין עיר",
+          "total_ils": [
+            null,
+            null,
+            null,
+            60593000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.047,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            577,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "detailed",
+        "url": null
+      }
+    ]
+  },
+  "6900": {
+    "muni_id": "6900",
+    "name": "כפר סבא",
+    "has_pipeline_data": true,
+    "website_url": "https://www.kfar-saba.muni.il",
+    "treemap": {
+      "labels": [
+        "תקציב כפר סבא",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי",
+        "רווחה",
+        "מינהל הרווחה",
+        "רווחת הפרט והמשפחה",
+        "מינהל כללי",
+        "הנהלה ומועצה",
+        "מבקר הרשות",
+        "תברואה",
+        "מינהל תברואה",
+        "שרותי נקיון"
+      ],
+      "parents": [
+        "",
+        "תקציב כפר סבא",
+        "חינוך",
+        "חינוך",
+        "תקציב כפר סבא",
+        "רווחה",
+        "רווחה",
+        "תקציב כפר סבא",
+        "מינהל כללי",
+        "מינהל כללי",
+        "תקציב כפר סבא",
+        "תברואה",
+        "תברואה"
+      ],
+      "values_total": [
+        null,
+        169992000,
+        101995200,
+        67996800,
+        105804000,
+        63482400,
+        42321600,
+        78228000,
+        46936800,
+        31291200,
+        59112000,
+        35467200,
+        23644800
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.189,
+        0.113,
+        0.076,
+        0.118,
+        0.071,
+        0.047,
+        0.087,
+        0.052,
+        0.035,
+        0.066,
+        0.04,
+        0.026
+      ],
+      "values_per_capita": [
+        null,
+        1700,
+        1020,
+        680,
+        1058,
+        635,
+        423,
+        782,
+        469,
+        313,
+        591,
+        355,
+        236
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2025,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 169992000,
+          "pct": 0.189
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": 105804000,
+          "pct": 0.118
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": 78228000,
+          "pct": 0.087
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": 59112000,
+          "pct": 0.066
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            null,
+            null,
+            169920000,
+            169992000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.189,
+            0.189,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            1699,
+            1700,
+            null
+          ]
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": [
+            null,
+            null,
+            105750000,
+            105804000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.118,
+            0.118,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            1058,
+            1058,
+            null
+          ]
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": [
+            null,
+            null,
+            78192000,
+            78228000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.087,
+            0.087,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            782,
+            782,
+            null
+          ]
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": [
+            null,
+            null,
+            59076000,
+            59112000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.066,
+            0.066,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            591,
+            591,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "summary",
+        "url": null
+      },
+      {
+        "year": 2024,
+        "status": "summary",
+        "url": null
+      }
+    ]
+  },
+  "7400": {
+    "muni_id": "7400",
+    "name": "נתניה",
+    "has_pipeline_data": true,
+    "website_url": "https://www.netanya.muni.il",
+    "treemap": {
+      "labels": [
+        "תקציב נתניה",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי",
+        "רווחה",
+        "מינהל הרווחה",
+        "רווחת הפרט והמשפחה",
+        "מינהל כללי",
+        "הנהלה ומועצה",
+        "מבקר הרשות",
+        "תברואה",
+        "מינהל תברואה",
+        "שרותי נקיון",
+        "תכנון ובנין עיר",
+        "משרד מהנדס הרשות",
+        "תכנון עיר",
+        "איכות הסביבה",
+        "שירותים שונים לאיכות הסביבה"
+      ],
+      "parents": [
+        "",
+        "תקציב נתניה",
+        "חינוך",
+        "חינוך",
+        "תקציב נתניה",
+        "רווחה",
+        "רווחה",
+        "תקציב נתניה",
+        "מינהל כללי",
+        "מינהל כללי",
+        "תקציב נתניה",
+        "תברואה",
+        "תברואה",
+        "תקציב נתניה",
+        "תכנון ובנין עיר",
+        "תכנון ובנין עיר",
+        "תקציב נתניה",
+        "איכות הסביבה"
+      ],
+      "values_total": [
+        null,
+        522648000,
+        313588800,
+        209059200,
+        178080000,
+        106848000,
+        71232000,
+        161532000,
+        96919200,
+        64612800,
+        116928000,
+        70156800,
+        46771200,
+        87360000,
+        52416000,
+        34944000,
+        44058000,
+        26434800
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.249,
+        0.149,
+        0.1,
+        0.085,
+        0.051,
+        0.034,
+        0.077,
+        0.046,
+        0.031,
+        0.056,
+        0.034,
+        0.022,
+        0.042,
+        0.025,
+        0.017,
+        0.021,
+        0.013
+      ],
+      "values_per_capita": [
+        null,
+        2272,
+        1363,
+        909,
+        774,
+        464,
+        310,
+        702,
+        421,
+        281,
+        508,
+        305,
+        203,
+        380,
+        228,
+        152,
+        192,
+        115
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2025,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 522648000,
+          "pct": 0.249
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": 178080000,
+          "pct": 0.085
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": 161532000,
+          "pct": 0.077
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": 116928000,
+          "pct": 0.056
+        },
+        {
+          "code": "73",
+          "label": "תכנון ובנין עיר",
+          "total_ils": 87360000,
+          "pct": 0.042
+        },
+        {
+          "code": "87",
+          "label": "איכות הסביבה",
+          "total_ils": 44058000,
+          "pct": 0.021
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            null,
+            522312000,
+            522480000,
+            522648000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            0.249,
+            0.249,
+            0.249,
+            null
+          ],
+          "per_capita": [
+            null,
+            2271,
+            2272,
+            2272,
+            null
+          ]
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": [
+            null,
+            177828000,
+            177954000,
+            178080000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            0.085,
+            0.085,
+            0.085,
+            null
+          ],
+          "per_capita": [
+            null,
+            773,
+            774,
+            774,
+            null
+          ]
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": [
+            null,
+            161364000,
+            161448000,
+            161532000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            0.077,
+            0.077,
+            0.077,
+            null
+          ],
+          "per_capita": [
+            null,
+            702,
+            702,
+            702,
+            null
+          ]
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": [
+            null,
+            116760000,
+            116844000,
+            116928000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            0.056,
+            0.056,
+            0.056,
+            null
+          ],
+          "per_capita": [
+            null,
+            508,
+            508,
+            508,
+            null
+          ]
+        },
+        {
+          "code": "73",
+          "label": "תכנון ובנין עיר",
+          "total_ils": [
+            null,
+            87234000,
+            87297000,
+            87360000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            0.042,
+            0.042,
+            0.042,
+            null
+          ],
+          "per_capita": [
+            null,
+            379,
+            380,
+            380,
+            null
+          ]
+        },
+        {
+          "code": "87",
+          "label": "איכות הסביבה",
+          "total_ils": [
+            null,
+            43974000,
+            44016000,
+            44058000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            0.021,
+            0.021,
+            0.021,
+            null
+          ],
+          "per_capita": [
+            null,
+            191,
+            191,
+            192,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "detailed",
+        "url": null
+      },
+      {
+        "year": 2024,
+        "status": "detailed",
+        "url": null
+      },
+      {
+        "year": 2023,
+        "status": "summary",
+        "url": null
+      }
+    ]
+  },
+  "7900": {
+    "muni_id": "7900",
+    "name": "פתח תקווה",
+    "has_pipeline_data": true,
+    "website_url": "https://www.pt.gov.il",
+    "treemap": {
+      "labels": [
+        "תקציב פתח תקווה",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי",
+        "רווחה",
+        "מינהל הרווחה",
+        "רווחת הפרט והמשפחה",
+        "מינהל כללי",
+        "הנהלה ומועצה",
+        "מבקר הרשות",
+        "תברואה",
+        "מינהל תברואה",
+        "שרותי נקיון",
+        "תכנון ובנין עיר",
+        "משרד מהנדס הרשות",
+        "תכנון עיר",
+        "איכות הסביבה",
+        "שירותים שונים לאיכות הסביבה",
+        "מים",
+        "מינהל המים",
+        "גביה"
+      ],
+      "parents": [
+        "",
+        "תקציב פתח תקווה",
+        "חינוך",
+        "חינוך",
+        "תקציב פתח תקווה",
+        "רווחה",
+        "רווחה",
+        "תקציב פתח תקווה",
+        "מינהל כללי",
+        "מינהל כללי",
+        "תקציב פתח תקווה",
+        "תברואה",
+        "תברואה",
+        "תקציב פתח תקווה",
+        "תכנון ובנין עיר",
+        "תכנון ובנין עיר",
+        "תקציב פתח תקווה",
+        "איכות הסביבה",
+        "תקציב פתח תקווה",
+        "מים",
+        "מים"
+      ],
+      "values_total": [
+        null,
+        613248000,
+        367948800,
+        245299200,
+        215472000,
+        129283200,
+        86188800,
+        192576000,
+        115545600,
+        77030400,
+        141600000,
+        84960000,
+        56640000,
+        105816000,
+        63489600,
+        42326400,
+        54336000,
+        32601600,
+        111648000,
+        66988800,
+        44659200
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.256,
+        0.154,
+        0.102,
+        0.09,
+        0.054,
+        0.036,
+        0.08,
+        0.048,
+        0.032,
+        0.059,
+        0.035,
+        0.024,
+        0.044,
+        0.026,
+        0.018,
+        0.023,
+        0.014,
+        0.047,
+        0.028,
+        0.019
+      ],
+      "values_per_capita": [
+        null,
+        2359,
+        1415,
+        944,
+        829,
+        497,
+        332,
+        741,
+        445,
+        296,
+        545,
+        327,
+        218,
+        407,
+        244,
+        163,
+        209,
+        125,
+        429,
+        257,
+        172
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2025,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 613248000,
+          "pct": 0.256
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": 215472000,
+          "pct": 0.09
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": 192576000,
+          "pct": 0.08
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": 141600000,
+          "pct": 0.059
+        },
+        {
+          "code": "73",
+          "label": "תכנון ובנין עיר",
+          "total_ils": 105816000,
+          "pct": 0.044
+        },
+        {
+          "code": "87",
+          "label": "איכות הסביבה",
+          "total_ils": 54336000,
+          "pct": 0.023
+        },
+        {
+          "code": "91",
+          "label": "מים",
+          "total_ils": 111648000,
+          "pct": 0.047
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            null,
+            null,
+            null,
+            613248000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.256,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            2359,
+            null
+          ]
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": [
+            null,
+            null,
+            null,
+            215472000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.09,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            829,
+            null
+          ]
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": [
+            null,
+            null,
+            null,
+            192576000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.08,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            741,
+            null
+          ]
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": [
+            null,
+            null,
+            null,
+            141600000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.059,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            545,
+            null
+          ]
+        },
+        {
+          "code": "73",
+          "label": "תכנון ובנין עיר",
+          "total_ils": [
+            null,
+            null,
+            null,
+            105816000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.044,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            407,
+            null
+          ]
+        },
+        {
+          "code": "87",
+          "label": "איכות הסביבה",
+          "total_ils": [
+            null,
+            null,
+            null,
+            54336000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.023,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            209,
+            null
+          ]
+        },
+        {
+          "code": "91",
+          "label": "מים",
+          "total_ils": [
+            null,
+            null,
+            null,
+            111648000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.047,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            429,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "summary",
+        "url": null
+      },
+      {
+        "year": 2024,
+        "status": "missing",
+        "url": null
+      }
+    ]
+  },
+  "8300": {
+    "muni_id": "8300",
+    "name": "ראשון לציון",
+    "has_pipeline_data": true,
+    "website_url": "https://www.rishonlezion.muni.il",
+    "treemap": {
+      "labels": [
+        "תקציב ראשון לציון",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי",
+        "רווחה",
+        "מינהל הרווחה",
+        "רווחת הפרט והמשפחה",
+        "מינהל כללי",
+        "הנהלה ומועצה",
+        "מבקר הרשות",
+        "תברואה",
+        "מינהל תברואה",
+        "שרותי נקיון",
+        "תכנון ובנין עיר",
+        "משרד מהנדס הרשות",
+        "תכנון עיר",
+        "איכות הסביבה",
+        "שירותים שונים לאיכות הסביבה",
+        "מים",
+        "מינהל המים",
+        "גביה"
+      ],
+      "parents": [
+        "",
+        "תקציב ראשון לציון",
+        "חינוך",
+        "חינוך",
+        "תקציב ראשון לציון",
+        "רווחה",
+        "רווחה",
+        "תקציב ראשון לציון",
+        "מינהל כללי",
+        "מינהל כללי",
+        "תקציב ראשון לציון",
+        "תברואה",
+        "תברואה",
+        "תקציב ראשון לציון",
+        "תכנון ובנין עיר",
+        "תכנון ובנין עיר",
+        "תקציב ראשון לציון",
+        "איכות הסביבה",
+        "תקציב ראשון לציון",
+        "מים",
+        "מים"
+      ],
+      "values_total": [
+        null,
+        480056000,
+        288033600,
+        192022400,
+        263764000,
+        158258400,
+        105505600,
+        222732000,
+        133639200,
+        89092800,
+        173880000,
+        104328000,
+        69552000,
+        109618000,
+        65770800,
+        43847200,
+        71162000,
+        42697200,
+        53176000,
+        31905600,
+        21270400
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.209,
+        0.125,
+        0.084,
+        0.115,
+        0.069,
+        0.046,
+        0.097,
+        0.058,
+        0.039,
+        0.076,
+        0.046,
+        0.03,
+        0.048,
+        0.029,
+        0.019,
+        0.031,
+        0.019,
+        0.023,
+        0.014,
+        0.009
+      ],
+      "values_per_capita": [
+        null,
+        1887,
+        1132,
+        755,
+        1037,
+        622,
+        415,
+        876,
+        526,
+        350,
+        684,
+        410,
+        274,
+        431,
+        259,
+        172,
+        280,
+        168,
+        209,
+        125,
+        84
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2025,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 480056000,
+          "pct": 0.209
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": 263764000,
+          "pct": 0.115
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": 222732000,
+          "pct": 0.097
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": 173880000,
+          "pct": 0.076
+        },
+        {
+          "code": "73",
+          "label": "תכנון ובנין עיר",
+          "total_ils": 109618000,
+          "pct": 0.048
+        },
+        {
+          "code": "87",
+          "label": "איכות הסביבה",
+          "total_ils": 71162000,
+          "pct": 0.031
+        },
+        {
+          "code": "91",
+          "label": "מים",
+          "total_ils": 53176000,
+          "pct": 0.023
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            null,
+            null,
+            null,
+            480056000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.209,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            1887,
+            null
+          ]
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": [
+            null,
+            null,
+            null,
+            263764000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.115,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            1037,
+            null
+          ]
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": [
+            null,
+            null,
+            null,
+            222732000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.097,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            876,
+            null
+          ]
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": [
+            null,
+            null,
+            null,
+            173880000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.076,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            684,
+            null
+          ]
+        },
+        {
+          "code": "73",
+          "label": "תכנון ובנין עיר",
+          "total_ils": [
+            null,
+            null,
+            null,
+            109618000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.048,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            431,
+            null
+          ]
+        },
+        {
+          "code": "87",
+          "label": "איכות הסביבה",
+          "total_ils": [
+            null,
+            null,
+            null,
+            71162000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.031,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            280,
+            null
+          ]
+        },
+        {
+          "code": "91",
+          "label": "מים",
+          "total_ils": [
+            null,
+            null,
+            null,
+            53176000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.023,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            209,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "detailed",
+        "url": null
+      }
+    ]
+  },
+  "8600": {
+    "muni_id": "8600",
+    "name": "רמת גן",
+    "has_pipeline_data": true,
+    "website_url": "https://www.ramat-gan.muni.il",
+    "treemap": {
+      "labels": [
+        "תקציב רמת גן",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי",
+        "רווחה",
+        "מינהל הרווחה",
+        "רווחת הפרט והמשפחה",
+        "מינהל כללי",
+        "הנהלה ומועצה",
+        "מבקר הרשות",
+        "תברואה",
+        "מינהל תברואה",
+        "שרותי נקיון",
+        "תכנון ובנין עיר",
+        "משרד מהנדס הרשות",
+        "תכנון עיר"
+      ],
+      "parents": [
+        "",
+        "תקציב רמת גן",
+        "חינוך",
+        "חינוך",
+        "תקציב רמת גן",
+        "רווחה",
+        "רווחה",
+        "תקציב רמת גן",
+        "מינהל כללי",
+        "מינהל כללי",
+        "תקציב רמת גן",
+        "תברואה",
+        "תברואה",
+        "תקציב רמת גן",
+        "תכנון ובנין עיר",
+        "תכנון ובנין עיר"
+      ],
+      "values_total": [
+        null,
+        362640000,
+        217584000,
+        145056000,
+        145830000,
+        87498000,
+        58332000,
+        110040000,
+        66024000,
+        44016000,
+        78180000,
+        46908000,
+        31272000,
+        58395000,
+        35037000,
+        23358000
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.242,
+        0.145,
+        0.097,
+        0.097,
+        0.058,
+        0.039,
+        0.073,
+        0.044,
+        0.029,
+        0.052,
+        0.031,
+        0.021,
+        0.039,
+        0.023,
+        0.016
+      ],
+      "values_per_capita": [
+        null,
+        2225,
+        1335,
+        890,
+        895,
+        537,
+        358,
+        675,
+        405,
+        270,
+        480,
+        288,
+        192,
+        358,
+        215,
+        143
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2025,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 362640000,
+          "pct": 0.242
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": 145830000,
+          "pct": 0.097
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": 110040000,
+          "pct": 0.073
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": 78180000,
+          "pct": 0.052
+        },
+        {
+          "code": "73",
+          "label": "תכנון ובנין עיר",
+          "total_ils": 58395000,
+          "pct": 0.039
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            362280000,
+            362400000,
+            362520000,
+            362640000,
+            null
+          ],
+          "pct_of_budget": [
+            0.242,
+            0.242,
+            0.242,
+            0.242,
+            null
+          ],
+          "per_capita": [
+            2223,
+            2223,
+            2224,
+            2225,
+            null
+          ]
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": [
+            145560000,
+            145650000,
+            145740000,
+            145830000,
+            null
+          ],
+          "pct_of_budget": [
+            0.097,
+            0.097,
+            0.097,
+            0.097,
+            null
+          ],
+          "per_capita": [
+            893,
+            894,
+            894,
+            895,
+            null
+          ]
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": [
+            109860000,
+            109920000,
+            109980000,
+            110040000,
+            null
+          ],
+          "pct_of_budget": [
+            0.073,
+            0.073,
+            0.073,
+            0.073,
+            null
+          ],
+          "per_capita": [
+            674,
+            674,
+            675,
+            675,
+            null
+          ]
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": [
+            78000000,
+            78060000,
+            78120000,
+            78180000,
+            null
+          ],
+          "pct_of_budget": [
+            0.052,
+            0.052,
+            0.052,
+            0.052,
+            null
+          ],
+          "per_capita": [
+            479,
+            479,
+            479,
+            480,
+            null
+          ]
+        },
+        {
+          "code": "73",
+          "label": "תכנון ובנין עיר",
+          "total_ils": [
+            58260000,
+            58305000,
+            58350000,
+            58395000,
+            null
+          ],
+          "pct_of_budget": [
+            0.039,
+            0.039,
+            0.039,
+            0.039,
+            null
+          ],
+          "per_capita": [
+            357,
+            358,
+            358,
+            358,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "detailed",
+        "url": null
+      },
+      {
+        "year": 2024,
+        "status": "detailed",
+        "url": null
+      },
+      {
+        "year": 2023,
+        "status": "detailed",
+        "url": null
+      },
+      {
+        "year": 2022,
+        "status": "detailed",
+        "url": null
+      }
+    ]
+  },
+  "8700": {
+    "muni_id": "8700",
+    "name": "רעננה",
+    "has_pipeline_data": true,
+    "website_url": "https://www.raanana.muni.il",
+    "treemap": {
+      "labels": [
+        "תקציב רעננה",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי",
+        "רווחה",
+        "מינהל הרווחה",
+        "רווחת הפרט והמשפחה",
+        "מינהל כללי",
+        "הנהלה ומועצה",
+        "מבקר הרשות",
+        "תברואה",
+        "מינהל תברואה",
+        "שרותי נקיון"
+      ],
+      "parents": [
+        "",
+        "תקציב רעננה",
+        "חינוך",
+        "חינוך",
+        "תקציב רעננה",
+        "רווחה",
+        "רווחה",
+        "תקציב רעננה",
+        "מינהל כללי",
+        "מינהל כללי",
+        "תקציב רעננה",
+        "תברואה",
+        "תברואה"
+      ],
+      "values_total": [
+        null,
+        160276000,
+        96165600,
+        64110400,
+        84626000,
+        50775600,
+        33850400,
+        73746000,
+        44247600,
+        29498400,
+        55692000,
+        33415200,
+        22276800
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.189,
+        0.113,
+        0.076,
+        0.1,
+        0.06,
+        0.04,
+        0.087,
+        0.052,
+        0.035,
+        0.066,
+        0.04,
+        0.026
+      ],
+      "values_per_capita": [
+        null,
+        1781,
+        1069,
+        712,
+        940,
+        564,
+        376,
+        819,
+        491,
+        328,
+        619,
+        371,
+        248
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2025,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 160276000,
+          "pct": 0.189
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": 84626000,
+          "pct": 0.1
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": 73746000,
+          "pct": 0.087
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": 55692000,
+          "pct": 0.066
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            null,
+            null,
+            160208000,
+            160276000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.188,
+            0.189,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            1780,
+            1781,
+            null
+          ]
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": [
+            null,
+            null,
+            84575000,
+            84626000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.1,
+            0.1,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            940,
+            940,
+            null
+          ]
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": [
+            null,
+            null,
+            73712000,
+            73746000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.087,
+            0.087,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            819,
+            819,
+            null
+          ]
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": [
+            null,
+            null,
+            55658000,
+            55692000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            0.065,
+            0.066,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            618,
+            619,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "detailed",
+        "url": null
+      },
+      {
+        "year": 2024,
+        "status": "summary",
+        "url": null
+      }
+    ]
+  },
+  "9000": {
+    "muni_id": "9000",
+    "name": "באר שבע",
+    "has_pipeline_data": true,
+    "website_url": "https://www.beer-sheva.muni.il",
+    "treemap": {
+      "labels": [
+        "תקציב באר שבע",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי",
+        "רווחה",
+        "מינהל הרווחה",
+        "רווחת הפרט והמשפחה",
+        "מינהל כללי",
+        "הנהלה ומועצה",
+        "מבקר הרשות",
+        "תברואה",
+        "מינהל תברואה",
+        "שרותי נקיון",
+        "תכנון ובנין עיר",
+        "משרד מהנדס הרשות",
+        "תכנון עיר",
+        "איכות הסביבה",
+        "שירותים שונים לאיכות הסביבה"
+      ],
+      "parents": [
+        "",
+        "תקציב באר שבע",
+        "חינוך",
+        "חינוך",
+        "תקציב באר שבע",
+        "רווחה",
+        "רווחה",
+        "תקציב באר שבע",
+        "מינהל כללי",
+        "מינהל כללי",
+        "תקציב באר שבע",
+        "תברואה",
+        "תברואה",
+        "תקציב באר שבע",
+        "תכנון ובנין עיר",
+        "תכנון ובנין עיר",
+        "תקציב באר שבע",
+        "איכות הסביבה"
+      ],
+      "values_total": [
+        null,
+        370424000,
+        222254400,
+        148169600,
+        198284000,
+        118970400,
+        79313600,
+        170924000,
+        102554400,
+        68369600,
+        130568000,
+        78340800,
+        52227200,
+        40622000,
+        24373200,
+        16248800,
+        63498000,
+        38098800
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.195,
+        0.117,
+        0.078,
+        0.104,
+        0.062,
+        0.042,
+        0.09,
+        0.054,
+        0.036,
+        0.069,
+        0.041,
+        0.028,
+        0.021,
+        0.013,
+        0.008,
+        0.033,
+        0.02
+      ],
+      "values_per_capita": [
+        null,
+        1739,
+        1043,
+        696,
+        931,
+        559,
+        372,
+        802,
+        481,
+        321,
+        613,
+        368,
+        245,
+        191,
+        115,
+        76,
+        298,
+        179
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2025,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 370424000,
+          "pct": 0.195
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": 198284000,
+          "pct": 0.104
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": 170924000,
+          "pct": 0.09
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": 130568000,
+          "pct": 0.069
+        },
+        {
+          "code": "73",
+          "label": "תכנון ובנין עיר",
+          "total_ils": 40622000,
+          "pct": 0.021
+        },
+        {
+          "code": "87",
+          "label": "איכות הסביבה",
+          "total_ils": 63498000,
+          "pct": 0.033
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            null,
+            null,
+            null,
+            370424000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.195,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            1739,
+            null
+          ]
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": [
+            null,
+            null,
+            null,
+            198284000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.104,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            931,
+            null
+          ]
+        },
+        {
+          "code": "61",
+          "label": "מינהל כללי",
+          "total_ils": [
+            null,
+            null,
+            null,
+            170924000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.09,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            802,
+            null
+          ]
+        },
+        {
+          "code": "71",
+          "label": "תברואה",
+          "total_ils": [
+            null,
+            null,
+            null,
+            130568000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.069,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            613,
+            null
+          ]
+        },
+        {
+          "code": "73",
+          "label": "תכנון ובנין עיר",
+          "total_ils": [
+            null,
+            null,
+            null,
+            40622000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.021,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            191,
+            null
+          ]
+        },
+        {
+          "code": "87",
+          "label": "איכות הסביבה",
+          "total_ils": [
+            null,
+            null,
+            null,
+            63498000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.033,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            298,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "summary",
+        "url": null
+      }
+    ]
+  },
+  "9300": {
+    "muni_id": "9300",
+    "name": "זכרון יעקב",
+    "has_pipeline_data": true,
+    "website_url": "https://www.zichron.muni.il",
+    "treemap": {
+      "labels": [
+        "תקציב זכרון יעקב",
+        "חינוך",
+        "מינהל החינוך",
+        "חינוך קדם יסודי",
+        "רווחה",
+        "מינהל הרווחה",
+        "רווחת הפרט והמשפחה"
+      ],
+      "parents": [
+        "",
+        "תקציב זכרון יעקב",
+        "חינוך",
+        "חינוך",
+        "תקציב זכרון יעקב",
+        "רווחה",
+        "רווחה"
+      ],
+      "values_total": [
+        null,
+        55369600,
+        33221760,
+        22147840,
+        19118000,
+        11470800,
+        7647200
+      ],
+      "values_pct_of_budget": [
+        null,
+        0.252,
+        0.151,
+        0.101,
+        0.087,
+        0.052,
+        0.035
+      ],
+      "values_per_capita": [
+        null,
+        2407,
+        1444,
+        963,
+        831,
+        499,
+        332
+      ]
+    },
+    "pie_latest_year": {
+      "year": 2025,
+      "slices": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": 55369600,
+          "pct": 0.252
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": 19118000,
+          "pct": 0.087
+        }
+      ]
+    },
+    "trend": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "series": [
+        {
+          "code": "81",
+          "label": "חינוך",
+          "total_ils": [
+            null,
+            null,
+            null,
+            55369600,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.252,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            2407,
+            null
+          ]
+        },
+        {
+          "code": "84",
+          "label": "רווחה",
+          "total_ils": [
+            null,
+            null,
+            null,
+            19118000,
+            null
+          ],
+          "pct_of_budget": [
+            null,
+            null,
+            null,
+            0.087,
+            null
+          ],
+          "per_capita": [
+            null,
+            null,
+            null,
+            831,
+            null
+          ]
+        }
+      ]
+    },
+    "source_files": [
+      {
+        "year": 2025,
+        "status": "summary",
+        "url": null
+      }
+    ]
+  }
+}
