@@ -69,3 +69,9 @@ budget_examples/shafir_2026.pdf
 # level-2.5 scope-classify POC) get moved into docs/examples/ as committed
 # examples instead of living here -- see docs/agents/... issue #12.
 scripts/spike_output/
+
+# Merged multi-part PDF budgets (issue #33) -- derived from data/, gitignored,
+# kept outside data/ itself so discover_year_records()'s muni-dir walk never
+# sees it (see data/localities/ for why a non-"{id}_{name}" dir under data/
+# is unsafe).
+data_merged/
