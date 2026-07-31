@@ -20,8 +20,8 @@ existing 901/902/903 convention.
 | 901 | `even_yehuda_2025.pdf` | `docling_pdf` | 1 | vectored, flat table |
 | 902 | `mate_yehuda_2024.pdf` | `docling_pdf_ocr` | 3 | scanned |
 | 903 | `elad_2022.xlsx` | `excel_native` | -- | only Excel sample |
-| 904 | `tel_aviv_2026.pdf` | `docling_pdf` | 363 | vectored, hierarchical codes; ran on GCP T4 GPU (~18min), `normalized.json` gitignored (14MB, see `.link.txt`) |
-| 905 | `shafir_2026.pdf` | `docling_pdf_ocr` | 144 | scanned; ran on GCP T4 GPU (~26min), `normalized.json` gitignored (2.6MB, see `.link.txt`); no `document.md`/`docling_native.json` captured from that run |
+| 904 | `tel_aviv_2026.pdf` | `docling_pdf` | 363 | vectored, hierarchical codes; ran on GCP spot NVIDIA L4 GPU (~17.6min), `normalized.json`/`docling_native.json` gitignored (~13.7MB/~100MB, see `.link.txt`) |
+| 905 | `shafir_2026.pdf` | `docling_pdf_ocr` | 144 | scanned; ran on GCP spot NVIDIA L4 GPU (~15min), `normalized.json`/`docling_native.json` gitignored (~2.77MB/~21.85MB, see `.link.txt`) |
 | 906 | `elyakin_2026.pdf` | `docling_pdf_ocr` | 3 | scanned |
 | 907 | `gezer_2026.pdf` | `docling_pdf` | 52 | vectored; ran on GCP T4 GPU |
 | 908 | `jaljulya_2026.pdf` | `docling_pdf_ocr` | 9 | scanned; ran on GCP T4 GPU |
