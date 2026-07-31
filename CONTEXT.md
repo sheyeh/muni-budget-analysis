@@ -12,9 +12,17 @@ _Avoid_: "parsed budget data", "extracted budget" — these imply semantic under
 The official Israeli municipality identifier (semel yishuv, Ministry of Interior / CBS code), reused as-is rather than inventing a project-internal ID — lets other public datasets be joined on the same key later.
 _Avoid_: "municipality code" as a project-invented term — it's an existing external identifier, not something this project defines.
 
+**Level-1 manifest**:
+The `[{muni_id, budget_filename, source: {kind, value}}]` JSON array (e.g. `data/level1_manifest.json`) bridging stage 1 (scraping) into stage 2 — `run.py`'s `load_level1_manifest()` reads it, `ingest.py`'s `resolve_source()` resolves each record's `source` to a local file. One record per source file to process, not per muni or per scrape attempt. `scripts/build_level1_manifest.py` builds this from the real `data/` corpus (see `docs/data-directory.md`).
+_Avoid_: confusing with **Processing manifest** below — same word ("manifest"), opposite end of stage 2: this is stage 2's *input* list, that's stage 2's *output* receipt.
+
+**Processing manifest**:
+The per-file `manifest.json` written by stage 2 to `processed/{muni_id}/{filename_stem}/manifest.json` (`build_manifest_record()` / `write_manifest()` in `src/muni_budget_analysis/processing/manifest.py`) — one processed file's provenance, pipeline outcome, and `status` (`success`/`partial`/`failed`). Read back by `is_already_processed()` for cache-by-content-hash skip logic.
+_Avoid_: confusing with **Level-1 manifest** above.
+
 **Normalized document**:
 The `normalized.json` file per source file — the concrete artifact holding one file's structural extraction (sections + tables). This is stage 2's contract with stage 3.
-_Avoid_: "processed file" (ambiguous — could mean the manifest, the docling native export, or this).
+_Avoid_: "processed file" (ambiguous — could mean the processing manifest, the docling native export, or this).
 
 **Budget line item**:
 A semantically resolved row produced by stage 3: a classification code placed in its hierarchy, a resolved fiscal year/amount-type per value (actual vs. budgeted vs. execution %), read off of one or more table rows in a normalized document. This is the "well-defined table of interesting values" stage 3 exists to produce. Not every source row becomes a leaf value — see **Row type**.
