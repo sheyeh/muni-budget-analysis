@@ -13,6 +13,7 @@ from docling_core.types.doc.document import DoclingDocument, TableData
 
 from muni_budget_analysis.processing.pdf_pipeline import (
     _assemble_group_rows,
+    _resolve_tesseract_cmd,
     convert_pdf,
     make_converter,
     merge_multipage_tables,
@@ -60,6 +61,25 @@ def test_convert_pdf_mate_yehuda_ocr_does_not_merge_distinct_tables():
     for table in result["tables"]:
         assert table["num_rows"] > 0
         assert table["num_cols"] > 0
+
+
+def test_resolve_tesseract_cmd_env_var_wins(monkeypatch):
+    monkeypatch.setenv("TESSERACT_CMD", "/custom/path/tesseract")
+    monkeypatch.setattr("shutil.which", lambda name: "/should/not/be/used")
+    assert _resolve_tesseract_cmd() == "/custom/path/tesseract"
+
+
+def test_resolve_tesseract_cmd_falls_back_to_path(monkeypatch):
+    monkeypatch.delenv("TESSERACT_CMD", raising=False)
+    monkeypatch.setattr("shutil.which", lambda name: "/usr/bin/tesseract")
+    assert _resolve_tesseract_cmd() == "/usr/bin/tesseract"
+
+
+def test_resolve_tesseract_cmd_raises_when_unresolvable(monkeypatch):
+    monkeypatch.delenv("TESSERACT_CMD", raising=False)
+    monkeypatch.setattr("shutil.which", lambda name: None)
+    with pytest.raises(RuntimeError, match="TESSERACT_CMD"):
+        _resolve_tesseract_cmd()
 
 
 def _add_table(doc: DoclingDocument, rows: list) -> None:
