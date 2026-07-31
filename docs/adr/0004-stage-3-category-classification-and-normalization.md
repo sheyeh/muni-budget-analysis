@@ -10,6 +10,7 @@ Through extensive spike analysis and code revision, we identified several core c
 3. **Percentage Columns**: Percentage-based columns (such as execution-rate percent `ביצוע לעומת תקציב`) were previously treated as standard currency, corrupting numeric aggregations.
 4. **Integration with Stage 2.5 (`scoped.json`)**: Level 2.5 identifies the active target year dimension axis (rows or columns) and marks out-of-scope columns or rows with `keep: false`. Stage 3 must filter out these fields to maintain consistency and keep the output clean.
 5. **API Quota & Cost Optimization**: Transitioning to standard large models like `gemini-3.6-flash` is too expensive for large batch runs, while smaller models can introduce syntax formatting variances.
+6. **Latency and Performance Bottlenecks**: The initial Stage 3 implementation processed tables sequentially and sent every table and row to the LLM before applying any Stage 2.5 scope filters, resulting in redundant API calls, unnecessary token costs, and high processing latency.
 
 ---
 
@@ -49,9 +50,15 @@ Percentage-based values (e.g., matching a `%` symbol or whose column header cont
 ### 5. Cost-Effective Default Model
 We selected **`gemini-3.5-flash-lite`** as the default production model for classification, reducing input costs by 80% ($1.50 -> $0.30/M tokens) and output costs by 72% ($9.00 -> $2.50/M tokens) while maintaining high classification accuracy.
 
+### 6. Performance Optimization: Pre-Filtering and Batch Async LLM Calling
+To maximize pipeline throughput and minimize redundant API token consumption, we introduced the following optimization patterns:
+- **Upfront Table & Row Filtering (Pre-filtering)**: We decoupled Level 2.5 scope evaluation from the post-classification standardizer. The orchestrator now evaluates `scoped.json` filtering up-front. If a table or row is out-of-scope (`keep = false`), it is completely filtered out *before* prompting the LLM, entirely eliminating redundant model calls for out-of-scope elements.
+- **Concurrent Batch Async Calls**: Instead of sequential LLM queries (which accumulate the full network roundtrip latency for every single table), Stage 3 now pools all in-scope table prompt payloads into an asynchronous batch list. We execute these calls concurrently using `asyncio` and the new Google GenAI SDK's async API (`client.aio.models.generate_content`).
+- **Concurrency Rate Limiting**: The batch execution is bound by a configurable semaphore (`asyncio.Semaphore(max_concurrency=5)`) to prevent hitting API rate limits during large concurrent runs while delivering a dramatic reduction in batch analysis duration.
+
 ---
 
 ## Status
 
 **Accepted and Implemented**. 
-Fully covered with comprehensive unit tests (`tests/test_build_output.py`) verifying percentage parsing, validation warnings, unit multiplier mapping, and scope filtering.
+Fully covered with comprehensive unit and integration tests (`tests/test_build_output.py` and `tests/test_analysis_run.py`) verifying percentage parsing, validation warnings, unit multiplier mapping, upfront scope filtering, and concurrent async mock classifications.

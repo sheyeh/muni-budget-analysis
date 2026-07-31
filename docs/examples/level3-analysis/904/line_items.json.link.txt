@@ -1,0 +1,9 @@
+tel_aviv_2026's line_items.json (~19.3MB, generated from data/analysis/904/default/line_items.json) is kept out of git per CLAUDE.md's large-file convention (>~2MB).
+
+Regenerate locally:
+1. Ensure you have downloaded or regenerated tel_aviv_2026's normalized.json and scoped.json in docs/examples/level2-processing/904/
+2. Run the Level 3 batch analysis runner from the repository root:
+
+.venv/Scripts/python -m muni_budget_analysis.analysis.run \
+  --processed-dir docs/examples/level2-processing \
+  --analysis-dir docs/examples/level3-analysis

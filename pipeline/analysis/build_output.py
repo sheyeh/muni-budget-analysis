@@ -73,6 +73,50 @@ class OutputRecord:
     fiscal_year_value: int | None = None
 
 
+def get_table_scope_filters(
+    table: TableExtract,
+    scope_data: dict | list | None,
+) -> tuple[bool, dict[int, bool], dict[str | int, bool], dict | None]:
+    """
+    Extract Level 2.5 scope filters for a table from scoped.json data.
+
+    Returns:
+      (table_keep, rows_to_keep, cols_to_keep, table_scope)
+    """
+    rows_to_keep = {}
+    cols_to_keep = {}
+    table_keep = True
+
+    table_scope = None
+    if scope_data:
+        if isinstance(scope_data, dict):
+            # Try mock format (table index as key)
+            table_scope = scope_data.get(str(table.table_index)) or scope_data.get(table.table_index)
+            if not table_scope:
+                # Try real scoped.json format (table_scopes list)
+                scopes = scope_data.get("table_scopes", [])
+                target_id = f"table-{table.table_index}"
+                for s in scopes:
+                    if s.get("table_id") == target_id or s.get("table_id") == getattr(table, "table_id", None):
+                        table_scope = s
+                        break
+        elif isinstance(scope_data, list) and table.table_index < len(scope_data):
+            table_scope = scope_data[table.table_index]
+
+        if table_scope:
+            if table_scope.get("year_axis") == "none":
+                table_keep = bool(table_scope.get("keep", True))
+
+            for r in table_scope.get("rows", []):
+                rows_to_keep[r["index"]] = bool(r.get("keep", True))
+
+            for c in table_scope.get("columns", []):
+                cols_to_keep[c.get("header")] = bool(c.get("keep", True))
+                cols_to_keep[c.get("index")] = bool(c.get("keep", True))
+
+    return table_keep, rows_to_keep, cols_to_keep, table_scope
+
+
 def build_records(
     *,
     source: str,
@@ -103,36 +147,7 @@ def build_records(
         target_year = scope_data["target_year"]
 
     # 2. Respect Stage 2.5 Filters
-    rows_to_keep = {}
-    cols_to_keep = {}
-    table_keep = True
-
-    table_scope = None
-    if scope_data:
-        if isinstance(scope_data, dict):
-            # Try mock format (table index as key)
-            table_scope = scope_data.get(str(table.table_index)) or scope_data.get(table.table_index)
-            if not table_scope:
-                # Try real scoped.json format (table_scopes list)
-                scopes = scope_data.get("table_scopes", [])
-                target_id = f"table-{table.table_index}"
-                for s in scopes:
-                    if s.get("table_id") == target_id or s.get("table_id") == getattr(table, "table_id", None):
-                        table_scope = s
-                        break
-        elif isinstance(scope_data, list) and table.table_index < len(scope_data):
-            table_scope = scope_data[table.table_index]
-        
-        if table_scope:
-            if table_scope.get("year_axis") == "none":
-                table_keep = bool(table_scope.get("keep", True))
-            
-            for r in table_scope.get("rows", []):
-                rows_to_keep[r["index"]] = bool(r.get("keep", True))
-            
-            for c in table_scope.get("columns", []):
-                cols_to_keep[c.get("header")] = bool(c.get("keep", True))
-                cols_to_keep[c.get("index")] = bool(c.get("keep", True))
+    table_keep, rows_to_keep, cols_to_keep, table_scope = get_table_scope_filters(table, scope_data)
 
     if not table_keep:
         return []

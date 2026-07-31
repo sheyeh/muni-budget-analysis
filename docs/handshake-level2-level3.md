@@ -213,13 +213,14 @@ non-matching key is absent.
      which slice is in-scope for the target year, not what any of the
      values mean).
 4. If `scoped.json` does not exist at all, level 3 has no scope
-   information and must decide its own default (today,
-   `pipeline/analysis/` classifies every row of every table it's given --
-   see the gap noted below).
+   information and must decide its own default (the production-ready module
+   `src/muni_budget_analysis/analysis/` classifies all rows with values).
 
 ## Gap: Resolved (July 2026)
 
-The migration of the level-3 analyzer pipeline is fully complete and verified. The Stage 3 processor (`pipeline/analysis/normalized_input.py` and `build_output.py`) now natively reads and consumes `normalized.json` and joins it with `scoped.json`'s keeps and targets (using heuristic fallbacks when no scope classification metadata is found), and outputs the standardized, pre-normalized `line_items.json` output contract. Raw `native.json` is no longer used by the pipeline.
+The migration of the level-3 analyzer pipeline is fully complete and verified. The production Stage 3 processor (`src/muni_budget_analysis/analysis/run.py` and `build_output.py`) now natively reads and consumes `normalized.json` and joins it with `scoped.json`'s keeps and targets (using heuristic fallbacks when no scope classification metadata is found), and outputs the standardized, pre-normalized `line_items.json` output contract. Raw `native.json` is no longer used by the pipeline.
+
+Additionally, Stage 3 has been optimized to execute upfront table and row pre-filtering before invoking the LLM, and to run all LLM calls concurrently as async batches (via `client.aio` and asyncio semaphores), vastly accelerating execution and minimizing API token consumption.
 
 ## `muni_id` caveat
 

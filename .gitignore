@@ -60,6 +60,10 @@ docs/examples/level2-processing/909/docling_native.json
 docs/examples/level2-processing/905/normalized.json
 docs/examples/level2-processing/905/docling_native.json
 
+# Large Level 3 analysis output files kept outside git (see accompanying .link.txt)
+docs/examples/level3-analysis/904/line_items.json
+docs/examples/level3-analysis/905/line_items.json
+
 # Large source budget files kept outside git (see accompanying .link.txt)
 budget_examples/jaljulya_2026.pdf
 budget_examples/shafir_2026.pdf
