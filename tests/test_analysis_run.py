@@ -100,9 +100,9 @@ def sample_scoped_json():
     }
 
 
-@patch("muni_budget_analysis.analysis.run.classify_table")
+@patch("muni_budget_analysis.analysis.run.classify_tables_batch_async")
 def test_process_one_document_success(
-    mock_classify,
+    mock_batch_classify,
     tmp_path,
     mock_codebook,
     sample_normalized_json,
@@ -117,12 +117,14 @@ def test_process_one_document_success(
     (doc_dir / "manifest.json").write_text(json.dumps(sample_manifest_json, ensure_ascii=False), encoding="utf-8")
     (doc_dir / "scoped.json").write_text(json.dumps(sample_scoped_json, ensure_ascii=False), encoding="utf-8")
 
-    # Mock the LLM classification return
-    mock_classify.return_value = ClassificationResult(
-        rows=[
-            RowClassification(row_index=1, code="111", row_type="line_item", confidence=0.95, note="matched successfully")
-        ]
-    )
+    # Mock the LLM batch classification return
+    mock_batch_classify.return_value = [
+        (0, ClassificationResult(
+            rows=[
+                RowClassification(row_index=1, code="111", row_type="line_item", confidence=0.95, note="matched successfully")
+            ]
+        ))
+    ]
 
     from muni_budget_analysis.analysis.codebook import load_codebook, as_prompt_listing, by_code
     codebook = load_codebook()
@@ -140,7 +142,7 @@ def test_process_one_document_success(
     )
 
     assert res is True
-    assert mock_classify.called
+    assert mock_batch_classify.called
 
     # Check output
     output_file = doc_dir / "line_items.json"
@@ -159,9 +161,9 @@ def test_process_one_document_success(
     assert item["fiscal_year_value"] == 2025
 
 
-@patch("muni_budget_analysis.analysis.run.classify_table")
+@patch("muni_budget_analysis.analysis.run.classify_tables_batch_async")
 def test_process_one_document_skips_failed_manifest(
-    mock_classify,
+    mock_batch_classify,
     tmp_path,
     mock_codebook,
     sample_normalized_json,
@@ -191,13 +193,13 @@ def test_process_one_document_skips_failed_manifest(
     )
 
     assert res is False
-    assert not mock_classify.called
+    assert not mock_batch_classify.called
     assert not (doc_dir / "line_items.json").exists()
 
 
-@patch("muni_budget_analysis.analysis.run.classify_table")
+@patch("muni_budget_analysis.analysis.run.classify_tables_batch_async")
 def test_run_analysis_batch(
-    mock_classify,
+    mock_batch_classify,
     tmp_path,
     mock_codebook,
     sample_normalized_json,
@@ -217,11 +219,13 @@ def test_run_analysis_batch(
     doc_dir_2.mkdir(parents=True)
     (doc_dir_2 / "manifest.json").write_text(json.dumps(sample_manifest_json, ensure_ascii=False), encoding="utf-8")
 
-    mock_classify.return_value = ClassificationResult(
-        rows=[
-            RowClassification(row_index=1, code="111", row_type="line_item", confidence=0.8, note="matched")
-        ]
-    )
+    mock_batch_classify.return_value = [
+        (0, ClassificationResult(
+            rows=[
+                RowClassification(row_index=1, code="111", row_type="line_item", confidence=0.8, note="matched")
+            ]
+        ))
+    ]
 
     # Run the batch analysis
     stats = run_analysis_batch(

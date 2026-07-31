@@ -13,7 +13,7 @@ from __future__ import annotations
 import json
 import time
 from dataclasses import dataclass
-from typing import Optional, List
+from typing import Optional, List, Any
 from pydantic import BaseModel, Field
 
 # Default to cost-effective gemini-3.5-flash-lite as aligned
@@ -244,3 +244,94 @@ def classify_table(
     prompt = _build_user_prompt(codebook_listing, rows, unit_known)
     raw = _call_gemini(prompt, api_key=api_key, model=model)
     return _parse_response(raw)
+
+
+async def _call_gemini_async(prompt: str, api_key: str | None, model: str) -> str:
+    import os
+    import asyncio
+    from google import genai
+    from google.genai import types
+
+    project = os.environ.get("GOOGLE_CLOUD_PROJECT")
+    if project:
+        location = os.environ.get("GOOGLE_CLOUD_LOCATION", "us-central1")
+        client = genai.Client(vertexai=True, project=project, location=location)
+    elif api_key:
+        client = genai.Client(api_key=api_key)
+    else:
+        raise RuntimeError(
+            "Neither GOOGLE_CLOUD_PROJECT (Vertex AI) nor GEMINI_API_KEY/GOOGLE_API_KEY "
+            "(Gemini Developer API) is set."
+        )
+    delay = RETRY_BASE_DELAY_SECONDS
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            # We use client.aio for async API calls in the new google-genai SDK
+            response = await client.aio.models.generate_content(
+                model=model,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    system_instruction=SYSTEM_PROMPT,
+                    temperature=0.0,
+                    response_mime_type="application/json",
+                    response_schema=TableClassificationResponse,
+                ),
+            )
+            return response.text
+        except Exception as exc:
+            if _is_daily_quota_exhausted(exc):
+                raise QuotaExhaustedError(
+                    f"Daily quota exhausted for model {model!r}. This is a per-day cap "
+                    "(e.g. the free tier's ~20 requests/day/model) -- retrying now won't "
+                    "help; wait for the quota to reset or use a different --model/API key/tier. "
+                    f"Original error: {exc}"
+                ) from exc
+            if attempt == MAX_RETRIES or not _is_retryable(exc):
+                raise
+            wait = _server_suggested_delay(exc) or delay
+            print(f"    Gemini async call failed (attempt {attempt}/{MAX_RETRIES}): {exc!r} -- retrying in {wait:.0f}s")
+            await asyncio.sleep(wait)
+            delay *= 2
+
+
+async def classify_table_async(
+    *,
+    codebook_listing: str,
+    rows: list[tuple[int, str, str]],
+    unit_known: str | None,
+    api_key: str | None,
+    model: str = DEFAULT_MODEL,
+) -> ClassificationResult:
+    prompt = _build_user_prompt(codebook_listing, rows, unit_known)
+    raw = await _call_gemini_async(prompt, api_key=api_key, model=model)
+    return _parse_response(raw)
+
+
+async def classify_tables_batch_async(
+    batch_tasks: list[dict[str, Any]],
+    api_key: str | None,
+    model: str = DEFAULT_MODEL,
+    max_concurrency: int = 5,
+) -> list[tuple[int, ClassificationResult | Exception]]:
+    """
+    Classify multiple tables concurrently using asyncio and Semaphore.
+    """
+    import asyncio
+    sem = asyncio.Semaphore(max_concurrency)
+
+    async def worker(task: dict[str, Any]) -> tuple[int, ClassificationResult | Exception]:
+        async with sem:
+            try:
+                result = await classify_table_async(
+                    codebook_listing=task['codebook_listing'],
+                    rows=task['rows'],
+                    unit_known=task['unit_known'],
+                    api_key=api_key,
+                    model=model,
+                )
+                return task['table_index'], result
+            except Exception as exc:
+                return task['table_index'], exc
+
+    tasks = [worker(task) for task in batch_tasks]
+    return await asyncio.gather(*tasks)

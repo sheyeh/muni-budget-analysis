@@ -19,7 +19,7 @@ from typing import Any, Dict, List, Optional
 
 from muni_budget_analysis.analysis.codebook import load_codebook, as_prompt_listing, by_code
 from muni_budget_analysis.analysis.normalized_input import extract_all_normalized_tables
-from muni_budget_analysis.analysis.llm_classify import classify_table, DEFAULT_MODEL
+from muni_budget_analysis.analysis.llm_classify import classify_table, DEFAULT_MODEL, classify_tables_batch_async
 from muni_budget_analysis.analysis.build_output import build_records, build_line_items_json
 
 logger = logging.getLogger(__name__)
@@ -84,8 +84,27 @@ def process_one_document(
 
     logger.info(f"Processing {len(tables)} tables in {doc_dir.name} (muni_id={muni_id}, target_year={target_year})...")
 
+    # 1. Pre-filter tables and rows BEFORE LLM calling
+    from muni_budget_analysis.analysis.build_output import get_table_scope_filters
+    from muni_budget_analysis.analysis.llm_classify import ClassificationResult
+    
+    tables_to_classify = []
+    table_configs = []
+    
     for table in tables:
-        rows_needing_classification = [r for r in table.rows if r.values]
+        table_keep, rows_to_keep, cols_to_keep, table_scope = get_table_scope_filters(table, scope_data)
+        if not table_keep:
+            logger.info(f"  Skipping table {table.table_index} entirely (scoped keep is false)")
+            continue
+
+        rows_needing_classification = []
+        for r in table.rows:
+            if not r.values:
+                continue
+            if r.row_index in rows_to_keep and not rows_to_keep[r.row_index]:
+                continue
+            rows_needing_classification.append(r)
+
         if not rows_needing_classification:
             continue
 
@@ -94,22 +113,42 @@ def process_one_document(
             for r in rows_needing_classification
         ]
         unit_known = "thousands" if table.unit == "thousands" else None
+        
+        tables_to_classify.append(table)
+        table_configs.append({
+            'table_index': table.table_index,
+            'codebook_listing': codebook_listing,
+            'rows': rows_for_prompt,
+            'unit_known': unit_known,
+        })
 
-        logger.info(f"  Classifying table {table.table_index}: {len(rows_for_prompt)} rows")
+    # 2. Execute classifications concurrently (batch async)
+    classification_by_table_index = {}
+    if table_configs:
+        import asyncio
+        
+        logger.info(f"  Classifying {len(table_configs)} tables concurrently (batch async)...")
+        results = asyncio.run(classify_tables_batch_async(table_configs, api_key=api_key, model=model))
+        
+        for table_index, result in results:
+            if isinstance(result, Exception):
+                msg = f"LLM classification failed for table {table_index}: {result!r}"
+                warnings.append(msg)
+                logger.error(f"  {msg}")
+            else:
+                classification_by_table_index[table_index] = result
 
-        try:
-            result = classify_table(
-                codebook_listing=codebook_listing,
-                rows=rows_for_prompt,
-                unit_known=unit_known,
-                api_key=api_key,
-                model=model,
-            )
-        except Exception as exc:
-            msg = f"LLM classification failed for table {table.table_index}: {exc!r}"
-            warnings.append(msg)
-            logger.error(f"  {msg}")
+    # 3. Build records using classification results
+    for table in tables:
+        # Verify table keep scope
+        table_keep, _, _, _ = get_table_scope_filters(table, scope_data)
+        if not table_keep:
             continue
+
+        result = classification_by_table_index.get(table.table_index)
+        if result is None:
+            # Fallback to empty classification if omitted/failed
+            result = ClassificationResult(rows=[])
 
         records = build_records(
             source=doc_dir.name,
@@ -119,7 +158,6 @@ def process_one_document(
             scope_data=scope_data,
         )
         all_records.extend(records)
-        time.sleep(1.0)  # Rate limiting safety cushion
 
     # 4. Construct production contract
     unit_str = "thousands_nis" if any(r.unit_multiplier == 1000 for r in all_records) else "nis"
